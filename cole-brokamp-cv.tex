@@ -1,0 +1,226 @@
+\documentclass[margin,line]{res}
+
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.4in}}}{\end{list}}
+
+\usepackage[unicode=true]{hyperref}
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+
+\begin{document}
+
+\name{Cole Brokamp \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3in}p{4in}}      
+Department of Environmental Health  & {\it Voice:}  (513) 518-5121 \\         
+University of Cincinnati & {\it E-mail:}  cole.brokamp@gmail.com\\       
+Cincinnati, OH 45220 USA  & {\it Website:} www.cole-brokamp.github.io \\     
+\end{tabular}
+
+
+\section{\sc Research Interests}
+Machine learning applied to biomedical data, statistical methods for Random Forest,
+statistical computing, environmental health, air pollution, land use modeling
+
+\section{\sc Education}
+{\bf University of Cincinnati}, Cincinnati, Ohio USA \\
+\vspace*{-.1in}
+\begin{list1}
+\item[]Ph.D. Candidate, Biostatistics, May 2015 (expected
+  graduation date: April 2016)
+\end{list1}
+
+{\bf University of Cincinnati}, Cincinnati, Ohio USA\\
+%{\em Department of Mathematics and Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[]B.S., Biomedical Engineering,  June, 2010
+\end{list1}
+
+
+\section{\sc Research Experience}
+\textbf{Department of Biostatistics and Bioinformatics, University of Cincinnati} \\
+
+\vspace{-0.2in}
+\textsl{Cincinnati Childhood Allergy and Air Pollution Study (CCAAPS)}
+\hfill \textit{March 2014 -- present} \\
+Advisor: Patrick Ryan \\
+\vspace{-0.13in}
+\begin{list1}
+\item[]Conducted unsupervised clustering analysis of asthmatic children into clinically-useful subtypes and machine learning based prediction of disease phenotypes. Analyzed and visualized big air pollution data from real-time, GPS equipped sensors using GIS tools. General statistical consulting for epidemiologists and clinicians involved with study. 
+\end{list1}
+
+
+\textsl{Relationship of Indoor Outdoor and Personal Air  (RIOPA)}
+\hfill \textit{January 2014 -- November 2014} \\
+Advisor: Patrick Ryan, MB Rao \\
+\vspace{-0.13in}
+\begin{list1}
+\item[] Characterized and analyzed multivariate data using clustering and principal component techniques. Implemented machine learning algorithm for prediction of personal exposure to individual elements in PM2.5 based on indoor and outdoor air data, as well as information about potential PM2.5 sources and personal activties.
+\end{list1}
+
+
+
+\textsl{Brief Rating of Aggression by Children and Adolescents (BRACHA)}
+\hfill \textit{March 2013 -- August 2014} \\
+Advisor: Jeff Welge, Doug Mossman, Drew Barzman \\
+\vspace{-0.13in}
+\begin{list1}
+\item[] Created novel data tool combining machine learning and logistic regression to predict presence, severity, frequency, and timing of aggressive acts committed in Cincinnati Children's College Hill Psychiatric Residential Clinic.
+\end{list1}
+
+ 
+\textbf{Department of Pharmacology and Biophysics, University of Cincinnati} \\
+
+\vspace{-0.2in}
+\textsl{Ultrasound- and Liposome-Mediated Targeted Gene Therapy}
+\hfill \textit{July 2010 -- January 2012} \\
+Advisor: Keith Jones, Christy Holland \\
+\vspace{-0.13in}
+\begin{list1}
+\item[] Developed novel methodology for delivering genetic material to myocardium in mouse model of acute myocardial infarction. Ultrasound-mediated delivery of oligonucleotides targeted to suppress inflammation-related gene expression with spatial and temporal control over dosing.
+\end{list1}
+
+
+\textbf{Department of Biomedical Engineering, University of Cincinnati}\\
+
+\vspace{-0.2in}
+\textsl{Ion Channel Engineering and Characterization}
+\hfill \textit{March 2007 -- July 2010} \\ 
+Advisor: David Wendell, Carlo Montemagno \\
+\vspace{-0.13in}
+\begin{list1}
+\item[] Implemented a planar artificial lipid bilayer system to study voltage-responsive ion currents through several ion channels. Characterized Connexin-43 and several mutants' responses to voltage differences as well as several compounds. Designed and purified several membrane proteins: genetic design and construction, protein production and purification, reconstitution into liposomes and polysomes.
+\end{list1}
+
+
+\section{\sc Academic Experience}
+{\bf University of Cincinnati}, Cincinnati, Ohio USA
+
+{\em Instructor} \hfill \textit{August - December, 2015}\\
+Co-taught graduate level course for the Department of Biostatistics and Epidemiology.  Shared responsibility for lectures, exams,
+homework assignments, and  grades.  
+\vspace*{.05in}  
+\begin{list2}
+\item BE-XXX Computational Statistics using R Shiny, Fall 2015.
+\end{list2}
+
+
+
+\section{\sc Publications}
+\include{publications-content}
+
+
+\section{\sc Conference Presentations}
+\begin{list1} \itemsep 4pt
+\item[] Tan JS, \textbf{Brokamp C}, LeMasters G, Bernstein DI, Lockey JE, Hershey GK, Villareal M, Ryan P. Longitudinal Patterns of Skin Prick Test Sensitization in Early Childhood Predicts Risk for Asthma at age 7. A poster presented at the American Academy of Allergy, Asthma \& Immunology Annual Meeting, February 2015, Houston, TX.
+\item[] Schmidlin KA, \textbf{Brokamp C}, LeMasters G, Bernstein DI, Lockey JE, Hershey GK, Ryan P. Distinct Phenotypes of Childhood Asthma: Cluster Analysis in a Longitudinal Birth Cohort. A poster presented at the American Academy of Allergy, Asthma \& Immunology Annual Meeting, February 2015, Houston, TX.
+\item[] \textbf{Brokamp C}, Appel K, Welge J, Mossman D, Barzman D. Brief Rating of Aggression by Children and Adolescents (BRACHA) 1.0.  A poster presented at the American Academy of Psychiatry and the Law conference, October 2014, Chicago, IL. 
+\item[] Chatterjee K, Ryan P, Grinshpun S, Schaffer C, \textbf{Brokamp C}, Adamkiewicz G, Chew G, Chillrud S, Ross J, Reponen T. Exposure to PM2.5, Ultrafine and Black Carbon Particles in Green vs. Non-Green Homes. A poster presented at the International Society of Exposure Science Conference, October 2014, Cincinnati, OH.
+\item[] \textbf{Brokamp C}, Rao MB, Ryan P. Assessing the Improvement in Predicting Personal Exposure to Elements in PM2.5 by Including Indoor PM2.5 Measurements and Home Characteristics to Outdoor PM2.5 Measurements.  A poster presented at the International Society of Exposure Science Conference, October 2014, Cincinnati, OH.
+\item[] \textbf{Brokamp C}, Rao MB, Ryan P. Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements. A poster and speed oral presentation at the Joint Statistical Meeting, August 2014, Boston, MA.
+\item[] \textbf{Brokamp C}, Rao MB, Ryan P. Assessing the Improvement in Predicting Personal Exposure to Elements in PM2.5 by Including Indoor PM2.5 Measurements and Home Characteristics to Outdoor PM2.5 Measurements. A poster presented at the Health Effects Institute Conference, May 2014, Alexandria, VA.
+\item[] \textbf{Brokamp C}, Wendell D, Montemagno C. Electrophysiology and Plaque Formation of Cx43 Hemichannels.  A poster presented at the Biophysical Society Conference, March 2010, San Francisco, CA.
+\item[] \textbf{Brokamp C}, Wendell D, Montemagno C. Exogenous Control of Gene Expression in Insect Cells via Ribozyme Modulation. A poster presented at the Biophysical Society Conference, March 2009, Boston, MA.
+\item[] \textbf{Brokamp C}, Wendell D, Montemagno C.  The Engineering and Conductance of a Membrane Bound Nanopore from the Phi29 Portal Protein GP10.  A poster presented at the Biophysical Society Conference, March 2009, Boston, MA.
+\item[] \textbf{Brokamp C}, Wendell D, Montemagno C. Exogenous Control of Gene Expression in Insect Cells via Ribozyme Modulation.  A poster presented at the University of Cincinnati Undergraduate Poster Symposium, June 2008, Cincinnati, OH.
+\item[] \textbf{Brokamp C}, Wendell D, Montemagno C. Engineering the Calvin Cycle: A Cell Free Photoconversion System for Biofuel Generation.  A poster presented at the University of Cincinnati Undergraduate Poster Symposium, June 2008, Cincinnati, OH.
+\end{list1}
+
+\section{\sc Seminar Presentations}
+\begin{list1} \itemsep 4pt
+\item[] \textbf{Brokamp C}. Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately Represent the Elemental Composition of Personal PM2.5? A seminar presentation for the University of Cincinnati Biostatistics and Epidemiology, September 2014, Cincinnati, OH. 
+\item[] \textbf{Brokamp C}. Exact Sampling and Counting for Fixed-Margin Matrices.  A seminar presentation for University of Cincinnati Biostatistics and Epidemiology, September 2013, Cincinnati, OH.
+\item[] \textbf{Brokamp C}. Calculating Correct Standard Errors from Subsets of Complex Sampling Designs in R.  A seminar presentation for University of Cincinnati Biostatistics and Epidemiology, August 2013, Cincinnati, OH.
+\item[] \textbf{Brokamp C}. Statistical Analysis of Microarray Data: Controlling the False Discovery Rate.  A seminar presentation for BE 7089, University of Cincinnati Biostatistics and Epidemiology, October 2012, Cincinnati, OH.
+\item[] \textbf{Brokamp C}. Small Molecule Disruption of G Beta Gamma Signaling Inhibits the Progression of Heart Failure.  A seminar presentation for the University of Cincinnati Department of Pharmacology and Biophysics, November 2011, Cincinnati, OH.
+\item[] \textbf{Brokamp C}. Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid to the Heart.  A seminar presentation for the University of Cincinnati Department of Pharmacology and Biophysics, March 2011, Cincinnati, OH.
+\item[] \textbf{Brokamp C}. An academic research cooperative education experience. A seminar presentation for BME 321, University of Cincinnati Biomedical Engineering, February 2011, Cincinnati, OH.
+\item[] \textbf{Brokamp C}. Chronopharmacology: The Role of the Circadian Clock in Pharmacology.  A seminar presentation for the University of Cincinnati Department of Pharmacology and Biophysics, January 2011, Cincinnati, OH.
+\end{list1}
+
+
+
+\section{\sc Computer Skills} 
+
+\begin{list1} \itemsep 4pt
+\item[] \textit{Statistical Packages:}  R (including GIS packages: rgdal, rgeos, sp, raster)
+\item[] \textit{Languages:} Python, Unix shell scripting, Max
+\item[] \textit{Applications:} RShiny, Knitr, \LaTeX, MS Office, qGIS, ArcGIS, GEOS, LSF 
+\item[] \textit{Operating Systems:}  Unix/Linux, Mac, Windows\\ 
+\end{list1}
+
+\section{\sc Software}
+\texttt{CB}
+\begin{list1} \itemsep 2pt
+\item[] A package for R that covers my commonly used personal functions. Includes data exploration functions common to epidemiologic studies. Available at \texttt{https://github.com/cole-brokamp/CB}.
+\end{list1}
+
+\texttt{Location-based Pollution Exposure}
+\begin{list1} \itemsep 2pt
+\item[] A portable R Shiny web application that generates predictions of traffic related air pollution exposures based on location.  Interactive mapping as well as batch submission of addresses both available at \texttt{http://cole-brokamp.github.io/\#projects}.
+\end{list1}
+
+Other Projects
+\begin{list1} \itemsep 2pt
+\item[] My contributions to open source projects and more software currently under development are available at \texttt{https://github.com/cole-brokamp}.
+\end{list1}
+
+ 
+
+\section{\sc Awards and Memberships} 
+
+\begin{list1} \itemsep 4pt    
+\item[] Member - International Society of Exposure Science \hfill \textit{2014 -- present}
+\item[] Member - American Statistical Assocation \hfill \textit{2013 -- present}
+\item[] Choose Ohio First Scholarship Recipient \hfill \textit{2010 -- 2015}
+\item[] University Graduate Scholarship Recipient \hfill \textit{2010 -- present}
+\item[] Distinguished Honors Scholar, UC Engineering \hfill \textit{2010}
+\item[] University of Cincinnati Alumni Scholarship \hfill \textit{2008 -- 2009}
+\item[] University Cincinnatus Scholar Recipient \hfill \textit{2005 -- 2010}
+\end{list1}
+
+
+\section{\sc Leadership and Service} 
+\begin{list1} \itemsep 4pt     
+\item[] Co-founded Biostatistics Student Journal Club, \\Department of Biostatistics, University of Cincinnati\hfill \textit{2013} 
+\item[] Student Representative to Graduate Education Committee, \\Department of Pharmacology, University of Cincinnati \hfill \textit{2010 -- 2011}
+\end{list1}
+
+
+\end{resume}
+\end{document}
+
+
+
+
