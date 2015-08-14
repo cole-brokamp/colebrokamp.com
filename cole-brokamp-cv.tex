@@ -10,6 +10,10 @@
 \setlength{\pdfpagewidth}{\paperwidth}
 \setlength{\pdfpageheight}{\paperheight} 
 
+% list1 is small indent
+% list2 is big indent
+% list3 is no indent
+
 \newenvironment{list1}{
   \begin{list}{\ding{113}}{%
       \setlength{\itemsep}{0in}
@@ -22,6 +26,12 @@
       \setlength{\parsep}{0in} \setlength{\parskip}{0in}
       \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
       \setlength{\leftmargin}{0.4in}}}{\end{list}}
+\newenvironment{list3}{
+  \begin{list}{}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0in}}}{\end{list}}
 
 \usepackage[unicode=true]{hyperref}
 \hypersetup{breaklinks=true,
@@ -142,7 +152,7 @@ homework assignments, and  grades.
 
 
 \section{\sc Conference Presentations}
-\begin{list1} \itemsep 4pt
+\begin{list3} \itemsep 4pt
 \item[] Tan JS, \textbf{Brokamp C}, LeMasters G, Bernstein DI, Lockey JE, Hershey GK, Villareal M, Ryan P. Longitudinal Patterns of Skin Prick Test Sensitization in Early Childhood Predicts Risk for Asthma at age 7. A poster presented at the American Academy of Allergy, Asthma \& Immunology Annual Meeting, February 2015, Houston, TX.
 \item[] Schmidlin KA, \textbf{Brokamp C}, LeMasters G, Bernstein DI, Lockey JE, Hershey GK, Ryan P. Distinct Phenotypes of Childhood Asthma: Cluster Analysis in a Longitudinal Birth Cohort. A poster presented at the American Academy of Allergy, Asthma \& Immunology Annual Meeting, February 2015, Houston, TX.
 \item[] \textbf{Brokamp C}, Appel K, Welge J, Mossman D, Barzman D. Brief Rating of Aggression by Children and Adolescents (BRACHA) 1.0.  A poster presented at the American Academy of Psychiatry and the Law conference, October 2014, Chicago, IL. 
@@ -155,10 +165,10 @@ homework assignments, and  grades.
 \item[] \textbf{Brokamp C}, Wendell D, Montemagno C.  The Engineering and Conductance of a Membrane Bound Nanopore from the Phi29 Portal Protein GP10.  A poster presented at the Biophysical Society Conference, March 2009, Boston, MA.
 \item[] \textbf{Brokamp C}, Wendell D, Montemagno C. Exogenous Control of Gene Expression in Insect Cells via Ribozyme Modulation.  A poster presented at the University of Cincinnati Undergraduate Poster Symposium, June 2008, Cincinnati, OH.
 \item[] \textbf{Brokamp C}, Wendell D, Montemagno C. Engineering the Calvin Cycle: A Cell Free Photoconversion System for Biofuel Generation.  A poster presented at the University of Cincinnati Undergraduate Poster Symposium, June 2008, Cincinnati, OH.
-\end{list1}
+\end{list3}
 
 \section{\sc Seminar Presentations}
-\begin{list1} \itemsep 4pt
+\begin{list3} \itemsep 4pt
 \item[] \textbf{Brokamp C}. Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately Represent the Elemental Composition of Personal PM2.5? A seminar presentation for the University of Cincinnati Biostatistics and Epidemiology, September 2014, Cincinnati, OH. 
 \item[] \textbf{Brokamp C}. Exact Sampling and Counting for Fixed-Margin Matrices.  A seminar presentation for University of Cincinnati Biostatistics and Epidemiology, September 2013, Cincinnati, OH.
 \item[] \textbf{Brokamp C}. Calculating Correct Standard Errors from Subsets of Complex Sampling Designs in R.  A seminar presentation for University of Cincinnati Biostatistics and Epidemiology, August 2013, Cincinnati, OH.
@@ -167,18 +177,18 @@ homework assignments, and  grades.
 \item[] \textbf{Brokamp C}. Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid to the Heart.  A seminar presentation for the University of Cincinnati Department of Pharmacology and Biophysics, March 2011, Cincinnati, OH.
 \item[] \textbf{Brokamp C}. An academic research cooperative education experience. A seminar presentation for BME 321, University of Cincinnati Biomedical Engineering, February 2011, Cincinnati, OH.
 \item[] \textbf{Brokamp C}. Chronopharmacology: The Role of the Circadian Clock in Pharmacology.  A seminar presentation for the University of Cincinnati Department of Pharmacology and Biophysics, January 2011, Cincinnati, OH.
-\end{list1}
+\end{list3}
 
 
 
 \section{\sc Computer Skills} 
 
-\begin{list1} \itemsep 4pt
+\begin{list3} \itemsep 4pt
 \item[] \textit{Statistical Packages:}  R (including GIS packages: rgdal, rgeos, sp, raster)
 \item[] \textit{Languages:} Python, Unix shell scripting, Max
 \item[] \textit{Applications:} RShiny, Knitr, \LaTeX, MS Office, qGIS, ArcGIS, GEOS, LSF 
 \item[] \textit{Operating Systems:}  Unix/Linux, Mac, Windows\\ 
-\end{list1}
+\end{list3}
 
 \section{\sc Software}
 \texttt{CB}
@@ -200,7 +210,7 @@ Other Projects
 
 \section{\sc Awards and Memberships} 
 
-\begin{list1} \itemsep 4pt    
+\begin{list3} \itemsep 4pt    
 \item[] Member - International Society of Exposure Science \hfill \textit{2014 -- present}
 \item[] Member - American Statistical Assocation \hfill \textit{2013 -- present}
 \item[] Choose Ohio First Scholarship Recipient \hfill \textit{2010 -- 2015}
@@ -208,14 +218,14 @@ Other Projects
 \item[] Distinguished Honors Scholar, UC Engineering \hfill \textit{2010}
 \item[] University of Cincinnati Alumni Scholarship \hfill \textit{2008 -- 2009}
 \item[] University Cincinnatus Scholar Recipient \hfill \textit{2005 -- 2010}
-\end{list1}
+\end{list3}
 
 
 \section{\sc Leadership and Service} 
-\begin{list1} \itemsep 4pt     
+\begin{list3} \itemsep 4pt     
 \item[] Co-founded Biostatistics Student Journal Club, \\Department of Biostatistics, University of Cincinnati\hfill \textit{2013} 
 \item[] Student Representative to Graduate Education Committee, \\Department of Pharmacology, University of Cincinnati \hfill \textit{2010 -- 2011}
-\end{list1}
+\end{list3}
 
 
 \end{resume}
