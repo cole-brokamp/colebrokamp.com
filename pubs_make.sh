@@ -10,4 +10,4 @@ sed -n '/begin{document}/,/end{document}/p' publications.tex | sed '1d' | sed '$
 "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode cole-brokamp-cv.tex
 
 # clean up
-rm cole-brokamp-cv.{log,synctex.gz,}
+rm cole-brokamp-cv.{log,synctex.gz}
