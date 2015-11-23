@@ -13,15 +13,5 @@ sed -n '/begin{document}/,/end{document}/p' publications.tex | sed '1d' | sed '$
 rm cole-brokamp-cv.{log,synctex.gz}
 
 
-# copy paste to markdown file
-echo " "
-echo " "
-echo " "
-echo "**********"
-echo "don't forget to copy and paste the PDF refs into the markdown file"
-echo "make style changes (bold name) and add links to document from website"
-echo "then rerun pubs_make.sh script"
-echo "**********"
-echo " "
-echo " "
-echo " "
+# open cv
+open cole-brokamp-cv.pdf
