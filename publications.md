@@ -1,10 +1,20 @@
+Jennifer Kannan, **Cole Brokamp**, David I. Bernstein, James E. Lockey, Manuel Villareal, Gurjit K. Khurana Hershey, Grace K. LeMasters, and Patrick Ryan. Clinical and environmental factors associated with habitual snoring in the cincinnati childhood allergy and air pollution study. In preparation.
+
+Kristin A. Schmidlin, **Cole Brokamp**, Grace K. LeMasters, David I. Bernstein, James E. Lockey, Manuel Villareal, Gurjit K. Khurana Hershey, and Patrick Ryan. Cluster analysis of childhood asthma phenotypes identifies specific environmental risk factors. In preparation.
+
+Jessica S. Tan, **Cole Brokamp**, David I. Bernstein, Grace K. LeMasters, Gurjit K. Khurana Hershey, James E. Lockey, Manuel Villareal, and Patrick Ryan. Patterns of longitudinal allergic sensitization identifies phenotypes of children at increased risk for asthma. In preparation.
+
 **Cole Brokamp**, Grace LeMasters, and Patrick Ryan. Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies. Under review.
+
+Kanistha C. Coombs, Ginger L. Chew, Christopher Schaffer, Patrick H. Ryan, **Cole Brokamp**, Sergey A. Grinshpun, Gary Adamkiewicz, Steve Chillrude, Curtis Hedman, Meryl Colton, Jamie Ross, and Tiina Reponen. Indoor air quality in green vs. non-green low-income homes of asthmatic children living in a temperate region of US (Ohio). Under review.
+
+**Cole Brokamp**, MB Rao, Z-H Fan, and Patrick Ryan. Analysis of personal and home characteristics associated with the elemental composition of PM2.5 in indoor, outdoor, and personal air in the RIOPA study. In press.
 
 Kelly J Brunst, Patrick H Ryan, **Cole Brokamp**, David Bernstein, Tiina Reponen, James Lockey, Gurjit K Khurana Hershey, Linda Levin, Sergey A Grinshpun, and Grace LeMasters. Timing and duration of traffic-related air pollution exposure and the risk for childhood wheeze and asthma. American journal of respiratory and critical care medicine, (ja), 2015. [[download]](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/rccm%252E201407-1314oc.pdf)
 
 Patrick H Ryan, Sang Young Son, Christopher Wolfe, James Lockey, **Cole Brokamp**, and Grace LeMasters. A field application of a personal sensor for ultrafine particle exposure in children. Science of The Total Environment, 508:366-373, 2015. [[download]](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/1-s2.0-S0048969714016556-main.pdf)
 
-**Cole Brokamp**, MB Rao, Zhihua Tina Fan, and Patrick H Ryan. Does the elemental composition of indoor and outdoor pm2.5 accurately represent the elemental composition of personal pm2.5? Atmospheric Environment, 101:226-234, 2015. [[download]](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/1-s2.0-S1352231014008814-main.pdf)
+**Cole Brokamp**, MB Rao, Zhihua Tina Fan, and Patrick H Ryan. Does the elemental composition of indoor and outdoor PM2.5 accurately represent the elemental composition of personal PM2.5? Atmospheric Environment, 101:226-234, 2015. [[download]](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/1-s2.0-S1352231014008814-main.pdf)
 
 **Cole Brokamp**, Jacob Todd, Carlo Montemagno, and David Wendell. Electrophysiology of single and aggregate cx43 hemichannels. PLoS ONE, 7(10):e47775, 2012. [[download]](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/journal.pone.0047775.pdf)
 
