@@ -1,4 +1,6 @@
-**Cole Brokamp** and Patrick Ryan. Land use models for eleven elemental components of particulate matter in an urban environment: A comparison of linear regression and random forest models. [In preparation.]
+**Cole Brokamp**, MB Rao, Patrick Ryan, and Roman Jandarov. A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife. [In preparation.]
+
+**Cole Brokamp**, MB Rao, Roman Jandarov, and Patrick Ryan. Land use models for eleven elemental components of particulate matter in an urban environment: A comparison of linear regression and random forest models. [In preparation.]
 
 Jennifer Kannan, **Cole Brokamp**, David I. Bernstein, James E. Lockey, Manuel Villareal, Gurjit K. Khurana Hershey, Grace K. LeMasters, and Patrick Ryan. Clinical and environmental factors associated with habitual snoring in the cincinnati childhood allergy and air pollution study. [In preparation.]
 
@@ -6,13 +8,13 @@ Kristin A. Schmidlin, **Cole Brokamp**, Grace K. LeMasters, David I. Bernstein, 
 
 Jessica S. Tan, **Cole Brokamp**, David I. Bernstein, Grace K. LeMasters, Gurjit K. Khurana Hershey, James E. Lockey, Manuel Villareal, and Patrick Ryan. Patterns of longitudinal allergic sensitization identifies phenotypes of children at increased risk for asthma. [In preparation.]
 
-Patrick Ryan, James E. Lockey, Brad Black, Carol H. Rice, Jeff Burkle, Tim Hilbert, Linda Levin, **Cole Brokamp**, Roy McKay, Ted Larson, and Grace K. LeMasters. Childhood exposure to libby amphibole asbestos and respiratory symptoms in young adulthood. [Submitted.]
+Patrick Ryan, James E. Lockey, Brad Black, Carol H. Rice, Jeff Burkle, Tim Hilbert, Linda Levin, **Cole Brokamp**, Roy McKay, Ted Larson, and Grace K. LeMasters. Childhood exposure to libby amphibole asbestos and respiratory symptoms in young adulthood. [In preparation.]
 
 **Cole Brokamp**, Grace LeMasters, and Patrick Ryan. Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies. [In Press - Journal of Exposure Science and Environmental Epidemiology.]
 
-Kanistha C. Coombs, Ginger L. Chew, Christopher Schaffer, Patrick H. Ryan, **Cole Brokamp**, Sergey A. Grinshpun, Gary Adamkiewicz, Steve Chillrude, Curtis Hedman, Meryl Colton, Jamie Ross, and Tiina Reponen. Indoor air quality in green vs. non-green low-income homes of asthmatic children living in a temperate region of US (Ohio). [Submitted.]
+Kanistha C. Coombs, Ginger L. Chew, Christopher Schaffer, Patrick H. Ryan, **Cole Brokamp**, Sergey A. Grinshpun, Gary Adamkiewicz, Steve Chillrude, Curtis Hedman, Meryl Colton, Jamie Ross, and Tiina Reponen. Indoor air quality in green vs. non-green low-income homes of asthmatic children living in a temperate region of US (Ohio). [Under review.]
 
-**Cole Brokamp**, MB Rao, Z-H Fan, and Patrick Ryan. Analysis of personal and home characteristics associated with the elemental composition of PM2.5 in indoor, outdoor, and personal air in the RIOPA study. [In press - Health Effects Institute.]
+Patrick Ryan, **Cole Brokamp**, Z-H Fan, and MB Rao. Analysis of personal and home characteristics associated with the elemental composition of pm2.5 in indoor, outdoor, and personal air in the riopa study. Health Effects Institute, Research Report 185, 2015.
 
 Kelly J Brunst, Patrick H Ryan, **Cole Brokamp**, David Bernstein, Tiina Reponen, James Lockey, Gurjit K Khurana Hershey, Linda Levin, Sergey A Grinshpun, and Grace LeMasters. Timing and duration of traffic-related air pollution exposure and the risk for childhood wheeze and asthma. American journal of respiratory and critical care medicine, (ja), 2015. [[download]](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/rccm%252E201407-1314oc.pdf)
 
