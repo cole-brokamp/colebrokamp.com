@@ -4,7 +4,6 @@ echo 'Enter the commit message:'
 read commitMessage
 git commit -m "$commitMessage"
 git push
-read
 
 # pubs.html is symmlinked to website directory
 # change to this directory; change html and push new site
@@ -15,7 +14,6 @@ cat index_pre.html > index.html
 cat /Users/cole/Documents/CV\ and\ Cover\ Letters\ and\ Applications/CV/pubs.html >> index.html
 cat index_post.html >> index.html
 
-git add
+git add .
 git commit -m "$commitMessage"
 git push
-read
