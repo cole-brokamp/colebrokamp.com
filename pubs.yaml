@@ -1,7 +1,68 @@
 ---
-title: Land use models for eleven elemental components of particulate matter in an urban environment. A comparison of linear regression and random forest models
-author: Cole Brokamp, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan
+title: A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife
+author: Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov
 note: In preparation
+---
+title: Childhood exposure to libby amphibole asbestos and respiratory symptoms in young adulthood
+author: Patrick Ryan, James E. Lockey, Brad Black, Carol H. Rice, Jeff Burkle, Tim Hilbert, Linda Levin, Cole Brokamp, Roy McKay, Ted Larson, Grace K. LeMasters
+note: In preparation
+---
+title: Air pollution, epigenetics, and asthma
+author: Hong Ji, Jocelyn M Biagini Myers, Eric B Brandt, Cole Brokamp, Patrick H Ryan, Gurjit K Khurana Hershey
+note: Under review
+---
+title: "Land use models for eleven elemental components of particulate matter in an urban environment: A comparison of linear regression and random forest models"
+author: Cole Brokamp, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan
+note: Submitted
+---
+title: Clinical and environmental factors associated with habitual snoring in the cincinnati childhood allergy and air pollution study
+author: Jennifer Kannan, Cole Brokamp, David I. Bernstein, James E. Lockey, Manuel Villareal, Gurjit K. Khurana Hershey, Grace K. LeMasters, Patrick Ryan 
+note: Submitted
+---
+title: Cluster analysis of childhood asthma phenotypes identifies specific environmental risk factors
+author: Kristin A. Schmidlin, Cole Brokamp, Grace K. LeMasters, David I. Bernstein, James E. Lockey, Manuel Villareal, Gurjit K. Khurana Hershey, Patrick Ryan
+note: Under review
+---
+title: Patterns of longitudinal allergic sensitization identifies phenotypes of children at increased risk for asthma
+author: Jessica S. Tan, Cole Brokamp, David I. Bernstein, Grace K. LeMasters, Gurjit K. Khurana Hershey, James E. Lockey, Manuel Villareal, Patrick Ryan
+note: Under review
+---
+title: Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies
+author: Cole Brokamp, Grace LeMasters, Patrick Ryan
+journal: Journal of Exposure Science and Environmental Epidemiology
+year: 2016
+download_link: 
+note: In press
+---
+title: Indoor air quality in green-renovated vs. non-green low-income homes of children living in a temperate region of US (Ohio)
+author: Kanistha C. Coombs, Ginger L. Chew, Christopher Schaffer, Patrick H. Ryan, Cole Brokamp, Sergey A. Grinshpun, Gary Adamkiewicz, Steve Chillrude, Curtis Hedman, Meryl Colton, Jamie Ross, Tiina Reponen
+journal: Science of The Total Environment
+issue: 554-555
+pages: 178-185
+year: 2016
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/Koni-IAQ-STOTEN-2016.pdf
+---
+title: Analysis of personal and home characteristics associated with the elemental composition of PM2.5 in indoor, outdoor, and personal air in the RIOPA study
+author: Patrick Ryan, Cole Brokamp, Z-H Fan, MB Rao
+journal: Health Effects Institute Research Report 185
+year: 2015
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/RR185-Ryan.pdf
+---
+title: Timing and duration of traffic-related air pollution exposure and the risk for childhood wheeze and asthma
+author: Kelly J Brunst, Patrick H Ryan, Cole Brokamp, David Bernstein, Tiina Reponen, James Lockey, Gurjit K Khurana Hershey, Linda Levin, Sergey A Grinshpun, Grace LeMasters
+journal: American journal of respiratory and critical care medicine
+issue: 192(4)
+pages: 421-427
+year: 2015
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/Timing%20-%20Duration%20TRAP%20Exposure%20and%20Wheeze-Asthma.pdf
+---
+title: A field application of a personal sensor for ultrafine particle exposure in children
+author: Patrick H Ryan, Sang Young Son, Christopher Wolfe, James Lockey, Cole Brokamp, Grace LeMasters
+journal: Science of The Total Environment
+issue: 508
+pages: 366-373
+year: 2015
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/1-s2.0-S0048969714016556-main.pdf
 ---
 title: Does the elemental composition of indoor and outdoor PM2.5 accurately represent the elemental composition of personal PM2.5?
 author: Cole Brokamp, MB Rao, Tina Zhihua Fan, Patrick H Ryan
@@ -11,4 +72,26 @@ pages: 226-234
 year: 2015
 download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/1-s2.0-S1352231014008814-main.pdf
 ---
-
+title: Electrophysiology of single and aggregate Cx43 hemichannels
+author: "Cole Brokamp, Jacob Todd, Carlo Montemagno David Wendell"
+journal: PLoS ONE
+issue: "7(10):e47775"
+year: 2012
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/journal.pone.0047775.pdf
+---
+title: "Probenecid: novel use as a non-injurious positive inotrope acting via cardiac TRPV2 stimulation"
+author: Sheryl E Koch, Xiaoqian Gao, Lauren Haar, Min Jiang, Valerie M Lasko, Nathan Robbins, Wenfeng Cai, Cole Brokamp, Priyanka Varma, Michael Tranter, Yong Liu, Xiaoping Ren, John N. Lorenz, Hong-Sheng Wang, W Keith Jones, Jack Rubinstein
+journal: Journal of Molecular and Cellular Cardiology
+issue: 53(1)
+pages: 134-144
+year: 2012
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/nihms-373871.pdf
+---
+title: Coordinated post-transcriptional regulation of HSP70. 3 gene expression by microRNA and alternative polyadenylation
+author: Michael Tranter, Robert N Helsley, Waltke R Paulding, Michael McGuinness, Cole Brokamp, Lauren Haar, Yong Liu, Xiaoping Ren, W Keith Jones
+journal: Journal of Biological Chemistry
+issue: 286(34)
+pages: 29828-29837
+year: 2011
+download_link: https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/J.%20Biol.%20Chem.-2011-Tranter-29828-37.pdf
+---
