@@ -17,3 +17,5 @@ cat index_post.html >> index.html
 git add .
 git commit -m "$commitMessage"
 git push
+
+open http://colebrokamp.com
