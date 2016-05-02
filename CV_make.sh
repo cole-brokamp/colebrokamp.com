@@ -1,17 +1,12 @@
-# first pandoc the markdown file into html and tex
-pandoc publications.md -o publications.html
-pandoc -s publications.md -o publications.tex
-# pandoc publications.md --latex-engine=xelatex -o publications.pdf
-
-# then extract only the body of the .tex file to file to include in CV latex document
-sed -n '/begin{document}/,/end{document}/p' publications.tex | sed '1d' | sed '$d' > publications-content.tex
+# extract pubs from yaml file into html and tex files
+R CMD BATCH --vanilla parse_pubs.R
 
 # then latex the CV into a pdf
-"/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode cole-brokamp-cv.tex
+"/usr/texbin/texfot" "/usr/texbin/pdflatex" cole-brokamp-cv.tex
 
 # clean up
-rm cole-brokamp-cv.{log,synctex.gz}
-
+rm parse_pubs.Rout
+# rm cole-brokamp-cv.{log,synctex.gz}
 
 # open cv
 open cole-brokamp-cv.pdf
