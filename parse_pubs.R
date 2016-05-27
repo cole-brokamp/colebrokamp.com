@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 library(magrittr)
 
 # read in yaml and parse yaml file
