@@ -5,3 +5,4 @@ pubs.html
 pubs.tex
 pubs.md
 *.log
+.DS_Store
