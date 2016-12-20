@@ -10,3 +10,4 @@ software.md
 *.log
 .DS_Store
 *.synctex.gz 
+.Rproj.user
