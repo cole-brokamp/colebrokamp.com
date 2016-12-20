@@ -13,7 +13,7 @@ vignette:
 ---
 name: geocoder
 description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
-url: https://github.com/cole-brokamp/geocoder
+url: https://bitbucket.org/cole-brokamp/geocoder
 docker: https://hub.docker.com/r/colebrokamp/geocoder/
 doi: 10.5281/zenodo.56484
 vignette:

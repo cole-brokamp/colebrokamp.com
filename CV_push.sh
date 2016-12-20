@@ -1,9 +1,12 @@
-# add updated pubs files and commit
 git add .
 echo 'Enter the commit message:'
 read commitMessage
 git commit -m "$commitMessage"
 git push
+
+# pubs.md, software.md, talks.md all symmlinked to website directory
+# change to this directory, rebuild site, and push
+
 
 # pubs.html is symmlinked to website directory
 # change to this directory; change html and push new site
