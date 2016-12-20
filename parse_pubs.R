@@ -15,9 +15,12 @@ pubs.yaml <- lapply(pubs,yaml::yaml.load)
 
 yaml_paste_bib <- function(y,bold.name){
   out <- paste0(y$author,'. ',y$title,'. ')
-  if (is.numeric(y$year)) out <- paste0(out,y$journal,'. ',y$issue,':',y$pages,', ',y$year,'. ')
-  if (is.character(y$download_link)) out <- paste0(out,'*[Download](',y$download_link,')*. ')
-  if (is.character(y$note)) out <- paste0(out,'*',y$note,'*. ')
+  if (!is.null(y$journal)) out <- paste0(out,y$journal,'. ')
+  if (!is.null(y$issue)) out <- paste0(out,y$issue,'. ')
+  if (!is.null(y$pages)) out <- paste0(out,y$pages,'. ')
+  if (!is.null(y$year)) out <- paste0(out,y$year,'. ')
+  if (!is.null(y$download_link)) out <- paste0(out,'*[Download](',y$download_link,')*. ')
+  if (!is.null(y$note)) out <- paste0(out,'*',y$note,'*. ')
   out <- gsub(bold.name,paste0('**',bold.name,'**'),out)
   subsection <- y$note
   if (is.null(subsection)) subsection <- y$year
