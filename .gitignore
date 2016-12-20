@@ -7,6 +7,9 @@ pubs.md
 talks.html
 talks.tex
 talks.md
+software.html
+software.tex
+software.md
 *.log
 .DS_Store
 *.synctex.gz 
