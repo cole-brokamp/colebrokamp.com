@@ -16,10 +16,11 @@ software.yaml <- lapply(software,yaml::yaml.load)
 yaml_paste_software <- function(y) {
   out <- paste0('**','`',y$name,'`**  \n',
                 y$description,'.','  \n',
-                'URL: ','[',y$url,']','(',y$url,')')
-  if (!is.null(y$doi)) out <- paste0(out,'  \n','DOI: ','[',y$doi,']','(',y$doi,')')
-  if (!is.null(y$vignette)) out <- paste0(out,'  \n','[Vignette](',y$vignette,')')
-  if (!is.null(y$docker)) out <- paste0(out,'  \n','[Docker Image](',y$docker,')')
+                # 'url: ',
+                '[',y$url,']','(',y$url,')')
+  # if (!is.null(y$doi)) out <- paste0(out,'  \n','doi: ','[',y$doi,']','(',y$doi,')')
+  # if (!is.null(y$vignette)) out <- paste0(out,'  \n','[Vignette](',y$vignette,')')
+  # if (!is.null(y$docker)) out <- paste0(out,'  \n','[Docker Image](',y$docker,')')
   return(out)
 }
 
