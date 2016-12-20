@@ -4,5 +4,9 @@ old_cv/
 pubs.html
 pubs.tex
 pubs.md
+talks.html
+talks.tex
+talks.md
 *.log
 .DS_Store
+*.synctex.gz 

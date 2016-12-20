@@ -3,11 +3,11 @@
 library(magrittr)
 
 # read in yaml and parse yaml file
-input <- 
+input <-
   readLines('pubs.yaml') %>%
   paste(collapse='\n')
 
-pubs <- 
+pubs <-
   strsplit(input,'---',fixed=TRUE)[[1]] %>%
   tail(-1)
 
@@ -47,4 +47,3 @@ if (file.create('pubs.md')) invisible(sapply(subsection.labels,
                                              function(x) cat(make_subsection(x),file='pubs.md',append=TRUE)))
 
 system('pandoc -o pubs.html pubs.md')
-
