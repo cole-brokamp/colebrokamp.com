@@ -39,6 +39,7 @@ system('pandoc -o pubs.tex pubs.md')
 # create subsections and make html file
 subsections <- sapply(pubs.parsed,function(x) x[['subsection']])
 subsection.labels <- unique(subsections)
+subsection.labels <- sort(subsection.labels,decreasing=TRUE)
 
 make_subsection <- function(subsection.label){
   subsection.which <- which(subsections == subsection.label)
@@ -47,6 +48,4 @@ make_subsection <- function(subsection.label){
 }
 
 if (file.create('pubs.md')) invisible(sapply(subsection.labels,
-                                             function(x) cat(make_subsection(x),file='pubs.md',append=TRUE)))
-
-system('pandoc -o pubs.html pubs.md')
+                                             function(x) cat(make_subsection(x),file='pubs_sections.md',append=TRUE)))

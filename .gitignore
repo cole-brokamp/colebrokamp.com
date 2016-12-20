@@ -1,13 +1,10 @@
 .Rhistory
 CV ideas.txt
-old_cv/
-pubs.html
 pubs.tex
 pubs.md
-talks.html
+pubs_sections.md
 talks.tex
 talks.md
-software.html
 software.tex
 software.md
 *.log
