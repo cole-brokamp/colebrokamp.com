@@ -18,7 +18,7 @@ yaml_paste_talks <- function(y) {
                 y$event,'. ',
                 y$location,'. ',
                 y$year,'.')
-  if (!is.null(y$link)) out <- paste0(out,' *[Download](',y$download_link,')*. ')
+  if (!is.null(y$link)) out <- paste0(out,' *[Download](',y$link,')*. ')
   return(out)
 }
 
