@@ -4,21 +4,9 @@ read commitMessage
 git commit -m "$commitMessage"
 git push
 
-# pubs.md, software.md, talks.md all symmlinked to website directory
-# change to this directory, rebuild site, and push
+# in case pubs, talks, or software are changed rebuild website and push to website S3 bucket
+R -e \"rmarkdown::render_site(input='/Users/cole/Documents/CV_website_more/colebrokamp.com',
+encoding = 'UTF-8')\"
 
 
-# pubs.html is symmlinked to website directory
-# change to this directory; change html and push new site
-cd ~/Documents/cole-brokamp.github.io
-cp index.html index.html.backup
-
-cat index_pre.html > index.html
-cat /Users/cole/Documents/CV\ and\ Cover\ Letters\ and\ Applications/CV/pubs.html >> index.html
-cat index_post.html >> index.html
-
-git add .
-git commit -m "$commitMessage"
-git push
-
-open http://colebrokamp.com
+aws s3 sync /Users/cole/Documents/CV_website_more/colebrokamp.com/_site/ s3://colebrokamp.com
