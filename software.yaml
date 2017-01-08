@@ -1,4 +1,24 @@
 ---
+name: automagic
+description: Automagically install packages necessary to run R code 
+url: https://github.com/cole-brokamp/automagic
+doi:
+vignette:
+---
+name: geocoder
+description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
+url: https://bitbucket.org/cole-brokamp/geocoder
+docker: https://hub.docker.com/r/colebrokamp/geocoder/
+doi: 10.5281/zenodo.56484
+vignette:
+---
+name: shiny_docker
+description: A robust method to automatically dockerize your R Shiny application
+url: https://github.com/cole-brokamp/shiny_docker
+docker: https://hub.docker.com/r/colebrokamp/shiny/
+doi:
+vignette:
+---
 name: RFinfer
 description: A package for R that implements novel versions of the random forest from my dissertation research, produces confidence intervals and prediction variances
 url: https://cran.r-project.org/web/packages/RFinfer/index.html
@@ -11,16 +31,9 @@ url: https://github.com/cole-brokamp/aiRpollution
 doi: 10.5281/zenodo.50878
 vignette:
 ---
-name: geocoder
-description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
-url: https://bitbucket.org/cole-brokamp/geocoder
-docker: https://hub.docker.com/r/colebrokamp/geocoder/
-doi: 10.5281/zenodo.56484
-vignette:
----
 name: geocodeCAGIS
 description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
-url: ttps://github.com/cole-brokamp/geocodeCAGIS
+url: https://github.com/cole-brokamp/geocodeCAGIS
 doi: 10.5281/zenodo.50876
 vignette:
 ---
@@ -29,19 +42,6 @@ description: A package for R that contains my commonly used personal functions, 
 url: https://github.com/cole-brokamp/CB
 doi: 10.5281/zenodo.50877
 vignette: https://github.com/cole-brokamp/CB/blob/master/README.md
----
-name: shiny_docker
-description: A robust method to automatically dockerize your R Shiny application
-url: https://github.com/cole-brokamp/shiny_docker
-docker: https://hub.docker.com/r/colebrokamp/shiny/
-doi:
-vignette:
----
-name: automagic
-description: Automagically install packages necessary to run R code 
-url: https://github.com/cole-brokamp/automagic
-doi:
-vignette:
 ---
 name: R Shiny
 description: Several R Shiny Applications
