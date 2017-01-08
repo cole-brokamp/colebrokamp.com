@@ -1,0 +1,25 @@
+---
+title: "About"
+---
+
+<div class = "row">
+<div class = "col-md-8">
+
+I am currently a research fellow at Cincinnati Children's Hospital Medical Center interested in applying machine learning techniques to environmental data. I completed my PhD in Biostatistics in the Department of Environmental Health at the University of Cincinnati. As part of my dissertation work ([text](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/Cole%20Brokamp%20Dissertation%2024March2016.pdf)/[slides](https://github.com/cole-brokamp/cole-brokamp.github.io/raw/master/publications/Cole%20Brokamp%20Dissertation%20Defense%2023March2016.pdf)), I created a novel random forest land use model to predict children's exposure to air pollution and its effect on their health. 
+
+</div>
+
+<div class = "col-md-2">
+![](figs/cole_brokamp_headshot.png)
+</div>
+
+</div>
+
+Currently, I am:
+
+- Developing a spatiotemporal air pollution exposure assessment model for Cincinnati, Ohio
+- Testing and implementing causal inference methods for random forest
+- Creating statistical computing tools for geocoding and environmental exposure assessment
+- Designing interactive web applications for exploring the social determinants of health
+
+[View my CV](http://colebrokamp.com/cv)

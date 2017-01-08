@@ -1,0 +1,7 @@
+name: "colebrokamp.com"
+output:
+  html_document:
+    theme: flatly
+    highlight: pygments
+exclude: ['*.sh','post_ideas.txt']
+include: []

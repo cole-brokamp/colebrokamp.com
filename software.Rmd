@@ -1,0 +1,7 @@
+---
+title: "Software"
+---
+
+```{r child='/Users/cole/Documents/CV_website_more/CV/software.md'} 
+```
+

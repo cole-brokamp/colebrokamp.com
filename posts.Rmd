@@ -1,0 +1,9 @@
+---
+title: 'Posts'
+---
+
+[Geocoding Tips](posts_geocoding_tips.html)
+
+[Code Cheatsheets](posts_cheatsheet.html)
+
+[Probability and Odds Ratios](posts_probability_odds_ratios.html)

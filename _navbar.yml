@@ -1,0 +1,26 @@
+title: "Cole Brokamp"
+left:
+  - text: "Publications"
+    href: publications.html
+  - text: "Talks"
+    href: talks.html
+  - text: "Software"
+    href: software.html
+  - text: "Posts"
+    href: posts.html
+  - text: "Shiny"
+    href: shiny.html
+    menu: 
+      - text: "ECAT Assessment"
+      - href: shiny_ecat.html
+      - text: "LinnStrument Scales"
+      - href: shiny_linnstrument.html
+      - text: "Geomarker.io"
+      - href: http://geomarker.io
+right:
+    - icon: fa-envelope
+      href: mailto:cole.brokamp@gmail.com
+    - icon: fa-twitter
+      href: https://twitter.com/cole_brokamp
+    - icon: fa-github
+      href: https://github.com/cole-brokamp
