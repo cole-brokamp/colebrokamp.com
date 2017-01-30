@@ -4,3 +4,6 @@
 .Ruserdata
 _site/*
 post_ideas.txt
+*_cache
+*_files
+
