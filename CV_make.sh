@@ -4,7 +4,7 @@ R CMD BATCH --vanilla parse_talks.R
 R CMD BATCH --vanilla parse_software.R
 
 # then latex the CV into a pdf
-"/usr/texbin/texfot" "/usr/texbin/pdflatex" cole-brokamp-cv.tex
+texfot pdflatex cole-brokamp-cv.tex
 
 # clean up
 rm *.Rout
