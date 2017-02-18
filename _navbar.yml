@@ -9,14 +9,13 @@ left:
   - text: "Posts"
     href: posts.html
   - text: "Shiny"
-    href: shiny.html
     menu: 
       - text: "ECAT Assessment"
-      - href: shiny_ecat.html
+        href: shiny_ecat.html
       - text: "LinnStrument Scales"
-      - href: shiny_linnstrument.html
-      - text: "Geomarker.io"
-      - href: http://geomarker.io
+        href: shiny_linnstrument.html
+      - text: "Cincinnati Neighborhoods"
+        href: shiny_cincy_neigh.html
 right:
     - icon: fa-envelope
       href: mailto:cole.brokamp@gmail.com

@@ -9,10 +9,10 @@ An R Shiny application which allows uploading of latitude and longitude coordina
 
 #### [Single Address with Visual Map](http://ecat-map.amazon-shiny.duckdns.org)
 
-[![](figs/ecat-map.gif)](http://ecat-map.amazon-shiny.duckdns.org) 
+[![](appshots/ecat-map.png)](http://ecat-map.amazon-shiny.duckdns.org) 
 
 &nbsp;  
 
-#### [Batch Submission of Coordinates]()
+#### [Batch Submission of Coordinates](ecat-file.amazon-shiny.duckdns.org)
 
-[![](figs/ecat-file.png)]()  
+[![](appshots/ecat-file.png)](ecat-file.amazon-shiny.duckdns.org)  

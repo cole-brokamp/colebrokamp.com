@@ -1,0 +1,10 @@
+---
+Title: "R Shiny"
+---
+&nbsp;  
+
+### **[Cincinnati Neighborhoods](http://geomarker.io/neighborhood)**
+
+An R Shiny application which allows for comparing Cincinnati Neighborhoods. Basic socioeconomic information, hospital bed day utilization by cause, and environmental exposures are all presented in order to allow the user to simultaneously overlay multiple sources of information.
+
+[![](appshots/cincy-neigh.png)](http://geomarker.io/neighborhood) 
