@@ -15,4 +15,4 @@ An R Shiny application which allows uploading of latitude and longitude coordina
 
 #### [Batch Submission of Coordinates](ecat-file.amazon-shiny.duckdns.org)
 
-[![](appshots/ecat-file.png)](ecat-file.amazon-shiny.duckdns.org)  
+[![](appshots/ecat-file.png)](http://ecat-file.amazon-shiny.duckdns.org)  
