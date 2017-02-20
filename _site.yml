@@ -3,5 +3,7 @@ output:
   html_document:
     theme: flatly
     highlight: pygments
+    include:
+      before_body: _google_analytics.html
 exclude: ['*.sh','post_ideas.txt']
 include: []
