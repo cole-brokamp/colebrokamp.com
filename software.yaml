@@ -1,15 +1,15 @@
 ---
 name: automagic
-description: Automagically install packages necessary to run R code 
+description: Automagically install packages necessary to run R code
 url: https://github.com/cole-brokamp/automagic
-doi:
+doi: doi.org/10.5281/zenodo.322638
 vignette:
 ---
-name: shiny_docker
-description: A robust method to automatically dockerize your R Shiny application
-url: https://github.com/cole-brokamp/shiny_docker
-docker: https://hub.docker.com/r/colebrokamp/shiny/
-doi:
+name: rize
+description: Dockerize R shiny apps
+url: https://github.com/cole-brokamp/rize
+docker: https://hub.docker.com/r/colebrokamp/rize/
+doi: doi.org/10.5281/zenodo.322636
 vignette:
 ---
 name: RFinfer
@@ -24,17 +24,18 @@ url: https://github.com/cole-brokamp/aiRpollution
 doi: 10.5281/zenodo.50878
 vignette:
 ---
-name: DeGAuSS
-description: A family of standalone software packages designed for Decentralized Geomarker Assessment for multi Site Studies. Allows for coordinate extraction from addresses and estimation of environmental exposures and community characteristics without exposing private health information outside of the institution.
+name: DeGAUSS
+description: A family of standalone software packages designed for Decentralized Geomarker Assessment for multi Site Studies. Allows for coordinate extraction from addresses and estimation of environmental exposures and community characteristics without exposing private health information outside of the institution
 url: https://github.com/cole-brokamp/DeGAUSS
+docker: https://hub.docker.com/u/degauss/
 doi:
-vignette:
+vignette: https://cole-brokamp.github.io/DeGAUSS/
 ---
 name: geocodeCAGIS
 description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
 url: https://github.com/cole-brokamp/geocodeCAGIS
 doi: 10.5281/zenodo.50876
-vignette:
+vignette: http://colebrokamp.com.s3-website-us-east-1.amazonaws.com/posts_geocoding_tips.html
 ---
 name: geocoder
 description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
@@ -44,5 +45,5 @@ vignette:
 ---
 name: R Shiny
 description: Several R Shiny Applications
-url: https://colebrokamp.com/shiny
+url: https://colebrokamp.com
 ---
