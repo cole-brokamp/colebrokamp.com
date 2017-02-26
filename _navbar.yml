@@ -16,6 +16,10 @@ left:
         href: shiny_linnstrument.html
       - text: "Cincinnati Neighborhoods"
         href: shiny_cincy_neigh.html
+      - text: "Personal UFP Sampling"
+        href: shiny_ufp_dashboard.html
+      - text: "Combined Sewer Overflows"
+        href: shiny_cso_modeling.html
 right:
     - icon: fa-envelope
       href: mailto:cole.brokamp@gmail.com
