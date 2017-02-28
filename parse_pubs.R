@@ -30,12 +30,12 @@ yaml_paste_bib <- function(y,bold.name){
 
 pubs.parsed <- lapply(pubs.yaml,yaml_paste_bib,bold.name='Cole Brokamp')
 
-# make md file for CV
+# make tex file for CV
 
 if (file.create('pubs.md')) cat(paste(sapply(pubs.parsed,function(x) x$text),collapse='\n\n'),file='pubs.md')
+system('pandoc -o pubs.tex pubs.md')
 
-
-# create subsections and make html file
+# create subsections and make md file
 subsections <- sapply(pubs.parsed,function(x) x[['subsection']])
 subsection.labels <- unique(subsections)
 subsection.labels <- sort(subsection.labels,decreasing=TRUE)
