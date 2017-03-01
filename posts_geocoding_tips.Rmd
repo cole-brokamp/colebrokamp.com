@@ -2,7 +2,15 @@
 title: "Geocoding Tips"
 ---
 
-### Input
+## Background
+
+This service estimates latitude and longitude coordinates from address strings.  For more information on how the program works and how you can implement it yourself, see https://github.com/cole-brokamp/geocoder
+
+The program implements a Ruby interface to parse US street addresses and perform fuzzy lookup against an SQLite3 database. It will return the best matches found, with geographic coordinates using [address interpolation](https://en.wikipedia.org/wiki/Geocoding#Address_interpolation) based on 2015 [TIGER/Line files](https://en.wikipedia.org/wiki/Topologically_Integrated_Geographic_Encoding_and_Referencing).  It will attempt to fill in missing information, and it knows about standard and common non-standard postal abbreviations, ordinal versus cardinal numbers, and more. 
+
+Perhaps the most useful feature to users at CCHMC is that the process is [HIPAA](http://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/) compliant.  Geocoding is completed on a server inside the CCHMC network without using internet access. 
+
+## Input
 
 Below are some tips for getting the best results from the offline geocoder located [here](https://github.com/cole-brokamp/geocoder). For more information on how the program works and how you can implement it yourself, including as a Docker image, see https://github.com/cole-brokamp/geocoder.
 
@@ -17,7 +25,7 @@ Below are some tips for getting the best results from the offline geocoder locat
 - spelling should be as accurate as possible, but the program does complete "fuzzy matching" so an exact match is not necessary
 - address strings with out of order items will likely return NA (i.e. `3333 Burnet Ave Cincinnati 45229 OH`)
 
-### Output
+## Output
 
 The following fields are included in the geocoded output.
 
@@ -62,3 +70,7 @@ Other method results are included in the output if `range` is not available, but
 - `city`: centroid of the matched city
 
 If results geocoded with methods other than `range` must be used, also consider using the `score` field in the output file to filter quality results.
+
+## Citation
+
+If you use any geocoding results in a scientific publication, please cite the use of this software. The DOI number and example citations are located at [http://doi.org/10.5281/zenodo.344621](http://doi.org/10.5281/zenodo.344621).
