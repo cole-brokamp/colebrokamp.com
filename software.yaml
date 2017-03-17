@@ -35,13 +35,12 @@ name: geocodeCAGIS
 description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
 url: https://github.com/cole-brokamp/geocodeCAGIS
 doi: http://doi.org/10.5281/zenodo.50876
-vignette: http://colebrokamp.com.s3-website-us-east-1.amazonaws.com/posts_geocoding_tips.html
 ---
 name: geocoder
 description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
 url: https://github.com/cole-brokamp/geocoder
 doi: http://doi.org/10.5281/zenodo.344621
-vignette:
+vignette: http://colebrokamp.com.s3-website-us-east-1.amazonaws.com/posts_geocoding_tips.html
 ---
 name: R Shiny
 description: Several R Shiny Applications
