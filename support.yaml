@@ -1,0 +1,145 @@
+---
+number: Internal Arnold W. Strauss Fellowship Award - Cincinnati Children's Hospital
+pi: Brokamp
+dates: 7/1/16 - 6/30/17
+title: Assessing Exposure to Air Pollution Across Time and Space
+description: The primary objective of this award is to combine satellite-based measurements, land use characteristics, and meteorologic data to create a hybrid spatiotemporal model for ground level exposure to particulate matter using exact addresses and dates.
+role: PI
+tag: Active
+---
+number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
+pi: Brokamp
+dates: 1/24/17 - 6/30/17
+title: Validating a Geocoding Approach for Multi Site Studies
+description: The primary objective of this award is to compare the geocoding (assigning latitude and longitude coordinates to addresses) accuracy of our software DeGAUSS (DEcentralized Geomarker Assessment for mUlti Site Studies) to with other common geocoding software. Furthermore, each method will be evaluated based on it ability to correctly estimate environmental exposures and community-level characteristics.
+role: PI
+tag: Active
+---
+number: NIH/NIEHS 1R01ES019890-01
+pi: Ryan
+dates: 7/1/12 - 3/31/18
+title: Neurobehavioral and Neuroimaging Effects of Traffic Exposure in Children
+description: The association between exposure to traffic-related air pollutants (TRAP) during early childhood and neurobehavioral and neuroimaging outcomes has not been thoroughly examined. The objective of the proposed study is to determine if children exposed to increased levels of TRAP during critical time periods of brain development have altered neurobehavior in childhood as measured by a battery of valid and reliable tests and to assess the physiologic impact of TRAP exposure on brain structure, organization, and function using quantitative magnetic resonance imaging (MRI). These results will fill important gaps in current scientific knowledge related to the relationship between TRAP exposure and neurobehavior and central nervous system effects.
+role: Biostatistician
+tag: Active
+---
+number: Academy Health
+pi: Beck
+dates: 2/1/16 - 6/30/17
+title: "Community Health Peer Learning Program: Participant Community"
+description: "The goals of this project are to reduce by 10% the inpatient bed-day rate for one high risk neighborhood in Cincinnati through interventions promoted by shared data and improved data visualization."
+role: Biostatistician
+tag: Active
+---
+number: NIH 5K23AI121325
+pi: Florin
+dates: 01/01/16 - 12/31/19
+title: Biomarkers and Risk Stratification in Pediatric Community
+description: The extensive variation in care, in addition to the lack of evidence-based decision aids, highlights the critical need for an improved understanding of disease severity and tools to guide management for pediatric CAP. The proposed research will address this important knowledge and practice gap.
+role: Biostatistician
+tag: Active
+---
+number: NIH/NINDS R01 NS030678
+pi: Kleindorfer
+dates: 04/01/15 - 03/31/20
+title: Comparison of Hemorrhagic & Ischemic Stroke Among Blacks and Whites
+description: Tracking of population-based stroke incidence in the Greater Cincinnati and Northern Kentucky region, with special emphasis on stroke in the young and stroke recurrence.
+role: Biostatistician
+tag: Active
+---
+number: U01HG008666
+pi: Harley
+dates: 09/01/15 - 05/31/19
+title: "EMERGE: Better Outcomes for Children: Promoting Excellence in Healthcare Genomics to Inform Policy"
+description: We have developed algorithms for the electronic health record (EHR), led the Pediatric Workgroup, developed pharmacogenomics, evaluated the preferences of parents and caregivers to advance genomic medicine and assimilated technical advances into our EHR. The eMERGE effort has become the basic fabric of the institutional initiative to incorporate the extraordinary advances of genetics, genomics and the electronic medical record into healthcare.
+role: Biostatistician
+tag: Active
+---
+number: Internal ARC - Cincinnati Children’s Hospital
+pi: Marsolo
+dates: 7/1/15 - 7/1/18
+title: Mother Infant Data Hub
+description: The goals of this award are to create a research database of comprehensive clinical coverage for neonates born throughout the greater Cincinnati area including linkage of medical records to external data sets at the individual- and area-level during the first year of life.
+role: Biostatistician
+tag: Active
+---
+number: Internal ARC - Cincinnati Children’s Hospital
+pi: Ambroggio
+dates: 7/1/15 - 7/1/18
+title: CARPE DIEM
+description: The goals of this award are to develop a diagnostic tool based on the urinary metabolome that can differentiate between viral and bacterial community-acquired pneunomia in children.
+role: Biostatistician
+tag: Active
+---
+number: Internal - University of Cincinnati
+pi: Jasne
+dates: 1/1/17 - 12/31/17
+title: Epidemiology of Rural/Urban Disparities in Stroke
+description: The goal of this project is to identify stroke incidence disparities among rural and urban geographic areas.
+role: Biostatistician
+tag: Active
+---
+number: HEI 4784-RFA08-1/09-5
+pi: Ryan
+dates: 12/1/12 - 11/30/13
+title: Analysis of Personal and Home Characteristics Associated with the Elemental Composition of PM2.5 in Indoor, Outdoor, and Personal Air in the RIOPA Study
+description: The purpose of this study is to assess the relationship between concurrent measurements of the elemental composition of PM2.5 in indoor, outdoor, and ambient air and the elemental composition of indoor, outdoor and personal air across individuals and cities. The study will also identify personal, home, and environmental factors significantly associated with specific elements or clusters of elements in PM2.5.
+role: Biostatistician
+tag: Complete
+---
+number: Gerber Pediatric Research Grant, Gerber Foundation
+pi: Florin
+dates: 1/1/14 - 12/31/16
+title: Clinical Prediction Model for Community-Acquired Pneumonia
+description: This project will use clinical data and the biomarker procalcitonin to develop a severity score used to predict the development of severe disease and complications in children with community-acquired pneumonia, the most common serious bacterial infection children and leading killer of children worldwide.
+role: Biostatistician
+tag: Complete
+---
+number: NIH/NIEHS
+pi: Braun/Ryan
+dates: 12/1/17 - 11/30/22
+title: Lifetime Exposure to Ambient Air Pollution and Adolescent Cardiometabolic Health
+description: The objective of this proposal is to determine whether exposure to air pollution during critical periods of growth and development is associated with altered growth trajectories, increased adiposity, altered lipid profiles, and vascular dysfunction during adolescence.
+role: Biostatistician
+tag: Pending
+---
+number: NIH R01CA221960
+pi: Salomonis
+dates: 9/1/17 - 8/31/22
+title: "AltAnalyze-CisBP: A comprehensive solution for splicing pathway discovery in cancer"
+description: We are building a powerful toolkit to identify a relatively new class of therapeutic targets for cancer therapy. In cancer, the abnormal splicing of gene products can initiate cancer and lead to worse outcomes. With the completion of these aims, cancer researchers will be able to evaluate and understand the causes of aberrant gene splicing to target new pathways in diverse cancers.
+role: Biostatistician
+tag: Pending
+---
+number: NIH R01GM126109
+pi: Salomonis
+dates: 9/1/17 - 8/31/20
+title: "CellHarmony: Integration and analysis of single-cell compendiums"
+description: Our understanding of human disease is being transformed by new technologies to examine the genomes of individual cells. We are developing novel ultra-sensitive approaches for finding rare populations of cells, distinguished by novel gene signatures that could predispose to human disease and ultimately lead to crucial diagnostics.
+role: Biostatistician
+tag: Pending
+---
+number: NIH R01FD006021
+pi: Ziady
+dates: 3/1/17 - 2/28/22
+title: Predictive Molecular Marks of Lung Function Decline in CF
+description: Given our compelling cross-sectional proteomic and statistical modeling data we propose to produce an algorithm for lung function decline that is based on the integration of longitudinal behavior of novel disease markers with novel Functional Data (FD) analysis of FEV1.
+role: Biostatistician
+tag: Pending
+---
+number: NIH/NIDDK R01DK109956
+pi: Khoury
+dates: 9/1/17 - 8/31/22
+title: "Level and timing of diabetic hyperglycemia in utero: the transgenerational effect on adult morbidity (TEAM study)"
+description: This transgenerational cohort study will apply innovative statistical approaches to relate timing, level and variability of maternal glycemia to morbidity in adult offspring of women with type 1 diabetes.
+role: Biostatistician
+tag: Pending
+---
+number: Internal ARC - Cincinnati Children’s Hospital
+pi: Beck/Brokamp/Ryan
+dates: 7/1/17 - 6/30/20
+title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
+description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
+role: Biostatistician
+tag: Pending
+---

@@ -2,6 +2,7 @@
 R CMD BATCH --vanilla parse_pubs.R
 R CMD BATCH --vanilla parse_talks.R
 R CMD BATCH --vanilla parse_software.R
+R CMD BATCH --vanilla parse_support.R
 
 # then latex the CV into a pdf
 texfot pdflatex cole-brokamp-cv.tex

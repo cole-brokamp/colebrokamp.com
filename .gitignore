@@ -11,3 +11,6 @@ software.md
 .DS_Store
 *.synctex.gz 
 .Rproj.user
+
+support.tex
+support.md
