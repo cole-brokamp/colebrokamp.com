@@ -17,13 +17,13 @@ Below are some tips for getting the best results from the offline geocoder locat
 
 #### Tips for Getting the Best Results  
 - omit apartment numbers or "second address line"
-- plus4 zip codes are ignored
+- plus4 zip codes are ignored, but if they must be included make sure to separate them with a dash (i.e. `37209-0000` instead of `372090000`)
 - capitalization does not affect results
 - separate the different address components with a space
 - abbreviations may be used (i.e. `St.` instead of `Street` or `OH` instead of `Ohio`)
 - use arabic numerals instead of written numbers (i.e. `13` instead of `thirteen`)
 - spelling should be as accurate as possible, but the program does complete "fuzzy matching" so an exact match is not necessary
-- address strings with out of order items will likely return NA (i.e. `3333 Burnet Ave Cincinnati 45229 OH`)
+- address strings with out of order items could return NA (i.e. `3333 Burnet Ave Cincinnati 45229 OH`)
 
 ## Output
 
