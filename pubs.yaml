@@ -1,7 +1,7 @@
 ---
 title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
 author: Cole Brokamp, Andrew F. Beck, Louis Muglia, Patrick Ryan
-note: In Preparation
+note: Submitted
 ---
 title: "Decentralized and HIPAA Compliant Geocoding to Characterize Community and Environmental Exposures for Multi-Site Studies"
 author: Cole Brokamp, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan
@@ -9,7 +9,7 @@ note: In Preparation
 ---
 title: "Phenotypes of Rapid Cystic Fibrosis Lung Disease Progression during Adolescence and Young Adulthood"
 author: Rhonda D. Szczesniak, Dan Li, Weiji Su, Cole Brokamp, John Pestian, Michael Seid, John P. Clancy
-note: Under Review
+note: In Press
 ---
 title: "Interrater Reliability of Examination Findings in Children with Suspected Community-Acquired Pneumonia"
 author: Todd Florin, Lilliam Ambroggio, Cole Brokamp, Mantosh S. Rattan, Eric J. Crotty, Andrea Kachelmeyer, Richard M. Ruddy, Samir Shah
@@ -21,12 +21,15 @@ note: Under Review
 ---
 title: "Childhood exposure to libby amphibole asbestos and respiratory symptoms in young adulthood"
 author: Patrick Ryan, James E. Lockey, Brad Black, Carol H. Rice, Jeff Burkle, Tim Hilbert, Linda Levin, Cole Brokamp, Roy McKay, Ted Larson, Grace K. LeMasters
-note: Submitted
+note: Under Review
 ---
 title: "Association of air pollution with mammographic breast density in the Breast Cancer Surveillance Consortium"
 author: Lusine Yaghjyan, R Aroa, Cole Brokamp, E O'Meara, B Sprague, G Ghita, Patrick Ryan
-note: In Press
 journal: Breast Cancer Research
+year: 2017
+issue: 19:36
+pages: 1-10
+download_link: http://colebrokamp-website.s3.amazonaws.com/publications/Yaghjyan_2017_BreastCancerResearch.pdf
 ---
 title: "A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife"
 author: Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov
@@ -67,7 +70,8 @@ title: "Residential mobility impacts exposure assessment and community socioecon
 author: Cole Brokamp, Grace LeMasters, Patrick Ryan
 journal: Journal of Exposure Science and Environmental Epidemiology
 year: 2016
-issue: online
+issue: 26(4)
+pages: 428-34
 download_link: http://colebrokamp-website.s3.amazonaws.com/publications/Brokamp_JESEE_2016.pdf
 ---
 title: "Indoor air quality in green-renovated vs. non-green low-income homes of children living in a temperate region of US (Ohio)"
