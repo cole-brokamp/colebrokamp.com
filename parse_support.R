@@ -16,7 +16,7 @@ support.yaml <- lapply(support,yaml::yaml.load)
 support_paste <- function(y){
   out <- paste0('**', y$number, '**', '  \n',
                 '*', y$title, '*', '  \n',
-                y$pi, ', PI', ' (*', y$dates, '*)  \n',
+                y$pi, ', PI', ' (', y$dates, ')  \n',
                 y$description, '  \n',
                 'Role: ', y$role, '  \n')
   return(list('text'=out, 'tag'=y$tag))
