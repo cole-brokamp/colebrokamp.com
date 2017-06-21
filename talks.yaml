@@ -1,11 +1,5 @@
 ---
-title: "Using GRAPPH to Leverage Geoinformatics for Innovative Research, Place-based Clinical Care, and Community-Centered Quality Improvement"
-event: Cincinnati Children's Hospital Medical Center Mayerson Center for Safe and Healthy Children Quarterly Research Meeting
-year: 2017
-location: Cincinnati, OH
-link: http://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_MayersonCenter_16June2017.pdf
----
-title: "Decentralized and HIPAA Compliant Geocoding to Characterize Community and Environmental Exposures for Multi-Site Studies"
+title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
 event: International Society of Exposure Science Annual Meeting
 year: 2017
 location: Research Triangle Park, NC
@@ -14,6 +8,12 @@ title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensi
 event: International Society of Exposure Science Annual Meeting
 year: 2017
 location: Research Triangle Park, NC
+---
+title: "Using GRAPPH to Leverage Geoinformatics for Innovative Research, Place-based Clinical Care, and Community-Centered Quality Improvement"
+event: Cincinnati Children's Hospital Medical Center Mayerson Center for Safe and Healthy Children Quarterly Research Meeting
+year: 2017
+location: Cincinnati, OH
+link: http://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_MayersonCenter_16June2017.pdf
 ---
 title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
 event: Cincinnati Children's Hospital Medical Center Postdoc and Research Associate Meeting

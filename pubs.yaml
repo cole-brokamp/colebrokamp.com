@@ -33,15 +33,17 @@ download_link: http://colebrokamp-website.s3.amazonaws.com/publications/Yaghjyan
 ---
 title: "A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife"
 author: Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov
-note: Submitted
+journal: arXiv preprint arXiv:1706.06150
+year: 2017
+download_link: https://arxiv.org/pdf/1706.06150
 ---
 title: "Cluster analysis of childhood asthma phenotypes identifies specific environmental risk factors"
 author: Kristin A. Schmidlin, Cole Brokamp, Grace K. LeMasters, David I. Bernstein, James E. Lockey, Manuel Villareal, Gurjit K. Khurana Hershey, Patrick Ryan
-note: In Preparation
+note: Hide
 ---
 title: "Patterns of longitudinal allergic sensitization identifies phenotypes of children at increased risk for asthma"
 author: Jessica S. Tan, Cole Brokamp, David I. Bernstein, Grace K. LeMasters, Gurjit K. Khurana Hershey, James E. Lockey, Manuel Villareal, Patrick Ryan
-note: In Preparation
+note: Hide
 ---
 title: "Exposure assessment models for elemental components of particulate matter in an urban environment: A comparison of regression and random forest approaches"
 author: Cole Brokamp, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan
