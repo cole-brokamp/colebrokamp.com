@@ -1,6 +1,7 @@
 #!/usr/bin/Rscript
 
 library(magrittr)
+library(purrr)
 
 # read in yaml and parse yaml file
 input <-
@@ -12,6 +13,10 @@ pubs <-
   tail(-1)
 
 pubs.yaml <- lapply(pubs,yaml::yaml.load)
+
+# remove "hide" tags
+hides <- map(pubs.yaml, 'note') == 'Hide'
+pubs.yaml <- pubs.yaml[!hides]
 
 yaml_paste_bib <- function(y,bold.name){
   out <- paste0(y$author,'. ',y$title,'. ')
@@ -29,6 +34,7 @@ yaml_paste_bib <- function(y,bold.name){
 }
 
 pubs.parsed <- lapply(pubs.yaml,yaml_paste_bib,bold.name='Cole Brokamp')
+
 
 # make tex file for CV
 
