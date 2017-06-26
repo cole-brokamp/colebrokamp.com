@@ -5,7 +5,7 @@ dates: 7/1/16 - 6/30/17
 title: Assessing Exposure to Air Pollution Across Time and Space
 description: The primary objective of this award is to combine satellite-based measurements, land use characteristics, and meteorologic data to create a hybrid spatiotemporal model for ground level exposure to particulate matter using exact addresses and dates.
 role: PI
-tag: Active
+tag: Complete
 ---
 number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
 pi: Brokamp
@@ -13,7 +13,7 @@ dates: 1/24/17 - 6/30/17
 title: Validating a Geocoding Approach for Multi Site Studies
 description: The primary objective of this award is to compare the geocoding (assigning latitude and longitude coordinates to addresses) accuracy of our software DeGAUSS (DEcentralized Geomarker Assessment for mUlti Site Studies) to with other common geocoding software. Furthermore, each method will be evaluated based on it ability to correctly estimate environmental exposures and community-level characteristics.
 role: PI
-tag: Active
+tag: Complete
 ---
 number: NIH/NIEHS 1R01ES019890-01
 pi: Ryan
@@ -29,7 +29,7 @@ dates: 2/1/16 - 6/30/17
 title: "Community Health Peer Learning Program: Participant Community"
 description: "The goals of this project are to reduce by 10% the inpatient bed-day rate for one high risk neighborhood in Cincinnati through interventions promoted by shared data and improved data visualization."
 role: Biostatistician
-tag: Active
+tag: Complete
 ---
 number: NIH 5K23AI121325
 pi: Florin
