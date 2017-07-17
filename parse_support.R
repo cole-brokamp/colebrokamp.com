@@ -34,8 +34,8 @@ make_subsection <- function(subsection.label){
   return(paste(c(paste('\n\n###',subsection.label),subsection.text),collapse='\n\n'))
 }
 
-# make tex file for CV  
-sapply(subsection.labels, make_subsection) %>% 
+# make tex file for CV
+sapply(c('Active', 'Pending', 'Complete'), make_subsection) %>%
   cat(file='support.md', append=FALSE)
 
 system('pandoc -o support.tex support.md')
