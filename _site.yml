@@ -1,4 +1,5 @@
-name: "colebrokamp.com"
+name: 'colebrokamp.com'
+output_dir: '.'
 output:
   html_document:
     theme: flatly

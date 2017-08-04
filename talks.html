@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Talks</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Cole Brokamp</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="talks.html">Talks</a>
+</li>
+<li>
+  <a href="software.html">Software</a>
+</li>
+<li>
+  <a href="posts.html">Posts</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Shiny
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="shiny_ecat.html">ECAT Assessment</a>
+    </li>
+    <li>
+      <a href="shiny_linnstrument.html">LinnStrument Scales</a>
+    </li>
+    <li>
+      <a href="shiny_cincy_neigh.html">Cincinnati Neighborhoods</a>
+    </li>
+    <li>
+      <a href="shiny_ufp_dashboard.html">Personal UFP Sampling</a>
+    </li>
+    <li>
+      <a href="shiny_cso_modeling.html">Combined Sewer Overflows</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:cole.brokamp@gmail.com">
+    <span class="fa fa-envelope"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/cole_brokamp">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/cole-brokamp">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-71324015-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Talks</h1>
+
+</div>
+
+
+<p><em>Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies.</em> International Society of Exposure Science Annual Meeting. Research Triangle Park, NC. 2017.</p>
+<p><em>Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing.</em> International Society of Exposure Science Annual Meeting. Research Triangle Park, NC. 2017.</p>
+<p><em>Using GRAPPH to Leverage Geoinformatics for Innovative Research, Place-based Clinical Care, and Community-Centered Quality Improvement.</em> Cincinnati Children’s Hospital Medical Center Mayerson Center for Safe and Healthy Children Quarterly Research Meeting. Cincinnati, OH. 2017. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_MayersonCenter_16June2017.pdf">Download</a></em>.</p>
+<p><em>Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study.</em> Cincinnati Children’s Hospital Medical Center Postdoc and Research Associate Meeting. Cincinnati, OH. 2017. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_3_April_2017.pdf">Download</a></em>.</p>
+<p><em>Geocoding to Characterize Community and Environmental Exposures for Multi-site Studies.</em> Cincinnati Children’s Hospital Medical Center Division of Biomedical Informatics Hutton Lecture Series. Cincinnati, OH. 2017. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_Hutton.pdf">Download</a></em>.</p>
+<p><em>GIS Tools for Environmental Epidemiology.</em> Biomedical Informatics (BMIN8001) Practicum Lecture. Cincinnati, OH. 2017. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/BMIN8001_environmental_epidemiology.pdf">Download</a></em>.</p>
+<p><em>Building A Platform for Data Sharing.</em> Cincinnati Children’s Hospital Medical Center Academy Health Site Visit. Cincinnati, OH. 2017. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/academy_health_visit.pdf">Download</a></em>.</p>
+<p><em>Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models.</em> International Society of Exposure Science Annual Meeting. Utrecht, NL. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf">Download</a></em>.</p>
+<p><em>Predictive Comparisons: Interpreting Input Effects for Any Supervised Learner.</em> Cincinnati Children’s Hospital Medical Center Division of Biostatistics &amp; Epidemiology Journal Club. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/APC_talk.pdf">Download</a></em>.</p>
+<p><em>Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models.</em> University of Cincinnati Division of Biostatistics and Bioinformatics Seminar Series. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf">Download</a></em>.</p>
+<p><em>Data Visualization for Population Health Initiatives.</em> All In Data Visualization Webinar. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/all_in_webinar_Beck_Brokamp.pdf">Download</a></em>.</p>
+<p><em>Using Machine Learning and Interactive Dashboards to Understand How Children’s Health is Impacted by their Community and Surrounding Environment.</em> University of Cincinnati Institute for Analytics Innovation Showcase and Networking Event. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/data_analytics_showcase_cole_brokamp.pdf">Download</a></em>.</p>
+<p><em>Combined Sewer Overflow and Childhood Hospital Admissions.</em> Cincinnati Children’s Hospital Medical Center Division of Biostatistics &amp; Epidemiology Seminar Series. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/Combined%20Sewer%20Overflow%20and%20Hospital%20Admissions.pdf">Download</a></em>.</p>
+<p><em>Land Use Random Forests for Estimation of Exposure to Elemental Components of Particulate Matter.</em> University of Cincinnati Division of Biostatistics and Bioinformatics Doctoral Dissertation Defense. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/Cole%20Brokamp%20Dissertation%20Defense%2023March2016.pdf">Download</a></em>.</p>
+<p><em>Geospatial Data for Environmental Epidemiology.</em> Cincinnati Children’s Hospital Medical Center Environmental Epidemiology Shared Interest Group Seminar Series. Cincinnati, OH. 2016. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/GIS_env_epi.pdf">Download</a></em>.</p>
+<p><em>Confidence Intervals for Random Forest Predictions Using the Infinitesimal Jackknife.</em> University of Cincinnati Division of Biostatistics and Bioinformatics Seminar Series. Cincinnati, OH. 2015. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/Confidence_Intervals_for_Random_Forest_Predictions_Using_the_Infinitesimal_Jackknife.pdf">Download</a></em>.</p>
+<p><em>Childhood Residential Changes are Associated with Decreased Traffic Exposure and Improved Neighborhood Characteristics.</em> International Society of Exposure Science Annual Meeting. Las Vegas, NV. 2015. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/Cole_Brokamp_ISES_2015.pdf">Download</a></em>.</p>
+<p><em>R Studio and R Markdown: An integrated IDE and report generator for R.</em> University of Cincinnati BE7022 (Intro To Biostatistics) Guest Lecture. Cincinnati, OH. 2015. <em><a href="http://colebrokamp-website.s3.amazonaws.com/talks/RStudio_and_RMarkdown.pdf">Download</a></em>.</p>
+<p><em>Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately Represent the Elemental Composition of Personal PM2.5?.</em> University of Cincinnati Division of Epidemiology Seminar Series. Cincinnati, OH. 2014.</p>
+<p><em>Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements.</em> Joint Statistical Meeting. Boston, MA. 2014.</p>
+<p><em>Exact Sampling and Counting for Fixed-Margin Matrices..</em> University of Cincinnati Division of Epidemiology Seminar Series. Cincinnati, OH. 2013.</p>
+<p><em>Small Molecule Disruption of G Beta Gamma Signaling Inhibits the Progression of Heart Failure..</em> University of Cincinnati Department of Pharmacology and Biophysics Seminar Series. Cincinnati, OH. 2011.</p>
+<p><em>Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid to the Heart..</em> University of Cincinnati Department of Pharmacology and Biophysics Seminar Series. Cincinnati, OH. 2011.</p>
+<p><em>An academic research cooperative education experience..</em> University of Cincinnati BME321 Guest Lecture. Cincinnati, OH. 2011.</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
