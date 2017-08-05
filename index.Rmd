@@ -22,4 +22,4 @@ Currently, I am:
 - Creating statistical computing tools for geocoding and environmental exposure assessment
 - Designing interactive web applications for exploring the social determinants of health
 
-[View my CV](cv)
+[View my CV](cv.pdf)
