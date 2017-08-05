@@ -1,0 +1,12 @@
+---
+Title: "R Shiny"
+---
+&nbsp;  
+
+### **Combined Sewer Overflow Dashboard**
+
+An R Shiny application used to explore combined sewer overflow events and their effect on the probability of a CCHMC emergency department visit.
+
+![](appshots/cso_modeling.png)
+
+
