@@ -1,12 +1,11 @@
 ---
-title: "About"
+title: ""
 ---
 
 <div class = "row">
-<div class = "col-md-8">
 
+<div class = "col-md-6">
 I am a research fellow at Cincinnati Children's Hospital Medical Center interested in geoinformatics, remote sensing, environmental health, statistical computing, and statistical inference for machine learning algorithms. I completed my PhD in Biostatistics in the Department of Environmental Health at the University of Cincinnati. 
-
 </div>
 
 <div class = "col-md-2">

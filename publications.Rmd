@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: ""
 ---
 
 ```{r child='/Users/cole/Documents/CV_website_more/CV/pubs_sections.md'}

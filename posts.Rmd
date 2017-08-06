@@ -1,5 +1,5 @@
 ---
-title: 'Posts'
+title: ''
 ---
 
 [Geocoding Tips](posts_geocoding_tips.html)

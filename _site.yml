@@ -3,7 +3,7 @@ output_dir: 'docs'
 output:
   html_document:
     css: style.css
-    theme: flatly
+    theme: simplex
     highlight: pygments
     include:
       before_body: _google_analytics.html
