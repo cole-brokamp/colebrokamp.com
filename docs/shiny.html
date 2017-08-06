@@ -11,7 +11,7 @@
 
 
 
-<title>Shiny</title>
+<title>R Shiny</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -52,6 +52,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 
@@ -173,39 +174,12 @@ $(document).ready(function () {
 <li>
   <a href="posts.html">Posts</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Shiny
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="shiny_ecat.html">ECAT Assessment</a>
-    </li>
-    <li>
-      <a href="shiny_linnstrument.html">LinnStrument Scales</a>
-    </li>
-    <li>
-      <a href="shiny_cincy_neigh.html">Cincinnati Neighborhoods</a>
-    </li>
-    <li>
-      <a href="shiny_ufp_dashboard.html">Personal UFP Sampling</a>
-    </li>
-    <li>
-      <a href="shiny_cso_modeling.html">Combined Sewer Overflows</a>
-    </li>
-  </ul>
+<li>
+  <a href="shiny.html">R Shiny</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:cole.brokamp@gmail.com">
-    <span class="fa fa-envelope"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://twitter.com/cole_brokamp">
     <span class="fa fa-twitter"></span>
      
@@ -214,6 +188,18 @@ $(document).ready(function () {
 <li>
   <a href="https://github.com/cole-brokamp">
     <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:cole.brokamp@gmail.com">
+    <span class="fa fa-envelope"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://colebrokamp.com/cv.pdf">
+    <span class="fa fa-file-text"></span>
      
   </a>
 </li>
@@ -236,12 +222,55 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Shiny</h1>
+<h1 class="title toc-ignore">R Shiny</h1>
 
 </div>
 
 
+<p> </p>
+<div id="cincinnati-neighborhoods" class="section level3">
+<h3><strong><a href="http://geomarker.io/neighborhood">Cincinnati Neighborhoods</a></strong></h3>
+<p>An R Shiny application which allows for comparing Cincinnati Neighborhoods. Basic socioeconomic information, hospital bed day utilization by cause, and environmental exposures are all presented in order to allow the user to simultaneously overlay multiple sources of information.</p>
+<p><a href="http://geomarker.io/neighborhood"><img src="appshots/cincy-neigh.png" /></a></p>
+<p> </p>
+</div>
+<div id="combined-sewer-overflow-dashboard" class="section level3">
+<h3><strong>Combined Sewer Overflow Dashboard</strong></h3>
+<p>An R Shiny application used to explore combined sewer overflow events and their effect on the probability of a CCHMC emergency department visit.</p>
+<div class="figure">
+<img src="appshots/cso_modeling.png" />
 
+</div>
+<p> </p>
+</div>
+<div id="linnstrument-scales" class="section level3">
+<h3><strong><a href="http://linnstrument-scales.amazon-shiny.duckdns.org">LinnStrument Scales</a></strong></h3>
+<p>An R Shiny application (<a href="https://github.com/cole-brokamp/linnstrument_scales">source code</a></icon></icon>) that illustrates notes on LinnStrument for any given base key and scale mode. A navigation bar offers three modes: (1) small scale that only shows one octave of a scale with note numbers, (2) large scale that shows the scale over several octaves without note numbers, and (3) large scale overlays that shows one large scale and a different scale overlapping in order to compare scale layouts for different base keys and modes.</p>
+<p><a href="http://linnstrument-scales.amazon-shiny.duckdns.org"><img src="appshots/linnstrument.png" /></a></p>
+<p> </p>
+</div>
+<div id="ultrafine-particles-dashboard" class="section level3">
+<h3><strong>Ultrafine Particles Dashboard</strong></h3>
+<p>An R Shiny application used to interactively explore and showcase data from a personal sampler that records GPS location and a total count of ultrafine particle air pollution every second.</p>
+<div class="figure">
+<img src="appshots/ufp-dashboard.png" />
+
+</div>
+<p> </p>
+</div>
+<div id="location-based-prediction-of-air-pollution-exposure" class="section level3">
+<h3><strong>Location-based Prediction of Air Pollution Exposure</strong></h3>
+<p>An R Shiny application which allows uploading of latitude and longitude coordinates and returns the estimated average daily exposure to traffic related air pollution. Optionally, it can also return the distance to the nearest interstate and highway, as well as various other census tract derived variables. This tool has been widely used within the Cincinnati Children’s Hospital Medical Center in both clinical and research settings.</p>
+<div id="single-address-with-visual-map" class="section level4">
+<h4><a href="http://ecat-map.amazon-shiny.duckdns.org">Single Address with Visual Map</a></h4>
+<p><a href="http://ecat-map.amazon-shiny.duckdns.org"><img src="appshots/ecat-map.png" /></a></p>
+<p> </p>
+</div>
+<div id="batch-submission-of-coordinates" class="section level4">
+<h4><a href="http://ecat-file.amazon-shiny.duckdns.org">Batch Submission of Coordinates</a></h4>
+<p><a href="http://ecat-file.amazon-shiny.duckdns.org"><img src="appshots/ecat-file.png" /></a></p>
+</div>
+</div>
 
 
 
