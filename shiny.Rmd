@@ -4,48 +4,89 @@ title: "R Shiny"
 
 &nbsp;
 
-### **[Cincinnati Neighborhoods](http://geomarker.io/neighborhood)**
+### [Cincinnati Neighborhoods](http://geomarker.io/neighborhood)
 
+<div class = "row">
+
+<div class = "col-md-6">
+[![](appshots/cincy-neigh.png)](http://geomarker.io/neighborhood)
+</div>
+
+<div class = "col-md-6">
 An R Shiny application which allows for comparing Cincinnati Neighborhoods. Basic socioeconomic information, hospital bed day utilization by cause, and environmental exposures are all presented in order to allow the user to simultaneously overlay multiple sources of information.
+</div>
 
-[![](appshots/cincy-neigh.png)](http://geomarker.io/neighborhood) 
+</div>
 
 &nbsp;
 
-### **Combined Sewer Overflow Dashboard**
+### Combined Sewer Overflow Dashboard
 
-An R Shiny application used to explore combined sewer overflow events and their effect on the probability of a CCHMC emergency department visit.
+<div class = "row">
 
+<div class = "col-md-6">
 ![](appshots/cso_modeling.png)
+</div>
+
+<div class = "col-md-6">
+An R Shiny application used to explore combined sewer overflow events and their effect on the probability of a CCHMC emergency department visit.
+</div>
+
+</div>
 
 &nbsp;
 
-### **[LinnStrument Scales](http://linnstrument-scales.amazon-shiny.duckdns.org)**
+### [LinnStrument Scales](http://linnstrument-scales.amazon-shiny.duckdns.org)
 
-An R Shiny application ([source code](https://github.com/cole-brokamp/linnstrument_scales)</icon></icon>) that illustrates notes on LinnStrument for any given base key and scale mode. A navigation bar offers three modes: (1) small scale that only shows one octave of a scale with note numbers, (2) large scale that shows the scale over several octaves without note numbers, and (3) large scale overlays that shows one large scale and a different scale overlapping in order to compare scale layouts for different base keys and modes.
+<div class = "row">
 
+<div class = "col-md-6">
 [![](appshots/linnstrument.png)](http://linnstrument-scales.amazon-shiny.duckdns.org)
+</div>
+
+<div class = "col-md-6">
+An R Shiny application ([source code](https://github.com/cole-brokamp/linnstrument_scales)</icon></icon>) that illustrates notes on LinnStrument for any given base key and scale mode. A navigation bar offers three modes: (1) small scale that only shows one octave of a scale with note numbers, (2) large scale that shows the scale over several octaves without note numbers, and (3) large scale overlays that shows one large scale and a different scale overlapping in order to compare scale layouts for different base keys and modes.
+</div>
+
+</div>
 
 &nbsp;
 
-### **Ultrafine Particles Dashboard**
+### Ultrafine Particles Dashboard
 
-An R Shiny application used to interactively explore and showcase data from a personal sampler that records GPS location and a total count of ultrafine particle air pollution every second.  
+<div class = "row">
 
+<div class = "col-md-6">
 ![](appshots/ufp-dashboard.png)
+</div>
+
+<div class = "col-md-6">
+An R Shiny application used to interactively explore and showcase data from a personal sampler that records GPS location and a total count of ultrafine particle air pollution every second.  
+</div>
+
+</div>
 
 &nbsp;  
 
-### **Location-based Prediction of Air Pollution Exposure**
+### Location-based Prediction of Air Pollution Exposure
 
+<div class = "row">
+
+<div class = "col-md-12">
 An R Shiny application which allows uploading of latitude and longitude coordinates and returns the estimated average daily exposure to traffic related air pollution. Optionally, it can also return the distance to the nearest interstate and highway, as well as various other census tract derived variables. This tool has been widely used within the Cincinnati Children's Hospital Medical Center in both clinical and research settings.
+</div>
 
-#### [Single Address with Visual Map](http://ecat-map.amazon-shiny.duckdns.org)
+</div>
 
+<div class = "row">
+
+<div class = "col-md-6">
+[Single Address with Visual Map](http://ecat-map.amazon-shiny.duckdns.org)
 [![](appshots/ecat-map.png)](http://ecat-map.amazon-shiny.duckdns.org) 
+</div>
 
-&nbsp;  
-
-#### [Batch Submission of Coordinates](http://ecat-file.amazon-shiny.duckdns.org)
-
+<div class = "col-md-6">
+[Batch Submission of Coordinates](http://ecat-file.amazon-shiny.duckdns.org)
 [![](appshots/ecat-file.png)](http://ecat-file.amazon-shiny.duckdns.org)  
+</div>
+</div>
