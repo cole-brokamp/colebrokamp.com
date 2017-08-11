@@ -5,3 +5,5 @@ title: ''
 [Geocoding Tips](posts_geocoding_tips.html)
 
 [Code Cheatsheets](posts_cheatsheet.html)
+
+[Available Geomarkers](posts_GIS_database_table.html)

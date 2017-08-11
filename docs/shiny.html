@@ -172,10 +172,25 @@ $(document).ready(function () {
   <a href="software.html">Software</a>
 </li>
 <li>
-  <a href="posts.html">Posts</a>
-</li>
-<li>
   <a href="shiny.html">R Shiny</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Posts
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="posts_geocoding_tips.html">Geocoding Tips</a>
+    </li>
+    <li>
+      <a href="posts_cheatsheet.html">Code Cheatsheets</a>
+    </li>
+    <li>
+      <a href="posts_GIS_database_table.html">Available Geomarkers</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -241,6 +256,18 @@ $(document).ready(function () {
 </div>
 <p> </p>
 </div>
+<div id="cf-point-of-personalized-detection-cfpopd" class="section level3">
+<h3><a href="http://cfpopd.amazon-shiny.duckdns.org/">CF Point of Personalized Detection (CFPOPD)</a></h3>
+<div class="row">
+<div class="col-md-6">
+<p><a href="http://cfpopd.amazon-shiny.duckdns.org/"><img src="appshots/cfpopd.png" /></a></p>
+</div>
+<div class="col-md-6">
+<p>Dr. Rhonda Szczesniak (Cincinnati Children’s) has recently used functional data analysis combined with joint modeling (FD-JM) to identify and predict rapid decline in lung function among patients with cystic fibrosis (CF) lung disease. Ongoing work with the CF Foundation Patient Registry (CFFPR) to implement these models and visualizations into clinical settings has improved prognostic care. This CFPOPD clinician GUI prototype was generated using R shiny and the flexdashboard package.</p>
+</div>
+</div>
+<p> </p>
+</div>
 <div id="combined-sewer-overflow-dashboard" class="section level3">
 <h3>Combined Sewer Overflow Dashboard</h3>
 <div class="row">
@@ -256,18 +283,6 @@ $(document).ready(function () {
 </div>
 <p> </p>
 </div>
-<div id="linnstrument-scales" class="section level3">
-<h3><a href="http://linnstrument-scales.amazon-shiny.duckdns.org">LinnStrument Scales</a></h3>
-<div class="row">
-<div class="col-md-6">
-<p><a href="http://linnstrument-scales.amazon-shiny.duckdns.org"><img src="appshots/linnstrument.png" /></a></p>
-</div>
-<div class="col-md-6">
-<p>An R Shiny application (<a href="https://github.com/cole-brokamp/linnstrument_scales">source code</a></icon></icon>) that illustrates notes on LinnStrument for any given base key and scale mode. A navigation bar offers three modes: (1) small scale that only shows one octave of a scale with note numbers, (2) large scale that shows the scale over several octaves without note numbers, and (3) large scale overlays that shows one large scale and a different scale overlapping in order to compare scale layouts for different base keys and modes.</p>
-</div>
-</div>
-<p> </p>
-</div>
 <div id="ultrafine-particles-dashboard" class="section level3">
 <h3>Ultrafine Particles Dashboard</h3>
 <div class="row">
@@ -279,6 +294,18 @@ $(document).ready(function () {
 </div>
 <div class="col-md-6">
 <p>An R Shiny application used to interactively explore and showcase data from a personal sampler that records GPS location and a total count of ultrafine particle air pollution every second.</p>
+</div>
+</div>
+<p> </p>
+</div>
+<div id="linnstrument-scales" class="section level3">
+<h3><a href="http://linnstrument-scales.amazon-shiny.duckdns.org">LinnStrument Scales</a></h3>
+<div class="row">
+<div class="col-md-6">
+<p><a href="http://linnstrument-scales.amazon-shiny.duckdns.org"><img src="appshots/linnstrument.png" /></a></p>
+</div>
+<div class="col-md-6">
+<p>An R Shiny application (<a href="https://github.com/cole-brokamp/linnstrument_scales">source code</a></icon></icon>) that illustrates notes on LinnStrument for any given base key and scale mode. A navigation bar offers three modes: (1) small scale that only shows one octave of a scale with note numbers, (2) large scale that shows the scale over several octaves without note numbers, and (3) large scale overlays that shows one large scale and a different scale overlapping in order to compare scale layouts for different base keys and modes.</p>
 </div>
 </div>
 <p> </p>
