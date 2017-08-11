@@ -15,6 +15,14 @@ description: The primary objective of this award is to compare the geocoding (as
 role: PI
 tag: Complete
 ---
+number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
+pi: Brokamp
+dates: 9/1/17 - 12/31/17
+title: Using Machine Learning to Supplement Electronic Health Record databases with Individual Socioeconomic Status
+description: Retrospective epidemiological studies are often created using electronic health record databases.  Although these records are "wide", they are not "deep" with respect to individual level demographic data.  We propose a novel machine learning based approach that uses open city and auditor databases to predict individual level income and family socioeconomic status.  This will solve the urgent problem of unconfounding for individual SES in the execution of EHR based research.
+role: PI
+tag: Pending
+---
 number: NIH/NIEHS 1R01ES019890-01
 pi: Ryan
 dates: 7/1/12 - 3/31/18
@@ -103,6 +111,14 @@ description: The objective of this proposal is to determine whether exposure to 
 role: Biostatistician
 tag: Pending
 ---
+number: NIH R01FP00013153
+pi: Sczcesniak
+dates: 4/1/18 - 3/31/23
+title: Mapping Environmental Contributions to Rapid Lung Disease Progression in Cystic Fibrosis
+description: This project will incorporate established environmental contributors and novel data on community characteristics into functional data analysis and joint longitudinal modeling in order to transform dynamic prediction and clinical surveillance of rapid pulmonary decline.
+role: Co-I
+tag: Pending
+---
 number: NIH R01CA221960
 pi: Salomonis
 dates: 9/1/17 - 8/31/22
@@ -135,7 +151,7 @@ description: This transgenerational cohort study will apply innovative statistic
 role: Biostatistician
 tag: Pending
 ---
-number: qnternal ARC - Cincinnati Children’s Hospital
+number: Internal ARC - Cincinnati Children’s Hospital
 pi: Beck/Ryan
 dates: 7/1/17 - 6/30/20
 title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
