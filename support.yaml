@@ -21,7 +21,7 @@ dates: 9/1/17 - 12/31/17
 title: Using Machine Learning to Supplement Electronic Health Record databases with Individual Socioeconomic Status
 description: Retrospective epidemiological studies are often created using electronic health record databases.  Although these records are "wide", they are not "deep" with respect to individual level demographic data.  We propose a novel machine learning based approach that uses open city and auditor databases to predict individual level income and family socioeconomic status.  This will solve the urgent problem of unconfounding for individual SES in the execution of EHR based research.
 role: PI
-tag: Pending
+tag: Active
 ---
 number: NIH/NIEHS 1R01ES019890-01
 pi: Ryan
