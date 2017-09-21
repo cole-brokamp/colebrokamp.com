@@ -31,9 +31,9 @@ docker: https://hub.docker.com/u/degauss/
 doi: http://doi.org/10.5281/zenodo.344490
 vignette: https://cole-brokamp.github.io/DeGAUSS/
 ---
-name: geocodeCAGIS
+name: hamilton
 description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
-url: https://github.com/cole-brokamp/geocodeCAGIS
+url: https://github.com/cole-brokamp/hamilton
 doi: http://doi.org/10.5281/zenodo.50876
 ---
 name: geocoder
