@@ -7,7 +7,7 @@ title: ""
 webshot::appshot('~/Biostatistics/rhonda_weiji_shiny/cfpopd',
                  'appshots/cfpopd.png', delay=5)
 webshot::webshot('http://cfpopd.amazon-shiny.duckdns.org/',
-                 'appshots/cfpopd.png', delay=20)
+                 'appshots/cfpopd.png', delay=100)
 ```
 &nbsp;
 
