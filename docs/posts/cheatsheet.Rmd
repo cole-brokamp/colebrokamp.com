@@ -1,0 +1,158 @@
+---
+title: "Code Cheatsheet"
+output:
+  html_document:
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: true
+---
+
+## GDAL
+
+**Clip vectors by bounding box**
+
+	ogr2ogr -f "ESRI Shapefile" output.shp input.shp -clipsrc <x_min> <y_min> <x_max> <y_max>
+
+**Clip one vector by another**
+
+	ogr2ogr -clipsrc clipping_polygon.shp output.shp input.shp
+
+**Reproject vector**
+
+	ogr2ogr output.shp -t_srs "EPSG:4326" input.shp
+
+**Merge vector files**
+
+	ogr2ogr merged.shp input1.shp
+	ogr2ogr -update -append merged.shp input2.shp -nln merged
+
+**Reproject raster:**
+
+	gdalwarp -t_srs "EPSG:102003" input.tif output.tif
+
+Be sure to add _-r bilinear_ if reprojecting elevation data to prevent funky banding artifacts.
+
+**Clip raster by bounding box**
+
+	gdalwarp -te <x_min> <y_min> <x_max> <y_max> input.tif clipped_output.tif
+
+**Merge rasters**
+
+	gdalwarp input1.tif input2.tif merged.tif -srcnodata <nodata_value> -dstnodata <merged_nodata_value>
+
+**Burn vector into raster**
+
+	gdal_rasterize -b 1 -i -burn -32678 -l layername input.shp input.tif
+
+**Extract polygons from raster**
+
+	gdal_polygonize.py input.tif -f "GeoJSON" output.json
+
+**Get values for a specific location in a raster**
+
+	gdallocationinfo -xml -wgs84 input.tif <lon> <lat>
+
+
+**Download and subset TIGER Road Files**
+
+```
+# download
+wget -r ftp://ftp2.census.gov/geo/tiger/TIGER2010/ROADS/*
+
+# unzip files
+mkdir ./all_2010_roads
+find . -type f -name "*.zip" -print0 | xargs -0 -I{} unzip {} -d ./all_2010_lines
+
+# delete zipped files
+rm -r ftp2.census.gov
+
+mkdir ./TIGER2010_roads
+mkdir ./S1100_subset
+mkdir ./S1200_subset
+mkdir ./S1400_subset
+
+# merge for each state
+#for state in $( ls all_2010_lines/ | grep .shp$ | cut -d_ -f3 | cut -b 1,2 | uniq ); do
+#	find shps/ -type f -name "*_78*" | grep .shp$ | xargs -I{} shapemerger -o ./TIGER2010_lines/TIGER2010_lines_${state}.shp {}
+#done
+
+# subset all of the shapefiles to each of the road classes
+for f in `ls all_2010_lines/ | grep .shp$`; do
+	ogr2ogr -where "MTFCC = 'S1400'" S1400_subset/$f all_2010_lines/$f
+done
+
+# merge all of these together
+shapemerger -o TIGER2010_roads/S1400_roads.shp S1400_subset/*.shp
+
+# delete shp files
+rm -r all_2010_lines
+rm -r S1100_subset
+rm -r S1200_subset
+rm -r S1400_subset
+
+# move to GIS folder
+mv TIGER2010_roads/ ~/Documents/Biostatistics/_GIS\ data/
+```
+
+## Markdown
+**Create a blank line**
+```
+&nbsp;
+
+```
+
+
+## Git
+
+**Serve raw files directly from GitHub with proper content-type headers**
+
+rawgit.com
+
+**Make a subfolder into its own repo**
+
+	pushd ~/Documents/Biostatistics/Elemental\ Land\ Use\ Models\ copy/
+	git subtree split -P data_munge -b data_munge_only
+	popd
+	mkdir elemental_land_use_models/data_munge
+	pushd elemental_land_use_models/data_munge
+	git init
+	git pull ~/Documents/Biostatistics/Elemental\ Land\ Use\ Models\ copy/ data_munge_only
+	popd
+
+
+**Example fork from github.com**
+
+Fork the repo on github.com and `clone` it onto the local machine.
+
+To list all remotes: `git remote -v`
+
+Configure a remote to point to the original repo:
+
+`git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPO.git`
+
+Fetch the branches and their commits (commits to `master` stored as the local branch `upstream/master`):
+
+`git fetch upstream`
+
+Make sure you are in your local branch you want to merge to and then merge the changes from the upstream branch:
+
+`git merge upstream/master`
+
+**Transfer an existing repo to a new GitHub repo**
+
+To push an existing git repo onto github, first make sure all the files are added and committed.
+
+Create the repo on github:
+
+`curl -u 'cole-brokamp' https://api.github.com/user/repos -d '{"name":"NEW_REPO_NAME"}'`
+
+Connect the local repository to the github one:
+
+`git remote add origin https://github.com/cole-brokamp/NEW_REPO_NAME`
+
+Push everything to github:
+
+`git push -u origin master`
+
+Don't forget to make a `README.md` file, if desired.

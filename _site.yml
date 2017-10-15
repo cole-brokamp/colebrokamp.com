@@ -7,5 +7,5 @@ output:
     highlight: pygments
     include:
       before_body: _google_analytics.html
-exclude: ['*.sh','post_ideas.txt','README.md','colebrokamp.com.Rproj']
+exclude: ['*.sh','post_ideas.txt','README.md','README.html','colebrokamp.com.Rproj']
 include: []

@@ -2,8 +2,10 @@
 title: ''
 ---
 
-[Geocoding Tips](posts_geocoding_tips.html)
+&nbsp;
 
-[Code Cheatsheets](posts_cheatsheet.html)
+[Geocoding Tips](./posts/geocoding_tips.html)
 
-[Available Geomarkers](posts_GIS_database_table.html)
+[Code Cheatsheets](posts/cheatsheet.html)
+
+[Available Geomarkers](posts/available_geomarkers.html)

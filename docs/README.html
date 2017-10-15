@@ -173,23 +173,8 @@ $(document).ready(function () {
 <li>
   <a href="shiny.html">R Shiny</a>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Posts
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="posts_geocoding_tips.html">Geocoding Tips</a>
-    </li>
-    <li>
-      <a href="posts_cheatsheet.html">Code Cheatsheets</a>
-    </li>
-    <li>
-      <a href="posts_GIS_database_table.html">Available Geomarkers</a>
-    </li>
-  </ul>
+<li>
+  <a href="posts.html">Posts</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -244,7 +229,8 @@ $(document).ready(function () {
 
 <div id="colebrokamp.com" class="section level2">
 <h2>colebrokamp.com</h2>
-<p>created using R Markdown</p>
+<p>Created using R Markdown</p>
+<p>To build, first knit all <code>.Rmd</code> files in the <code>posts</code> folder (<code>rmarkdown::render_site()</code> doesn’t automatically recognize <code>*.Rmd</code> files in subfolders) and then <code>rmarkdown::render_site()</code>.</p>
 </div>
 
 

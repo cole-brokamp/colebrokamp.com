@@ -9,13 +9,7 @@ left:
   - text: "R Shiny"
     href: shiny.html
   - text: "Posts"
-    menu: 
-      - text: "Geocoding Tips"
-        href: posts_geocoding_tips.html
-      - text: "Code Cheatsheets"
-        href: posts_cheatsheet.html
-      - text: Available Geomarkers
-        href: posts_GIS_database_table.html
+    href: posts.html
 right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp
