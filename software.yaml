@@ -1,4 +1,20 @@
 ---
+name: DeGAUSS
+description: A family of standalone software packages designed for Decentralized Geomarker Assessment for multi Site Studies. Allows for coordinate extraction from addresses and estimation of environmental exposures and community characteristics without exposing private health information outside of the institution
+url: https://github.com/cole-brokamp/DeGAUSS
+docker: https://hub.docker.com/u/degauss/
+doi: http://doi.org/10.5281/zenodo.344490
+vignette: https://cole-brokamp.github.io/DeGAUSS/
+---
+name: hamilton
+description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
+url: https://github.com/cole-brokamp/hamilton
+doi: http://doi.org/10.5281/zenodo.50876
+---
+name: OfflineGeocodeR
+description: R wrapper around calling a Docker container (DeGAUSS/geocoder_slim) to geocode addresses from R without exposing PHI to the internet
+url: https://github.com/cole-brokamp/OfflineGeocodeR
+---
 name: automagic
 description: Automagically install packages necessary to run R code
 url: https://github.com/cole-brokamp/automagic
@@ -23,18 +39,6 @@ description: A package for R that assesses exposure to air pollution components 
 url: https://github.com/cole-brokamp/aiRpollution
 doi: http://doi.org/10.5281/zenodo.50878
 vignette:
----
-name: DeGAUSS
-description: A family of standalone software packages designed for Decentralized Geomarker Assessment for multi Site Studies. Allows for coordinate extraction from addresses and estimation of environmental exposures and community characteristics without exposing private health information outside of the institution
-url: https://github.com/cole-brokamp/DeGAUSS
-docker: https://hub.docker.com/u/degauss/
-doi: http://doi.org/10.5281/zenodo.344490
-vignette: https://cole-brokamp.github.io/DeGAUSS/
----
-name: hamilton
-description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
-url: https://github.com/cole-brokamp/hamilton
-doi: http://doi.org/10.5281/zenodo.50876
 ---
 name: geocoder
 description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
