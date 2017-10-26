@@ -5,7 +5,7 @@ title: ""
 <div class = "row">
 
 <div class = "col-md-6">
-I am a research fellow at Cincinnati Children's Hospital Medical Center interested in geoinformatics, remote sensing, environmental health, statistical computing, and statistical inference for machine learning algorithms. I completed my PhD in Biostatistics in the Department of Environmental Health at the University of Cincinnati. 
+I am an Assistant Professor Cincinnati Children's Hospital Medical Center interested in geoinformatics, remote sensing, environmental health, statistical computing, and statistical inference for machine learning algorithms. I completed my PhD in Biostatistics in the Department of Environmental Health at the University of Cincinnati and did my postdoctoral training at Cincinnati Children's.
 </div>
 
 <div class = "col-md-2">
@@ -16,7 +16,7 @@ I am a research fellow at Cincinnati Children's Hospital Medical Center interest
 
 Currently, I am:
 
-- Developing a spatiotemporal air pollution exposure assessment model for Cincinnati, Ohio
+- Evaluating the heterogeneous causal effects of environmental exposures on childhood health outcomes
 - Testing and implementing causal inference methods for random forest
 - Creating statistical computing tools for geocoding and environmental exposure assessment
 - Designing interactive web applications for exploring the social determinants of health
