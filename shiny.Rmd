@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "R Shiny"
 ---
 
 ```{r eval=FALSE, include=FALSE}
