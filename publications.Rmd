@@ -1,7 +1,8 @@
 ---
 title: ""
+pagetitle: "Publications"
 ---
 
-```{r child='/Users/cole/Documents/CV_website_more/CV/pubs_sections.md'}
+```{r child='../CV/pubs_sections.md'}
 ```
 

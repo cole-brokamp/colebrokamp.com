@@ -1,7 +1,8 @@
 ---
 title: ""
+pagetitle: "Talks"
 ---
 
-```{r child='/Users/cole/Documents/CV_website_more/CV/talks.md'}
+```{r child='../CV/talks.md'}
 ```
 
