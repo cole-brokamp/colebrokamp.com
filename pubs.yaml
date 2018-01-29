@@ -31,34 +31,44 @@ title: "Toward a Culture of Health in Hospitals: Pervasive population disparitie
 author: Andrew F. Beck, Carley L. Riley, Stuart Taylor, Cole Brokamp, Robert S. Kahn
 note: Under Review
 ---
-title: "Validation of the IDSA/PIDS Severity Criteria in Children with Community-Acquired Pneumonia"
-author: Todd A. Florin, Cole Brokamp, Rachel Mantyla, Bradley DePaoli, Richard Ruddy, Samir S. Shah, Lilliam Ambroggio
-journal: Clinical Infectious Diseases
-note: In Press
----
-title: "Early Detection of Rapid Cystic Fibrosis Disease Progression Tailored to Point of Care: A Proof-of-Principle Study"
-author: Rhonda Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, John P. Clancy
-journal: IEEE Journal of Translational Engineering on Health and Medicine
-note: In Press
----
 title: "Using medium- and high-resolution residential greenspace measures to assess risks of allergy outcomes in a cohort of children residing near Cincinnati, Ohio"
 author: Rebecca Gernes, Cole Brokamp, Glenn Rice, J. Michael Wright, Michelle Kondo, Yvonne Michael, Geoffrey Donovan, Demetrios Gatziolis, David Bernstein, Grace LeMasters, James Lockey, G. Khurana Hershey, Patrick Ryan
 note: Under Review
 ---
+title: "Validation of the IDSA/PIDS Severity Criteria in Children with Community-Acquired Pneumonia"
+author: Todd A. Florin, Cole Brokamp, Rachel Mantyla, Bradley DePaoli, Richard Ruddy, Samir S. Shah, Lilliam Ambroggio
+journal: Clinical Infectious Diseases
+issue: ciy031
+year: 2018
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Florin_ClinicalInfectiousDiseases_2018.pdf
+---
+title: "Early Detection of Rapid Cystic Fibrosis Disease Progression Tailored to Point of Care: A Proof-of-Principle Study"
+author: Rhonda Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, John P. Clancy
+journal: IEEE Journal of Translational Engineering on Health and Medicine
+year: 2017
+---
 title: "A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife"
 author: Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov
 journal: Stat
-note: In Press
+issue: 6(1)
+pages: 360-372
+year: 2017
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Brokamp_Stat_2017.pdf
 ---
 title: "Phenotypes of Rapid Cystic Fibrosis Lung Disease Progression during Adolescence and Young Adulthood"
 author: Rhonda D. Szczesniak, Dan Li, Weiji Su, Cole Brokamp, John Pestian, Michael Seid, John P. Clancy
 journal: American Journal of Respiratory And Critical Care Medicine
-note: In Press
+issue: 196(4)
+pages: 471-478
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Szczesniak_AJRCCM_2017.pdf
 ---
 title: "Reliability of Examination Findings in Suspected Community-Acquired Pneumonia"
 author: Todd Florin, Lilliam Ambroggio, Cole Brokamp, Mantosh S. Rattan, Eric J. Crotty, Andrea Kachelmeyer, Richard M. Ruddy, Samir Shah
 journal: Pediatrics
-note: In Press
+issue: 140(3)
+pages: e20170310
+year: 2017
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Florin_Pediatrics_2017.pdf
 ---
 title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
 author: Cole Brokamp, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan
