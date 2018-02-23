@@ -6,7 +6,7 @@ git commit -m "$commitMessage"
 git push
 
 # copy cv to website folder
-cp cole-brokamp-cv.pdf /Users/cole/Library/Mobile Documents/com~apple~CloudDocs/CV_website_more/colebrokamp.com/cv.pdf
+cp cole-brokamp-cv.pdf /Users/cole/Library/Mobile\ Documents/com~apple~CloudDocs/CV_website_more/colebrokamp.com/cv.pdf
 
 
 
