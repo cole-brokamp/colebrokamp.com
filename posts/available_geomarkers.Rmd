@@ -24,6 +24,7 @@ cole.brokamp@cchmc.org
 | National Land Cover Database (NLCD) | 21 classes of land cover classifications | 30 x 30 m grid | Annual (1992, 2001, 2006, 2011) |
 | Smart Location Database (SLD) | Location efficiency, characteristics of the built environment | Census tract | 2010 |
 | Modified Retail Food Environment Index (mRFEI) | Fraction of food retailers that are &quot;healthy&quot; | Census Tract | 2011 |
+| USDA National Agricultural Statistics Service (NASS) | Quantity of types of animals, products, crops | Zip Code | 1997, 2002, 2007, 2008, 2011 - 2016 |
 
 ### Level 3
 
