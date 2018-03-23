@@ -23,6 +23,14 @@ description: Retrospective epidemiological studies are often created using elect
 role: PI
 tag: Active
 ---
+number: NIH 5UG3OD023282-02
+pi: Gern
+dates: 9/01/2016 - 8/31/2023
+title: Children’s Respiratory Research and Environment Workgroup (CREW)
+description: This consortium will identify asthma endotypes and overcome shortcomings of individual cohorts by providing a large (nearly 9000 births and long-term follow-up of 6000-7000 children and young adults) and diverse national data set, harmonizing data related to asthma clinical indicators and early life environmental exposures, developing standardized measures for prospective data collection across CREW cohorts and other ECHO studies, and conducting targeted enrollment of additional subjects into existing cohorts.
+role: Co-I
+tag: Active
+---
 number: NIH/NIEHS 1R01ES019890-01
 pi: Ryan
 dates: 7/1/12 - 3/31/18
@@ -55,13 +63,13 @@ description: Tracking of population-based stroke incidence in the Greater Cincin
 role: Biostatistician
 tag: Active
 ---
-number: U01HG008666
+number: NIH U01HG008666
 pi: Harley
 dates: 09/01/15 - 05/31/19
 title: "EMERGE: Better Outcomes for Children: Promoting Excellence in Healthcare Genomics to Inform Policy"
 description: We have developed algorithms for the electronic health record (EHR), led the Pediatric Workgroup, developed pharmacogenomics, evaluated the preferences of parents and caregivers to advance genomic medicine and assimilated technical advances into our EHR. The eMERGE effort has become the basic fabric of the institutional initiative to incorporate the extraordinary advances of genetics, genomics and the electronic medical record into healthcare.
 role: Biostatistician
-tag: Active
+tag: Complete
 ---
 number: Internal ARC - Cincinnati Children’s Hospital
 pi: Marsolo
@@ -77,7 +85,7 @@ dates: 7/1/15 - 7/1/18
 title: CARPE DIEM
 description: The goals of this award are to develop a diagnostic tool based on the urinary metabolome that can differentiate between viral and bacterial community-acquired pneunomia in children.
 role: Biostatistician
-tag: Active
+tag: Complete
 ---
 number: Internal - University of Cincinnati
 pi: Jasne
