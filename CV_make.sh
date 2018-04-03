@@ -1,3 +1,5 @@
+set -e
+
 # extract info from yaml file into md and tex files
 R CMD BATCH --vanilla parse_pubs.R
 R CMD BATCH --vanilla parse_talks.R

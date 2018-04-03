@@ -1,3 +1,5 @@
+set -e
+
 # add and commit all for CV repo
 git add .
 echo 'Enter the commit message:'
