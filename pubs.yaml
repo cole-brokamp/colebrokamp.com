@@ -52,8 +52,11 @@ download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Florin_
 ---
 title: "Early Detection of Rapid Cystic Fibrosis Disease Progression Tailored to Point of Care: A Proof-of-Principle Study"
 author: Rhonda Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, John P. Clancy
-journal: IEEE Journal of Translational Engineering on Health and Medicine
+journal: Healthcare Innovations and Point of Care Technologies
+issue: "(HI-POCT), 2017 IEEE"
+pages: 204-207
 year: 2017
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Szczesniak_IEEE_2017.pdf
 ---
 title: "A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife"
 author: Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov
