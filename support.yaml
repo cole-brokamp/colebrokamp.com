@@ -111,12 +111,28 @@ description: This project will use clinical data and the biomarker procalcitonin
 role: Biostatistician
 tag: Complete
 ---
+number: Ohio Department of Medicaid
+pi: Hall
+dates: 5/1/18 - 4/30/20
+title: Ohio Opioid Analytics Project
+description: Our team will assure timely completion of project deliverables and achievement of project goals by implementing best practices of project management.
+role: Co-I
+tag: Pending
+---
+number: NIH/NIMHD
+pi: Beck
+dates: 9/1/18 - 8/31/23
+title: Achieving Pediatric Health Equity by Responding to Identified Sociomedical risks with Effective Unified Purpose – Development and Evaluation of the RISEUP System
+description: The objective of this project is to enhance and test an integrated medical-social monitoring and response system designed to meet the needs of patients and communities.
+role: Co-I
+tag: Pending
+---
 number: NIH/NIEHS
 pi: Braun/Ryan
 dates: 3/1/18 - 2/28/22
 title: Lifetime Exposure to Ambient Air Pollution and Adolescent Cardiometabolic Health
 description: The objective of this proposal is to determine whether exposure to air pollution during critical periods of growth and development is associated with altered growth trajectories, increased adiposity, altered lipid profiles, and vascular dysfunction during adolescence.
-role: Biostatistician
+role: Co-I
 tag: Pending
 ---
 number: NIH/NIEHS
@@ -140,7 +156,7 @@ pi: Salomonis
 dates: 9/1/17 - 8/31/22
 title: "AltAnalyze-CisBP: A comprehensive solution for splicing pathway discovery in cancer"
 description: We are building a powerful toolkit to identify a relatively new class of therapeutic targets for cancer therapy. In cancer, the abnormal splicing of gene products can initiate cancer and lead to worse outcomes. With the completion of these aims, cancer researchers will be able to evaluate and understand the causes of aberrant gene splicing to target new pathways in diverse cancers.
-role: Biostatistician
+role: Co-I
 tag: Pending
 ---
 number: NIH R01GM126109
@@ -148,7 +164,7 @@ pi: Salomonis
 dates: 9/1/17 - 8/31/20
 title: "CellHarmony: Integration and analysis of single-cell compendiums"
 description: Our understanding of human disease is being transformed by new technologies to examine the genomes of individual cells. We are developing novel ultra-sensitive approaches for finding rare populations of cells, distinguished by novel gene signatures that could predispose to human disease and ultimately lead to crucial diagnostics.
-role: Biostatistician
+role: Co-I
 tag: Pending
 ---
 number: NIH R01FD006021
@@ -156,7 +172,7 @@ pi: Ziady
 dates: 3/1/17 - 2/28/22
 title: Predictive Molecular Marks of Lung Function Decline in CF
 description: Given our compelling cross-sectional proteomic and statistical modeling data we propose to produce an algorithm for lung function decline that is based on the integration of longitudinal behavior of novel disease markers with novel Functional Data (FD) analysis of FEV1.
-role: Biostatistician
+role: Co-I
 tag: Pending
 ---
 number: Internal ARC - Cincinnati Children’s Hospital
@@ -164,7 +180,7 @@ pi: Beck/Ryan
 dates: 7/1/17 - 6/30/20
 title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
 description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
-role: Co-I
+role: PI
 tag: Pending
 ---
 number: Transplantation and Immunology Research Network Fellowship Research Grant - American Society of Transplantation
@@ -172,7 +188,7 @@ pi: Wadhwani
 dates: 7/1/18 - 6/30/21
 title: The Ecology of Nonadherence in in Pediatric Liver Transplant
 description: Determine whether neighborhood-based measures are associated with lower adherence in the transplant setting.
-role: Biostatistician
+role: Co-I
 tag: Pending
 ---
 number: PAR-16-367 - NIH Research Project Grant (R21/R33)
@@ -180,6 +196,6 @@ pi: Bazzano
 title: A Novel Research Infrastructure Enabling Life-Course Studies of Healthy Aging
 description: Evaluate the use of historical residence information within a multi-cohort study to reconstruct place-based environmental and sociodemographic exposures over the lifecourse.
 dates: 7/1/18 - 6/30/23
-role: Biostatistician
+role: Co-I
 tag: Pending
 ---
