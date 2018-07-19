@@ -77,7 +77,7 @@ dates: 7/1/15 - 7/1/18
 title: Mother Infant Data Hub
 description: The goals of this award are to create a research database of comprehensive clinical coverage for neonates born throughout the greater Cincinnati area including linkage of medical records to external data sets at the individual- and area-level during the first year of life.
 role: Biostatistician
-tag: Active
+tag: Complete
 ---
 number: Internal ARC - Cincinnati Children’s Hospital
 pi: Ambroggio
@@ -113,7 +113,7 @@ tag: Complete
 ---
 number: Ohio Department of Medicaid
 pi: Hall
-dates: 5/14/18 - 4/30/20
+dates: 5/14/18 - 5/30/19
 title: Ohio Opioid Analytics Project
 description: This project will develop and implement point-of-care predictive models to identify risk factors for opioid endpoints in order to guide clinicians and service delivery as well as identify interventions that can be used to implement public health policies.
 role: Co-I
@@ -121,7 +121,7 @@ tag: Active
 ---
 number: Health Effects Institute New Investigator Award
 pi: Brokamp
-dates: 10/1/18 - 9/30/21
+dates: 10/1/19 - 9/30/22
 title: Data-driven discovery of subpopulations susceptible to the health effects of air pollution
 description: The overall objective of this application is to develop methods to identify subpopulations most susceptible to the health effects of air pollution using a database of over 35 individual- and community-level susceptibility characteristics within both (1) a dataset derived from electronic health records in order to identify subpopulations susceptible to acute PM2.5-related risks of psychiatric, respiratory, and cardiovascular emergency department visits and (2) a population-wide administrative database of mother-infant dyads to identify subpopulations susceptible to chronic gestational PM2.5-related risks of low birth weight, preterm birth weight, and hospitalization during the first year of life.
 role: PI
@@ -185,7 +185,7 @@ tag: Pending
 ---
 number: Internal ARC - Cincinnati Children’s Hospital
 pi: Beck/Ryan
-dates: 7/1/17 - 6/30/20
+dates: 10/1/18 - 9/30/21
 title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
 description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
 role: PI
