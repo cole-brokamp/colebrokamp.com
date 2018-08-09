@@ -8,7 +8,7 @@ cole.brokamp@cchmc.org
 | **Database** | **Example Data** | **Space** | **Time** |
 | --------------------- | ---------------------------- | --------- | --------- |
 | Topologically Integrated Geographic Encoding and Referencing (TIGER) | Proximity to roadway by type, locations of airports, railroads, bodies of water, elevation | Exact location (nationwide) | Yearly |
-| Open Street Map (OSM) | Public transportation routes | Exact location | Current |
+| Open Street Map (OSM) | Public transportation routes, estimated drive time | Exact location | Current |
 | Global Historical Climatology Network (GHCN) | Temperature, relative humidity, precipitation, wind speed and direction | Interpreted from &gt; 5000 stations (nationwide) | Daily |
 | National Emissions Inventory (NEI) | Location and amount of emissions | Exact location | Yearly |
 | EPA Air Quality System (AQS) | Fixed site monitoring of ambient pollutant levels, air quality alerts | Interpreted from over 2500 stations (nationwide) | Daily |
