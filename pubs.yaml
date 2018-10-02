@@ -2,7 +2,8 @@
 title: "DeGAUSS: Decentralized Geomarker Assessment for Multi-Site Studies"
 author: Cole Brokamp
 journal: Journal of Open Source Software
-note: Hide
+note: In Press
+doi: 10.21105/joss.00812
 ---
 title: Juliana BASC and EVI paper
 author: Juliana, Pat, Cole
@@ -10,7 +11,11 @@ journal: Journal of Pediatrics
 note: Hide
 ---
 title: Acute PM2.5 and Mental Health ED Visits
-author: Pat Ryan, Cole Brokamp
+author: Pat Ryan, Cole Brokamp, Jeff Strawn
+note: Hide
+---
+title: acute pm and copd exacerbations in adults
+author: Ahn
 note: Hide
 ---
 title: "Material Community Deprivation and Hospital Utilization During the First Year of Life: An Urban Population-Based Cohort Study"
@@ -24,7 +29,8 @@ note: Hide
 ---
 title: "Improving Detection of Rapid Cystic Fibrosis Disease Progression—Early Translation of a Predictive Algorithm into a Point-of-Care Tool"
 author: Rhonda D. Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, and John P. Clancy
-note: Hide
+journal: IEEE Journal of Translational Engineering in Health and Medicine
+note: In Press
 ---
 title: "Developing and Translating a Prediction Model to Preemptively Identify Rapid Pulmonary Decline using the US Cystic Fibrosis Patient Registry: Looking Backward to See Forward"
 author: Rhonda D. Szczesniak, Weiji Su, Cole Brokamp, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, John P. Clancy
