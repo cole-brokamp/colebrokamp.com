@@ -53,7 +53,7 @@ dates: 01/01/16 - 12/31/19
 title: Biomarkers and Risk Stratification in Pediatric Community
 description: The extensive variation in care, in addition to the lack of evidence-based decision aids, highlights the critical need for an improved understanding of disease severity and tools to guide management for pediatric CAP. The proposed research will address this important knowledge and practice gap.
 role: Biostatistician
-tag: Active
+tag: Complete
 ---
 number: NIH/NINDS R01 NS030678
 pi: Kleindorfer
@@ -61,7 +61,7 @@ dates: 04/01/15 - 03/31/20
 title: Comparison of Hemorrhagic & Ischemic Stroke Among Blacks and Whites
 description: Tracking of population-based stroke incidence in the Greater Cincinnati and Northern Kentucky region, with special emphasis on stroke in the young and stroke recurrence.
 role: Biostatistician
-tag: Active
+tag: Complete
 ---
 number: NIH U01HG008666
 pi: Harley
@@ -165,7 +165,7 @@ dates: 9/1/17 - 8/31/22
 title: "AltAnalyze-CisBP: A comprehensive solution for splicing pathway discovery in cancer"
 description: We are building a powerful toolkit to identify a relatively new class of therapeutic targets for cancer therapy. In cancer, the abnormal splicing of gene products can initiate cancer and lead to worse outcomes. With the completion of these aims, cancer researchers will be able to evaluate and understand the causes of aberrant gene splicing to target new pathways in diverse cancers.
 role: Co-I
-tag: Pending
+tag: Hide
 ---
 number: NIH R01GM126109
 pi: Salomonis
@@ -173,7 +173,7 @@ dates: 9/1/17 - 8/31/20
 title: "CellHarmony: Integration and analysis of single-cell compendiums"
 description: Our understanding of human disease is being transformed by new technologies to examine the genomes of individual cells. We are developing novel ultra-sensitive approaches for finding rare populations of cells, distinguished by novel gene signatures that could predispose to human disease and ultimately lead to crucial diagnostics.
 role: Co-I
-tag: Pending
+tag: Hide
 ---
 number: NIH R01FD006021
 pi: Ziady
@@ -197,7 +197,7 @@ dates: 7/1/18 - 6/30/21
 title: The Ecology of Nonadherence in in Pediatric Liver Transplant
 description: Determine whether neighborhood-based measures are associated with lower adherence in the transplant setting.
 role: Co-I
-tag: Pending
+tag: Hide
 ---
 number: PAR-16-367 - NIH Research Project Grant (R21/R33)
 pi: Bazzano
@@ -214,4 +214,16 @@ description: The objective is to generate a comprehensive set of actionable diff
 dates: 04/01/2019 – 03/31/2021
 role: Co-I
 tag: Pending
+---
+number: ECHO OIF
+pi: Brokamp
+tag: Hide
+---
+number: NLM G08
+pi: Parsons
+tag: Hide
+---
+number: NLM R01
+pi: Brokamp
+tag: Hide
 ---

@@ -1,6 +1,7 @@
 #!/usr/bin/Rscript
 
 library(magrittr)
+library(purrr)
 
 # read in yaml and parse yaml file
 input <-
@@ -23,6 +24,10 @@ support_paste <- function(y){
 }
 
 support_parsed <- lapply(support.yaml, support_paste)
+
+# remove "hide" tags
+hides <- map(support_parsed, 'tag') == 'Hide'
+support_parsed <- support_parsed[!hides]
 
 # create subsections and make md file
 subsections <- sapply(support_parsed,function(x) x[['tag']])
