@@ -4,10 +4,11 @@ event: Northwestern Institute for Public Health and Medicine Seminar Series
 year: 2018
 location: Chicago, IL
 ---
-title: "Social Determinants of Health and Geoinformatics"
+title: "Introduction to Geoinformatics for Precision Population Health"
 event: University of Cincinnati Introduction to Medical Informatics course guest lecture
 year: 2018
 location: Cincinnati, OH
+link: "https://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_informatics_2018.pdf"
 ---
 title: "Reproducible Research in R: Geoinformatics, Epidemiology, and Publicly Available Health and GIS Data"
 event: Workshop at the American College of Epidemiology Annual Meeting
