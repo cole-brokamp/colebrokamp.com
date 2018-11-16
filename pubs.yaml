@@ -2,27 +2,28 @@
 title: NRDC economic impacts of climate change using CSO study data
 note: Hide
 ---
+title: acute pm and copd exacerbations in adults
+author: Ahn
+note: Hide
+---
 title: PICU disparities
 note: Hide
 ---
 title: CCC disparities
 note: Hide
 ---
-title: nobel's source pm and daily asthma admissions
+title: "nobel's source pm and daily asthma admissions"
 note: Hide
 ---
-title: "Sharad driver's license"
+title: "Sharad drivers license"
 note: Hide
 ---
 title: Sharad MLVI and dep index
 note: Hide
 ---
-title: Acute PM2.5 and Mental Health ED Visits
-author: Pat Ryan, Cole Brokamp, Jeff Strawn
-note: Hide
----
-title: acute pm and copd exacerbations in adults
-author: Ahn
+title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study"
+author: Cole Brokamp, Jeffrey Strawn, Andrew Beck, Pat Ryan, Cole Brokamp
+journal: JAMA
 note: Hide
 ---
 title: "Material Community Deprivation and Hospital Utilization During the First Year of Life: An Urban Population-Based Cohort Study"
@@ -41,7 +42,7 @@ journal: Science of the Total Environment
 note: Hide
 ---
 title: "CARPE DIEM Phenotypic Clustering"
-author: Cole Brokamp, ...
+author: Todd Florin, Cole Brokamp, ...
 note: Hide
 ---
 title: "DeGAUSS: Decentralized Geomarker Assessment for Multi-Site Studies"
@@ -54,11 +55,10 @@ download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Brokamp
 title: "Improving Detection of Rapid Cystic Fibrosis Disease Progression—Early Translation of a Predictive Algorithm into a Point-of-Care Tool"
 author: Rhonda D. Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, and John P. Clancy
 journal: IEEE Journal of Translational Engineering in Health and Medicine
-note: In Press
----
-title: "Developing and Translating a Prediction Model to Preemptively Identify Rapid Pulmonary Decline using the US Cystic Fibrosis Patient Registry: Looking Backward to See Forward"
-author: Rhonda D. Szczesniak, Weiji Su, Cole Brokamp, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, John P. Clancy
-note: Hide
+issue: Early Access
+year: 2018
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Szczesniak_IEEE_2018.pdf
+doi: 10.1109/JTEHM.2018.2878534
 ---
 title: "Emergency Medical Services Utilization is Associated with Community Deprivation in Children"
 author: Lauren C. Riney, Cole Brokamp, Andrew F. Beck, Wendy Pomerantz, Hamilton Schwartz, Todd A. Florin
