@@ -1,5 +1,4 @@
 ## colebrokamp.com
 
-Created using R Markdown
-
-To build, first knit all `.Rmd` files in the `posts` folder (`rmarkdown::render_site()` doesn't automatically recognize `*.Rmd` files in subfolders) and then `rmarkdown::render_site()`.
+- `make` to copy in CV and build site based on `.yaml` files in `../CV`
+- if adding new post, don't forget to render it with R first and then add a link to it in `posts.Rmd`
