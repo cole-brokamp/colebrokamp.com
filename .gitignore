@@ -7,10 +7,10 @@ talks.tex
 talks.md
 software.tex
 software.md
+support.md
+support.tex
 *.log
 .DS_Store
 *.synctex.gz 
 .Rproj.user
-
-support.tex
-support.md
+*.Rout
