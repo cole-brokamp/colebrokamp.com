@@ -3,17 +3,9 @@ title: ""
 pagetitle: "Cole Brokamp"
 ---
 
-<div class = "row">
+<img src='figs/cole_circle.png' align='right' style="max-height: 250px; max-width: 250px;">
 
-<div class = "col-md-6">
 I am an Assistant Professor at Cincinnati Children's Hospital Medical Center interested in geoinformatics, environmental health, statistical computing, population health, and statistical inference for machine learning. I completed my PhD in Biostatistics & Bioinformatics in the Department of Environmental Health at the University of Cincinnati and did my postdoctoral training at Cincinnati Children's in Biostatistics & Epidemiology.
-</div>
-
-<div class = "col-md-2">
-![](figs/cole_brokamp_headshot.png)
-</div>
-
-</div>
 
 Currently, I am:
 
