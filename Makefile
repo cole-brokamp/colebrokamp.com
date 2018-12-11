@@ -2,7 +2,7 @@ R_CMD=R CMD BATCH --vanilla
 
 all: cole-brokamp-cv.pdf
 
-cole-brokamp-cv.pdf: pubs.tex talks.tex software.tex support.tex
+cole-brokamp-cv.pdf: pubs.tex talks.tex software.tex support.tex cole-brokamp-cv.tex
 		texfot pdflatex cole-brokamp-cv.tex
 		open cole-brokamp-cv.pdf
 
