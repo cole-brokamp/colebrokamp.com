@@ -231,9 +231,13 @@ role: Co-I
 dates: 07/01/2019 - 06/30/2022
 tag: Pending
 ---
-number: NLM R01
+number: NIH NLM R01
 pi: Brokamp
-tag: Hide
+title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
+description: This award will create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale.
+role: PI
+dates: 12/1/2019 - 12/01/23
+tag: Pending
 ---
 number: PEDSnet KL12 / Russel Sage / Internal Disparities
 pi: Shaw
