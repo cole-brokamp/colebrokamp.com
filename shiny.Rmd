@@ -107,12 +107,12 @@ An R Shiny application which allows uploading of latitude and longitude coordina
 <div class = "row">
 
 <div class = "col-md-6">
-[Single Address with Visual Map](http://ecat-map.amazon-shiny.duckdns.org)
-[![](appshots/ecat-map.png)](http://ecat-map.amazon-shiny.duckdns.org) 
+**Single Address with Visual Map**
+![](appshots/ecat-map.png) 
 </div>
 
 <div class = "col-md-6">
-[Batch Submission of Coordinates](http://ecat-file.amazon-shiny.duckdns.org)
-[![](appshots/ecat-file.png)](http://ecat-file.amazon-shiny.duckdns.org)  
+**Batch Submission of Coordinates**
+![](appshots/ecat-file.png)
 </div>
 </div>
