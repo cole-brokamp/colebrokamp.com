@@ -153,11 +153,11 @@ tag: Pending
 ---
 number: NIH R01FP00013153
 pi: Sczcesniak
-dates: 4/1/18 - 3/31/23
+dates: 1/1/19 - 12/31/23
 title: Mapping Environmental Contributions to Rapid Lung Disease Progression in Cystic Fibrosis
 description: This project will incorporate established environmental contributors and novel data on community characteristics into functional data analysis and joint longitudinal modeling in order to transform dynamic prediction and clinical surveillance of rapid pulmonary decline.
 role: Co-I
-tag: Pending
+tag: Active
 ---
 number: NIH R01CA221960
 pi: Salomonis
@@ -189,7 +189,7 @@ dates: 10/1/18 - 9/30/21
 title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
 description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
 role: PI
-tag: Pending
+tag: Hide
 ---
 number: Transplantation and Immunology Research Network Fellowship Research Grant - American Society of Transplantation
 pi: Wadhwani
@@ -231,21 +231,18 @@ role: Co-I
 dates: 07/01/2019 - 06/30/2022
 tag: Pending
 ---
-number: NIH NLM R01
+number: NIH NLM 1R01LM013222-01
 pi: Brokamp
 title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
 description: This award will create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale.
 role: PI
-dates: 12/1/2019 - 12/01/23
+dates: 12/1/2019 - 11/30/23
 tag: Pending
 ---
-number: PEDSnet KL12 / Russel Sage / Internal Disparities
+number: AHRQ PEDSnet K12
 pi: Shaw
-title: ACEs work...
+title: "Inpatient Screening for Parental Adversity and Resilience"
+description: This award will work to establish and implement a screening approach for the assessment of parental adverse childhood experiences in the hospital setting.
 role: Co-I
-tag: Hide
----
-number: R01
-role: Co-I
-pi: Yolton
-tag: Hide
+tag: Active
+dates: 1/1/19 - 12/31/20
