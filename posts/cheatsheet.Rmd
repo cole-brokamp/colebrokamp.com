@@ -95,14 +95,6 @@ rm -r S1400_subset
 mv TIGER2010_roads/ ~/Documents/Biostatistics/_GIS\ data/
 ```
 
-## Markdown
-**Create a blank line**
-```
-&nbsp;
-
-```
-
-
 ## Git
 
 **Serve raw files directly from GitHub with proper content-type headers**

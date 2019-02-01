@@ -5,8 +5,6 @@ pagetitle: "Posts"
 
 &nbsp;
 
-[Geocoding Tips](./posts/geocoding_tips.html)
-
 [Code Cheatsheets](posts/cheatsheet.html)
 
 [Available Geomarkers](posts/available_geomarkers.html)
