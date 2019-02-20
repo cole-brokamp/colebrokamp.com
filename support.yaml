@@ -7,30 +7,6 @@ description: We propose a new shared facility to meet the needs of researchers, 
 role: PI
 tag: Hide
 ---
-number: Transplantation and Immunology Research Network Fellowship Research Grant - American Society of Transplantation
-pi: Wadhwani
-dates: 7/1/18 - 6/30/21
-title: The Ecology of Nonadherence in in Pediatric Liver Transplant
-description: Determine whether neighborhood-based measures are associated with lower adherence in the transplant setting.
-role: Co-I
-tag: Hide
----
-number: NIH R01CA221960
-pi: Salomonis
-dates: 9/1/17 - 8/31/22
-title: "AltAnalyze-CisBP: A comprehensive solution for splicing pathway discovery in cancer"
-description: We are building a powerful toolkit to identify a relatively new class of therapeutic targets for cancer therapy. In cancer, the abnormal splicing of gene products can initiate cancer and lead to worse outcomes. With the completion of these aims, cancer researchers will be able to evaluate and understand the causes of aberrant gene splicing to target new pathways in diverse cancers.
-role: Co-I
-tag: Hide
----
-number: NIH R01GM126109
-pi: Salomonis
-dates: 9/1/17 - 8/31/20
-title: "CellHarmony: Integration and analysis of single-cell compendiums"
-description: Our understanding of human disease is being transformed by new technologies to examine the genomes of individual cells. We are developing novel ultra-sensitive approaches for finding rare populations of cells, distinguished by novel gene signatures that could predispose to human disease and ultimately lead to crucial diagnostics.
-role: Co-I
-tag: Hide
----
 number: "Internal Arnold W. Strauss Fellowship Award - Cincinnati Children's Hospital"
 pi: Brokamp
 dates: 7/1/16 - 6/30/17
@@ -55,27 +31,11 @@ description: The association between exposure to traffic-related air pollutants 
 role: Biostatistician
 tag: Complete
 ---
-number: Academy Health
-pi: Beck
-dates: 2/1/16 - 6/30/17
-title: "Community Health Peer Learning Program: Participant Community"
-description: "The goals of this project are to reduce by 10% the inpatient bed-day rate for one high risk neighborhood in Cincinnati through interventions promoted by shared data and improved data visualization."
-role: Co-I
-tag: Complete
----
 number: NIH 5K23AI121325
 pi: Florin
 dates: 01/01/16 - 12/31/19
 title: Biomarkers and Risk Stratification in Pediatric Community
 description: The extensive variation in care, in addition to the lack of evidence-based decision aids, highlights the critical need for an improved understanding of disease severity and tools to guide management for pediatric CAP. The proposed research will address this important knowledge and practice gap.
-role: Biostatistician
-tag: Complete
----
-number: NIH/NINDS R01 NS030678
-pi: Kleindorfer
-dates: 04/01/15 - 03/31/20
-title: Comparison of Hemorrhagic & Ischemic Stroke Among Blacks and Whites
-description: Tracking of population-based stroke incidence in the Greater Cincinnati and Northern Kentucky region, with special emphasis on stroke in the young and stroke recurrence.
 role: Biostatistician
 tag: Complete
 ---
@@ -119,13 +79,13 @@ description: The purpose of this study is to assess the relationship between con
 role: Biostatistician
 tag: Complete
 ---
-number: Gerber Pediatric Research Grant, Gerber Foundation
-pi: Florin
-dates: 1/1/14 - 12/31/16
-title: Clinical Prediction Model for Community-Acquired Pneumonia
-description: This project will use clinical data and the biomarker procalcitonin to develop a severity score used to predict the development of severe disease and complications in children with community-acquired pneumonia, the most common serious bacterial infection children and leading killer of children worldwide.
+number: NIH/NINDS R01 NS030678
+pi: Kleindorfer
+dates: 04/01/15 - 03/31/20
+title: Comparison of Hemorrhagic & Ischemic Stroke Among Blacks and Whites
+description: Tracking of population-based stroke incidence in the Greater Cincinnati and Northern Kentucky region, with special emphasis on stroke in the young and stroke recurrence.
 role: Biostatistician
-tag: Complete
+tag: Active
 ---
 number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
 pi: Brokamp
@@ -173,9 +133,9 @@ dates: 3/1/18 - 2/28/22
 title: Lifetime Exposure to Ambient Air Pollution and Adolescent Cardiometabolic Health
 description: The objective of this proposal is to determine whether exposure to air pollution during critical periods of growth and development is associated with altered growth trajectories, increased adiposity, altered lipid profiles, and vascular dysfunction during adolescence.
 role: Co-I
-tag: Pending
+tag: Hide
 ---
-number: NIH/NIEHS R22
+number: NIH/NIEHS R21ES030092
 pi: Ryan
 dates: 12/1/18 - 11/30/20
 title: Developing and Evaluating Novel Strategies for Reporting Back Individual Results of Personal Air Monitors
@@ -197,7 +157,7 @@ dates: 3/1/17 - 2/28/22
 title: Predictive Molecular Marks of Lung Function Decline in CF
 description: Given our compelling cross-sectional proteomic and statistical modeling data we propose to produce an algorithm for lung function decline that is based on the integration of longitudinal behavior of novel disease markers with novel Functional Data (FD) analysis of FEV1.
 role: Co-I
-tag: Pending
+tag: Hide
 ---
 number: NIH/NIA R21AG057983
 pi: Woo/Urbina
@@ -270,4 +230,24 @@ description: This award will implement a generalizable process for streamlining 
 role: Co-I
 dates: 7/1/19 - 6/30/19
 tag: Pending
+---
+number: NIH NIMHHD
+pi: Beck
+title: Civically Activated Neighbors Voicing & Affirming Societal Health (CANVAS Health)
+description: This award will quantify the intersection between civic engagement and child health outcomes and qualitatively ascertain how parents of low income children understand the connection between health and civic engagement.
+role: Co-I
+dates: 7/1/19 - 6/30/21
+tag: Pending
+---
+number: stroke renewal grant
+role: Co-I
+tag: Hide
+---
+number: NIH NIEHS R01
+pi: Brunst
+title: ""
+description: "CCAAPS epigenetics, PM2.5 neurobehavioral outcomes"
+role: Co-I
+dates:
+tag: Hide
 ---
