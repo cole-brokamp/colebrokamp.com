@@ -1,5 +1,37 @@
 ---
-number: Internal Arnold W. Strauss Fellowship Award - Cincinnati Children's Hospital
+number: Internal ARC - Cincinnati Children’s Hospital
+pi: Beck/Ryan
+dates: 10/1/18 - 9/30/21
+title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
+description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
+role: PI
+tag: Hide
+---
+number: Transplantation and Immunology Research Network Fellowship Research Grant - American Society of Transplantation
+pi: Wadhwani
+dates: 7/1/18 - 6/30/21
+title: The Ecology of Nonadherence in in Pediatric Liver Transplant
+description: Determine whether neighborhood-based measures are associated with lower adherence in the transplant setting.
+role: Co-I
+tag: Hide
+---
+number: NIH R01CA221960
+pi: Salomonis
+dates: 9/1/17 - 8/31/22
+title: "AltAnalyze-CisBP: A comprehensive solution for splicing pathway discovery in cancer"
+description: We are building a powerful toolkit to identify a relatively new class of therapeutic targets for cancer therapy. In cancer, the abnormal splicing of gene products can initiate cancer and lead to worse outcomes. With the completion of these aims, cancer researchers will be able to evaluate and understand the causes of aberrant gene splicing to target new pathways in diverse cancers.
+role: Co-I
+tag: Hide
+---
+number: NIH R01GM126109
+pi: Salomonis
+dates: 9/1/17 - 8/31/20
+title: "CellHarmony: Integration and analysis of single-cell compendiums"
+description: Our understanding of human disease is being transformed by new technologies to examine the genomes of individual cells. We are developing novel ultra-sensitive approaches for finding rare populations of cells, distinguished by novel gene signatures that could predispose to human disease and ultimately lead to crucial diagnostics.
+role: Co-I
+tag: Hide
+---
+number: "Internal Arnold W. Strauss Fellowship Award - Cincinnati Children's Hospital"
 pi: Brokamp
 dates: 7/1/16 - 6/30/17
 title: Assessing Exposure to Air Pollution Across Time and Space
@@ -15,22 +47,6 @@ description: The primary objective of this award is to compare the geocoding (as
 role: PI
 tag: Complete
 ---
-number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
-pi: Brokamp
-dates: 9/1/17 - 6/30/19
-title: Using Machine Learning to Supplement Electronic Health Record databases with Individual Socioeconomic Status
-description: Retrospective epidemiological studies are often created using electronic health record databases.  Although these records are "wide", they are not "deep" with respect to individual level demographic data.  We propose a novel machine learning based approach that uses open city and auditor databases to predict individual level income and family socioeconomic status.  This will solve the urgent problem of unconfounding for individual SES in the execution of EHR based research.
-role: PI
-tag: Active
----
-number: NIH 5UG3OD023282-02
-pi: Gern
-dates: 9/01/2016 - 8/31/2023
-title: Children’s Respiratory Research and Environment Workgroup (CREW)
-description: This consortium will identify asthma endotypes and overcome shortcomings of individual cohorts by providing a large (nearly 9000 births and long-term follow-up of 6000-7000 children and young adults) and diverse national data set, harmonizing data related to asthma clinical indicators and early life environmental exposures, developing standardized measures for prospective data collection across CREW cohorts and other ECHO studies, and conducting targeted enrollment of additional subjects into existing cohorts.
-role: Co-I
-tag: Active
----
 number: NIH/NIEHS 1R01ES019890-01
 pi: Ryan
 dates: 7/1/12 - 3/31/18
@@ -44,7 +60,7 @@ pi: Beck
 dates: 2/1/16 - 6/30/17
 title: "Community Health Peer Learning Program: Participant Community"
 description: "The goals of this project are to reduce by 10% the inpatient bed-day rate for one high risk neighborhood in Cincinnati through interventions promoted by shared data and improved data visualization."
-role: Biostatistician
+role: Co-I
 tag: Complete
 ---
 number: NIH 5K23AI121325
@@ -111,6 +127,22 @@ description: This project will use clinical data and the biomarker procalcitonin
 role: Biostatistician
 tag: Complete
 ---
+number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
+pi: Brokamp
+dates: 9/1/17 - 6/30/19
+title: Using Machine Learning to Supplement Electronic Health Record databases with Individual Socioeconomic Status
+description: Retrospective epidemiological studies are often created using electronic health record databases.  Although these records are "wide", they are not "deep" with respect to individual level demographic data.  We propose a novel machine learning based approach that uses open city and auditor databases to predict individual level income and family socioeconomic status.  This will solve the urgent problem of unconfounding for individual SES in the execution of EHR based research.
+role: PI
+tag: Active
+---
+number: NIH 5UG3OD023282-02
+pi: Gern
+dates: 9/01/2016 - 8/31/2023
+title: Children’s Respiratory Research and Environment Workgroup (CREW)
+description: This consortium will identify asthma endotypes and overcome shortcomings of individual cohorts by providing a large (nearly 9000 births and long-term follow-up of 6000-7000 children and young adults) and diverse national data set, harmonizing data related to asthma clinical indicators and early life environmental exposures, developing standardized measures for prospective data collection across CREW cohorts and other ECHO studies, and conducting targeted enrollment of additional subjects into existing cohorts.
+role: Co-I
+tag: Active
+---
 number: Ohio Department of Medicaid
 pi: Hall
 dates: 5/14/18 - 5/30/19
@@ -151,29 +183,13 @@ description: This project will work to develop new methods for reporting individ
 role: Co-I
 tag: Pending
 ---
-number: NIH R01FP00013153
+number: NIH/NHLBI R01HL141286-01A1
 pi: Sczcesniak
 dates: 1/1/19 - 12/31/23
 title: Mapping Environmental Contributions to Rapid Lung Disease Progression in Cystic Fibrosis
-description: This project will incorporate established environmental contributors and novel data on community characteristics into functional data analysis and joint longitudinal modeling in order to transform dynamic prediction and clinical surveillance of rapid pulmonary decline.
+description: The overall objective of this research is to leverage a rich CF registry, extant national and local environmental data sources, and prospectively collected study data to accurately forecast the onset of rapid decline progression.
 role: Co-I
 tag: Active
----
-number: NIH R01CA221960
-pi: Salomonis
-dates: 9/1/17 - 8/31/22
-title: "AltAnalyze-CisBP: A comprehensive solution for splicing pathway discovery in cancer"
-description: We are building a powerful toolkit to identify a relatively new class of therapeutic targets for cancer therapy. In cancer, the abnormal splicing of gene products can initiate cancer and lead to worse outcomes. With the completion of these aims, cancer researchers will be able to evaluate and understand the causes of aberrant gene splicing to target new pathways in diverse cancers.
-role: Co-I
-tag: Hide
----
-number: NIH R01GM126109
-pi: Salomonis
-dates: 9/1/17 - 8/31/20
-title: "CellHarmony: Integration and analysis of single-cell compendiums"
-description: Our understanding of human disease is being transformed by new technologies to examine the genomes of individual cells. We are developing novel ultra-sensitive approaches for finding rare populations of cells, distinguished by novel gene signatures that could predispose to human disease and ultimately lead to crucial diagnostics.
-role: Co-I
-tag: Hide
 ---
 number: NIH R01FD006021
 pi: Ziady
@@ -183,27 +199,11 @@ description: Given our compelling cross-sectional proteomic and statistical mode
 role: Co-I
 tag: Pending
 ---
-number: Internal ARC - Cincinnati Children’s Hospital
-pi: Beck/Ryan
-dates: 10/1/18 - 9/30/21
-title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
-description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
-role: PI
-tag: Hide
----
-number: Transplantation and Immunology Research Network Fellowship Research Grant - American Society of Transplantation
-pi: Wadhwani
-dates: 7/1/18 - 6/30/21
-title: The Ecology of Nonadherence in in Pediatric Liver Transplant
-description: Determine whether neighborhood-based measures are associated with lower adherence in the transplant setting.
-role: Co-I
-tag: Hide
----
-number: PAR-16-367 - NIH Research Project Grant (R21/R33)
-pi: Bazzano
+number: NIH/NIA R21AG057983
+pi: Woo/Urbina
 title: A Novel Research Infrastructure Enabling Life-Course Studies of Healthy Aging
-description: Evaluate the use of historical residence information within a multi-cohort study to reconstruct place-based environmental and sociodemographic exposures over the lifecourse.
-dates: 7/1/18 - 6/30/23
+description: The goal of this two-phase study is to develop the data and biospecimen infrastructure for the Bogalusa Heart Study, the Princeton Lipid Research Study and the NHLBI Growth and Health Study (R21 phase) and to conduct pilot evaluations of the feasibility, acceptability and validity of data collected using a variety of biometric sensors relating to cardiometabolic risk, sleep quality and cognition in these cohorts (R33 phase). These two phases will together prepare these cohorts for future aging-related studies.
+dates: 8/15/18 - 7/31/23
 role: Co-I
 tag: Active
 ---
@@ -236,7 +236,7 @@ pi: Brokamp
 title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
 description: This award will create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale.
 role: PI
-dates: 12/1/2019 - 11/30/23
+dates: 12/1/19 - 11/30/23
 tag: Pending
 ---
 number: AHRQ PEDSnet K12
@@ -246,3 +246,28 @@ description: This award will work to establish and implement a screening approac
 role: Co-I
 tag: Active
 dates: 1/1/19 - 12/31/20
+---
+number: NIH R03
+pi: Riley
+title: "Addressing Child Well-Being Disparities Through Community Partnerships"
+description: "This award will enchance our understanding of families' needs and expectations of local child health resources and why families do or do not access these resources."
+role: Co-I
+dates: 7/1/19 - 6/30/21
+tag: Pending
+---
+number: NIH R01
+pi: Yaghjyan
+title: "Air pollution, greenness, and breast cancer risk in the Breast Cancer Surveillance Consortium"
+description: "This award will examine the associations of air pollution and breast cancer risk and if this relationship is mediated by breast density or greenness."
+role: Co-I
+dates: 1/1/20 - 12/31/24
+tag: Pending
+---
+number: Internal Innovative Core Award - Center for Clinical & Translational Science & Training
+pi: Hall
+title: "From Electronic Health Records to Research Quality Data"
+description: This award will implement a generalizable process for streamlining extraction, cleaning, and loading of EHR data into REDCap databases along with automated integration of relevant measures of patient neighborhood characteristics.
+role: Co-I
+dates: 7/1/19 - 6/30/19
+tag: Pending
+---

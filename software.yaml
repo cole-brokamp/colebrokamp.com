@@ -1,13 +1,11 @@
 ---
 name: DeGAUSS
-description: A family of standalone software packages designed for Decentralized Geomarker Assessment for multi Site Studies. Allows for coordinate extraction from addresses and estimation of environmental exposures and community characteristics without exposing private health information outside of the institution
+description: A decentralized, offline, secure, and reproducible method for geocoding and deriving community and individual level environmental characteristics while maintaining the privacy of protected health information
 url: https://github.com/cole-brokamp/DeGAUSS
-docker: https://hub.docker.com/u/degauss/
 doi: http://doi.org/10.5281/zenodo.344490
-vignette: https://cole-brokamp.github.io/DeGAUSS/
 ---
 name: hamilton
-description: A package for R that uses exact address files from CAGIS to geocode addresses in Cincinnati, Ohio and link to address based information from the City of Cincinnati and the Hamilton County Auditor's Office
+description: Offline parcel-based geocoding for addresses in Hamilton County, USA
 url: https://github.com/cole-brokamp/hamilton
 doi: http://doi.org/10.5281/zenodo.50876
 ---
@@ -19,7 +17,6 @@ name: automagic
 description: Automagically install packages necessary to run R code
 url: https://github.com/cole-brokamp/automagic
 doi: http://doi.org/10.5281/zenodo.322638
-vignette:
 ---
 name: rize
 description: Dockerize R shiny apps
@@ -28,23 +25,19 @@ docker: https://hub.docker.com/r/colebrokamp/rize/
 doi: http://doi.org/10.5281/zenodo.322636
 vignette:
 ---
-name: RFinfer
-description: A package for R that implements novel versions of the random forest from my dissertation research, produces confidence intervals and prediction variances
-url: https://cran.r-project.org/web/packages/RFinfer/index.html
-doi: http://doi.org/10.5281/zenodo.50879
-vignette: https://cran.r-project.org/web/packages/RFinfer/vignettes/RFinfer-examples.html
----
-name: aiRpollution
-description: A package for R that assesses exposure to air pollution components in Cincinnati, Ohio.  Also includes other convience functions for extracting Cincinnati GIS variables
-url: https://github.com/cole-brokamp/aiRpollution
-doi: http://doi.org/10.5281/zenodo.50878
-vignette:
+name: aiR
+description: "aiR is used to assess PM2.5 exposures in the Cincinnati, Ohio area. The package creates predictions based on a spatiotemporal hybrid satellite/land use random forest model. PM2.5 exposure predictions are available at 1 x 1 km grid resolution covering the seven county area (OH: Hamilton, Clermont, Warren, Butler; KY: Boone, Kenton, Campbell) on a daily basis from 2000 - 2015"
+url: https://github.com/cole-brokamp/aiR
 ---
 name: geocoder
 description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
 url: https://github.com/cole-brokamp/geocoder
 doi: http://doi.org/10.5281/zenodo.344621
 vignette: http://colebrokamp.com.s3-website-us-east-1.amazonaws.com/posts_geocoding_tips.html
+---
+name: CFPOPD
+description: An R Shiny application for predicting rapid decline in lung function in children with cystic fibrosis
+url: http://predictfev1.com
 ---
 name: R Shiny
 description: Several R Shiny Applications
