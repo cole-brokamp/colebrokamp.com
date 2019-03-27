@@ -3,7 +3,7 @@ R_CMD=R CMD BATCH --vanilla
 all: cole-brokamp-cv.pdf
 
 cole-brokamp-cv.pdf: pubs.tex talks.tex software.tex support.tex cole-brokamp-cv.tex
-		texfot pdflatex cole-brokamp-cv.tex
+		/Users/cole/Library/TinyTeX/texmf-dist/scripts/texfot/texfot.pl pdflatex cole-brokamp-cv.tex
 		open cole-brokamp-cv.pdf
 
 pubs.tex pubs.md pubs_sections.md: pubs.yaml
