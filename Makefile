@@ -1,4 +1,4 @@
-all: site cv
+all: cv site
 
 site:
 		R -e "rmarkdown::render_site(encoding = 'UTF-8')"
