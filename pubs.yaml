@@ -7,25 +7,7 @@ note: Hide
 title: NRDC economic impacts of climate change using CSO study data
 note: Hide
 ---
-title: acute pm and copd exacerbations in adults
-author: Ahn, Cole, et al
-note: Hide
----
-title: "Neighborhood Poverty is Associated with Higher Rates of Pediatric Intensive Care Utilization in One Large Midwestern County"
-author: Erica Andrist, Carley L. Riley, Cole Brokamp, Stuart Taylor, Andrew F. Beck
-journal: Pediatrics
-note: Hide
----
-title: CCC disparities
-note: Hide
----
 title: "nobel's source pm and daily asthma admissions"
-note: Hide
----
-title: "Sharad drivers license"
-note: Hide
----
-title: Sharad MLVI and dep index
 note: Hide
 ---
 title: "A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies: the Children's Respiratory and Evironmental Workgroup (CREW)"
@@ -41,8 +23,11 @@ note: Hide
 title: "Using high-resolution residential greenspace measures in an urban environment to assess risks of allergy outcomes in a cohort of children"
 author: Rebecca Gernes, Cole Brokamp, Glenn Rice, J. Michael Wright, Michelle Kondo, Yvonne Michael, Geoffrey Donovan, Demetrios Gatziolis, David Bernstein, Grace LeMasters, James Lockey, G. Khurana Hershey, Patrick Ryan
 journal: Science of the Total Environment
+issue: 668
+pages: 760-767
 year: 2019
-note: In Press
+download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Gernes-Using%20high-resolution%20residential%20greenspace%20measures%20in%20an%20urban%20environment%20to%20assess%20risks%20of%20allergy%20outcomes%20in%20children-STE2019.pdf
+doi: 10.1016/j.scitotenv.2019.03.009
 ---
 title: "Material Community Deprivation and Hospital Utilization During the First Year of Life: An Urban Population-Based Cohort Study"
 author: Cole Brokamp, Andrew F. Beck, Neera K. Goyal, Patrick Ryan, James M. Greenberg, Eric S. Hall
@@ -58,10 +43,6 @@ author: Juliana Madzia, Patrick Ryan, Kimberly Yolton, Zana Percy, Nick Newman, 
 journal: Journal of Pediatrics
 year: 2018
 download_link: https://colebrokamp-website.s3.amazonaws.com/publications/Madzia_JPeds_2018.pdf
----
-title: "CARPE DIEM Phenotypic Clustering"
-author: Todd Florin, Cole Brokamp, ...
-note: Hide
 ---
 title: "DeGAUSS: Decentralized Geomarker Assessment for Multi-Site Studies"
 author: Cole Brokamp
