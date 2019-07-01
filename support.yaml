@@ -93,7 +93,7 @@ dates: 9/1/17 - 6/30/19
 title: Using Machine Learning to Supplement Electronic Health Record databases with Individual Socioeconomic Status
 description: Retrospective epidemiological studies are often created using electronic health record databases.  Although these records are "wide", they are not "deep" with respect to individual level demographic data.  We propose a novel machine learning based approach that uses open city and auditor databases to predict individual level income and family socioeconomic status.  This will solve the urgent problem of unconfounding for individual SES in the execution of EHR based research.
 role: PI
-tag: Active
+tag: Complete
 ---
 number: NIH 5UG3OD023282-02
 pi: Gern
@@ -105,11 +105,11 @@ tag: Active
 ---
 number: Ohio Department of Medicaid
 pi: Hall
-dates: 5/14/18 - 5/30/19
+dates: 5/14/18 - 6/30/19
 title: Ohio Opioid Analytics Project
 description: This project will develop and implement point-of-care predictive models to identify risk factors for opioid endpoints in order to guide clinicians and service delivery as well as identify interventions that can be used to implement public health policies.
 role: Co-I
-tag: Active
+tag: Complete
 ---
 number: Health Effects Institute Rosenblith New Investigator Award
 pi: Brokamp
@@ -181,7 +181,7 @@ title: "Decentralized and Reproducible Geomarker Assessment for Multi-Site Studi
 description: This award will work towards building geospatial exposure assessment computing tools for utilizing high resolution spatiotemporal gridded datasets within ECHO.
 role: PI
 dates: 09/01/2019 - 08/31/2021
-tag: Pending
+tag: Active
 ---
 number: NIH NLM G08
 pi: Parsons
@@ -213,7 +213,7 @@ title: "Addressing Child Well-Being Disparities Through Community Partnerships"
 description: "This award will enchance our understanding of families' needs and expectations of local child health resources and why families do or do not access these resources."
 role: Co-I
 dates: 7/1/19 - 6/30/21
-tag: Pending
+tag: Hide
 ---
 number: NIH R01
 pi: Yaghjyan
