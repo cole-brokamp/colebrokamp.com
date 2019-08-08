@@ -12,6 +12,21 @@ webshot::webshot('http://cfpopd.amazon-shiny.duckdns.org/',
 ```
 &nbsp;
 
+### Ohio Opioid Analytics Project
+
+<div class = "row">
+
+<div class = "col-md-6">
+![](appshots/oap.png)
+</div>
+
+<div class = "col-md-6">
+Developed in partnership with the Government Resource Council and the State of Ohio, this interactive geospatial data application predicts opioid-related overdoses per 1,000 Ohio adult Medicaid enrollees. Predicted rates are based on ecological factors that can be altered to illustrate a potential outcome based on a hypothetical policy intervention. 
+</div>
+
+</div>
+&nbsp;
+
 ### [Cincinnati Neighborhoods](http://geomarker.io/neighborhood)
 
 <div class = "row">
