@@ -28,7 +28,7 @@ pi: Ryan
 dates: 7/1/12 - 3/31/18
 title: Neurobehavioral and Neuroimaging Effects of Traffic Exposure in Children
 description: The association between exposure to traffic-related air pollutants (TRAP) during early childhood and neurobehavioral and neuroimaging outcomes has not been thoroughly examined. The objective of the proposed study is to determine if children exposed to increased levels of TRAP during critical time periods of brain development have altered neurobehavior in childhood as measured by a battery of valid and reliable tests and to assess the physiologic impact of TRAP exposure on brain structure, organization, and function using quantitative magnetic resonance imaging (MRI). These results will fill important gaps in current scientific knowledge related to the relationship between TRAP exposure and neurobehavior and central nervous system effects.
-role: Biostatistician
+role: Co-I
 tag: Complete
 ---
 number: NIH 5K23AI121325
@@ -52,7 +52,7 @@ pi: Marsolo
 dates: 7/1/15 - 7/1/18
 title: Mother Infant Data Hub
 description: The goals of this award are to create a research database of comprehensive clinical coverage for neonates born throughout the greater Cincinnati area including linkage of medical records to external data sets at the individual- and area-level during the first year of life.
-role: Biostatistician
+role: Co-I
 tag: Complete
 ---
 number: Internal ARC - Cincinnati Children’s Hospital
@@ -117,7 +117,7 @@ dates: 10/1/19 - 9/30/22
 title: Data-driven discovery of subpopulations susceptible to the health effects of air pollution
 description: The overall objective of this application is to develop methods to identify subpopulations most susceptible to the health effects of air pollution using a database of over 35 individual- and community-level susceptibility characteristics within both (1) a dataset derived from electronic health records in order to identify subpopulations susceptible to acute PM2.5-related risks of psychiatric, respiratory, and cardiovascular emergency department visits and (2) a population-wide administrative database of mother-infant dyads to identify subpopulations susceptible to chronic gestational PM2.5-related risks of low birth weight, preterm birth weight, and hospitalization during the first year of life.
 role: PI
-tag: Pending
+tag: Hide
 ---
 number: NIH/NIMHD R01
 pi: Beck
@@ -137,11 +137,11 @@ tag: Hide
 ---
 number: NIH/NIEHS R21ES030092
 pi: Ryan
-dates: 12/1/18 - 11/30/20
+dates: 9/1/19 - 9/1/21
 title: Developing and Evaluating Novel Strategies for Reporting Back Individual Results of Personal Air Monitors
 description: This project will work to develop new methods for reporting individual-level personal air pollution concentrations to study subjects to better help them understand the risk of air pollution and to modify their behavior to improve health outcomes.
 role: Co-I
-tag: Pending
+tag: Active
 ---
 number: NIH/NHLBI R01HL141286-01A1
 pi: Sczcesniak
