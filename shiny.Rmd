@@ -43,12 +43,12 @@ An R Shiny application which allows for comparing Cincinnati Neighborhoods. Basi
 
 &nbsp;
 
-### [CF Point of Personalized Detection (CFPOPD)](http://cfpopd.amazon-shiny.duckdns.org/)
+### [CF Point of Personalized Detection (CFPOPD)](http://cfpopd.app.colebrokamp.com/)
 
 <div class = "row">
 
 <div class = "col-md-6">
-[![](appshots/cfpopd.png)](http://cfpopd.amazon-shiny.duckdns.org/)
+[![](appshots/cfpopd.png)](http://cfpopd.app.colebrokamp.com/)
 </div>
 
 <div class = "col-md-6">
@@ -93,12 +93,12 @@ An R Shiny application used to interactively explore and showcase data from a pe
 
 &nbsp;  
 
-### [LinnStrument Scales](http://linnstrument-scales.amazon-shiny.duckdns.org)
+### [LinnStrument Scales](http://lse.app.colebrokamp.com)
 
 <div class = "row">
 
 <div class = "col-md-6">
-[![](appshots/linnstrument.png)](http://linnstrument-scales.amazon-shiny.duckdns.org)
+[![](appshots/linnstrument.png)](http://lse.app.colebrokamp.com)
 </div>
 
 <div class = "col-md-6">
