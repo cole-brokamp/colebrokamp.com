@@ -1,12 +1,4 @@
 ---
-number: Internal ARC - Cincinnati Children’s Hospital
-pi: Beck/Ryan
-dates: 10/1/18 - 9/30/21
-title: Geospatial Research Accelerator for Precision Population Health (GRAPPH)
-description: We propose a new shared facility to meet the needs of researchers, clinicians, and community partners in the pursuit of precision population health.
-role: PI
-tag: Hide
----
 number: "Internal Arnold W. Strauss Fellowship Award - Cincinnati Children's Hospital"
 pi: Brokamp
 dates: 7/1/16 - 6/30/17
@@ -23,62 +15,6 @@ description: The primary objective of this award is to compare the geocoding (as
 role: PI
 tag: Complete
 ---
-number: NIH/NIEHS 1R01ES019890-01
-pi: Ryan
-dates: 7/1/12 - 3/31/18
-title: Neurobehavioral and Neuroimaging Effects of Traffic Exposure in Children
-description: The association between exposure to traffic-related air pollutants (TRAP) during early childhood and neurobehavioral and neuroimaging outcomes has not been thoroughly examined. The objective of the proposed study is to determine if children exposed to increased levels of TRAP during critical time periods of brain development have altered neurobehavior in childhood as measured by a battery of valid and reliable tests and to assess the physiologic impact of TRAP exposure on brain structure, organization, and function using quantitative magnetic resonance imaging (MRI). These results will fill important gaps in current scientific knowledge related to the relationship between TRAP exposure and neurobehavior and central nervous system effects.
-role: Co-I
-tag: Complete
----
-number: NIH 5K23AI121325
-pi: Florin
-dates: 01/01/16 - 12/31/19
-title: Biomarkers and Risk Stratification in Pediatric Community
-description: The extensive variation in care, in addition to the lack of evidence-based decision aids, highlights the critical need for an improved understanding of disease severity and tools to guide management for pediatric CAP. The proposed research will address this important knowledge and practice gap.
-role: Biostatistician
-tag: Complete
----
-number: NIH U01HG008666
-pi: Harley
-dates: 09/01/15 - 05/31/19
-title: "EMERGE: Better Outcomes for Children: Promoting Excellence in Healthcare Genomics to Inform Policy"
-description: We have developed algorithms for the electronic health record (EHR), led the Pediatric Workgroup, developed pharmacogenomics, evaluated the preferences of parents and caregivers to advance genomic medicine and assimilated technical advances into our EHR. The eMERGE effort has become the basic fabric of the institutional initiative to incorporate the extraordinary advances of genetics, genomics and the electronic medical record into healthcare.
-role: Biostatistician
-tag: Complete
----
-number: Internal ARC - Cincinnati Children’s Hospital
-pi: Marsolo
-dates: 7/1/15 - 7/1/18
-title: Mother Infant Data Hub
-description: The goals of this award are to create a research database of comprehensive clinical coverage for neonates born throughout the greater Cincinnati area including linkage of medical records to external data sets at the individual- and area-level during the first year of life.
-role: Co-I
-tag: Complete
----
-number: Internal ARC - Cincinnati Children’s Hospital
-pi: Ambroggio
-dates: 7/1/15 - 7/1/18
-title: CARPE DIEM
-description: The goals of this award are to develop a diagnostic tool based on the urinary metabolome that can differentiate between viral and bacterial community-acquired pneunomia in children.
-role: Biostatistician
-tag: Complete
----
-number: Internal - University of Cincinnati
-pi: Jasne
-dates: 1/1/17 - 6/31/17
-title: Epidemiology of Rural/Urban Disparities in Stroke
-description: The goal of this project is to identify stroke incidence disparities among rural and urban geographic areas.
-role: Co-I
-tag: Complete
----
-number: HEI 4784-RFA08-1/09-5
-pi: Ryan
-dates: 12/1/12 - 11/30/13
-title: Analysis of Personal and Home Characteristics Associated with the Elemental Composition of PM2.5 in Indoor, Outdoor, and Personal Air in the RIOPA Study
-description: The purpose of this study is to assess the relationship between concurrent measurements of the elemental composition of PM2.5 in indoor, outdoor, and ambient air and the elemental composition of indoor, outdoor and personal air across individuals and cities. The study will also identify personal, home, and environmental factors significantly associated with specific elements or clusters of elements in PM2.5.
-role: Biostatistician
-tag: Complete
----
 number: NIH/NINDS R01 NS030678
 pi: Kleindorfer
 dates: 04/01/15 - 03/31/20
@@ -89,11 +25,11 @@ tag: Active
 ---
 number: Internal Processes and Methods Award - Center for Clinical & Translational Science & Training
 pi: Brokamp
-dates: 9/1/17 - 6/30/19
+dates: 9/1/17 - 6/30/20
 title: Using Machine Learning to Supplement Electronic Health Record databases with Individual Socioeconomic Status
 description: Retrospective epidemiological studies are often created using electronic health record databases.  Although these records are "wide", they are not "deep" with respect to individual level demographic data.  We propose a novel machine learning based approach that uses open city and auditor databases to predict individual level income and family socioeconomic status.  This will solve the urgent problem of unconfounding for individual SES in the execution of EHR based research.
 role: PI
-tag: Complete
+tag: Active
 ---
 number: NIH 5UG3OD023282-02
 pi: Gern
@@ -103,36 +39,12 @@ description: This consortium will identify asthma endotypes and overcome shortco
 role: Co-I
 tag: Active
 ---
-number: Ohio Department of Medicaid
-pi: Hall
-dates: 5/14/18 - 6/30/19
-title: Ohio Opioid Analytics Project
-description: This project will develop and implement point-of-care predictive models to identify risk factors for opioid endpoints in order to guide clinicians and service delivery as well as identify interventions that can be used to implement public health policies.
-role: Co-I
-tag: Complete
----
 number: Health Effects Institute Rosenblith New Investigator Award
 pi: Brokamp
 dates: 10/1/19 - 9/30/22
 title: Data-driven discovery of subpopulations susceptible to the health effects of air pollution
 description: The overall objective of this application is to develop methods to identify subpopulations most susceptible to the health effects of air pollution using a database of over 35 individual- and community-level susceptibility characteristics within both (1) a dataset derived from electronic health records in order to identify subpopulations susceptible to acute PM2.5-related risks of psychiatric, respiratory, and cardiovascular emergency department visits and (2) a population-wide administrative database of mother-infant dyads to identify subpopulations susceptible to chronic gestational PM2.5-related risks of low birth weight, preterm birth weight, and hospitalization during the first year of life.
 role: PI
-tag: Hide
----
-number: NIH/NIMHD R01
-pi: Beck
-dates: 9/1/18 - 8/31/23
-title: Achieving Pediatric Health Equity by Responding to Identified Sociomedical risks with Effective Unified Purpose – Development and Evaluation of the RISEUP System
-description: The objective of this project is to enhance and test an integrated medical-social monitoring and response system designed to meet the needs of patients and communities.
-role: Co-I
-tag: Pending
----
-number: NIH/NIEHS R01
-pi: Braun/Ryan
-dates: 3/1/18 - 2/28/22
-title: Lifetime Exposure to Ambient Air Pollution and Adolescent Cardiometabolic Health
-description: The objective of this proposal is to determine whether exposure to air pollution during critical periods of growth and development is associated with altered growth trajectories, increased adiposity, altered lipid profiles, and vascular dysfunction during adolescence.
-role: Co-I
 tag: Hide
 ---
 number: NIH/NIEHS R21ES030092
@@ -151,14 +63,6 @@ description: The overall objective of this research is to leverage a rich CF reg
 role: Co-I
 tag: Active
 ---
-number: NIH R01FD006021
-pi: Ziady
-dates: 3/1/19 - 2/28/24
-title: Predictive Molecular Marks of Lung Function Decline in CF
-description: Given our compelling cross-sectional proteomic and statistical modeling data we propose to produce an algorithm for lung function decline that is based on the integration of longitudinal behavior of novel disease markers with novel Functional Data (FD) analysis of FEV1.
-role: Co-I
-tag: Pending
----
 number: NIH/NIA R21AG057983
 pi: Woo/Urbina
 title: A Novel Research Infrastructure Enabling Life-Course Studies of Healthy Aging
@@ -166,14 +70,6 @@ description: The goal of this two-phase study is to develop the data and biospec
 dates: 8/15/18 - 7/31/23
 role: Co-I
 tag: Active
----
-number: NIH R21 (AN:4179153)
-pi: Pratap
-title: "Disparities in cancellation of children's surgery: a community-oriented, mixed methods study"
-description: The objective is to generate a comprehensive set of actionable differences in contextual facilitators and barriers distinguishing disadvantaged communities with high and low cancellation rates.
-dates: 04/01/2019 – 03/31/2021
-role: Co-I
-tag: Hide
 ---
 number: ECHO Opportunities and Infrastructure Fund Award
 pi: Brokamp
@@ -183,22 +79,6 @@ role: PI
 dates: 09/01/2019 - 08/31/2021
 tag: Active
 ---
-number: NIH NLM G08
-pi: Parsons
-title: "Informing community action to reduce and eliminate health disparities: Community driven app development and evaluation (ICARE)"
-description: Create and disseminate electronic health resources for individual-level resources and neighborhood level health disparities via iterative community driven development.
-role: Co-I
-dates: 07/01/2019 - 06/30/2022
-tag: Hide
----
-number: NIH NLM 1R01LM013222-01
-pi: Brokamp
-title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
-description: This award will create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale.
-role: PI
-dates: 12/1/19 - 11/30/23
-tag: Pending
----
 number: AHRQ PEDSnet K12
 pi: Shaw
 title: "Inpatient Screening for Parental Adversity and Resilience"
@@ -207,55 +87,19 @@ role: Co-I
 tag: Active
 dates: 1/1/19 - 12/31/20
 ---
-number: NIH R03
-pi: Riley
-title: "Addressing Child Well-Being Disparities Through Community Partnerships"
-description: "This award will enchance our understanding of families' needs and expectations of local child health resources and why families do or do not access these resources."
-role: Co-I
-dates: 7/1/19 - 6/30/21
-tag: Hide
----
-number: NIH R01
-pi: Yaghjyan
-title: "Air pollution, greenness, and breast cancer risk in the Breast Cancer Surveillance Consortium"
-description: "This award will examine the associations of air pollution and breast cancer risk and if this relationship is mediated by breast density or greenness."
-role: Co-I
-dates: 1/1/20 - 12/31/24
+number: NIH NLM 1R01LM013222-01A1
+pi: Brokamp
+title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
+description: This award will create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale.
+role: PI
+dates: 4/1/20 - 3/31/24
 tag: Pending
 ---
-number: Internal Innovative Core Award - Center for Clinical & Translational Science & Training
-pi: Hall
-title: "From Electronic Health Records to Research Quality Data"
-description: This award will implement a generalizable process for streamlining extraction, cleaning, and loading of EHR data into REDCap databases along with automated integration of relevant measures of patient neighborhood characteristics.
-role: Co-I
-dates: 7/1/19 - 6/30/19
-tag: Hide
----
-number: NIH NIMHHD
-pi: Beck
-title: Civically Activated Neighbors Voicing & Affirming Societal Health (CANVAS Health)
-description: This award will quantify the intersection between civic engagement and child health outcomes and qualitatively ascertain how parents of low income children understand the connection between health and civic engagement.
-role: Co-I
-dates: 7/1/19 - 6/30/21
+number: NIH NLM 1R01LM013420-01
+pi: Brokamp/Hall
+title: "Development of an Electronic Health Records to Enhanced Research Database Pipeline With Applications in Intrauterine Substance Exposures"
+description: Our objective in this work is to develop an approach to allow biomedical researchers to more fully harness EHR content, including structured and free-text components, and to facilitate enhanced research dataset creation through repeated, automated EHR extractions including automatic integration of geomarkers and external  datasets.
+role: Co-PI
+dates: 7/1/20 - 6/30/24
 tag: Pending
----
-number: rhonda/jane/eileen U01
-role: Co-I
-tag: Hide
----
-number: Green Umbrella / Kresge (climate change and health inequity) LOI
-role: unpaid consultant
-tag: Hide
----
-number: stroke renewal grant
-role: Co-I
-tag: Hide
----
-number: NIH NIEHS R01
-pi: Brunst
-title: ""
-description: "CCAAPS epigenetics, PM2.5 neurobehavioral outcomes"
-role: Co-I
-dates:
-tag: Hide
 ---
