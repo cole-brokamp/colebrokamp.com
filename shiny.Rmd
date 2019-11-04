@@ -43,12 +43,12 @@ An R Shiny application which allows for comparing Cincinnati Neighborhoods. Basi
 
 &nbsp;
 
-### [CF Point of Personalized Detection (CFPOPD)](http://cfpopd.app.colebrokamp.com/)
+### [CF Point of Personalized Detection (CFPOPD)](http://clinic.predictfev1.com/)
 
 <div class = "row">
 
 <div class = "col-md-6">
-[![](appshots/cfpopd.png)](http://cfpopd.app.colebrokamp.com/)
+[![](appshots/cfpopd.png)](http://clinic.predictfev1.com/)
 </div>
 
 <div class = "col-md-6">
