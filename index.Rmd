@@ -15,3 +15,4 @@ Currently, I am:
 - Designing interactive web applications for exploring the social determinants of health
 
 [View my CV](cv.pdf)
+<!-- [ORCID: 0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151) -->
