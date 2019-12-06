@@ -8,3 +8,5 @@ post_ideas.txt
 *_cache
 *_files
 
+/docs/renv.lock
+/docs/renv/
