@@ -13,6 +13,10 @@ name: OfflineGeocodeR
 description: R wrapper around calling a Docker container (DeGAUSS/geocoder_slim) to geocode addresses from R without exposing PHI to the internet
 url: https://github.com/cole-brokamp/OfflineGeocodeR
 ---
+name: dep
+description: "Find, document, and deploy packages that an R project depends on"
+url: https://github.com/cole-brokamp/dep
+---
 name: automagic
 description: Automagically install packages necessary to run R code
 url: https://github.com/cole-brokamp/automagic
@@ -37,7 +41,7 @@ vignette: http://colebrokamp.com.s3-website-us-east-1.amazonaws.com/posts_geocod
 ---
 name: CFPOPD
 description: An R Shiny application for predicting rapid decline in lung function in children with cystic fibrosis
-url: http://predictfev1.com
+url: http://clinic.predictfev1.com
 ---
 name: R Shiny
 description: Several R Shiny Applications
