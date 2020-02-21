@@ -8,8 +8,6 @@ left:
     href: software.html
   - text: "R Shiny"
     href: shiny.html
-  - text: "Posts"
-    href: posts.html
 right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp
