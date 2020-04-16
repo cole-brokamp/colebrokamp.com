@@ -79,6 +79,14 @@ role: PI
 dates: 09/01/2019 - 08/31/2021
 tag: Active
 ---
+number: Ohio Department of Health Contract No. CSP907820
+pi: Brokamp
+title: "Model Identifying Geographic Areas in Ohio for Blood Lead Testing"
+description: This award will develop a predictive model to determine which children should be tested for potentially high blood lead during physician visits based on their residential location.
+role: PI
+tag: Active
+dates: 4/15/2020 - 9/30/2020
+---
 number: AHRQ PEDSnet K12
 pi: Shaw
 title: "Inpatient Screening for Parental Adversity and Resilience"
