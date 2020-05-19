@@ -1,8 +1,10 @@
 ---
 title: "Biomarkers and Disease Severity in Children with Community-Acquired Pneumonia"
-author: Todd Florin
+author: Todd Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard Ruddy, Samir S Shaw
 journal: Pediatrics
-note: Hide
+issue: online
+year: 2020
+doi: 10.1542/peds.2019-3728
 ---
 title: "Lessons and Tips for Designing a Machine Learning Study Using EHR Data"
 author: Jaron Arbet, Cole Brokamp, Jareen Meinzen-Derr, Katy E. Trinkley, Heidi M Spratt
@@ -50,8 +52,8 @@ doi: 10.1097/TP.0000000000003157
 title: "Effect of greenness on asthma in children: A systematic review"
 author: Kim Hartley, Patrick Ryan, Cole Brokamp, Gordon L. Gillespie
 journal: Public Health Nursing
-issue: 00
-pages: 1-8
+issue: 37(3)
+pages: 453-460
 year: 2020
 doi: 10.1111/phn.12701
 download_link: https://colebrokamp-website.s3.us-east-1.amazonaws.com/publications/Hartley_PHN_2020.pdf
