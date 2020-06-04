@@ -1,16 +1,4 @@
 .Rhistory
-CV ideas.txt
-pubs.tex
-pubs.md
-pubs_sections.md
-talks.tex
-talks.md
-software.tex
-software.md
-support.md
-support.tex
 *.log
 .DS_Store
 *.synctex.gz 
-.Rproj.user
-*.Rout
