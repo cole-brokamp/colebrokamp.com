@@ -1,0 +1,48 @@
+---
+name: DeGAUSS
+description: A decentralized, offline, secure, and reproducible method for geocoding and deriving community and individual level environmental characteristics while maintaining the privacy of protected health information
+url: https://github.com/degauss-org/DeGAUSS
+doi: http://doi.org/10.5281/zenodo.344490
+---
+name: hamilton
+description: Offline parcel-based geocoding for addresses in Hamilton County, USA
+url: https://github.com/geomarker-io/hamilton
+doi: http://doi.org/10.5281/zenodo.50876
+---
+name: OfflineGeocodeR
+description: R wrapper around calling a Docker container (DeGAUSS/geocoder_slim) to geocode addresses from R without exposing PHI to the internet
+url: https://github.com/geomarker-io/OfflineGeocodeR
+---
+name: dep
+description: "Find, document, and deploy packages that an R project depends on"
+url: https://github.com/cole-brokamp/dep
+---
+name: automagic
+description: Automagically install packages necessary to run R code
+url: https://github.com/cole-brokamp/automagic
+doi: http://doi.org/10.5281/zenodo.322638
+---
+name: rize
+description: Dockerize R shiny apps
+url: https://github.com/cole-brokamp/rize
+doi: http://doi.org/10.5281/zenodo.322636
+vignette:
+---
+name: aiR
+description: "aiR is used to assess PM2.5 exposures in the Cincinnati, Ohio area. The package creates predictions based on a spatiotemporal hybrid satellite/land use random forest model. PM2.5 exposure predictions are available at 1 x 1 km grid resolution covering the seven county area (OH: Hamilton, Clermont, Warren, Butler; KY: Boone, Kenton, Campbell) on a daily basis from 2000 - 2015"
+url: https://github.com/geomarker-io/aiR
+---
+name: geocoder
+description: A software package for linux that geocodes using TIGER/Line data.  Offline geocoding is useful when dealing with private health information. This software is also implemented on a internal server, available to researchers at CCHMC
+url: https://github.com/degauss-org/geocoder
+doi: http://doi.org/10.5281/zenodo.344621
+vignette: http://colebrokamp.com.s3-website-us-east-1.amazonaws.com/posts_geocoding_tips.html
+---
+name: CFPOPD
+description: An R Shiny application for predicting rapid decline in lung function in children with cystic fibrosis
+url: http://clinic.predictfev1.com
+---
+name: R Shiny
+description: Several R Shiny Applications
+url: http://colebrokamp.com/shiny
+---

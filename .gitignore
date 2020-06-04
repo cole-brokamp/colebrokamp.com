@@ -1,0 +1,4 @@
+.Rhistory
+*.log
+.DS_Store
+*.synctex.gz 
