@@ -6,6 +6,7 @@ output:
     theme: simplex
     highlight: pygments
     include:
-      before_body: _google_analytics.html
-exclude: ['Makefile','*.sh','post_ideas.txt','README.md','README.html','colebrokamp.com.Rproj', 'renv/*']
-include: []
+      before_body: assets/_google_analytics.html
+exclude: ['Makefile', 'README.md', 'renv.lock', 'renv', 'renv/*']
+include: ['assets/CV.pdf']
+new_session: true

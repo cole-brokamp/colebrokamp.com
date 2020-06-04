@@ -3,7 +3,7 @@ title: ""
 pagetitle: "Cole Brokamp"
 ---
 
-<img src='figs/cole_circle.png' align='right' style="max-height: 250px; max-width: 250px;">
+<img src='assets/cole_circle.png' align='right' style="max-height: 250px; max-width: 250px;">
 
 I am an Assistant Professor at Cincinnati Children's Hospital Medical Center interested in causal inference for machine learning, geoinformatics, environmental and population health, and fairness in precision medicine. I completed my PhD in Biostatistics & Bioinformatics in the Department of Environmental Health at the University of Cincinnati and did my postdoctoral training at Cincinnati Children's in Biostatistics & Epidemiology.
 
@@ -14,5 +14,5 @@ Currently, I am:
 - Developing statistical computing tools for geocoding and geomarker assessment
 - Designing interactive web applications for exploring the social determinants of health
 
-[View my CV](cv.pdf)
+[View my CV](assets/cole-brokamp-cv.pdf)
 <!-- [ORCID: 0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151) -->

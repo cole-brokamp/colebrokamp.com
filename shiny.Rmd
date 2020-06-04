@@ -25,7 +25,7 @@ Developed in partnership with the Government Resource Council and the State of O
 <div class = "row">
 
 <div class = "col-md-6">
-[![](appshots/cincy-neigh.png)](http://geomarker.io/neighborhood)
+[![](assets/cincy-neigh.png)](http://geomarker.io/neighborhood)
 </div>
 
 <div class = "col-md-6">
@@ -41,7 +41,7 @@ An R Shiny application which allows for comparing Cincinnati Neighborhoods. Basi
 <div class = "row">
 
 <div class = "col-md-6">
-[![](appshots/cfpopd.png)](http://clinic.predictfev1.com/)
+[![](assets/cfpopd.png)](http://clinic.predictfev1.com/)
 </div>
 
 <div class = "col-md-6">
@@ -57,7 +57,7 @@ Dr. Rhonda Szczesniak (Cincinnati Children's) has recently used functional data 
 <div class = "row">
 
 <div class = "col-md-6">
-![](appshots/cso_modeling.png)
+![](assets/cso_modeling.png)
 </div>
 
 <div class = "col-md-6">
@@ -75,7 +75,7 @@ An R Shiny application used to explore combined sewer overflow events and their 
 <div class = "row">
 
 <div class = "col-md-6">
-![](appshots/ufp-dashboard.png)
+![](assets/ufp-dashboard.png)
 </div>
 
 <div class = "col-md-6">
@@ -91,7 +91,7 @@ An R Shiny application used to interactively explore and showcase data from a pe
 <div class = "row">
 
 <div class = "col-md-6">
-[![](appshots/linnstrument.png)](http://lse.app.colebrokamp.com)
+[![](assets/linnstrument.png)](http://lse.app.colebrokamp.com)
 </div>
 
 <div class = "col-md-6">
@@ -116,11 +116,11 @@ An R Shiny application which allows uploading of latitude and longitude coordina
 
 <div class = "col-md-6">
 **Single Address with Visual Map**
-![](appshots/ecat-map.png) 
+![](assets/ecat-map.png) 
 </div>
 
 <div class = "col-md-6">
 **Batch Submission of Coordinates**
-![](appshots/ecat-file.png)
+![](assets/ecat-file.png)
 </div>
 </div>
