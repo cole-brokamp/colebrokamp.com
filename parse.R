@@ -20,8 +20,8 @@ cat(paste(pubs_md, collapse = "\n\n"), file = temp_file)
 system(glue("pandoc -o pubs.tex {temp_file}"))
 
 # create md file
-file.create("pubs.md")
-cat(paste(c("# Publications", pubs_md), collapse = "\n\n"), file = "pubs.md")
+file.create("publications.md")
+cat(paste(c("# Publications", pubs_md), collapse = "\n\n"), file = "publications.md")
 
 ## talks
 talks <- yaml::yaml.load_file("talks.yaml")
