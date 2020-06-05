@@ -40,7 +40,7 @@ cat(paste(talks_md, collapse = "\n\n"), file = temp_file)
 system(glue("pandoc -o talks.tex {temp_file}"))
 
 # create md file
-file.create("pubs.md")
+file.create("talks.md")
 cat(paste(c("# Talks", talks_md), collapse = "\n\n"), file = "talks.md")
 
 ###
