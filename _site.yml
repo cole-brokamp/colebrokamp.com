@@ -7,6 +7,6 @@ output:
     highlight: pygments
     include:
       before_body: assets/_google_analytics.html
-exclude: ['Makefile', 'README.md', 'renv.lock', 'renv', 'renv/*']
-include: ['assets/CV.pdf']
+exclude: ['Makefile', 'README.md', 'renv.lock', 'renv', 'renv/*', 'auto', 'cole-brokamp-cv.log', 'cole-brokamp-cv.tex', 'parse.Rout', '*.tex', '*.yaml', 'res.cls']
+include: []
 new_session: true

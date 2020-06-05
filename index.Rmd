@@ -14,5 +14,5 @@ Currently, I am:
 - Developing statistical computing tools for geocoding and geomarker assessment
 - Designing interactive web applications for exploring the social determinants of health
 
-[View my CV](assets/cole-brokamp-cv.pdf)
+[View my CV](cole-brokamp-cv.pdf)
 <!-- [ORCID: 0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151) -->

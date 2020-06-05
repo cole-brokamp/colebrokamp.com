@@ -1,8 +1,0 @@
----
-title: ""
-pagetitle: "Software"
----
-
-```{r child='../CV/software.md'} 
-```
-

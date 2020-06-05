@@ -1,8 +1,0 @@
----
-title: ""
-pagetitle: "Publications"
----
-
-```{r child='../CV/pubs_sections.md'}
-```
-
