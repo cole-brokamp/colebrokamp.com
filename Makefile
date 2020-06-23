@@ -17,6 +17,6 @@ cole-brokamp-cv.pdf: pubs.tex talks.tex cole-brokamp-cv.tex
 clean:
 		rm cole-brokamp-cv.log
 		rm parse.Rout
-		rm talks.md talks.tex pubs.md pubs.tex
+		rm talks.md talks.tex publications.md pubs.tex
 
 
