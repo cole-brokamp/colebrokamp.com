@@ -1,3 +1,12 @@
+florin-2020a:
+  title: "Proadrenomedullin Predicts Severe Disease in Children with Suspected Community-Acquired Pneumonia"
+  author: "Todd A Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Eric S Nylen, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard M Ruddy, Samir S Shah"
+  journal: "Clinical Infectious Diseases"
+  issue_pages: "ciaa1138"
+  year: 2020
+  download_link: ""
+  doi: 10.1093/cid/ciaa1138
+
 wadhwani-2020a:
   title: "Neighborhood Socioeconomic Deprivation, Racial Segregation, and Organ Donation Across 5 States"
   author: "Sharad I. Wadhwani, Cole Brokamp, Erika Rasnick, John C. Bucuvalas, Jennifer C. Lai, Andrew F. Beck"
@@ -9,16 +18,16 @@ wadhwani-2020a:
 
 arbet-2020:
   title: "Lessons and Tips for Designing a Machine Learning Study Using EHR Data"
-  author: Jaron Arbet, Cole Brokamp, Jareen Meinzen-Derr, Katy E. Trinkley, Heidi M Spratt
-  journal: Journal of Clinical and Translational Science
+  author: "Jaron Arbet, Cole Brokamp, Jareen Meinzen-Derr, Katy E. Trinkley, Heidi M Spratt"
+  journal: "Journal of Clinical and Translational Science"
   issue_pages: Online
   year: 2020
   download_link: ""
-  doi: ""
+  doi: 10.1017/cts.2020.513
 
 florin-2020:
   title: "Biomarkers and Disease Severity in Children with Community-Acquired Pneumonia"
-  author: Todd Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard Ruddy, Samir S Shaw
+  author: "Todd Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard Ruddy, Samir S Shaw"
   journal: Pediatrics
   issue_pages: Online
   year: 2020
@@ -26,8 +35,8 @@ florin-2020:
   doi: 10.1542/peds.2019-3728
 
 # wolfe-2020:
-#   title: "CFPOPD"
-#   author: Chris Wolfe, Teresa, ..., Rhonda, Cole Brokamp
+#   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): Co-producing an interactive web application to monitor and predict lung function decline"
+#   author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
 #   journal: JAMIA
 #   issue_pages: Online
 #   year: 2020
@@ -58,6 +67,9 @@ szczesniak-2020a:
 #   title: "Erika's air lead and BASC paper"
 #   author: Erika Rasnick, ..., Cole Brokamp
 #   journal: Environmental Health Perspectives
+
+# hartley-2020:
+#   title: "lung function, asthma, and greenspace..."
 
 percy-2020:
   title: "Subclinical and Overt Newborn Opioid Exposure: Prevalence and First Year Healthcare Utilization"
