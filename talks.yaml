@@ -1,3 +1,10 @@
+introbmi-2020:
+  title: "Introduction to Geoinformatics for Precision Population Health"
+  event: University of Cincinnati Introduction to Medical Informatics course guest lecture
+  year: 2020
+  location: Cincinnati, OH
+  download_link: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/GRAPPH_talk_informatics_2020.pdf"
+
 isee-2020:
   title: "Short-term Ambient Fine Particulate Matter and Anxiety Symptoms in Adolescents with Generalized Anxiety Disorder"
   event: International Society of Environmental Epidemiology Annual Meeting
@@ -14,7 +21,7 @@ user-2020:
 
 bmi-2020:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
-  event: University of Cincinnati Introduction to Medical Informatics course guest lecture
+  event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
   year: 2020
   location: Cincinnati, OH
   download_link: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_02_24.pdf"
@@ -84,7 +91,7 @@ ucinnovation-2018:
 
 bmi-2018:
   title: "Geoinformatics for Environmental Epidemiology"
-  event: Biomedical Informatics (BMIN8001) Practicum Lecture
+  event: Biomedical Informatics (BMIN8001) Practicum Guest Lecture
   year: 2018
   location: Cincinnati, OH
   download_link: ""
