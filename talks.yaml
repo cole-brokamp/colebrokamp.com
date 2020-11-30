@@ -1,3 +1,10 @@
+satRdays-2020:
+  title: "Three Levels of Computational Mobility in R"
+  event: SatRday Columbus
+  year: 2020
+  location: Virtual
+  download_link: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/cole_brokamp_three_levels_of_computational_mobility.pdf"
+
 portico-2020:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: Pediatric Musculoskeletal & Rheumatology Innovation Core Center Seminar Series
