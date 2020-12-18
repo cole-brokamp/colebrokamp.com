@@ -1,3 +1,40 @@
+# ryan-2020:
+#   title: "A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies: the Children's Respiratory and Environmental Workgroup (CREW)"
+#   author: Patrick Ryan, Cole Brokamp, ..., Diane Gold
+#   journal: Health and Place
+#   issue_pages: ""
+#   year: 2020
+#   download_link: ""
+#   doi: ""
+
+# rasnick-2020:
+#   title: "Erika's air lead and BASC paper"
+#   author: Erika Rasnick, ..., Cole Brokamp
+#   journal: Environmental Health Perspectives
+
+# hartley-2020:
+#   title: "lung function, asthma, and greenspace..."
+
+# wolfe-2020:
+#   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): Co-producing an interactive web application to monitor and predict lung function decline"
+#   author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
+#   journal: JAMIA
+#   issue_pages: Online
+#   year: 2020
+#   download_link: ""
+#   doi: ""
+
+# title: "nobel's source pm and daily asthma admissions"
+
+hartley-2020:
+  title: "Residential Surrounding Greenness and Self-Reported Symptoms of Anxiety and Depression in Adolescents"
+  author: "Kim Hartley, Joseph Perazzo, Cole Brokamp, Gordon Lee Gillespie, Kim M. Cecil, Grace LeMasters, Kimberly Yolton, Patrick Ryan"
+  journal: "Environmental Research"
+  issue_pages: "Online"
+  year: 2020
+  download_link: ""
+  doi: 10.1016/j.envres.2020.110628
+
 florin-2020a:
   title: "Proadrenomedullin Predicts Severe Disease in Children with Suspected Community-Acquired Pneumonia"
   author: "Todd A Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Eric S Nylen, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard M Ruddy, Samir S Shah"
@@ -34,17 +71,6 @@ florin-2020:
   download_link: ""
   doi: 10.1542/peds.2019-3728
 
-# wolfe-2020:
-#   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): Co-producing an interactive web application to monitor and predict lung function decline"
-#   author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
-#   journal: JAMIA
-#   issue_pages: Online
-#   year: 2020
-#   download_link: ""
-#   doi: ""
-
-# title: "nobel's source pm and daily asthma admissions"
-
 szczesniak-2020a:
   title: "Influences of Environmental Exposures On Individuals Living with Cystic Fibrosis"
   author: Rhonda Szczesniak, Jessica L. Rice, Cole Brokamp, Patrick Ryan, Teresa Pestian, Yizhao Ni, Eleni-Rosalina Andrinopoulou, Ruth H. Keogh, Emrah Gecili, Rui Huang, John P. Clancy, Joseph M. Collaco
@@ -53,23 +79,6 @@ szczesniak-2020a:
   year: 2020
   download_link: ""
   doi: 10.1080/17476348.2020.1753507
-
-# ryan-2020:
-#   title: "A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies: the Children's Respiratory and Environmental Workgroup (CREW)"
-#   author: Patrick Ryan, Cole Brokamp, ..., Diane Gold
-#   journal: Health and Place
-#   issue_pages: ""
-#   year: 2020
-#   download_link: ""
-#   doi: ""
-
-# rasnick-2020:
-#   title: "Erika's air lead and BASC paper"
-#   author: Erika Rasnick, ..., Cole Brokamp
-#   journal: Environmental Health Perspectives
-
-# hartley-2020:
-#   title: "lung function, asthma, and greenspace..."
 
 percy-2020:
   title: "Subclinical and Overt Newborn Opioid Exposure: Prevalence and First Year Healthcare Utilization"
