@@ -15,14 +15,14 @@
 # hartley-2020:
 #   title: "lung function, asthma, and greenspace..."
 
-# wolfe-2020:
-#   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): Co-producing an interactive web application to monitor and predict lung function decline"
-#   author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
-#   journal: JAMIA
-#   issue_pages: Online
-#   year: 2020
-#   download_link: ""
-#   doi: ""
+wolfe-2020:
+  title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): An Interactive Web Application"
+  author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
+  journal: JMIR Med Inform
+  issue_pages: 8(12):e23530
+  year: 2020
+  download_link: ""
+  doi: "10.2196/23530"
 
 # title: "nobel's source pm and daily asthma admissions"
 
