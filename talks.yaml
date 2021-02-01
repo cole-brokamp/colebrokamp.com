@@ -1,3 +1,10 @@
+bmi-2021:
+  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
+  event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
+  year: 2021
+  location: Cincinnati, OH
+  download_link: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2021_02_01.pdf"
+
 satRdays-2020:
   title: "Three Levels of Computational Mobility in R"
   event: SatRday Columbus
