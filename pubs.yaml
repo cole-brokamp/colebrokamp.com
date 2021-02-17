@@ -1,3 +1,12 @@
+rasnick-2020:
+  title: "Identifying Sensitive Windows of Airborne Lead Exposure Associated with Behavioral Outcomes at Age 12"
+  author: Erika Rasnick, Patrick H. Ryan, A. John Bailer, Thomas Fisher, Patrick J. Parsons, Kimberly Yolton, Nicholas C. Newman, Bruce P. Lanphear, Cole Brokamp
+  journal: Environmental Epidemiology
+  issue_pages: "Online"
+  year: 2021
+  download_link: ""
+  doi: ""
+
 ryan-2020:
   title: "A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies"
   author: Patrick H. Ryan, Cole Brokamp, Jeff Blossom, Nathan Lothrop, Rachel L. Miller, Paloma I. Beamer, Cynthia M. Visness, Antonella Zanobetti, Howard Andrews, Leonard B. Bacharier, Tina Hartert, Christine C. Johnson, Dennis Ownby, Robert F. Lemanske, Jr., Heike Gibson, Weeberb Requia, Brent Coull, Edward M. Zoratti, Anne L. Wright, Fernando D. Martinez, Christine M. Seroogy, James E. Gern, Diane R. Gold, on behalf of the CREW Consortium
@@ -6,11 +15,6 @@ ryan-2020:
   year: 2021
   download_link: ""
   doi: "10.1017/cts.2021.7"
-
-# rasnick-2020:
-#   title: "Erika's air lead and BASC paper"
-#   author: Erika Rasnick, ..., Cole Brokamp
-#   journal: Environmental Epidemiology
 
 # hartley-2020:
 #   title: "lung function, asthma, and greenspace..."
