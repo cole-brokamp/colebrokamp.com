@@ -1,4 +1,16 @@
-rasnick-2020:
+# mohammad-2021:
+#   title: "Source-specific contributions of particulate matter to asthma-related pediatric emergency department utilization"
+#   author: Nobel, Cole Brokamp
+#   journal: Health Information Science and Systems
+#   issue_pages: "Online"
+#   year: 2020
+#   download_link: ""
+#   doi: ""
+
+# hartley-2020:
+#   title: "lung function, asthma, and greenspace..."
+
+rasnick-2021:
   title: "Identifying Sensitive Windows of Airborne Lead Exposure Associated with Behavioral Outcomes at Age 12"
   author: Erika Rasnick, Patrick H. Ryan, A. John Bailer, Thomas Fisher, Patrick J. Parsons, Kimberly Yolton, Nicholas C. Newman, Bruce P. Lanphear, Cole Brokamp
   journal: Environmental Epidemiology
@@ -6,6 +18,15 @@ rasnick-2020:
   year: 2021
   download_link: ""
   doi: ""
+
+gecili-2021:
+  title: "Seasonal variation of lung function in cystic fibrosis: longitudinal modeling to compare a Midwest US cohort to international populations"
+  author: Emrah Gecili, Cole Brokamp, Anushka Palipana, Rui Huang, Eleni-Rosalina Andrinopoulou, Teresa Pestian, Erika Rasnick, Ruth H.Keoghe, Yizhao Ni, John P.Clancy, Patrick Ryan, Rhonda D.Szczesniak
+  journal: Science of the Total Environment
+  issue_pages: "Online"
+  year: 2020
+  download_link: ""
+  doi: "10.1016/j.scitotenv.2021.145905"
 
 ryan-2020:
   title: "A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies"
@@ -16,9 +37,6 @@ ryan-2020:
   download_link: ""
   doi: "10.1017/cts.2021.7"
 
-# hartley-2020:
-#   title: "lung function, asthma, and greenspace..."
-
 wolfe-2020:
   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): An Interactive Web Application"
   author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
@@ -27,8 +45,6 @@ wolfe-2020:
   year: 2020
   download_link: ""
   doi: "10.2196/23530"
-
-# title: "nobel's source pm and daily asthma admissions"
 
 hartley-2020:
   title: "Residential Surrounding Greenness and Self-Reported Symptoms of Anxiety and Depression in Adolescents"
