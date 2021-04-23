@@ -14,10 +14,18 @@ rasnick-2021:
   title: "Identifying Sensitive Windows of Airborne Lead Exposure Associated with Behavioral Outcomes at Age 12"
   author: Erika Rasnick, Patrick H. Ryan, A. John Bailer, Thomas Fisher, Patrick J. Parsons, Kimberly Yolton, Nicholas C. Newman, Bruce P. Lanphear, Cole Brokamp
   journal: Environmental Epidemiology
-  issue_pages: "Online"
+  issue_pages: "5(2):e144"
   year: 2021
   download_link: ""
   doi: ""
+
+gelici-2021a:
+  title: "Seasonality, mediation and comparison (SMAC) methods to identify influences on lung function decline"
+  author: Emrah Gecilia, Anushka Palipana Cole Brokamp Rui Huang, Eleni-Rosalina Andrinopoulou, Teresa Pestian, Erika Rasnick, Ruth H. Keogh, Yizhao, Ni, John P.Clancy, Patrick Ryan, Rhonda D. Szczesniak
+  journal: MethodsX
+  issue_pages: "8:101313"
+  year: 2021
+  download_link: ""
 
 gecili-2021:
   title: "Seasonal variation of lung function in cystic fibrosis: longitudinal modeling to compare a Midwest US cohort to international populations"
