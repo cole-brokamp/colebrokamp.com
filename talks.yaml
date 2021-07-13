@@ -1,9 +1,16 @@
+NIH-2021:
+  title: "Decentralized, Eﬃcient, and Secure High Resolution Spatiotemporal Exposure Assessment at Scale"
+  event: NIH Integrating Multiscale Geospatial Environmental Data into Large Population Health Studies Workshop
+  year: 2021
+  location: Online
+  download_link: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_DeGAUSS_16_06_2020.pdf"
+
 PAC3-2021:
   title: "Decentralized and Reproducible Geocoding and Geomarker Assessment for Multi-Site Studies"
   event: Pediatric Acute Care Cardiology Collaborative Spring Conference
   year: 2021
   location: Online
-  download_link: ""
+  download_link: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/DeGAUSS_quick_pitch_PAC3.pdf"
 
 nidey-2021:
   title: "Geomarkers and Health"
