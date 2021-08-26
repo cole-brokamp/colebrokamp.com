@@ -1,3 +1,15 @@
+liu-2021:
+  title: "Understanding Pediatric Surgery Cancellation: Geospatial Analysis"
+  author: Lei Liu, Yizhao Ni, Andrew F Beck, Cole Brokamp, ryan C Ramphul, Linda D Highfield, Megha Karkera Kanjia, J Nick Pratap
+  journal: Journal of Medical Internet Research
+  issue_pages: "23(8):e26231"
+  year: 2021
+  download_link: ""
+  doi: 10.2196/26231
+
+# hartley-2020:
+#   title: "lung function, asthma, and greenspace..."
+
 turner-2021:
   title: Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents
   author: Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick Ryan
@@ -6,14 +18,7 @@ turner-2021:
   year: 2021
   download_link: ""
   doi: 10.1016/j.envint.2021.106740 
-liu-2021:
-  title: "Geospatial Analysis to Understand Pediatric Surgery Cancellation"
-  author: Lei Liu,  Yizhao Ni,  Andrew F. Beck,  Cole Brokamp,  Ryan C. Ramphul,  Linda D. Highfield,  Megha Karkera Kanjia,  J. Nick Pratap 
-  journal: Journal of Medical Internet Research
-  issue_pages: "In Press"
-  year: 2021
-  download_link: ""
-  doi: "10.2196/26231"
+
 lowe-2021:
   title: "A Geographic Perspective on Opioid Misuse: Substance Abuse Treatment Deserts in Southwestern Ohio"
   author: Linnea Lowe, Cole Brokamp, Erika Rasnick, Eric S. Hall, Shauna Acquavita
@@ -22,6 +27,7 @@ lowe-2021:
   year: 2021
   download_link: ""
   doi: "10.18061/ojph.v4i1.8075"
+
 loizaga-2021:
   title: "Rheumatic Heart Disease in the United States: Forgotten but not Gone. Results of a 10 Year Multicenter Review"
   author: Sarah de Loizaga, Lindsay Arthur, Bhawna Arya, Brian Beckman, Wubishet Belay, Cole Brokamp, Nak Hyun Choi, Sean Connolly, Soham Dasgupta, Tavenner Dibert, Marylou Dryer, Lakshmi Gokanapudy Hahn, Elizabeth Greene, Daphney Kernizan, Omar Khalid, Jennifer Klein, Ryan Kobayashi, Subhrajit Lahiri, Raymond Lorenzoni, Jennifer Marshall, Theodore Millette, Lily Moore, Babu Muhamed, Meghna Murali, Andrea Otero Luna, Kinjal Parikh, Amy Sanyahumbi, Divya Shakti, Elizabeth Stein, Sanket Shah, Hannah Wilkins, McAllister Windom, Scott Wirth, Meghan Zimmerman, Andrew Beck, Nicholas Ollberding, Craig Sable, Andrea Beaton
@@ -66,9 +72,6 @@ mohammad-2021:
   year: 2021
   download_link: ""
   doi: "10.1007/s13755-021-00141-z"
-
-# hartley-2020:
-#   title: "lung function, asthma, and greenspace..."
 
 rasnick-2021:
   title: "Identifying Sensitive Windows of Airborne Lead Exposure Associated with Behavioral Outcomes at Age 12"
