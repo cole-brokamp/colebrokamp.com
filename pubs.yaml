@@ -9,6 +9,8 @@ brokamp-2022:
 
 # zanobetti-2021: jama peds echo paper
 # thomson-2021: "Neighborhood Socioeconomic Deprivation and Healthcare Utilization of Medically Complex Children"
+# hartley-2020: "lung function, asthma, and greenspace..."
+# :JTACS firearm paper
 
 liu-2021:
   title: "Understanding Pediatric Surgery Cancellation: Geospatial Analysis"
@@ -19,8 +21,6 @@ liu-2021:
   download_link: ""
   doi: 10.2196/26231
 
-# hartley-2020:
-#   title: "lung function, asthma, and greenspace..."
 
 turner-2021:
   title: Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents
