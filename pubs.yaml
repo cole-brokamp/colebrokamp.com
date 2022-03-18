@@ -1,3 +1,12 @@
+thomson-2022:
+  title: "Neighborhood Socioeconomic Deprivation and Health Care Utilization of Medically Complex Children"
+  author: Joanna Thomson, Breann Butts, Saige Camara, Erika Rasnick, Cole Brokamp, Caroline Heyd, Rebecca Steuart, Scott Callahan, Stuart Taylor, Andrew Beck
+  journal: Pediatrics
+  issue_pages: e2021052592
+  year: 2022
+  download_link: ""
+  doi: 10.1542/peds.2021-052592
+
 brokamp-2022:
   title: "A High Resolution Spatiotemporal Fine Particulate Matter Exposure Assessment Model for the contiguous United States"
   author: Cole Brokamp
@@ -8,8 +17,8 @@ brokamp-2022:
   doi: 10.1016/j.envadv.2021.100155
 
 # zanobetti-2021: jama peds echo paper
-# thomson-2021: "Neighborhood Socioeconomic Deprivation and Healthcare Utilization of Medically Complex Children"
 # hartley-2020: "lung function, asthma, and greenspace..."
+# turner-2022: "Impact of Personal, Sub-hourly Exposure to Ultrafine Particles on Respiratory Health in Adolescents With Asthma"
 # :JTACS firearm paper
 
 liu-2021:
@@ -23,7 +32,7 @@ liu-2021:
 
 
 turner-2021:
-  title: Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents
+  title: "Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents"
   author: Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick Ryan
   journal: Environment International
   issue_pages: "156:106740"
