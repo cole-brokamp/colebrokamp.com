@@ -1,3 +1,16 @@
+# zanobetti-2021: jama peds echo paper
+# hartley-2020: "lung function, asthma, and greenspace..."
+# :JTACS firearm paper
+
+roy-2022:
+  title: "Clustering and Regression-Based Analysis of PM2. 5 Sensitivity to Meteorology in Cincinnati, Ohio"
+  author: Madhumitaa Roy, Cole Brokamp, Sivaraman Balachandran
+  journal: Atmosphere
+  issue_pages: "13(4):545"
+  year: 2022
+  download_link: ""
+  doi: 10.3390/atmos13040545
+
 thomson-2022:
   title: "Neighborhood Socioeconomic Deprivation and Health Care Utilization of Medically Complex Children"
   author: Joanna Thomson, Breann Butts, Saige Camara, Erika Rasnick, Cole Brokamp, Caroline Heyd, Rebecca Steuart, Scott Callahan, Stuart Taylor, Andrew Beck
@@ -16,10 +29,14 @@ brokamp-2022:
   download_link: ""
   doi: 10.1016/j.envadv.2021.100155
 
-# zanobetti-2021: jama peds echo paper
-# hartley-2020: "lung function, asthma, and greenspace..."
-# turner-2022: "Impact of Personal, Sub-hourly Exposure to Ultrafine Particles on Respiratory Health in Adolescents With Asthma"
-# :JTACS firearm paper
+turner-2022:
+  title: "Impact of Personal, Sub-hourly Exposure to Ultrafine Particles on Respiratory Health in Adolescents With Asthma"
+  author: Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick Ryan
+  journal: Annals of the American Thoracic Society
+  issue_pages: Online
+  year: 2022
+  download_link: ""
+  doi: 10.1513/AnnalsATS.202108-947OC
 
 liu-2021:
   title: "Understanding Pediatric Surgery Cancellation: Geospatial Analysis"
