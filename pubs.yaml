@@ -1,6 +1,12 @@
 # zanobetti-2021: jama peds echo paper
-# hartley-2020: "lung function, asthma, and greenspace..."
-# :JTACS firearm paper
+hartley-2022: 
+  title: "Residential Greenness, Asthma, and Lung Function Among Children at High Risk of Allergic Sensitization: A Prospective Cohort Study"
+  author: Kim Hartley, Patrick Ryan, Gordon Gillespie, Joseph Perazzo, J. Michael Wright, Glenn Rice, Geoffrey Donovan, Rebecca Gernes, Gurjit Khurana Hershey, Grace LeMasters, Cole Brokamp 
+  journal: Environmental Health
+  issue_pages: In Press
+  year: 2022
+  download_link:  ""
+  doi: ""
 
 roy-2022:
   title: "Clustering and Regression-Based Analysis of PM2. 5 Sensitivity to Meteorology in Cincinnati, Ohio"
@@ -46,7 +52,6 @@ liu-2021:
   year: 2021
   download_link: ""
   doi: 10.2196/26231
-
 
 turner-2021:
   title: "Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents"
