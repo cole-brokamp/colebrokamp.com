@@ -1,3 +1,12 @@
+pennington-2022:
+  title: "Racial Fairness in Precision Medicine: Pediatric Asthma Prediction Algorithms"
+  author: Jordan Pennington, Erika Rasnick, Lisa J. Martin, Jocelyn M. Biagini, Tesfaye B. Mersha, Allison Parsons, Gurjit K. Khurana Hershey, Patrick Ryan, Cole Brokamp
+  journal: American Journal of Health Promotion
+  issue_pages: Online
+  year: 2022
+  download_link: ""
+  doi: 10.1177/08901171221121639
+
 esteban-2022:
   title: "Understanding Racial Disparities in Childhood Asthma Using Individual- and Neighborhood-Level Risk Factors"
   author: Esteban Correa, Lili Ding, Andrew F. Beck, Cole Brokamp, Mekibib Altayeb, Robert S. Kahn, Tesfay Mersha
@@ -5,7 +14,7 @@ esteban-2022:
   issue_pages: In Press
   year: 2022
   download_link: ""
-  doi: ""
+  doi: 10.1016/j.jaci.2022.07.024
 
 trinidad-2022a:
   title: "Children from Disadvantaged Neighborhoods Experience Disproportionate Injury from Interpersonal Violence"
@@ -15,6 +24,15 @@ trinidad-2022a:
   year: 2022
   download_link: ""
   doi: 10.1016/j.jpedsurg.2022.05.023
+
+shah-2022:
+  title: "Using Geomarkers and Sociodemographics to Inform Assessment of Caregiver Adversity and Resilience"
+  author: Anita N. Shah, Erika Rasnick, Mohammad AN Bhuiyan, Chris Wolfe, Dianna Bosse, Jeffrey M. Simmons, Samir S. Shah, Cole Brokamp, Andrew F. Beck
+  journal: Hospital Pediatrics
+  issue_pages: "12(8): 689-695"
+  year: 2022
+  download_link: ""
+  doi: 10.1542/hpeds.2021-006121
 
 turner-2022a:
   title: "Mental and Physical Stress Responses to Personal Ultrafine Particle Exposure in Adolescents"
