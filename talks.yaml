@@ -1,3 +1,10 @@
+RUG-2023:
+  title: "Functional Programming in R with {purrr}"
+  event: "CCHMC R Users Group Meeting"
+  year: 2023
+  location: Cincinnati, OH
+  download_link: "https://cchmc-rug.github.io/purrr"
+
 yale-biostat-2022:
   title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
   event: Yale Biostatistics Seminar
