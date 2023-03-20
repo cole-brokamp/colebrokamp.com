@@ -3,9 +3,11 @@ output_dir: 'docs'
 output:
   html_document:
     css: style.css
-    theme: simplex
-    highlight: pygments
-    include:
-      before_body: assets/_google_analytics.html
+    theme: flatly
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
 exclude: ['Makefile', 'README.md','*.yaml']
 new_session: true

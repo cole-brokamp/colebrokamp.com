@@ -12,13 +12,13 @@ library(purrr)
 library(glue)
 ```
 
-## 
+## About
 
-<img src='assets/cole_circle.png' align='right' style="max-height: 250px; max-width: 250px;">
-
-I am an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati College of Medicine interested in place-based data science, environmental and population health, and fairness in precision medicine. My research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on childhood psychiatric and neurobehavioral health outcomes. I am also interested in developing new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.
-
-[CV](cole-brokamp-cv.pdf) · [ORCID](https://orcid.org/0000-0002-0289-3151) · [Scholar](https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en) · [Biosketch](https://github.com/cole-brokamp/biosketch/raw/master/cole-brokamp-nihbiosketch.pdf)
+<div class="jumbotron">
+  <img src='cole_circle.png' align='right' style="max-height: 250px; max-width: 250px;">
+  <p>
+  I am an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati College of Medicine interested in place-based data science, environmental and population health, and fairness in precision medicine. My research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on childhood psychiatric and neurobehavioral health outcomes. I also develop new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods. </p>
+</div>
 
 ## Publications
 
