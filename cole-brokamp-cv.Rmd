@@ -26,7 +26,7 @@ library(glue)
 - Fax: (513) 636-7509
 - Email: cole.brokamp@cchmc.org
 - Homepage: https://colebrokamp.com
-- ORCID: 0000-0002-0289-3151
+- ORCID: [0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151)
 
 # Research Interests
 
