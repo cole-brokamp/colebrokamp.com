@@ -1,21 +1,16 @@
-.PHONY: all site clean
+all: site cole-brokamp-cv.pdf cole-brokamp-cv-peds-format.docx
 
-all: cole-brokamp-cv.pdf site clean
-
-site: pubs.md talks.md cole-brokamp-cv.pdf
+site: index.Rmd pubs.yaml talks.yaml
 		R -e "rmarkdown::render_site(encoding = 'UTF-8')"
-		cp cole-brokamp-cv.pdf docs/cv.pdf
 		open docs/index.html
 
-pubs.md pubs.tex talks.md talks.tex: pubs.yaml talks.yaml
-		R CMD BATCH --vanilla parse.R
-
-cole-brokamp-cv.pdf: pubs.tex talks.tex cole-brokamp-cv.tex
-		texfot pdflatex cole-brokamp-cv.tex
+cole-brokamp-cv.pdf: cole-brokamp-cv.Rmd pubs.yaml talks.yaml
+		R -e "rmarkdown::render('cole-brokamp-cv.Rmd', output_format = 'pdf_document')"
 		open cole-brokamp-cv.pdf
 
-clean:
-		rm parse.Rout
-		rm talks.md talks.tex publications.md pubs.tex
+cole-brokamp-cv-peds-format.docx: cole-brokamp-cv-peds-format.Rmd pubs.yaml talks.yaml reference.docx
+		R -e "rmarkdown::render('cole-brokamp-cv-peds-format.Rmd', output_format = 'word_document')"
+		open cole-brokamp-cv-peds-format.docx
+
 
 

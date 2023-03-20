@@ -1,13 +1,4 @@
 title: "Cole Brokamp"
-left:
-  - text: "Publications"
-    href: publications.html
-  - text: "Talks"
-    href: talks.html
-  # - text: "Software"
-  #   href: software.html
-  # - text: "R Shiny"
-  #   href: shiny.html
 right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp

@@ -1,0 +1,174 @@
+---
+title: "Curriculum Vitae: Cole Brokamp, Ph.D."
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+```{r}
+library(dplyr)
+library(purrr)
+library(glue)
+```
+
+# Personal Data
+
+- Name: Richard "Cole" Brokamp, Ph.D.
+- Position: Associate Professor, University of Cincinnati College of Medicine
+- Mailing Address:
+    Division of Biostatistics and Epidemiology
+    Cincinnati Children’s Hospital Medical Center
+    3333 Burnet Avenue, MLC 5041
+    Cincinnati, OH 45229-3039
+- Phone: (513) 517-0289
+- Fax: (513) 636-7509
+- Email: cole.brokamp@cchmc.org
+- Homepage: https://colebrokamp.com
+- ORCID: 0000-0002-0289-3151
+
+# Research Interests
+
+- Place-based data science
+- Environmental epidemiology
+- Population health
+- Causal inference machine learning methods
+- Fairness in precision medicine
+
+# Education
+
+**Cincinnati Children’s Hospital Medical Center**, Cincinnati, Ohio USA  
+Postdoctoral Research Fellow, Division of Biostatistics & Epidemiology, 2016 - 2017  
+Advisor: Dr. Patrick Ryan
+
+**University of Cincinnati College of Medicine**, Cincinnati, Ohio USA
+Ph.D., Department of Environmental Health, Division of Biostatistics and Bioinformatics, 2016
+Advisor: Dr. M.B. Rao
+
+**University of Cincinnati**, Cincinnati, Ohio USA
+B.S., Biomedical Engineering, 2010
+
+# Academic Appointments
+
+- November 2017 - October 2020: Non-Tenure Track Research Assistant Professor, University of Cincinnati College of Medicine Department of Pediatrics
+- November 2020 – June 2022: Tenure Track Assistant Professor, University of Cincinnati College of Medicine Department of Pediatrics
+- July 2022 – present: Tenure Track Associate Professor, University of Cincinnati College of Medicine Department of Pediatrics
+
+# Grants and Contracts
+
+### Current
+
+### Selected Previous (Brokamp, PI)
+
+# Publications
+
+```{r, echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("pubs.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "{paste(author, collapse = ', ')}",
+                         "{title}",
+                         "*{journal}*",
+                         "{issue_pages}",
+                         "{year}.",
+                         .sep = ". ",
+                         .na = character())) |>
+  cat(sep = "\n\n")
+```
+
+# Patents
+
+Assem Ziady, Rhonda Szczesniak, John Clancy, Cole Brokamp, inventors; Cincinnati Children’s Hospital Medical Center, assignee. Compositions and methods for treatment of lung function. United States patent US 10,761,099. 2020 Sep 1.
+
+# Talks
+
+```{r echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("talks.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "{title}",
+                         "*{event}*",
+                         "{location}",
+                         "{year}",
+                         .sep = ". ",
+                         .na = character())) |>
+  cat(sep = "\n\n")
+```
+
+# Awards and Honors
+
+- 2020: CCHMC Division of Biostatistics & Epidemiology Top Research Achievement
+- 2020: CCHMC Division of Biostatistics & Epidemiology Top Publication
+- 2017: CCHMC Division of Biostatistics & Epidemiology Top Research Achievement
+- 2017: CCHMC Division of Biostatistics & Epidemiology Top Publication
+- 2016: CCHMC Division of Biostatistics & Epidemiology Travel Award
+- 2016: CCHMC Arnold W. Strauss Fellowship Award
+- 2015: Choose Ohio First Scholarship Recipient
+
+# Service and Leadership
+
+## Service
+
+### Professional Societies
+
+- 2014 - present: Member, International Society of Exposure Science
+- 2018 - present: Member, International Society of Environmental Epidemiology
+- itutional Committees
+- 2023 - present: Member CCHMC Biomedical Informatics Faculty Search Committee
+- 2022 - present: Member, CCHMC Artificial Intelligence Governance Council
+- 2019 - present: Member, CCHMC DBE Faculty Career Development Committee
+- 2022: Chair, CCHMC DBE Strategic Plan Steering Committee
+- 2017 - present: Member, CCHMC DBE Strategic Plan Steering Committee
+- 2017 - present: Member, CCHMC DBE Research Committee
+- erence Leadership
+- 2016: Chair of the Land Use Regression Modeling Session, International Society of Exposure Science Annual Meeting
+- 2017: Chair of the Ensemble Learning for Air Pollution Exposure Assessment Session, International Society of Exposure Science Annual Meeting
+- 2021: Chair of the Harnessing Big Data in Exposure Science Session, International Society of Exposure Science Annual Meeting
+- 2021: Chair of the Environmental Exposures and Mental Health Session, International Society of Environmental Epidemiology
+
+### Scientific Reviewer
+
+- Journal Reviewer (12 manuscripts reviewed per year, on average):
+  - Academic Pediatrics
+  - American Journal of Respiratory and Critical Care Medicine
+  - Annals of Epidemiology
+  - Environmental Health Perspectives
+  - Environment International
+  - Environmental Modeling & Assessment
+  - Environmental Pollution
+  - Environmental Research
+  - Environmental Science & Technology
+  - Environmental Science & Technology Letters
+  - Health & Place
+  - International Journal of Environmental Research and Public Health
+  - International Journal of Epidemiology
+  - Journal of Exposure Science and Environmental Epidemiology
+  - Journal of Open Source Software
+  - PLOS ONE
+  - Pediatrics
+  - Stochastic Environmental Research and Risk Assessment
+  - Science of the Total Environment
+- Grant Reviewer:
+  - 2017: Puerto Rico Science, Technology & Research Trust
+  - 2018 - 2021: Arnold S. Strauss Fellowship Award, CCHMC
+  - 2018 – 2020, 2022: University of Rochester Processes and Methods Grant
+  - October 2019: NIH SIEE Study Section, Early Career Reviewer
+  - 2020: University of Michigan M-LEEaD Center Pilot Projects
+  - 2020: Ohio State University CCTS Pilot Projects
+  - 2021: University of Louisville CCTS Pilot Translational & Clinical Studies Program
+  - March 2022: NIH NIEHS ZES1 LKB-S (KS) Special Emphasis Panel
+  - March 2022: NIH NIEHS ZES1 LWF-S (K9) Special Emphasis Panel
+  - November 2022: NIH NIEHS ZES1 WL-W (K) Special Emphasis Panel
+  - February 2023: NIH NCI ZCTA1 TCRB-J (M2) R Review Panel
+- Abstract Reviewer:
+  - 2018, 2019, 2022: International Societies of Exposure Science 
+  - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
+  - 2021, 2022, 2023: American Medical Informatics Association Clinical Informatics Conference
+
+## Leadership
+
+- 2017 - present: Founding Director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH) within the Data Management and Analysis Center at Cincinnati Children’s
+- 2019 - present: Founding Leader of Cincinnati Children’s R Users Group (CCHMC RUG)
+
+\vfill
+
+Last Updated: `r Sys.Date()`
