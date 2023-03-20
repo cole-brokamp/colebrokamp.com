@@ -12,13 +12,19 @@ library(purrr)
 library(glue)
 ```
 
-## About
+## <img src='cole_circle.png' align='right' style="max-height: 180px"> {.jumbotron}
 
-<div class="jumbotron">
-  <img src='cole_circle.png' align='right' style="max-height: 250px; max-width: 250px;">
-  <p>
-  I am an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati College of Medicine interested in place-based data science, environmental and population health, and fairness in precision medicine. My research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on childhood psychiatric and neurobehavioral health outcomes. I also develop new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods. </p>
+<div class="container">
+Cole Brokamp, PhD is an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati interested in place-based data science, environmental epidemiology, and fairness in precision medicine.
 </div>
+
+<div class="container">
+His research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on pediatric psychiatric health. He develops new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.
+</div>
+
+## 
+
+&nbsp;
 
 ## Publications
 
@@ -35,7 +41,10 @@ yaml::yaml.load_file("pubs.yaml") |>
   cat(sep = "\n\n")
 ```
 
+<hr>
+
 ## Talks
+
 
 ```{r echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("talks.yaml") |>
@@ -49,3 +58,6 @@ yaml::yaml.load_file("talks.yaml") |>
                          .na = character())) |>
   cat(sep = "\n\n")
 ```
+
+<!--  LocalWords:  div
+ -->
