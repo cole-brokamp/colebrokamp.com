@@ -4,10 +4,5 @@ output:
   html_document:
     css: style.css
     theme: flatly
-    toc: true
-    toc_depth: 2
-    toc_float:
-      collapsed: false
-      smooth_scroll: true
 exclude: ['Makefile', 'README.md','*.yaml']
 new_session: true

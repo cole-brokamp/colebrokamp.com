@@ -1,4 +1,9 @@
 title: "Cole Brokamp"
+left:
+  - text: Publications
+    href: index.html#publications
+  - text: Talks
+    href: index.html#talks
 right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp
