@@ -15,8 +15,10 @@ library(glue)
 ## <img src='cole_circle.png' align='right' style="max-height: 180px"> {.jumbotron}
 
 <div class="container">
-Cole Brokamp, PhD is an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati interested in place-based data science, environmental epidemiology, and fairness in precision medicine.
+Cole Brokamp, PhD is an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati interested in geospatial data science, environmental epidemiology, and fairness in precision medicine.
 </div>
+
+&nbsp;
 
 <div class="container">
 His research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on pediatric psychiatric health. He develops new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.

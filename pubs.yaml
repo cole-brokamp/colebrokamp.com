@@ -86,63 +86,158 @@ vancil-2022:
 trinidad-2022b:
   title: "Use of Area Based Socioeconomic Deprivation Indices: A Scoping Review and Qualitative Analysis"
   author:
-    - Stephen Trinidad, Cole Brokamp, Andres Mor Huertas, Andrew Beck, Carley Riley, Erika Rasnick, Richard Falcone, Meera Kotagal
+    - Stephen Trinidad
+    - Cole Brokamp
+    - Andres Mor Huertas
+    - Andrew Beck
+    - Carley Riley
+    - Erika Rasnick
+    - Richard Falcone
+    - Meera Kotagal
   journal: Health Affairs
   issue_pages: In Press
   year: 2022
 
 parikh-2022:
   title: Epigenome-Wide Association of Neonatal Methylation and Trimester-Specific Prenatal PM2.5 Exposure
-  author: Milan N. Parikh, Cole Brokamp, Erika Rasnick, Lili Ding, Tesfaye B. Mersha, Katherine Bowers, Alonzo T. Folger
+  author:
+    - Milan N. Parikh
+    - Cole Brokamp
+    - Erika Rasnick
+    - Lili Ding
+    - Tesfaye B. Mersha
+    - Katherine Bowers
+    - Alonzo T. Folger
   journal: Environmental Epidemiology
   issue_pages: In Press
   year: 2022
 
 conrey-2022:
   title: Neighbourhood socio-economic environment predicts adiposity and obesity risk in children under two
-  author: Shannon C. Conrey, Allison R. Burrell, Cole Brokamp, Rachel M. Burke, Sarah C. Couch, Liang Niu, Claire P. Mattison, Alexandra Piasecki, Daniel C. Payne, Mary A. Staat, Ardythe L. Morrow
+  author:
+  - Shannon C. Conrey
+  - Allison R. Burrell
+  - Cole Brokamp
+  - Rachel M. Burke
+  - Sarah C. Couch
+  - Liang Niu
+  - Claire P. Mattison
+  - Alexandra Piasecki
+  - Daniel C. Payne
+  - Mary A. Staat
+  - Ardythe L. Morrow
   journal: Pediatric Obesity
   issue_pages: Online
   year: 2022
 
 pennington-2022:
   title: "Racial Fairness in Precision Medicine: Pediatric Asthma Prediction Algorithms"
-  author: Jordan Pennington, Erika Rasnick, Lisa J. Martin, Jocelyn M. Biagini, Tesfaye B. Mersha, Allison Parsons, Gurjit K. Khurana Hershey, Patrick Ryan, Cole Brokamp
+  author:
+    - Jordan Pennington
+    - Erika Rasnick
+    - Lisa J. Martin
+    - Jocelyn M. Biagini
+    - Tesfaye B. Mersha
+    - Allison Parsons
+    - Gurjit K. Khurana Hershey
+    - Patrick Ryan
+    - Cole Brokamp
   journal: American Journal of Health Promotion
   issue_pages: 37(2)
   year: 2022
 
 esteban-2022:
   title: Understanding Racial Disparities in Childhood Asthma Using Individual- and Neighborhood-Level Risk Factors
-  author: Esteban Correa, Lili Ding, Andrew F. Beck, Cole Brokamp, Mekibib Altayeb, Robert S. Kahn, Tesfay Mersha
+  author:
+    - Esteban Correa
+    - Lili Ding
+    - Andrew F. Beck
+    - Cole Brokamp
+    - Mekibib Altayeb
+    - Robert S. Kahn
+    - Tesfay Mersha
   journal: Journal of Allergy and Clinical Immunology
   issue_pages: In Press
   year: 2022
 
 trinidad-2022a:
   title: Children from Disadvantaged Neighborhoods Experience Disproportionate Injury from Interpersonal Violence
-  author: Stephen Trinidad, Cole Brokamp, Rashmi Sahay, Suzanne Moody, Dawne Gardner, Allison A.Parsons, Carley Riley, Nicole Sofer, Andrew F.Beck, Richard A. Falcone Jr., Meera Kotagal
+  author:
+    - Stephen Trinidad
+    - Cole Brokamp
+    - Rashmi Sahay
+    - Suzanne Moody
+    - Dawne Gardner
+    - Allison A.Parsons
+    - Carley Riley
+    - Nicole Sofer
+    - Andrew F.Beck
+    - Richard A. Falcone Jr.
+    - Meera Kotagal
   journal: Journal of Pediatric Surgery
   issue_pages: Online
   year: 2022
 
 shah-2022:
   title: Using Geomarkers and Sociodemographics to Inform Assessment of Caregiver Adversity and Resilience
-  author: Anita N. Shah, Erika Rasnick, Mohammad AN Bhuiyan, Chris Wolfe, Dianna Bosse, Jeffrey M. Simmons, Samir S. Shah, Cole Brokamp, Andrew F. Beck
+  author:
+    - Anita N. Shah
+    - Erika Rasnick
+    - Mohammad An Bhuiyan
+    - Chris Wolfe
+    - Dianna Bosse
+    - Jeffrey M. Simmons
+    - Samir S. Shah
+    - Cole Brokamp
+    - Andrew F. Beck
   journal: Hospital Pediatrics
   issue_pages: "12(8):689-695"
   year: 2022
 
 turner-2022a:
   title: "Mental and Physical Stress Responses to Personal Ultrafine Particle Exposure in Adolescents"
-  author: Ashley Lynn Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Kelly J. Brunst, Patrick H. Ryan
+  author:
+    - Ashley Lynn Turner
+    - Cole Brokamp
+    - Chris Wolfe
+    - Tiina Reponen
+    - Kelly J. Brunst
+    - Patrick H. Ryan
   journal: International Journal of Environmental Research and Public Health
   issue_pages: In Press
   year: 2022
 
 zanobetti-2022:
   title: "Childhood Asthma Incidence, Early and Persistent Wheeze, and Neighborhood Socioeconomic Factors in the ECHO/CREW Consortium"
-  author: Antonella Zanobetti, Patrick H. Ryan, Brent Coull, Cole Brokamp, Soma Datta, Jeffrey Blossom, Nathan Lothrop, Rachel L. Miller, Paloma I. Beamer, Cynthia M. Visness, Howard Andrews, Leonard B. Bacharier, Tina Hartert, Christine C. Johnson, Dennis Ownby, Gurjit K. Khurana Hershey, Christine Joseph, Song Yiqiang, Eneida Mendoza, Daniel J. Jackson, Heike Luttmann-Gibson, Edward M. Zoratti, Anne L. Wright, Fernando D. Martinez, Christine M. Seroogy, James E. Gern, Diane R. Gold, for the Children’s Respiratory and Environmental Workgroup (CREW) Consortium
+  author:
+    - Antonella Zanobetti
+    - Patrick H. Ryan
+    - Brent Coull
+    - Cole Brokamp
+    - Soma Datta
+    - Jeffrey Blossom
+    - Nathan Lothrop
+    - Rachel L. Miller
+    - Paloma I. Beamer
+    - Cynthia M. Visness
+    - Howard Andrews
+    - Leonard B. Bacharier
+    - Tina Hartert
+    - Christine C. Johnson
+    - Dennis Ownby
+    - Gurjit K. Khurana Hershey
+    - Christine Joseph
+    - Song Yiqiang
+    - Eneida Mendoza
+    - Daniel J. Jackson
+    - Heike Luttmann-Gibson
+    - Edward M. Zoratti
+    - Anne L. Wright
+    - Fernando D. Martinez
+    - Christine M. Seroogy
+    - James E. Gern
+    - Diane R. Gold
+    - for the Children’s Respiratory and Environmental Workgroup (CREW) Consortium
   journal: JAMA Pediatrics
   issue_pages: Online
   year: 2022
@@ -150,7 +245,19 @@ zanobetti-2022:
 
 trinidad-2022:
   title: Relationships Between Socioeconomic Deprivation and Pediatric Firearm-Related Injury at the Neighborhood Level
-  author: Stephen Trinidad, Andrew Vancil, Cole Brokamp, Suzanne Moody, Dawne Gardner, Allison A. Parsons, Carley Riley, Rashmi Sahay, Nicole Sofer, Andrew F. Beck, Richard A. Falcone Jr., Meera Kotagal
+  author:
+    - Stephen Trinidad
+    - Andrew Vancil
+    - Cole Brokamp
+    - Suzanne Moody
+    - Dawne Gardner
+    - Allison A. Parsons
+    - Carley Riley
+    - Rashmi Sahay
+    - Nicole Sofer
+    - Andrew F. Beck
+    - Richard A. Falcone Jr.
+    - Meera Kotagal
   journal: Journal of Trauma and Acute Care Surgery
   issue_pages: Online
   year: 2022
@@ -158,14 +265,28 @@ trinidad-2022:
 
 hartley-2022: 
   title: "Residential Greenness, Asthma, and Lung Function Among Children at High Risk of Allergic Sensitization: A Prospective Cohort Study"
-  author: Kim Hartley, Patrick Ryan, Gordon Gillespie, Joseph Perazzo, J. Michael Wright, Glenn Rice, Geoffrey Donovan, Rebecca Gernes, Gurjit Khurana Hershey, Grace LeMasters, Cole Brokamp 
+  author:
+    - Kim Hartley
+    - Patrick Ryan
+    - Gordon Gillespie
+    - Joseph Perazzo
+    - J. Michael Wright
+    - Glenn Rice
+    - Geoffrey Donovan
+    - Rebecca Gernes
+    - Gurjit Khurana Hershey
+    - Grace LeMasters
+    - Cole Brokamp 
   journal: Environmental Health
   issue_pages: In Press
   year: 2022
 
 roy-2022:
   title: Clustering and Regression-Based Analysis of PM2. 5 Sensitivity to Meteorology in Cincinnati, Ohio
-  author: Madhumitaa Roy, Cole Brokamp, Sivaraman Balachandran
+  author:
+    - Madhumitaa Roy
+    - Cole Brokamp
+    - Sivaraman Balachandran
   journal: Atmosphere
   issue_pages: "13(4):545"
   year: 2022
@@ -173,7 +294,17 @@ roy-2022:
 
 thomson-2022:
   title: Neighborhood Socioeconomic Deprivation and Health Care Utilization of Medically Complex Children
-  author: Joanna Thomson, Breann Butts, Saige Camara, Erika Rasnick, Cole Brokamp, Caroline Heyd, Rebecca Steuart, Scott Callahan, Stuart Taylor, Andrew Beck
+  author:
+    - Joanna Thomson
+    - Breann Butts
+    - Saige Camara
+    - Erika Rasnick
+    - Cole Brokamp
+    - Caroline Heyd
+    - Rebecca Steuart
+    - Scott Callahan
+    - Stuart Taylor
+    - Andrew Beck
   journal: Pediatrics
   issue_pages: e2021052592
   year: 2022
@@ -181,7 +312,8 @@ thomson-2022:
 
 brokamp-2022:
   title: A High Resolution Spatiotemporal Fine Particulate Matter Exposure Assessment Model for the contiguous United States
-  author: Cole Brokamp
+  author:
+    - Cole Brokamp
   journal: Environmental Advances
   issue_pages: "7:100155"
   year: 2022
@@ -190,7 +322,12 @@ brokamp-2022:
 
 turner-2022:
   title: Impact of Personal, Sub-hourly Exposure to Ultrafine Particles on Respiratory Health in Adolescents With Asthma
-  author: Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick Ryan
+  author:
+    - Ashley Turner
+    - Cole Brokamp
+    - Chris Wolfe
+    - Tiina Reponen
+    - Patrick Ryan
   journal: Annals of the American Thoracic Society
   issue_pages: Online
   year: 2022
@@ -198,7 +335,15 @@ turner-2022:
 
 liu-2021:
   title: "Understanding Pediatric Surgery Cancellation: Geospatial Analysis"
-  author: Lei Liu, Yizhao Ni, Andrew F Beck, Cole Brokamp, Ryan C Ramphul, Linda D Highfield, Megha Karkera Kanjia, J Nick Pratap
+  author:
+    - Lei Liu
+    - Yizhao Ni
+    - Andrew F Beck
+    - Cole Brokamp
+    - Ryan C Ramphul
+    - Linda D Highfield
+    - Megha Karkera Kanjia
+    - J Nick Pratap
   journal: Journal of Medical Internet Research
   issue_pages: "23(8):e26231"
   year: 2021
@@ -206,7 +351,12 @@ liu-2021:
 
 turner-2021:
   title: Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents
-  author: Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick Ryan
+  author:
+    - Ashley Turner
+    - Cole Brokamp
+    - Chris Wolfe
+    - Tiina Reponen
+    - Patrick Ryan
   journal: Environment International
   issue_pages: "156:106740"
   year: 2021
@@ -214,7 +364,12 @@ turner-2021:
 
 lowe-2021:
   title: "A Geographic Perspective on Opioid Misuse: Substance Abuse Treatment Deserts in Southwestern Ohio"
-  author: Linnea Lowe, Cole Brokamp, Erika Rasnick, Eric S. Hall, Shauna Acquavita
+  author:
+    - Linnea Lowe
+    - Cole Brokamp
+    - Erika Rasnick
+    - Eric S. Hall
+    - Shauna Acquavita
   journal: Ohio Journal of Public Health
   issue_pages: 4(1)
   year: 2021
@@ -222,14 +377,62 @@ lowe-2021:
 
 loizaga-2021:
   title: "Rheumatic Heart Disease in the United States: Forgotten but not Gone. Results of a 10 Year Multicenter Review"
-  author: Sarah de Loizaga, Lindsay Arthur, Bhawna Arya, Brian Beckman, Wubishet Belay, Cole Brokamp, Nak Hyun Choi, Sean Connolly, Soham Dasgupta, Tavenner Dibert, Marylou Dryer, Lakshmi Gokanapudy Hahn, Elizabeth Greene, Daphney Kernizan, Omar Khalid, Jennifer Klein, Ryan Kobayashi, Subhrajit Lahiri, Raymond Lorenzoni, Jennifer Marshall, Theodore Millette, Lily Moore, Babu Muhamed, Meghna Murali, Andrea Otero Luna, Kinjal Parikh, Amy Sanyahumbi, Divya Shakti, Elizabeth Stein, Sanket Shah, Hannah Wilkins, McAllister Windom, Scott Wirth, Meghan Zimmerman, Andrew Beck, Nicholas Ollberding, Craig Sable, Andrea Beaton
+  author:
+    - Sarah de Loizaga
+    - Lindsay Arthur
+    - Bhawna Arya
+    - Brian Beckman
+    - Wubishet Belay
+    - Cole Brokamp
+    - Nak Hyun Choi
+    - Sean Connolly
+    - Soham Dasgupta
+    - Tavenner Dibert
+    - Marylou Dryer
+    - Lakshmi Gokanapudy Hahn
+    - Elizabeth Greene
+    - Daphney Kernizan
+    - Omar Khalid
+    - Jennifer Klein
+    - Ryan Kobayashi
+    - Subhrajit Lahiri
+    - Raymond Lorenzoni
+    - Jennifer Marshall
+    - Theodore Millette
+    - Lily Moore
+    - Babu Muhamed
+    - Meghna Murali
+    - Andrea Otero Luna
+    - Kinjal Parikh
+    - Amy Sanyahumbi
+    - Divya Shakti
+    - Elizabeth Stein
+    - Sanket Shah
+    - Hannah Wilkins
+    - McAllister Windom
+    - Scott Wirth
+    - Meghan Zimmerman
+    - Andrew Beck
+    - Nicholas Ollberding
+    - Craig Sable
+    - Andrea Beaton
   journal: Journal of the American Heart Association
   issue_pages: In Press
   year: 2021
 
 maxwell-2021:
   title: Socioeconomic and racial disparities in diabetic ketoacidosis admissions in youth with type 1 diabetes
-  author: Andrea R. Maxwell, Nana-Hawa Yayah Jones, Stuart Taylor, Sarah D. Corathers, Erika Rasnick, Cole Brokamp, Carley L. Riley, Allison Parsons, Jessica C. Kichler, Andrew F. Beck
+  author:
+    - Andrea R. Maxwell
+    - Nana-Hawa Yayah Jones
+    - Stuart Taylor
+    - Sarah D. Corathers
+    - Erika Rasnick
+    - Cole Brokamp
+    - Carley L. Riley
+    - Allison Parsons
+    - Jessica C. Kichler
+    - Andrew F. Beck
   journal: Journal of Hospital Medicine
   issue_pages: In Press
   year: 2021
@@ -237,7 +440,17 @@ maxwell-2021:
 
 gecili-2021b:
   title: Rapid cystic fibrosis lung-function decline and in-vitro CFTR modulation
-  author: Emrah Gecili, Weiji Su, Cole Brokamp, Eleni-Rosalina Andrinopoulou, Francis J LaRosa Iii, Teresa Pestian, John P Clancy, George M Solomon, John J Brewington, Rhonda D Szczesniak
+  author:
+    - Emrah Gecili
+    - Weiji Su
+    - Cole Brokamp
+    - Eleni-Rosalina Andrinopoulou
+    - Francis J LaRosa Iii
+    - Teresa Pestian
+    - John P Clancy
+    - George M Solomon
+    - John J Brewington
+    - Rhonda D Szczesniak
   journal: Journal of Cystic Fibrosis
   issue_pages: S1569-1993(21)00111-9
   year: 2021
@@ -245,7 +458,16 @@ gecili-2021b:
 
 kelly-2021:
   title: Voter Participation is Associated with Child Health Outcomes at the Population Level
-  author: Grace Kelly, Jordan Pennington, Yonatan Segev, Cole Brokamp, Margaret N Jones, Saige Camara, Adrienne W Henize, Robert S Kahn, Andrew F Beck
+  author:
+    - Grace Kelly
+    - Jordan Pennington
+    - Yonatan Segev
+    - Cole Brokamp
+    - Margaret N Jones
+    - Saige Camara
+    - Adrienne W Henize
+    - Robert S Kahn
+    - Andrew F Beck
   journal: Journal of Pediatrics
   issue_pages: In Press
   year: 2021
@@ -253,7 +475,14 @@ kelly-2021:
 
 mohammad-2021:
   title: Source-specific contributions of particulate matter to asthma-related pediatric emergency department utilization
-  author: Mohammad Bhuiyan, Patrick Ryan, Farzan Oroumyeh, Yajna Jathan, Madhumitaa Roy, Siv Balachandran, Cole Brokamp
+  author:
+    - Mohammad Bhuiyan
+    - Patrick Ryan
+    - Farzan Oroumyeh
+    - Yajna Jathan
+    - Madhumitaa Roy
+    - Siv Balachandran
+    - Cole Brokamp
   journal: Health Information Science and Systems
   issue_pages: 9(12)
   year: 2021
@@ -261,21 +490,54 @@ mohammad-2021:
 
 rasnick-2021:
   title: Identifying Sensitive Windows of Airborne Lead Exposure Associated with Behavioral Outcomes at Age 12
-  author: Erika Rasnick, Patrick H. Ryan, A. John Bailer, Thomas Fisher, Patrick J. Parsons, Kimberly Yolton, Nicholas C. Newman, Bruce P. Lanphear, Cole Brokamp
+  author:
+    - Erika Rasnick
+    - Patrick H. Ryan
+    - A. John Bailer
+    - Thomas Fisher
+    - Patrick J. Parsons
+    - Kimberly Yolton
+    - Nicholas C. Newman
+    - Bruce P. Lanphear
+    - Cole Brokamp
   journal: Environmental Epidemiology
   issue_pages: "5(2):e144"
   year: 2021
 
 gecili-2021a:
   title: Seasonality, mediation and comparison (SMAC) methods to identify influences on lung function decline
-  author: Emrah Gecilia, Anushka Palipana Cole Brokamp Rui Huang, Eleni-Rosalina Andrinopoulou, Teresa Pestian, Erika Rasnick, Ruth H. Keogh, Yizhao, Ni, John P.Clancy, Patrick Ryan, Rhonda D. Szczesniak
+  author:
+    - Emrah Gecilia
+    - Anushka Palipana
+    - Cole Brokamp
+    - Rui Huang
+    - Eleni-Rosalina Andrinopoulou
+    - Teresa Pestian
+    - Erika Rasnick
+    - Ruth H. Keogh
+    - Yizhao Ni
+    - John P.Clancy
+    - Patrick Ryan
+    - Rhonda D. Szczesniak
   journal: MethodsX
   issue_pages: "8:101313"
   year: 2021
 
 gecili-2021:
   title: "Seasonal variation of lung function in cystic fibrosis: longitudinal modeling to compare a Midwest US cohort to international populations"
-  author: Emrah Gecili, Cole Brokamp, Anushka Palipana, Rui Huang, Eleni-Rosalina Andrinopoulou, Teresa Pestian, Erika Rasnick, Ruth H.Keoghe, Yizhao Ni, John P.Clancy, Patrick Ryan, Rhonda D.Szczesniak
+  author:
+    - Emrah Gecili
+    - Cole Brokamp
+    - Anushka Palipana
+    - Rui Huang
+    - Eleni-Rosalina Andrinopoulou
+    - Teresa Pestian
+    - Erika Rasnick
+    - Ruth H.Keoghe
+    - Yizhao Ni
+    - John P.Clancy
+    - Patrick Ryan
+    - Rhonda D.Szczesniak
   journal: Science of the Total Environment
   issue_pages: Online
   year: 2020
@@ -283,7 +545,31 @@ gecili-2021:
 
 ryan-2020:
   title: A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies
-  author: Patrick H. Ryan, Cole Brokamp, Jeff Blossom, Nathan Lothrop, Rachel L. Miller, Paloma I. Beamer, Cynthia M. Visness, Antonella Zanobetti, Howard Andrews, Leonard B. Bacharier, Tina Hartert, Christine C. Johnson, Dennis Ownby, Robert F. Lemanske, Jr., Heike Gibson, Weeberb Requia, Brent Coull, Edward M. Zoratti, Anne L. Wright, Fernando D. Martinez, Christine M. Seroogy, James E. Gern, Diane R. Gold, on behalf of the CREW Consortium
+  author:
+    - Patrick H. Ryan
+    - Cole Brokamp
+    - Jeff Blossom
+    - Nathan Lothrop
+    - Rachel L. Miller
+    - Paloma I. Beamer
+    - Cynthia M. Visness
+    - Antonella Zanobetti
+    - Howard Andrews
+    - Leonard B. Bacharier
+    - Tina Hartert
+    - Christine C. Johnson
+    - Dennis Ownby
+    - Robert F. Lemanske Jr.
+    - Heike Gibson
+    - Weeberb Requia
+    - Brent Coull
+    - Edward M. Zoratti
+    - Anne L. Wright
+    - Fernando D. Martinez
+    - Christine M. Seroogy
+    - James E. Gern
+    - Diane R. Gold
+    - on behalf of the CREW Consortium
   journal: Journal of Clinical and Translational Science
   issue_pages: "5:e86, 1-8"
   year: 2021
@@ -291,7 +577,20 @@ ryan-2020:
 
 wolfe-2020:
   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): An Interactive Web Application"
-  author: Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp 
+  author:
+    - Christopher Wolfe
+    - Teresa Pestian
+    - Emrah Gecili
+    - Weiji Su
+    - Ruth H. Keogh
+    - John P. Pestian
+    - Michael Seid
+    - Peter J. Diggle
+    - Assem Ziady
+    - John P. Clancy
+    - Daniel H. Grossoehme
+    - Rhonda D. Szczesniak
+    - Cole Brokamp 
   journal: JMIR Med Inform
   issue_pages: 8(12):e23530
   year: 2020
@@ -299,7 +598,15 @@ wolfe-2020:
 
 hartley-2020:
   title: Residential Surrounding Greenness and Self-Reported Symptoms of Anxiety and Depression in Adolescents
-  author: Kim Hartley, Joseph Perazzo, Cole Brokamp, Gordon Lee Gillespie, Kim M. Cecil, Grace LeMasters, Kimberly Yolton, Patrick Ryan
+  author:
+    - Kim Hartley
+    - Joseph Perazzo
+    - Cole Brokamp
+    - Gordon Lee Gillespie
+    - Kim M. Cecil
+    - Grace LeMasters
+    - Kimberly Yolton
+    - Patrick Ryan
   journal: Environmental Research
   issue_pages: "194:110628"
   year: 2020
@@ -307,7 +614,20 @@ hartley-2020:
 
 florin-2020a:
   title: Proadrenomedullin Predicts Severe Disease in Children with Suspected Community-Acquired Pneumonia
-  author: Todd A Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Eric S Nylen, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard M Ruddy, Samir S Shah
+  author:
+    - Todd A Florin
+    - Lilliam Ambroggio
+    - Cole Brokamp
+    - Yin Zhang
+    - Eric S Nylen
+    - Mantosh Rattan
+    - Eric Crotty
+    - Michael A Belsky
+    - Sara Krueger
+    - Thomas N Epperson
+    - Andrea Kachelmeyer
+    - Richard M Ruddy
+    - Samir S Shah
   journal: Clinical Infectious Diseases
   issue_pages: ciaa1138
   year: 2020
@@ -315,7 +635,13 @@ florin-2020a:
 
 wadhwani-2020a:
   title: Neighborhood Socioeconomic Deprivation, Racial Segregation, and Organ Donation Across 5 States
-  author: Sharad I. Wadhwani, Cole Brokamp, Erika Rasnick, John C. Bucuvalas, Jennifer C. Lai, Andrew F. Beck
+  author:
+    - Sharad I. Wadhwani
+    - Cole Brokamp
+    - Erika Rasnick
+    - John C. Bucuvalas
+    - Jennifer C. Lai
+    - Andrew F. Beck
   journal: American Journal of Transplantation
   issue_pages: Online
   year: 2020
@@ -323,7 +649,12 @@ wadhwani-2020a:
 
 arbet-2020:
   title: Lessons and Tips for Designing a Machine Learning Study Using EHR Data
-  author: Jaron Arbet, Cole Brokamp, Jareen Meinzen-Derr, Katy E. Trinkley, Heidi M Spratt
+  author:
+    - Jaron Arbet
+    - Cole Brokamp
+    - Jareen Meinzen-Derr
+    - Katy E. Trinkley
+    - Heidi M Spratt
   journal: Journal of Clinical and Translational Science
   issue_pages: Online
   year: 2020
@@ -331,7 +662,19 @@ arbet-2020:
 
 florin-2020:
   title: Biomarkers and Disease Severity in Children with Community-Acquired Pneumonia
-  author: Todd Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson, Andrea Kachelmeyer, Richard Ruddy, Samir S Shaw
+  author:
+    - Todd Florin
+    - Lilliam Ambroggio
+    - Cole Brokamp
+    - Yin Zhang
+    - Mantosh Rattan
+    - Eric Crotty
+    - Michael A Belsky
+    - Sara Krueger
+    - Thomas N Epperson
+    - Andrea Kachelmeyer
+    - Richard Ruddy
+    - Samir S Shaw
   journal: Pediatrics
   issue_pages: Online
   year: 2020
@@ -339,7 +682,19 @@ florin-2020:
 
 szczesniak-2020a:
   title: Influences of Environmental Exposures On Individuals Living with Cystic Fibrosis
-  author: Rhonda Szczesniak, Jessica L. Rice, Cole Brokamp, Patrick Ryan, Teresa Pestian, Yizhao Ni, Eleni-Rosalina Andrinopoulou, Ruth H. Keogh, Emrah Gecili, Rui Huang, John P. Clancy, Joseph M. Collaco
+  author:
+    - Rhonda Szczesniak
+    - Jessica L. Rice
+    - Cole Brokamp
+    - Patrick Ryan
+    - Teresa Pestian
+    - Yizhao Ni
+    - Eleni-Rosalina Andrinopoulou
+    - Ruth H. Keogh
+    - Emrah Gecili
+    - Rui Huang
+    - John P. Clancy
+    - Joseph M. Collaco
   journal: Expert Review of Respiratory Medicine
   issue_pages: Online
   year: 2020
@@ -347,14 +702,28 @@ szczesniak-2020a:
 
 percy-2020:
   title: "Subclinical and Overt Newborn Opioid Exposure: Prevalence and First Year Healthcare Utilization"
-  author: Zana Percy, Cole Brokamp, Jennifer M McAllister, Patrick Ryan, Scott L Wexelblatt, Eric Hall
+  author:
+    - Zana Percy
+    - Cole Brokamp
+    - Jennifer M McAllister
+    - Patrick Ryan
+    - Scott L Wexelblatt
+    - Eric Hall
   journal: Journal of Pediatrics
   issue_pages: Online
   year: 2020
 
 wadhwani-2020:
   title: Association Between Neighborhood-level Socioeconomic Deprivation and the Medication Level Variability Index for Children Following Liver Transplantation
-  author: Sharad Wadhwani, John Bucuvalas, Cole Brokamp, Ravinder Anand, Ashutosh Gupta, Stuart Taylor, Eyal Shemesh, Andrew Beck
+  author:
+    - Sharad Wadhwani
+    - John Bucuvalas
+    - Cole Brokamp
+    - Ravinder Anand
+    - Ashutosh Gupta
+    - Stuart Taylor
+    - Eyal Shemesh
+    - Andrew Beck
   journal: Transplantation
   issue_pages: Online
   year: 2020
@@ -362,7 +731,11 @@ wadhwani-2020:
 
 harley-2020:
   title: "Effect of greenness on asthma in children: A systematic review"
-  author: Kim Hartley, Patrick Ryan, Cole Brokamp, Gordon L. Gillespie
+  author:
+    - Kim Hartley
+    - Patrick Ryan
+    - Cole Brokamp
+    - Gordon L. Gillespie
   journal: Public Health Nursing
   issue_pages: 37(3). 453-460
   year: 2020
@@ -370,7 +743,14 @@ harley-2020:
 
 rossi-2020:
   title: Reported Prevalence of Maternal Hepatitis C Virus Infection in the United States
-  author: Robert M. Rossi, Chris Wolfe, Cole Brokamp, Jennifer M. McAllister, Scott Wexelblatt, Carri R. Warshak, Eric S. Hall
+  author:
+    - Robert M. Rossi
+    - Chris Wolfe
+    - Cole Brokamp
+    - Jennifer M. McAllister
+    - Scott Wexelblatt
+    - Carri R. Warshak
+    - Eric S. Hall
   journal: Obstetrics and Gynecology
   issue_pages: 135. 1-10
   year: 2020
@@ -378,7 +758,15 @@ rossi-2020:
 
 szczesniak-2020:
   title: Dynamic Predictive Probabilities to Monitor Rapid Cystic Fibrosis Disease Progression
-  author: Rhonda D. Szczesniak, Weiji Su, Cole Brokamp, Ruth H. Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, John P. Clancy
+  author:
+    - Rhonda D. Szczesniak
+    - Weiji Su
+    - Cole Brokamp
+    - Ruth H. Keogh
+    - John P. Pestian
+    - Michael Seid
+    - Peter J. Diggle
+    - John P. Clancy
   journal: Statistics in Medicine
   issue_pages: 39. 740-756
   year: 2020
@@ -386,7 +774,25 @@ szczesniak-2020:
 
 orkin-2019:
   title: Community Socioeconomic Deprivation and Non-Alcoholic Fatty Liver Disease Severity
-  author: Sarah Orkin, Cole Brokamp, Toshifumi Yodoshi, Andrew T. Trout, Chunyan Liu, Syeda Meryum, Stuart Taylor, Christopher Wolfe, Rachel Sheridan, Aradhna Seth, Mohammad Alfrad Nobel Bhuiyan, Sanita Ley, Ana Catalina Arce-Clachar, Kristin Bramlage, Robert Kahn, Stavra Xanthakos, Andrew F. Beck, Marialena Mouzaki
+  author:
+    - Sarah Orkin
+    - Cole Brokamp
+    - Toshifumi Yodoshi
+    - Andrew T. Trout
+    - Chunyan Liu
+    - Syeda Meryum
+    - Stuart Taylor
+    - Christopher Wolfe
+    - Rachel Sheridan
+    - Aradhna Seth
+    - Mohammad Alfrad Nobel Bhuiyan
+    - Sanita Ley
+    - Ana Catalina Arce-Clachar
+    - Kristin Bramlage
+    - Robert Kahn
+    - Stavra Xanthakos
+    - Andrew F. Beck
+    - Marialena Mouzaki
   journal: Journal of Pediatric Gastroenterology and Nutrition
   issue_pages: ""
   year: 2019
@@ -394,7 +800,11 @@ orkin-2019:
 
 brokamp-2019b:
   title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study"
-  author: Cole Brokamp, Jeffrey R. Strawn, Andrew F. Beck, Pat Ryan
+  author:
+    - Cole Brokamp
+    - Jeffrey R. Strawn
+    - Andrew F. Beck
+    - Pat Ryan
   journal: Environmental Health Perspectives
   issue_pages: 127(9)
   year: 2019
@@ -406,11 +816,13 @@ andrist-2019:
   journal: Pediatrics
   issue_pages: ""
   year: 2019
-  doi: ""
 
 brokamp-2019a:
   title: "Assessing Exposure to Outdoor Air Pollution for Epidemiological Studies: Model-based and Personal Sampling Strategies"
-  author: Cole Brokamp, Eric B. Brandt, Patrick H. Ryan
+  author:
+    - Cole Brokamp
+    - Eric B. Brandt
+    - Patrick H. Ryan
   journal: Journal of Allergy and Clinical Immunology
   issue_pages: ""
   year: 2019
@@ -418,7 +830,14 @@ brokamp-2019a:
 
 ambroggio-2019:
   title: Validation of the British Thoracic Society Severity Criteria for Pediatric Community-Acquired Pneumonia
-  author: Lilliam Ambroggio, Cole Brokamp, Rachel Mantyla, Brad DePaoli, Richard Ruddy, Samir Shah, Todd Florin
+  author:
+    - Lilliam Ambroggio
+    - Cole Brokamp
+    - Rachel Mantyla
+    - Brad DePaoli
+    - Richard Ruddy
+    - Samir Shah
+    - Todd Florin
   journal: Pediatric Infectious Diseases Journal
   issue_pages: ""
   year: 2019
@@ -426,7 +845,20 @@ ambroggio-2019:
 
 gernes-2019:
   title: Using high-resolution residential greenspace measures in an urban environment to assess risks of allergy outcomes in a cohort of children
-  author: Rebecca Gernes, Cole Brokamp, Glenn Rice, J. Michael Wright, Michelle Kondo, Yvonne Michael, Geoffrey Donovan, Demetrios Gatziolis, David Bernstein, Grace LeMasters, James Lockey, G. Khurana Hershey, Patrick Ryan
+  author:
+    - Rebecca Gernes
+    - Cole Brokamp
+    - Glenn Rice
+    - J. Michael Wright
+    - Michelle Kondo
+    - Yvonne Michael
+    - Geoffrey Donovan
+    - Demetrios Gatziolis
+    - David Bernstein
+    - Grace LeMasters
+    - James Lockey
+    - G. Khurana Hershey
+    - Patrick Ryan
   journal: Science of the Total Environment
   issue_pages: 668
   pages: 760-767
@@ -435,7 +867,13 @@ gernes-2019:
 
 brokamp-2019:
   title: "Material Community Deprivation and Hospital Utilization During the First Year of Life: An Urban Population-Based Cohort Study"
-  author: Cole Brokamp, Andrew F. Beck, Neera K. Goyal, Patrick Ryan, James M. Greenberg, Eric S. Hall
+  author:
+    - Cole Brokamp
+    - Andrew F. Beck
+    - Neera K. Goyal
+    - Patrick Ryan
+    - James M. Greenberg
+    - Eric S. Hall
   journal: Annals of Epidemiology
   issue_pages: 30
   pages: 37-43
@@ -444,7 +882,14 @@ brokamp-2019:
 
 madzia-2018:
   title: Residential Greenspace Is Associated with Childhood Behavioral Outcomes
-  author: Juliana Madzia, Patrick Ryan, Kimberly Yolton, Zana Percy, Nick Newman, Grace LeMasters, Cole Brokamp
+  author:
+    - Juliana Madzia
+    - Patrick Ryan
+    - Kimberly Yolton
+    - Zana Percy
+    - Nick Newman
+    - Grace LeMasters
+    - Cole Brokamp
   journal: Journal of Pediatrics
   issue_pages: ""
   year: 2018
@@ -459,7 +904,13 @@ brokamp-2018a:
 
 szczesniak-2019:
   title: Improving Detection of Rapid Cystic Fibrosis Disease Progression—Early Translation of a Predictive Algorithm into a Point-of-Care Tool
-  author: Rhonda D. Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, and John P. Clancy
+  author:
+    - Rhonda D. Szczesniak
+    - Cole Brokamp
+    - Weiji Su
+    - Gary L. McPhail
+    - John Pestian
+    - John P. Clancy
   journal: IEEE Journal of Translational Engineering in Health and Medicine
   issue_pages: 7(1); 1-8
   year: 2019
@@ -467,7 +918,13 @@ szczesniak-2019:
 
 riney-2018:
   title: Emergency Medical Services Utilization is Associated with Community Deprivation in Children
-  author: Lauren C. Riney, Cole Brokamp, Andrew F. Beck, Wendy Pomerantz, Hamilton Schwartz, Todd A. Florin
+  author:
+    - Lauren C. Riney
+    - Cole Brokamp
+    - Andrew F. Beck
+    - Wendy Pomerantz
+    - Hamilton Schwartz
+    - Todd A. Florin
   journal: Prehospital Emergency Care
   issue_pages: Online
   year: 2018
@@ -475,7 +932,11 @@ riney-2018:
 
 brokamp-2018:
   title: Predicting Daily Urban Fine Particulate Matter Concentrations Using Random Forest
-  author: Cole Brokamp, Roman Jandarov, Monir Hossain, Patrick Ryan
+  author:
+    - Cole Brokamp
+    - Roman Jandarov
+    - Monir Hossain
+    - Patrick Ryan
   journal: Environmental Science & Technology
   issue_pages: 52 (7); 4173-4179
   year: 2018
@@ -483,7 +944,12 @@ brokamp-2018:
 
 beck-2018:
   title: "Toward a Culture of Health in Hospitals: Pervasive population disparities in inpatient bed-day rates across conditions and subspecialties"
-  author: Andrew F. Beck, Carley L. Riley, Stuart Taylor, Cole Brokamp, Robert S. Kahn
+  author:
+    - Andrew F. Beck
+    - Carley L. Riley
+    - Stuart Taylor
+    - Cole Brokamp
+    - Robert S. Kahn
   journal: Health Affairs
   issue_pages: 37(4); 551-559
   year: 2018
@@ -491,14 +957,27 @@ beck-2018:
 
 florin-2018:
   title: Validation of the IDSA/PIDS Severity Criteria in Children with Community-Acquired Pneumonia
-  author: Todd A. Florin, Cole Brokamp, Rachel Mantyla, Bradley DePaoli, Richard Ruddy, Samir S. Shah, Lilliam Ambroggio
+  author:
+    - Todd A. Florin
+    - Cole Brokamp
+    - Rachel Mantyla
+    - Bradley DePaoli
+    - Richard Ruddy
+    - Samir S. Shah
+    - Lilliam Ambroggio
   journal: Clinical Infectious Diseases
   issue_pages: ciy031; 1-29
   year: 2018
 
 szczesniak-2017a:
   title: "Early Detection of Rapid Cystic Fibrosis Disease Progression Tailored to Point of Care: A Proof-of-Principle Study"
-  author: Rhonda Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John Pestian, John P. Clancy
+  author:
+    - Rhonda Szczesniak
+    - Cole Brokamp
+    - Weiji Su
+    - Gary L. McPhail
+    - John Pestian
+    - John P. Clancy
   journal: Healthcare Innovations and Point of Care Technologies
   issue_pages: (HI-POCT), 2017 IEEE; 204-207
   year: 2017
@@ -506,7 +985,11 @@ szczesniak-2017a:
 
 brokamp-2017c:
   title: A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife
-  author: Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov
+  author:
+    - Cole Brokamp
+    - MB Rao
+    - Patrick Ryan
+    - Roman Jandarov
   journal: Stat
   issue_pages: 6(1); 360-372
   year: 2017
@@ -514,7 +997,12 @@ brokamp-2017c:
 
 brokamp-2017b:
   title: Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies
-  author: Cole Brokamp, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan
+  author:
+    - Cole Brokamp
+    - Chris Wolfe
+    - Todd Lingren
+    - John Harley
+    - Patrick Ryan
   journal: Journal of American Medical Informatics Association
   issue_pages: 25(3); 309-314
   year: 2017
@@ -522,7 +1010,14 @@ brokamp-2017b:
 
 szczesniak-2017:
   title: Phenotypes of Rapid Cystic Fibrosis Lung Disease Progression during Adolescence and Young Adulthood
-  author: Rhonda D. Szczesniak, Dan Li, Weiji Su, Cole Brokamp, John Pestian, Michael Seid, John P. Clancy
+  author:
+    - Rhonda D. Szczesniak
+    - Dan Li
+    - Weiji Su
+    - Cole Brokamp
+    - John Pestian
+    - Michael Seid
+    - John P. Clancy
   journal: American Journal of Respiratory And Critical Care Medicine
   issue_pages: 196(4); 471-478
   year: 2017
@@ -530,7 +1025,15 @@ szczesniak-2017:
 
 florin-2017:
   title: Reliability of Examination Findings in Suspected Community-Acquired Pneumonia
-  author: Todd Florin, Lilliam Ambroggio, Cole Brokamp, Mantosh S. Rattan, Eric J. Crotty, Andrea Kachelmeyer, Richard M. Ruddy, Samir Shah
+  author:
+    - Todd Florin
+    - Lilliam Ambroggio
+    - Cole Brokamp
+    - Mantosh S. Rattan
+    - Eric J. Crotty
+    - Andrea Kachelmeyer
+    - Richard M. Ruddy
+    - Samir Shah
   journal: Pediatrics
   issue_pages: 140(3); e20170310
   year: 2017
@@ -538,7 +1041,11 @@ florin-2017:
 
 brokamp-2017a:
   title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
-  author: Cole Brokamp, Andrew F. Beck, Louis Muglia, Patrick Ryan
+  author:
+    - Cole Brokamp
+    - Andrew F. Beck
+    - Louis Muglia
+    - Patrick Ryan
   journal: Science of the Total Environment
   issue_pages: 607-608; 1180-1187
   year: 2017
@@ -546,7 +1053,18 @@ brokamp-2017a:
 
 ryan-2017:
   title: Childhood exposure to libby amphibole asbestos and respiratory symptoms in young adulthood
-  author: Patrick Ryan, James E. Lockey, Brad Black, Carol H. Rice, Jeff Burkle, Tim Hilbert, Linda Levin, Cole Brokamp, Roy McKay, Ted Larson, Grace K. LeMasters
+  author:
+    - Patrick Ryan
+    - James E. Lockey
+    - Brad Black
+    - Carol H. Rice
+    - Jeff Burkle
+    - Tim Hilbert
+    - Linda Levin
+    - Cole Brokamp
+    - Roy McKay
+    - Ted Larson
+    - Grace K. LeMasters
   journal: Environmental Research
   issue_pages: 158; 470-479
   year: 2017
@@ -554,7 +1072,14 @@ ryan-2017:
 
 yahgjyan-2017:
   title: Association of air pollution with mammographic breast density in the Breast Cancer Surveillance Consortium
-  author: Lusine Yaghjyan, R Aroa, Cole Brokamp, E O'Meara, B Sprague, G Ghita, Patrick Ryan
+  author:
+    - Lusine Yaghjyan
+    - R Aroa
+    - Cole Brokamp
+    - E O'Meara
+    - B Sprague
+    - G Ghita
+    - Patrick Ryan
   journal: Breast Cancer Research
   issue_pages: 19(36); 1-10
   year: 2017
@@ -562,7 +1087,12 @@ yahgjyan-2017:
 
 brokamp-2017:
   title: "Exposure assessment models for elemental components of particulate matter in an urban environment: A comparison of regression and random forest approaches"
-  author: Cole Brokamp, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan
+  author:
+    - Cole Brokamp
+    - Roman Jandarov
+    - MB Rao
+    - Grace LeMasters
+    - Patrick Ryan
   journal: Atmospheric Environment
   issue_pages: 151; 1-11
   year: 2017
@@ -570,7 +1100,13 @@ brokamp-2017:
 
 ji-2016:
   title: Air pollution, epigenetics, and asthma
-  author: Hong Ji, Jocelyn M Biagini Myers, Eric B Brandt, Cole Brokamp, Patrick H Ryan, Gurjit K Khurana Hershey
+  author:
+    - Hong Ji
+    - Jocelyn M Biagini Myers
+    - Eric B Brandt
+    - Cole Brokamp
+    - Patrick H Ryan
+    - Gurjit K Khurana Hershey
   journal: Allergy, Asthma & Clinical Immunology
   issue_pages: 12(1); 51
   year: 2016
@@ -578,7 +1114,15 @@ ji-2016:
 
 kannan-2016:
   title: Parental Snoring and Environmental Pollutants, but Not Aeroallergen Sensitization, Are Associated with Childhood Snoring in a Birth Cohort
-  author: Jennifer Kannan, Cole Brokamp, David I. Bernstein, Grace K. LeMasters, Gurjit K. Khurana Hershey, Manuel Villareal, James E. Lockey, Patrick Ryan
+  author:
+    - Jennifer Kannan
+    - Cole Brokamp
+    - David I. Bernstein
+    - Grace K. LeMasters
+    - Gurjit K. Khurana Hershey
+    - Manuel Villareal
+    - James E. Lockey
+    - Patrick Ryan
   journal: Pediatric Allergy, Immunology, and Pulmonology
   issue_pages: ""
   year: 2016
@@ -586,7 +1130,10 @@ kannan-2016:
 
 brokamp-2016:
   title: Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies
-  author: Cole Brokamp, Grace LeMasters, Patrick Ryan
+  author:
+    - Cole Brokamp
+    - Grace LeMasters
+    - Patrick Ryan
   journal: Journal of Exposure Science and Environmental Epidemiology
   issue_pages: 26(4); 428-34
   year: 2016
@@ -594,7 +1141,19 @@ brokamp-2016:
 
 coombs-2016:
   title: Indoor air quality in green-renovated vs. non-green low-income homes of children living in a temperate region of US (Ohio)
-  author: Kanistha C. Coombs, Ginger L. Chew, Christopher Schaffer, Patrick H. Ryan, Cole Brokamp, Sergey A. Grinshpun, Gary Adamkiewicz, Steve Chillrude, Curtis Hedman, Meryl Colton, Jamie Ross, Tiina Reponen
+  author:
+    - Kanistha C. Coombs
+    - Ginger L. Chew
+    - Christopher Schaffer
+    - Patrick H. Ryan
+    - Cole Brokamp
+    - Sergey A. Grinshpun
+    - Gary Adamkiewicz
+    - Steve Chillrude
+    - Curtis Hedman
+    - Meryl Colton
+    - Jamie Ross
+    - Tiina Reponen
   journal: Science of The Total Environment
   issue_pages: 554-555; 178-185
   year: 2016
@@ -602,7 +1161,11 @@ coombs-2016:
 
 ryan-2015a:
   title: Analysis of personal and home characteristics associated with the elemental composition of PM2.5 in indoor, outdoor, and personal air in the RIOPA study
-  author: Patrick Ryan, Cole Brokamp, Z-H Fan, MB Rao
+  author:
+    - Patrick Ryan
+    - Cole Brokamp
+    - ZH Fan
+    - MB Rao
   journal: Health Effects Institute Research Reports
   issue_pages: Report 185
   year: 2015
@@ -610,7 +1173,17 @@ ryan-2015a:
 
 brunst-2015:
   title: Timing and duration of traffic-related air pollution exposure and the risk for childhood wheeze and asthma
-  author: Kelly J Brunst, Patrick H Ryan, Cole Brokamp, David Bernstein, Tiina Reponen, James Lockey, Gurjit K Khurana Hershey, Linda Levin, Sergey A Grinshpun, Grace LeMasters
+  author:
+    - Kelly J Brunst
+    - Patrick H Ryan
+    - Cole Brokamp
+    - David Bernstein
+    - Tiina Reponen
+    - James Lockey
+    - Gurjit K Khurana Hershey
+    - Linda Levin
+    - Sergey A Grinshpun
+    - Grace LeMasters
   journal: American Journal of Respiratory and Critical Care Medicine
   issue_pages: 192(4); 421-427
   year: 2015
@@ -618,7 +1191,13 @@ brunst-2015:
 
 ryan-2015:
   title: A field application of a personal sensor for ultrafine particle exposure in children
-  author: Patrick H Ryan, Sang Young Son, Christopher Wolfe, James Lockey, Cole Brokamp, Grace LeMasters
+  author:
+    - Patrick H Ryan
+    - Sang Young Son
+    - Christopher Wolfe
+    - James Lockey
+    - Cole Brokamp
+    - Grace LeMasters
   journal: Science of The Total Environment
   issue_pages: 508; 366-373
   year: 2015
@@ -626,7 +1205,11 @@ ryan-2015:
 
 brokamp-2015:
   title: Does the elemental composition of indoor and outdoor PM2.5 accurately represent the elemental composition of personal PM2.5?
-  author: Cole Brokamp, MB Rao, Tina Zhihua Fan, Patrick H Ryan
+  author:
+    - Cole Brokamp
+    - MB Rao
+    - Tina Zhihua Fan
+    - Patrick H Ryan
   journal: Atmospheric Environment
   issue_pages: 101; 226-234
   year: 2015
@@ -634,7 +1217,11 @@ brokamp-2015:
 
 brokamp-2012:
   title: Electrophysiology of single and aggregate Cx43 hemichannels
-  author: Cole Brokamp, Jacob Todd, Carlo Montemagno David Wendell
+  author:
+    - Cole Brokamp
+    - Jacob Todd
+    - Carlo Montemagno
+    - David Wendell
   journal: PLoS ONE
   issue_pages: 7(10);e47775
   year: 2012
@@ -642,7 +1229,23 @@ brokamp-2012:
 
 kock-2012:
   title: "Probenecid: novel use as a non-injurious positive inotrope acting via cardiac TRPV2 stimulation"
-  author: Sheryl E Koch, Xiaoqian Gao, Lauren Haar, Min Jiang, Valerie M Lasko, Nathan Robbins, Wenfeng Cai, Cole Brokamp, Priyanka Varma, Michael Tranter, Yong Liu, Xiaoping Ren, John N. Lorenz, Hong-Sheng Wang, W Keith Jones, Jack Rubinstein
+  author:
+    - Sheryl E Koch
+    - Xiaoqian Gao
+    - Lauren Haar
+    - Min Jiang
+    - Valerie M Lasko
+    - Nathan Robbins
+    - Wenfeng Cai
+    - Cole Brokamp
+    - Priyanka Varma
+    - Michael Tranter
+    - Yong Liu
+    - Xiaoping Ren
+    - John N. Lorenz
+    - Hong-Sheng Wang
+    - W Keith Jones
+    - Jack Rubinstein
   journal: Journal of Molecular and Cellular Cardiology
   issue_pages: 53(1); 134-144
   year: 2012
@@ -650,7 +1253,16 @@ kock-2012:
 
 tranter-2011:
   title: Coordinated post-transcriptional regulation of HSP70. 3 gene expression by microRNA and alternative polyadenylation
-  author: Michael Tranter, Robert N Helsley, Waltke R Paulding, Michael McGuinness, Cole Brokamp, Lauren Haar, Yong Liu, Xiaoping Ren, W Keith Jones
+  author:
+    - Michael Tranter
+    - Robert N Helsley
+    - Waltke R Paulding
+    - Michael McGuinness
+    - Cole Brokamp
+    - Lauren Haar
+    - Yong Liu
+    - Xiaoping Ren
+    - W Keith Jones
   journal: Journal of Biological Chemistry
   issue_pages: 286(34); 29828-29837
   year: 2011
