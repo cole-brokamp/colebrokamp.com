@@ -153,7 +153,6 @@ Publications I have authored have 1,819 total citations (1,593 since 2018), with
 1.	Assem Ziady, Rhonda Szczesniak, John Clancy, Cole Brokamp, inventors; Cincinnati Children’s Hospital Medical Center, assignee. Compositions and methods for treatment of lung function. United States patent US 10,761,099. 2020 Sep 1.
 
 ```{r echo = FALSE, results = 'asis'}
-# TODO tag each one as "abstract", "invited", "seminar", "teaching"
 yaml::yaml.load_file("talks.yaml") |>
   map_chr(\(x) glue_data(x,
                          "**{title}**",
