@@ -73,12 +73,13 @@ yaml::yaml.load_file("pubs.yaml") |>
                          "{year}.",
                          .sep = ". ",
                          .na = character())) |>
+  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
   cat(sep = "\n\n")
 ```
 
 # Patents
 
-Assem Ziady, Rhonda Szczesniak, John Clancy, Cole Brokamp, inventors; Cincinnati Children’s Hospital Medical Center, assignee. Compositions and methods for treatment of lung function. United States patent US 10,761,099. 2020 Sep 1.
+Assem Ziady, Rhonda Szczesniak, John Clancy, **Cole Brokamp**, inventors; Cincinnati Children’s Hospital Medical Center, assignee. Compositions and methods for treatment of lung function. United States patent US 10,761,099. 2020 Sep 1.
 
 # Talks
 

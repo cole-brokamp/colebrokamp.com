@@ -109,6 +109,7 @@ yaml::yaml.load_file("pubs.yaml") |>
                          "{year}.",
                          .sep = ". ",
                          .na = character())) |>
+  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
   rev() |>
   cat(sep = "\n")
 ```
@@ -117,40 +118,40 @@ yaml::yaml.load_file("pubs.yaml") |>
 
 Publications I have authored have 1,819 total citations (1,593 since 2018), with an h-index of 25 (23 since 2018), and an i10-index of 40 (40 since 2017). Below are quality reviews of seven selected publications:
 
-1. Cole Brokamp, Roman Jandarov, Monir Hossain, Patrick Ryan. Predicting Daily Urban Fine Particulate Matter Concentrations Using Random Forest. Environmental Science & Technology. 52 (7). 4173-4179. 2018.
+1. **Cole Brokamp**, Roman Jandarov, Monir Hossain, Patrick Ryan. Predicting Daily Urban Fine Particulate Matter Concentrations Using Random Forest. Environmental Science & Technology. 52 (7). 4173-4179. 2018.
   –	I lead this publication by designing and completing all of the analyses. We used satellite data combined with weather and land use data to create a machine learning model that can accurately estimate daily exposure to ambient fine particulate matter at any location in the Greater Cincinnati Area from 2000 to the present.
   –	116 total citations since publication on 2018-03-14 (2023:4, 2022: 34, 2021: 32, 2020: 25, 2019: 20)
 
-2.	Cole Brokamp, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan. Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies. Journal of American Medical Informatics Association. 25(3). 309-314. 2017.
+2.	**Cole Brokamp**, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan. Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies. Journal of American Medical Informatics Association. 25(3). 309-314. 2017.
   –	I lead and completed all of the software development and validation for this study which summarized our software tool that can be used to securely geocode and estimate community and environmental exposures (geomarker assessment) within multi-site studies where sharing of protected health information is not feasible.
   –	52 total citations since publication on 2018-03-01 (2023: 3, 2022: 17, 2021: 10, 2020: 6, 2019: 11, 2018: 5)
 
-3.	Cole Brokamp, Jeffrey R. Strawn, Andrew F. Beck, Pat Ryan. Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study. Environmental Health Perspectives. 127(9). 2019. PMID: 31553231
+3.	**Cole Brokamp**, Jeffrey R. Strawn, Andrew F. Beck, Pat Ryan. Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study. Environmental Health Perspectives. 127(9). 2019. PMID: 31553231
   –	As the lead author, I designed and executed this study utilizing CCHMC electronic health records and my spatiotemporal air pollution exposure assessment model. Notably, this was the first scientific publication to show that short-term air pollution is associated with psychiatric exacerbations in children and adolescents.
   –	36 total citations since publication on 2019-09-25 (2022: 16, 2021: 16, 2020: 4)
   –	Selected as the top publication and top research achievement of 2020 for the Division of Biostatistics and Epidemiology and featured in the Cincinnati Children’s 2020 Annual Research Report
   –	Featured in several high-profile media outlets, including Newsweek, CNN, The London Time, Forbes, and over 30 other outlets
 
-4.	Cole Brokamp, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan. Exposure assessment models for elemental components of particulate matter in an urban environment: A comparison of regression and random forest approaches. Atmospheric Environment. 151. 1-11. 2017.
+4.	**Cole Brokamp**, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan. Exposure assessment models for elemental components of particulate matter in an urban environment: A comparison of regression and random forest approaches. Atmospheric Environment. 151. 1-11. 2017.
   –	I lead and completed all analyses for this study that was the first to utilize the machine learning method, random forest, to predict airborne concentrations of twelve different components of fine particulate matter air pollution. We showed that the random forest method outperformed traditional regression methods. The resulting exposure assessment models can be used to estimate air pollution exposures at any specific address in the seven counties surrounding Cincinnati, OH.
   –	174 total citations since publication on 2017-02-01 (2023: 4, 2022: 45, 2021: 33, 2020: 30, 2019: 26, 2018: 28, 2017: 10)
   –	Selected as the top publication of 2017 for the Division of Biostatistics and Epidemiology and featured in the Cincinnati Children’s 2017 Annual Research Report
 
-5.	Cole Brokamp, Grace LeMasters, Patrick Ryan. Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies. Journal of Exposure Science and Environmental Epidemiology. 26(4). 428-34. 2016.
+5.	**Cole Brokamp**, Grace LeMasters, Patrick Ryan. Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies. Journal of Exposure Science and Environmental Epidemiology. 26(4). 428-34. 2016.
   –	As the lead author, I completed all analyses for this manuscript which showed that ignoring unknown residential location changes in longitudinal epidemiology studies leads to bias in health outcome studies.
   –	60 total citations since publication on 2016-06-01 (2022: 13, 2021: 9, 2020: 12, 2019: 13, 2018: 8, 2017: 3)
 
-6.	Cole Brokamp, Andrew F Beck, Neera K Goyal, Patrick Ryan, James M Greenberg, Eric S Hall. Material community deprivation and hospital utilization during the first year of life: an urban population-based cohort study. Annals of Epidemiology. 30. 37-43. 2019.
+6.	**Cole Brokamp**, Andrew F Beck, Neera K Goyal, Patrick Ryan, James M Greenberg, Eric S Hall. Material community deprivation and hospital utilization during the first year of life: an urban population-based cohort study. Annals of Epidemiology. 30. 37-43. 2019.
   –	As the primary author, I designed and completed all analyses for this manuscript which created a community material deprivation index and used a causal inference framework to show that community poverty causes increased healthcare utilization in newborns independently of their individual-level socioeconomic status and race. The created nationwide deprivation index has been used as a resource in numerous other publications and public health applications.
   –	80 total citations since publication on 2019-02-01 (2023:  3, 2022: 33, 2021: 24, 2020: 18, 2019: 2)
 
-7.	Juliana Madzia, Patrick Ryan, Kimberly Yolton, Zana Percy, Nick Newman, Grace LeMasters, Cole Brokamp. Residential greenspace is associated with childhood behavioral outcomes. The Journal of Pediatrics. 207. 233-240. 2019.
+7.	Juliana Madzia, Patrick Ryan, Kimberly Yolton, Zana Percy, Nick Newman, Grace LeMasters, **Cole Brokamp**. Residential greenspace is associated with childhood behavioral outcomes. The Journal of Pediatrics. 207. 233-240. 2019.
   –	As the senior author, I designed and oversaw all analyses for this manuscript, including the work completed by my mentee, who was the first author. We used a cohort of Cincinnati children to show that increased greenspace around their residences was associated with reduced problems related to misconduct, anxiety, and depression.
   –	46 total citations since publication on 2019-04-01 (2023: 2, 2022: 23, 2021: 15, 2020: 6)
 
 ## Patents
 
-1.	Assem Ziady, Rhonda Szczesniak, John Clancy, Cole Brokamp, inventors; Cincinnati Children’s Hospital Medical Center, assignee. Compositions and methods for treatment of lung function. United States patent US 10,761,099. 2020 Sep 1.
+1.	Assem Ziady, Rhonda Szczesniak, John Clancy, **Cole Brokamp**, inventors; Cincinnati Children’s Hospital Medical Center, assignee. Compositions and methods for treatment of lung function. United States patent US 10,761,099. 2020 Sep 1.
 
 ```{r echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("talks.yaml") |>

@@ -45,7 +45,7 @@ yaml::yaml.load_file("pubs.yaml") |>
 ```{r echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("talks.yaml") |>
   map_chr(\(x) glue_data(x,
-                         "{title}",
+                         "**{title}**",
                          "*{event}*",
                          "{location}",
                          "{year}",
