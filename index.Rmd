@@ -12,21 +12,15 @@ library(purrr)
 library(glue)
 ```
 
-## <img src='cole_circle.png' align='right' style="max-height: 180px"> {.jumbotron}
+##
 
-<div class="container">
+<img src='cole_circle.png' align='right' style="max-height: 270px">
+
 Cole Brokamp, PhD is an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati interested in geospatial data science, environmental epidemiology, and fairness in precision medicine.
-</div>
 
-&nbsp;
-
-<div class="container">
-His research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on pediatric psychiatric health. He develops new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.
-</div>
+His research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on pediatric psychiatric health. He develops new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods. 
 
 ## 
-
-&nbsp;
 
 ## Publications
 
@@ -40,13 +34,13 @@ yaml::yaml.load_file("pubs.yaml") |>
                          "{year}.",
                          .sep = ". ",
                          .na = character())) |>
+  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
   cat(sep = "\n\n")
 ```
 
 <hr>
 
 ## Talks
-
 
 ```{r echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("talks.yaml") |>
@@ -60,6 +54,3 @@ yaml::yaml.load_file("talks.yaml") |>
                          .na = character())) |>
   cat(sep = "\n\n")
 ```
-
-<!--  LocalWords:  div
- -->
