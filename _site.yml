@@ -21,8 +21,6 @@ navbar:
       href: cole-brokamp-nih-biosketch.pdf
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
-    - icon: fa-map-pin
-      href: https://degauss.org
 output:
   html_document:
     theme:
