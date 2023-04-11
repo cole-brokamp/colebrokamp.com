@@ -1,0 +1,31 @@
+name: Brokamp, Cole
+era_commons_name: brokampr
+position_title: Associate Professor
+education_and_training:
+  -
+    institution: University of Cincinnati
+    location: Cincinnati, OH
+    degree: B.S.
+    completion_date: 06/2010
+    field_of_study: Biomedical Engineering
+  - 
+    institution: University of Cincinnati
+    location: Cincinnati, OH
+    degree: Ph.D.
+    completion_date: 04/2016
+    field_of_study: Biostatistics and Bioinformatics
+  - 
+    institution: Cincinnati Children's Hospital Medical Center
+    location: Cincinnati, OH
+    degree: Postdoctoral Research Fellow
+    completion_date: 10/2017
+    field_of_study: Biostatistics and Epidemiology
+positions:
+  -
+    title: Research Associate
+    institution: Department of Environmental Health, University of Cincinnati
+    year_range: [2012, 2016]
+  -
+    title: Research Fellow
+    institution: Cincinnati Children's Hospital Medical Center Division of Biostatistics and Epidemiology
+    year_range: [2016, 2017]

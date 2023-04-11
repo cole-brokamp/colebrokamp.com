@@ -1,0 +1,49 @@
+---
+title: ""
+---
+
+
+```{r, echo = F, eval = F}
+download.file("https://grants.nih.gov/grants/forms/biosketch-blank-format-rev-10-2021.docx",
+              "biosketch-blank-format-rev-10-2021.docx")
+```
+
+```{r echo = F, results = "asis"}
+d <- yaml::read_yaml("biosketch.yaml")
+
+glue::glue_data(d,
+                "NAME: {name}",
+                "eRA COMMONS USER NAME (credential, e.g., agency login): {era_commons_name}",
+                "EDUCATION/TRAINING (*Begin with baccalaureate or other initial professional education, such as nursing, include postdoctoral training and residency training if applicable. Add/delete rows as necessary.*)",
+                .sep = "\n\n---\n\n")
+```
+
+```{r, echo = F, results = "asis"}
+purrr::map(
+  d$education_and_training,
+  \(.) glue::glue_data(., "| {institution}, {location} | {degree} | {completion_date} | {field_of_study} |")
+) |>
+  append("| INSTITUTION AND LOCATION | DEGREE (*if applicable*) | Completion Date MM/YYYY | FIELD OF STUDY |", after = 0) |>
+  append("|:---:|:---:|:---:|:---:|", after = 1) |>
+  as.character() |>
+  cat(collapse = "\n")
+```
+
+# A. Personal Statement
+
+As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to large environmental and health outcome datasets. Recent democratization of “big spatial data” and advances in geoinformatics have allowed unprecedented access to environmental and socioeconomic characteristics that vary highly with respect to both time and space. More precise environmental features require more complex modeling and I have dedicated my career to furthering exposure science methodology in order to bring more precise exposure assessment tools to environmental and population health studies. This includes high resolution spatiotemporal exposure assessment models for fine particulate matter as well as a longitudinal measure of material community deprivation. Leveraging these models, I’ve also lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I have developed a novel approach and accompanying software package called DeGAUSS which allows for user-friendly attachment of geospatial variables to existing research cohorts while mitigating key privacy challenges. I am the founding director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH), which is a shared facility at Cincinnati Children’s Hospital Medical Center that works to develop and democratize geospatial data and methodologies across the institution.
+
+I look forward to contributing to Szczesniak_HEAL: Genome-sociome informed risk (G-SIR) risk prediction tools for enhanced clinical management and promotion of health equity across the lifespan (HEAL) as a project coinvestigator helping to lead the geomarker assessment and algorithm fairness in precision public health. Specifically, I recently published a racial algorithmic fairness evaluation of a widely used pediatric asthma prediction algorithm. Additionally, I have studied the impacts of daily fluctuations in air pollution and psychiatric exacerbations. Most importantly, I have expertise in creating geomarker assessment pipelines and have experience doing so with Dr. Szczesniak within the context of Cystic Fibrosis Foundation funding and goals.
+
+# B. Positions, Scientific Appointments, and Honors
+
+```{r echo = F, results = "asis"}
+purrr::map(d$positions,
+           \(.) glue::glue_data(., "{year_range[1]} - {year_range[2]} {title}, {institution}")) |>
+  as.character() |>
+  cat(collapse = "\n")
+```
+
+# Contributions to Science
+
+## 1. Spatiotemporal exposure assessment methods and machine learning models
