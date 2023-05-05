@@ -1,0 +1,64 @@
+## Service
+
+### Professional Societies
+
+- 2014 - present: Member, International Society of Exposure Science
+- 2018 - present: Member, International Society of Environmental Epidemiology
+- itutional Committees
+- 2023 - present: Member CCHMC Biomedical Informatics Faculty Search Committee
+- 2022 - present: Member, CCHMC Artificial Intelligence Governance Council
+- 2019 - present: Member, CCHMC DBE Faculty Career Development Committee
+- 2022: Chair, CCHMC DBE Strategic Plan Steering Committee
+- 2017 - present: Member, CCHMC DBE Strategic Plan Steering Committee
+- 2017 - present: Member, CCHMC DBE Research Committee
+- erence Leadership
+- 2016: Chair of the Land Use Regression Modeling Session, International Society of Exposure Science Annual Meeting
+- 2017: Chair of the Ensemble Learning for Air Pollution Exposure Assessment Session, International Society of Exposure Science Annual Meeting
+- 2021: Chair of the Harnessing Big Data in Exposure Science Session, International Society of Exposure Science Annual Meeting
+- 2021: Chair of the Environmental Exposures and Mental Health Session, International Society of Environmental Epidemiology
+
+### Scientific Reviewer
+
+- Journal Reviewer (12 manuscripts reviewed per year, on average):
+  - Academic Pediatrics
+  - American Journal of Public Health
+  - American Journal of Respiratory and Critical Care Medicine
+  - Annals of Epidemiology
+  - Environmental Health Perspectives
+  - Environment International
+  <!-- - Environmental Modeling & Assessment -->
+  - Environmental Pollution
+  - Environmental Research
+  - Environmental Science & Technology
+  <!-- - Environmental Science & Technology Letters -->
+  - Health & Place
+  <!-- - International Journal of Environmental Research and Public Health -->
+  - International Journal of Epidemiology
+  - Journal of Exposure Science and Environmental Epidemiology
+  - Journal of Open Source Software
+  - PLOS ONE
+  - Pediatrics
+  <!-- - Stochastic Environmental Research and Risk Assessment -->
+  - Science of the Total Environment
+- Grant Reviewer:
+  - 2017: Puerto Rico Science, Technology & Research Trust
+  - 2018 - 2021: Arnold S. Strauss Fellowship Award, CCHMC
+  - 2018 – 2020, 2022: University of Rochester Processes and Methods Grant
+  - October 2019: NIH SIEE Study Section, Early Career Reviewer
+  - 2020: University of Michigan M-LEEaD Center Pilot Projects
+  - 2020: Ohio State University CCTS Pilot Projects
+  - 2021: University of Louisville CCTS Pilot Translational & Clinical Studies Program
+  - March 2022: NIH NIEHS ZES1 LKB-S (KS) Special Emphasis Panel
+  - March 2022: NIH NIEHS ZES1 LWF-S (K9) Special Emphasis Panel
+  - November 2022: NIH NIEHS ZES1 WL-W (K) Special Emphasis Panel
+  - February 2023: NIH NCI ZCTA1 TCRB-J (M2) R Review Panel
+- Abstract Reviewer:
+  - 2018, 2019, 2022: International Societies of Exposure Science 
+  - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
+  - 2021, 2022, 2023: American Medical Informatics Association Clinical Informatics Conference
+  - 2023: American Medical Informatics Association Annual Symposium
+
+## Leadership
+
+- 2017 - present: Founding Director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH) within the Data Management and Analysis Center at Cincinnati Children’s
+- 2019 - present: Founding Leader of Cincinnati Children’s R Users Group (CCHMC RUG)
