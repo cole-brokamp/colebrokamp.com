@@ -1,32 +1,78 @@
 ---
 title: ""
+output:
+  pdf_document:
+    includes:
+      in_header: "nih_bio_styles.tex"
+    latex_engine: xelatex
+linestretch: 1.0
+fontsize: 11pt
+mainfont: Arial
+indent: false
+pagestyle: empty
+geometry:
+- left=0.5in
+- right=0.5in
+- top=0.5in
+- bottom=0.5in
 ---
 
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+d <- yaml::read_yaml("data/biosketch.yaml")
+## download.file("https://grants.nih.gov/grants/forms/biosketch-blank-format-rev-10-2021.docx",
+              ## "biosketch-blank-format-rev-10-2021.docx")
+```
+ <!-- \centering --> 
+\pgline \textbf{BIOGRAPHICAL SKETCH}  
 
-```{r, echo = F, eval = F}
-download.file("https://grants.nih.gov/grants/forms/biosketch-blank-format-rev-10-2021.docx",
-              "biosketch-blank-format-rev-10-2021.docx")
+\footnotesize
+Provide the following information for the Senior/key personnel and other significant contributors.
+
+Follow this format for each person.  **DO NOT EXCEED FIVE PAGES**
+
+\normalsize \pgline NAME: `r glue::glue_data(d, "{name}")`
+
+\pgline eRA COMMONS USER NAME (credential, e.g., agency login): `r glue::glue_data(d, "{era_commons_name}")`
+
+\pgline EDUCATION/TRAINING (\textit{Begin with baccalaureate or other initial professional education, such as nursing, include postdoctoral training and residency training if applicable. Add/delete rows as necessary.})
+
+\pgline
+
+
+```{r}
+d$education_and_training |>
+  purrr::map(tibble::as_tibble) |>
+  purrr::list_rbind() |>
+  tidyr::unite(inst_loc, institution, location, sep = "; ") |>
+  kableExtra::kable(col.names = c("INSTITUTION AND LOCATION", "DEGREE", "Completion Date", "FIELD OF STUDY")) |>
+  ## kableExtra::column_spec (1, border_left = FALSE, border_right = TRUE) |>
+  ## kableExtra::column_spec (2:3, border_left = TRUE, border_right = TRUE) |>
+  ## kableExtra::column_spec (4, border_left = TRUE, border_right = FALSE) |>
+  kableExtra::kable_styling()
 ```
 
-```{r echo = F, results = "asis"}
-d <- yaml::read_yaml("biosketch.yaml")
+```{r}
+# function that takes in a vector of **four** (or less) identifers from pubs.yaml and inserts the citations in that order
 
-glue::glue_data(d,
-                "NAME: {name}",
-                "eRA COMMONS USER NAME (credential, e.g., agency login): {era_commons_name}",
-                "EDUCATION/TRAINING (*Begin with baccalaureate or other initial professional education, such as nursing, include postdoctoral training and residency training if applicable. Add/delete rows as necessary.*)",
-                .sep = "\n\n---\n\n")
-```
-
-```{r, echo = F, results = "asis"}
-purrr::map(
-  d$education_and_training,
-  \(.) glue::glue_data(., "| {institution}, {location} | {degree} | {completion_date} | {field_of_study} |")
-) |>
-  append("| INSTITUTION AND LOCATION | DEGREE (*if applicable*) | Completion Date MM/YYYY | FIELD OF STUDY |", after = 0) |>
-  append("|:---:|:---:|:---:|:---:|", after = 1) |>
-  as.character() |>
-  cat(collapse = "\n")
+cite_four <- function(.x = c("brokamp-2023", "pennington-2022", "vancil-2022")) {
+  stopifnot(length(.x) <= 4)
+  pubs <- yaml::yaml.load_file("data/pubs.yaml")
+  stopifnot(all(.x %in% names(pubs)))
+  the_pubs <- purrr::map(.x, \(.) purrr::pluck(pubs, .))
+  the_pubs |>
+    purrr::map_chr(\(.) glue::glue_data(.,
+                           "{paste(author, collapse = ', ')}",
+                           "{title}",
+                           "*{journal}*",
+                           "{issue_pages}",
+                           "{year}.",
+                           .sep = ". ",
+                           .na = character())) |>
+    purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
+    cat(sep = "\n\n")
+}
 ```
 
 # A. Personal Statement
@@ -37,7 +83,8 @@ I look forward to contributing to Szczesniak_HEAL: Genome-sociome informed risk 
 
 # B. Positions, Scientific Appointments, and Honors
 
-```{r echo = F, results = "asis"}
+```{r}
+#| results: asis
 purrr::map(d$positions,
            \(.) glue::glue_data(., "{year_range[1]} - {year_range[2]} {title}, {institution}")) |>
   as.character() |>
@@ -46,4 +93,10 @@ purrr::map(d$positions,
 
 # Contributions to Science
 
+
 ## 1. Spatiotemporal exposure assessment methods and machine learning models
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2019a", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
+```

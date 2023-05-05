@@ -16,7 +16,7 @@ library(glue)
 # Personal Data
 
 ```{r}
-#| child: personal_data.Rmd
+#| child: children/personal_data.Rmd
 ```
 
 # Research Interests
@@ -30,13 +30,13 @@ library(glue)
 # Education
 
 ```{r}
-#| child: education.Rmd
+#| child: children/education.Rmd
 ```
 
 # Academic Appointments
 
 ```{r}
-#| child: academic_appointments.Rmd
+#| child: children/academic_appointments.Rmd
 ```
 
 # Grants and Contracts
@@ -48,7 +48,7 @@ library(glue)
 # Publications
 
 ```{r, echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("pubs.yaml") |>
+yaml::yaml.load_file("data/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "{paste(author, collapse = ', ')}",
                          "{title}",
@@ -64,13 +64,13 @@ yaml::yaml.load_file("pubs.yaml") |>
 # Patents
 
 ```{r}
-#| child: patents.Rmd
+#| child: children/patents.Rmd
 ```
 
 # Talks
 
 ```{r echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("talks.yaml") |>
+yaml::yaml.load_file("data/talks.yaml") |>
   map_chr(\(x) glue_data(x,
                          "{title}",
                          "*{event}*",
@@ -84,13 +84,13 @@ yaml::yaml.load_file("talks.yaml") |>
 # Awards and Honors
 
 ```{r}
-#|child: awards_and_honors.Rmd
+#|child: children/awards_and_honors.Rmd
 ```
 
 # Service and Leadership
 
 ```{r}
-#| child: service_and_leadership.Rmd
+#| child: children/service_and_leadership.Rmd
 ```
 
 \vfill

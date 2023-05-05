@@ -2,7 +2,7 @@
 title: "Curriculum Vitae: Cole Brokamp, Ph.D."
 output:
   word_document:
-    reference_docx: reference.docx
+    reference_docx: assets/reference.docx
 ---
 
 ```{r setup, include=FALSE}
@@ -18,7 +18,7 @@ library(glue)
 # Personal Data
 
 ```{r}
-#| child: personal_data.Rmd
+#| child: children/personal_data.Rmd
 ```
 
 # Education
@@ -26,7 +26,7 @@ library(glue)
 ## Academic Education
 
 ```{r}
-#| child: education.Rmd
+#| child: children/education.Rmd
 ```
 
 ## Training Courses and Workshops
@@ -45,7 +45,7 @@ library(glue)
 # Academic Appointments
 
 ```{r}
-#| child: academic_appointments.Rmd
+#| child: children/academic_appointments.Rmd
 ```
 
 # Licensing and Certification
@@ -60,7 +60,7 @@ library(glue)
 # Awards and Honors
 
 ```{r}
-#|child: awards_and_honors.Rmd
+#|child: children/awards_and_honors.Rmd
 ```
 
 # Research and Scholarly Activities
@@ -80,7 +80,7 @@ My main research focus has been to elucidate the effects of environmental exposu
 ### Peer reviewed articles
 	
 ```{r, echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("pubs.yaml") |>
+yaml::yaml.load_file("data/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "1",
                          "{paste(author, collapse = ', ')}",
@@ -133,12 +133,12 @@ Publications I have authored have 1,819 total citations (1,593 since 2018), with
 ## Patents
 
 ```{r}
-#| child: patents.Rmd
+#| child: children/patents.Rmd
 ```
 
 
 ```{r echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("talks.yaml") |>
+yaml::yaml.load_file("data/talks.yaml") |>
   map_chr(\(x) glue_data(x,
                          "**{title}**",
                          "*{event}*",
@@ -210,7 +210,7 @@ yaml::yaml.load_file("talks.yaml") |>
 # Service and Leadership
 
 ```{r}
-#| child: service_and_leadership.Rmd
+#| child: children/service_and_leadership.Rmd
 ```
 
 # Distribution of Effort

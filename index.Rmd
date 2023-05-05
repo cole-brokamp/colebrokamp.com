@@ -25,7 +25,7 @@ His research is focused on understanding the heterogeneous effects of environmen
 ## Publications
 
 ```{r, echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("pubs.yaml") |>
+yaml::yaml.load_file("data/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "{paste(author, collapse = ', ')}",
                          "{title}",
@@ -43,7 +43,7 @@ yaml::yaml.load_file("pubs.yaml") |>
 ## Talks
 
 ```{r echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("talks.yaml") |>
+yaml::yaml.load_file("data/talks.yaml") |>
   map_chr(\(x) glue_data(x,
                          "**{title}**",
                          "*{event}*",
