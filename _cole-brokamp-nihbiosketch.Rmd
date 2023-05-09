@@ -104,13 +104,14 @@ d$positions |>
   purrr::map(tibble::as_tibble) |>
   purrr::list_rbind() |>
   tidyr::unite(title_inst, title, institution, sep = ", ") |>
-  kableExtra::kable(col.names = NULL) |>
-  kableExtra::kable_styling(
-    ## full_width = T,
-    latex_options = c("HOLD_position")
-  ) |>
-  kableExtra::column_spec(1, border_left = FALSE, border_right = FALSE, width = "0.9in") |>
-  kableExtra::column_spec(2, border_left = FALSE, border_right = FALSE, width = "6.2in") |>
+  knitr::kable(col.names = NULL,
+               vline = "",
+               toprule = "",
+               linesep = "",
+               bottomrule = "",
+               position = "h!") |>
+  kableExtra::column_spec(1, width = "0.9in") |>
+  kableExtra::column_spec(2, width = "6.2in") |>
   kableExtra::row_spec(0:99, align = "l")
 ```
 
@@ -120,11 +121,12 @@ d$positions |>
 d$honors |>
   purrr::map(tibble::as_tibble) |>
   purrr::list_rbind() |>
-  kableExtra::kable(col.names = NULL) |>
-  kableExtra::kable_styling(
-    ## full_width = T,
-    latex_options = c("HOLD_position")
-  ) |>
+  knitr::kable(col.names = NULL,
+               vline = "",
+               toprule = "",
+               linesep = "",
+               bottomrule = "",
+               position = "h!") |>
   kableExtra::column_spec(1, width = "0.9in") |>
   kableExtra::column_spec(2, width = "6.2in") |>
   kableExtra::row_spec(0:99, align = "l")
@@ -134,29 +136,56 @@ d$honors |>
 
 ## Spatiotemporal exposure assessment methods and machine learning models
 
-My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. Additionally, I have built a validated community material deprivation index that has been used and cited by over 75 different published scientific studies.
+My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
 
 ```{r}
 #| results: asis
-cite_four(c("brokamp-2019a", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
+cite_four(c("brokamp-2022", "brokamp-2019a", "brokamp-2018", "brokamp-2017"))
+```
+
+## Community Material Deprivation Index
+
+I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. Additionally, I recently co-mentored a fellow to publish a scoping review and set of recommendations for the use of area based socioeconomic deprivation indices.
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2019", "trinidad-2022", "esteban-2022", "trinidad-2022b"))
 ```
 
 ## Built Environment and Pediatric Psychiatric Disorders
 
-  Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I lead the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as smaller, longitudinal panel studies.
+Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I lead the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as smaller, longitudinal panel studies.
   
+```{r}
+#| results: asis
+cite_four(c("vancil-2022", "rasnick-2021", "brokamp-2019b", "madzia-2018"))
+# zundel-2022
+```
   
 ## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
 
 I have developed a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
 
-## Pediatric Health Disparities
+```{r}
+#| results: asis
+cite_four(c("brokamp-2023", "ryan-2020", "brokamp-2018a", "brokamp-2017b"))
+```
 
-  I have also contributed to several studies on the disparities of health outcomes within children and the contribution of the place-based and social determinants of health to these disparities in order to identify root causes and meaningful solutions.
+<!-- ## Fairness in Precision Medicine -->
+
+<!-- ```{r} -->
+<!-- #| results: asis -->
+<!-- cite_four(c("pennington-2022")) -->
+<!-- ``` -->
 
 ## Clinical forecasting in cystic fibrosis with geomarkers
 
 I have contributed to a research team that has recently used functional data analysis combined with joint modeling (FD-JM) to identify and predict rapid decline in lung function among patients with cystic fibrosis (CF) lung disease. My work in translating this predictive model into an interactive application has allowed for patients and clinicians to take advantage of it at the bedside.  Focus groups and partnerships with clinicians have allowed us to iteratively develop the application based on end-user feedback. Work with the CF Foundation Patient Registry (CFFPR) to implement these models and visualizations into clinical settings has improved prognostic care. Recent work has incorporate place-based geomarkers of poverty, greenspace, and air pollution to further enhance the accuracy and clinical-utility of the prediction tool.
+
+```{r}
+#| results: asis
+cite_four(c("gecili-2023", "wolfe-2020", "szczesniak-2020a", "szczesniak-2017a" ))
+```
 
 **Complete list of published work in ORCID**: [https://orcid.org/0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151)
 
