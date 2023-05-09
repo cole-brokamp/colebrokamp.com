@@ -28,5 +28,6 @@ output:
       bg: "#cbd6d5"
       fg: "#396175"
       primary: "#C28273"
-exclude: ['Makefile', 'README.md','*.yaml']
+include: ["cole-brokamp-cv.pdf", "cole-brokamp-cv-peds-format.docx", "cole-brokamp-nih-biosketch.pdf"]
+exclude: ["data", "children"]
 new_session: true

@@ -1,0 +1,205 @@
+---
+title: ""
+output:
+  pdf_document:
+    includes:
+      in_header: "_nih_bio_styles.tex"
+    latex_engine: xelatex
+linestretch: 1.0
+fontsize: 11pt
+mainfont: Arial
+indent: false
+pagestyle: empty
+geometry:
+- left=0.5in
+- right=0.5in
+- top=0.5in
+- bottom=0.5in
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+d <- yaml::read_yaml("data/biosketch.yaml")
+## download.file("https://grants.nih.gov/grants/forms/biosketch-blank-format-rev-10-2021.docx",
+              ## "biosketch-blank-format-rev-10-2021.docx")
+```
+
+\setlength{\parskip}{0pt}
+\pgline\centerline{\textbf{BIOGRAPHICAL SKETCH}}
+
+\footnotesize
+\centerline{Provide the following information for the Senior/key personnel and other significant contributors.}
+
+\centerline{Follow this format for each person.  \textbf{DO NOT EXCEED FIVE PAGES}}
+
+\normalsize
+
+\pgline NAME: `r glue::glue_data(d, "{name}")`
+
+\pgline eRA COMMONS USER NAME (credential, e.g., agency login): `r glue::glue_data(d, "{era_commons_name}")`
+
+\pgline POSITION TITLE: `r glue::glue_data(d, "{position_title}")`
+
+\pgline EDUCATION/TRAINING (\textit{Begin with baccalaureate or other initial professional education, such as nursing, include postdoctoral training and residency training if applicable. Add/delete rows as necessary.})
+
+&nbsp;
+
+\renewcommand{\arraystretch}{1.7}
+
+```{r}
+d$education_and_training |>
+  purrr::map(tibble::as_tibble) |>
+  purrr::list_rbind() |>
+  tidyr::unite(inst_loc, institution, location, sep = "; ") |>
+  knitr::kable(col.names = c("INSTITUTION AND LOCATION",
+                             "DEGREE (if applicable)",
+                             "Completion Date MM/YYYY",
+                             "FIELD OF STUDY"),
+               bottomrule = "",
+               linesep = "",
+               position = "h!",
+               format = "latex") |>
+  kableExtra::column_spec(1, width = "3.5in") |>
+  kableExtra::column_spec(2, width = "0.8in") |>
+  kableExtra::column_spec(3, width = "1in") |>
+  kableExtra::column_spec(4, width = "1.6in" ) |>
+  kableExtra::row_spec(0, align = "c") |>
+  kableExtra::row_spec(1:99, align = "l")
+```
+
+\renewcommand{\arraystretch}{1}
+
+```{r}
+# function that takes in a vector of **four** (or less) identifers from pubs.yaml and inserts the citations in that order
+
+cite_four <- function(.x = c("brokamp-2023", "pennington-2022", "vancil-2022")) {
+  stopifnot(length(.x) <= 4)
+  pubs <- yaml::yaml.load_file("data/pubs.yaml")
+  stopifnot(all(.x %in% names(pubs)))
+  the_pubs <- purrr::map(.x, \(.) purrr::pluck(pubs, .))
+  the_pubs |>
+    purrr::map_chr(\(.) glue::glue_data(.,
+                           "1",
+                           "{paste(author, collapse = ', ')}",
+                           "{title}",
+                           "*{journal}*",
+                           "{issue_pages}",
+                           "{year}.",
+                           .sep = ". ",
+                           .na = character())) |>
+    purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
+    cat(sep = "\n\n")
+}
+```
+
+\setlength{\parskip}{6pt}
+
+# A. Personal Statement
+
+As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to large environmental and health outcome datasets. Recent democratization of “big spatial data” and advances in geoinformatics have allowed unprecedented access to environmental and socioeconomic characteristics that vary highly with respect to both time and space. More precise environmental features require more complex modeling and I have dedicated my career to furthering exposure science methodology in order to bring more precise exposure assessment tools to environmental and population health studies. This includes high resolution spatiotemporal exposure assessment models for fine particulate matter as well as a longitudinal measure of material community deprivation. Leveraging these models, I’ve also lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I have developed a novel approach and accompanying software package called DeGAUSS which allows for user-friendly attachment of geospatial variables to existing research cohorts while mitigating key privacy challenges. I am the founding director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH), which is a shared facility at Cincinnati Children’s Hospital Medical Center that works to develop and democratize geospatial data and methodologies across the institution.
+
+I look forward to continuing my close mentor/mentee relationship with Dr. Colegate throughout the Strauss Award and his postdoctoral fellowship.  I have used my experience and expertise in mentoring junior scientists throughout Stephen's dissertation work and the first nine months of his fellowship.  This line of work is already benefitting from previous work completed by two Summer Undergraduate Reseach Fellows (SURF) and and two Summer Medical Student Respiratory Research Fellows (SMSRFF), who have gone on to publish manuscripts and abstracts about early findings in racial fairness.  Specifically, I mentored a SMSRFF fellow on a similar precision medicine project with asthma, which results in a first author publication for the mentee.  I look forward to continuing my work with Stephen in precision medicine for lung exacerbation forecasting with specific applications to fairness.  My unique background in cystic fibrosis research, predictive modeling, and racial/ethnic fairness will provide Dr. Colegate with the ideal mentor to accopmlish his professional and scientific goals.
+
+<!-- I look forward to contributing to Szczesniak_HEAL: Genome-sociome informed risk (G-SIR) risk prediction tools for enhanced clinical management and promotion of health equity across the lifespan (HEAL) as a project coinvestigator helping to lead the geomarker assessment and algorithm fairness in precision public health. Specifically, I recently published a racial algorithmic fairness evaluation of a widely used pediatric asthma prediction algorithm. Additionally, I have studied the impacts of daily fluctuations in air pollution and psychiatric exacerbations. Most importantly, I have expertise in creating geomarker assessment pipelines and have experience doing so with Dr. Szczesniak within the context of Cystic Fibrosis Foundation funding and goals. -->
+
+```{r}
+#| results: asis
+cite_four(c("pennington-2022", "wolfe-2020", "szczesniak-2017", "gecili-2023"))
+```
+
+# B. Positions, Scientific Appointments, and Honors
+
+## Positions and Scientific Appointments
+
+```{r}
+d$positions |>
+  purrr::map(tibble::as_tibble) |>
+  purrr::list_rbind() |>
+  tidyr::unite(title_inst, title, institution, sep = ", ") |>
+  knitr::kable(col.names = NULL,
+               toprule = "",
+               linesep = "",
+               bottomrule = "",
+               position = "h!") |>
+  kableExtra::column_spec(1, width = "0.9in") |>
+  kableExtra::column_spec(2, width = "6.2in") |>
+  kableExtra::row_spec(0:99, align = "l")
+```
+
+## Honors
+
+```{r}
+d$honors |>
+  purrr::map(tibble::as_tibble) |>
+  purrr::list_rbind() |>
+  knitr::kable(col.names = NULL,
+               toprule = "",
+               linesep = "",
+               bottomrule = "",
+               position = "h!") |>
+  kableExtra::column_spec(1, width = "0.9in") |>
+  kableExtra::column_spec(2, width = "6.2in") |>
+  kableExtra::row_spec(0:99, align = "l")
+```
+
+# C. Contributions to Science
+
+## Spatiotemporal exposure assessment methods and machine learning models
+
+My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2022", "brokamp-2019a", "brokamp-2018", "brokamp-2017"))
+```
+
+## Community Material Deprivation Index
+
+I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. Additionally, I recently co-mentored a fellow to publish a scoping review and set of recommendations for the use of area based socioeconomic deprivation indices.
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2019", "trinidad-2022", "esteban-2022", "trinidad-2022b"))
+```
+
+## Built Environment and Pediatric Psychiatric Disorders
+
+Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I lead the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as smaller, longitudinal panel studies.
+  
+```{r}
+#| results: asis
+cite_four(c("vancil-2022", "rasnick-2021", "brokamp-2019b", "madzia-2018"))
+# zundel-2022
+```
+  
+## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
+
+I have developed a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2023", "ryan-2020", "brokamp-2018a", "brokamp-2017b"))
+```
+
+<!-- ## Fairness in Precision Medicine -->
+
+<!-- ```{r} -->
+<!-- #| results: asis -->
+<!-- cite_four(c("pennington-2022")) -->
+<!-- ``` -->
+
+## Clinical forecasting in cystic fibrosis with geomarkers
+
+I have contributed to a research team that has recently used functional data analysis combined with joint modeling (FD-JM) to identify and predict rapid decline in lung function among patients with cystic fibrosis (CF) lung disease. My work in translating this predictive model into an interactive application has allowed for patients and clinicians to take advantage of it at the bedside.  Focus groups and partnerships with clinicians have allowed us to iteratively develop the application based on end-user feedback. Work with the CF Foundation Patient Registry (CFFPR) to implement these models and visualizations into clinical settings has improved prognostic care. Recent work has incorporate place-based geomarkers of poverty, greenspace, and air pollution to further enhance the accuracy and clinical-utility of the prediction tool.
+
+```{r}
+#| results: asis
+cite_four(c("gecili-2023", "wolfe-2020", "szczesniak-2020a", "szczesniak-2017a" ))
+```
+
+**Complete list of published work in ORCID**:
+
+[https://orcid.org/0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151)
+
+

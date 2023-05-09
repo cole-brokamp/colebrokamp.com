@@ -1,0 +1,12 @@
+- Name: Richard "Cole" Brokamp, Ph.D.
+- Position: Associate Professor, University of Cincinnati College of Medicine
+- Mailing Address:
+    Division of Biostatistics and Epidemiology
+    Cincinnati Children’s Hospital Medical Center
+    3333 Burnet Avenue, MLC 5041
+    Cincinnati, OH 45229-3039
+- Phone: (513) 517-0289
+- Fax: (513) 636-7509
+- Email: cole.brokamp@cchmc.org
+- Homepage: https://colebrokamp.com
+- ORCID: [0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151)

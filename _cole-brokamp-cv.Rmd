@@ -1,6 +1,7 @@
 ---
-title: ""
-pagetitle: "Cole Brokamp"
+title: "Curriculum Vitae: Cole Brokamp, Ph.D."
+output:
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -12,17 +13,39 @@ library(purrr)
 library(glue)
 ```
 
-##
+# Personal Data
 
-<img src='assets/cole_circle.png' align='right' style="max-height: 270px">
+```{r}
+#| child: children/personal_data.Rmd
+```
 
-Cole Brokamp, PhD is an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati interested in geospatial data science, environmental epidemiology, and fairness in precision medicine.
+# Research Interests
 
-His research is focused on understanding the heterogeneous effects of environmental exposures and community characteristics on pediatric psychiatric health. He develops new methods and technologies to support environmental and population health research, including statistical computing tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods. 
+- Place-based data science
+- Environmental epidemiology
+- Population health
+- Causal inference machine learning methods
+- Fairness in precision medicine
 
-## 
+# Education
 
-## Publications
+```{r}
+#| child: children/education.Rmd
+```
+
+# Academic Appointments
+
+```{r}
+#| child: children/academic_appointments.Rmd
+```
+
+# Grants and Contracts
+
+### Current
+
+### Selected Previous (Brokamp, PI)
+
+# Publications
 
 ```{r, echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("data/pubs.yaml") |>
@@ -38,19 +61,38 @@ yaml::yaml.load_file("data/pubs.yaml") |>
   cat(sep = "\n\n")
 ```
 
-<hr>
+# Patents
 
-## Talks
+```{r}
+#| child: children/patents.Rmd
+```
+
+# Talks
 
 ```{r echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("data/talks.yaml") |>
   map_chr(\(x) glue_data(x,
-                         "**{title}**",
+                         "{title}",
                          "*{event}*",
                          "{location}",
                          "{year}",
-                         "[📄]({homepage})",
                          .sep = ". ",
                          .na = character())) |>
   cat(sep = "\n\n")
 ```
+
+# Awards and Honors
+
+```{r}
+#|child: children/awards_and_honors.Rmd
+```
+
+# Service and Leadership
+
+```{r}
+#| child: children/service_and_leadership.Rmd
+```
+
+\vfill
+
+Last Updated: `r Sys.Date()`
