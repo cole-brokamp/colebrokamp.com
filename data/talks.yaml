@@ -1,3 +1,17 @@
+codec-rug-2023:
+  title: "Using R to Build a Community Data Explorer for Cincinnati (CoDEC)"
+  event: "CCHMC R Users Group Meeting"
+  year: 2023
+  location: Cincinnti, OH
+  homepage: "https://geomarker.io/codec_talk"
+
+amiasummit-2023:
+  title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale"
+  event: American Medical Informatics Association Summit
+  year: 2023
+  location: Seattle, WA
+  homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/S29_Brokamp.pdf"
+
 bmipracticum-2023:
   title: "Geomarker Curation and Computation"
   event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
