@@ -3,7 +3,7 @@ title: ""
 output:
   pdf_document:
     includes:
-      in_header: "nih_bio_styles.tex"
+      in_header: "_nih_bio_styles.tex"
     latex_engine: xelatex
 linestretch: 1.0
 fontsize: 11pt
