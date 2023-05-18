@@ -4,6 +4,7 @@ codec-rug-2023:
   year: 2023
   location: Cincinnti, OH
   homepage: "https://geomarker.io/codec_talk"
+  type: seminar
 
 amiasummit-2023:
   title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale"
@@ -11,6 +12,7 @@ amiasummit-2023:
   year: 2023
   location: Seattle, WA
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/S29_Brokamp.pdf"
+  type: conference
 
 bmipracticum-2023:
   title: "Geomarker Curation and Computation"
@@ -18,6 +20,7 @@ bmipracticum-2023:
   year: 2023
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_degauss_2023-02-20.html"
+  type: teaching
 
 ccl-2023:
   title: "Air Pollution and Pediatric Mental Health"
@@ -25,6 +28,7 @@ ccl-2023:
   year: 2023
   location: Cincinnati, OH
   homepage: ""
+  type: invited
 
 RUG-2023:
   title: "Functional Programming in R with {purrr}"
@@ -32,6 +36,7 @@ RUG-2023:
   year: 2023
   location: Cincinnati, OH
   homepage: "https://cchmc-rug.github.io/purrr"
+  type: seminar
 
 yale-biostat-2022:
   title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
@@ -39,6 +44,7 @@ yale-biostat-2022:
   year: 2022
   location: Online
   homepage: ""
+  type: invited
 
 introbmi-2022:
   title: "Introduction to Geoinformatics"
@@ -46,6 +52,7 @@ introbmi-2022:
   year: 2022
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/introbmi_brokamp_geoinformatics.html"
+  type: teaching
 
 RUG-2022:
   title: "Automating Your Academic CV, Biosketch, and Website with R"
@@ -53,6 +60,7 @@ RUG-2022:
   year: 2022
   location: Cincinnati, OH
   homepage: "https://cchmc-rug.github.io/cv_automate"
+  type: seminar
 
 PAS-2022:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies"
@@ -60,6 +68,7 @@ PAS-2022:
   year: 2022
   location: Denver, CO
   homepage: ""
+  type: conference
   
 RDCRN-2022:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies"
@@ -67,6 +76,7 @@ RDCRN-2022:
   year: 2022
   location: Online
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_15-2-2022.pdf"
+  type: invited
 
 BD2K-2022:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies"
@@ -74,6 +84,7 @@ BD2K-2022:
   year: 2022
   location: Online
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_10-2-2022.pdf"
+  type: invited
 
 NIH-2022:
   title: "Challenges and Solutions for Private and Reproducible Environmental Exposure Assessment at Scale"
@@ -81,6 +92,7 @@ NIH-2022:
   year: 2022
   location: Online
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/GxE_ELSI_Brokamp.pdf"
+  type: invited
 
 introbmi-2021:
   title: "Geoinformatics for Population Health"
@@ -88,6 +100,7 @@ introbmi-2021:
   year: 2021
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/gfph_informatics_2021.pdf"
+  type: teaching
 
 ISES-2021:
   title: "Efficient and Secure High Resolution Spatiotemporal Exposure Assessment"
@@ -95,6 +108,7 @@ ISES-2021:
   year: 2021
   location: Online
   homepage: ""
+  type: conference
 
 NIH-2021:
   title: "Decentralized, Efficient, and Secure High Resolution Spatiotemporal Exposure Assessment at Scale"
@@ -102,6 +116,7 @@ NIH-2021:
   year: 2021
   location: Online
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_DeGAUSS_16_06_2020.pdf"
+  type: invited
 
 PAC3-2021:
   title: "Decentralized and Reproducible Geocoding and Geomarker Assessment for Multi-Site Studies"
@@ -109,6 +124,7 @@ PAC3-2021:
   year: 2021
   location: Online
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/DeGAUSS_quick_pitch_PAC3.pdf"
+  type: invited
 
 nidey-2021:
   title: "Geomarkers and Health"
@@ -116,6 +132,7 @@ nidey-2021:
   year: 2021
   location: Online
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/deprivation_index.pdf"
+  type: teaching
 
 bmi-2021:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
@@ -123,6 +140,7 @@ bmi-2021:
   year: 2021
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2021_02_01.pdf"
+  type: teaching
 
 satRdays-2020:
   title: "Three Levels of Computational Mobility in R"
@@ -130,6 +148,7 @@ satRdays-2020:
   year: 2020
   location: Virtual
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/cole_brokamp_three_levels_of_computational_mobility.pdf"
+  type: invited
 
 portico-2020:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
@@ -137,6 +156,7 @@ portico-2020:
   year: 2020
   location: Virtual
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_10_27.pdf"
+  type: invited
 
 introbmi-2020:
   title: "Introduction to Geoinformatics for Precision Population Health"
@@ -144,6 +164,7 @@ introbmi-2020:
   year: 2020
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/GRAPPH_talk_informatics_2020.pdf"
+  type: teaching
 
 isee-2020:
   title: "Short-term Ambient Fine Particulate Matter and Anxiety Symptoms in Adolescents with Generalized Anxiety Disorder"
@@ -151,6 +172,7 @@ isee-2020:
   year: 2020
   location: Virtual
   homepage: ""
+  type: conference
 
 user-2020:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies (DeGAUSS)"
@@ -158,6 +180,7 @@ user-2020:
   year: 2020
   location: St. Louis, MO
   homepage: ""
+  type: conference
 
 bmi-2020:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
@@ -165,6 +188,7 @@ bmi-2020:
   year: 2020
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_02_24.pdf"
+  type: teaching
 
 ucepi-2020:
   title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study"
@@ -172,6 +196,7 @@ ucepi-2020:
   year: 2020
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_PM_psych_ED_2020_01_23.pdf"
+  type: seminar
 
 career-2019:
   title: "Using Twitter for Academic Networking"
@@ -179,6 +204,7 @@ career-2019:
   year: 2019
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/twitter_for_academia.html"
+  type: seminar
 
 ml-2019:
   title: "Causal Inference Machine Learning Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
@@ -186,6 +212,7 @@ ml-2019:
   year: 2019
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_hce_2019_11_06.pdf"
+  type: seminar
 
 enar-2019:
   title: "Non-Parametric and Data-Driven Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
@@ -193,6 +220,7 @@ enar-2019:
   year: 2019
   location: Philadelphia, PA
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_hce_ENAR2019.pdf"
+  type: conference
 
 cctst-2019:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
@@ -200,6 +228,7 @@ cctst-2019:
   year: 2019
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_degauss_2019_15MAR2019.pdf"
+  type: invited
 
 northwestern-2018:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
@@ -207,6 +236,7 @@ northwestern-2018:
   year: 2018
   location: Chicago, IL
   homepage: ""
+  type: invited
 
 introbmi-2018:
   title: "Introduction to Geoinformatics for Precision Population Health"
@@ -214,6 +244,7 @@ introbmi-2018:
   year: 2018
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_informatics_2018.pdf"
+  type: teaching
 
 ace-2018:
   title: "Reproducible Research in R: Geoinformatics, Epidemiology, and Publicly Available Health and GIS Data"
@@ -221,6 +252,7 @@ ace-2018:
   year: 2018
   location: Cincinnati, OH
   homepage: "https://github.com/cole-brokamp/geoinformatics_and_population_health_in_R"
+  type: conference
 
 ucinnovation-2018:
   title: "Climate Change and Health Disparities in the Urban Environment"
@@ -228,6 +260,7 @@ ucinnovation-2018:
   year: 2018
   location: Cincinnati, OH
   homepage: ""
+  type: invited
 
 bmi-2018:
   title: "Geoinformatics for Environmental Epidemiology"
@@ -235,6 +268,7 @@ bmi-2018:
   year: 2018
   location: Cincinnati, OH
   homepage: ""
+  type: teaching
 
 pas-2018:
   title: "Hot Topics in Pediatric Research Methodology: CART and Random Forest"
@@ -242,6 +276,7 @@ pas-2018:
   year: 2018
   location: Toronto, ON
   homepage: ""
+  type: invited
 
 asacincy-2018:
   title: "Ensemble Machine Learning for Air Pollution Exposure Assessment"
@@ -249,6 +284,7 @@ asacincy-2018:
   year: 2018
   location: Cincinnati, OH
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/LURF_talk_20_FEB_2018.pdf
+  type: invited
 
 eh-2017:
   title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
@@ -256,6 +292,7 @@ eh-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_30_November_2017.pdf
+  type: seminar
 
 harvard-2017a:
   title: "The Cincinnati Childhood Allergy and Air Pollution Study: An Overview and New Approaches to Exposure Assessment"
@@ -263,6 +300,7 @@ harvard-2017a:
   year: 2017
   location: Boston, MA
   homepage: ""
+  type: invited
 
 harvard-2017:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
@@ -270,6 +308,7 @@ harvard-2017:
   year: 2017
   location: Boston, MA
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_13_NOV_2017.pdf
+  type: invited
 
 ises-2017a:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
@@ -277,6 +316,7 @@ ises-2017a:
   year: 2017
   location: Research Triangle Park, NC
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_ISES2017.pdf"
+  type: conference
 
 ises-2017:
   title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
@@ -284,6 +324,7 @@ ises-2017:
   year: 2017
   location: Research Triangle Park, NC
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/spatiotemporal_pm_model_talk_ISES2017.pdf"
+  type: conference
 
 dbe-2017:
   title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
@@ -291,6 +332,7 @@ dbe-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: ""
+  type: seminar
 
 mayerson-2017:
   title: "Using GRAPPH to Leverage Geoinformatics for Innovative Research, Place-based Clinical Care, and Community-Centered Quality Improvement"
@@ -298,6 +340,7 @@ mayerson-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_MayersonCenter_16June2017.pdf
+  type: seminar
 
 postdoc-2017:
   title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
@@ -305,6 +348,7 @@ postdoc-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_3_April_2017.pdf
+  type: seminar
 
 bmiseminar-2017:
   title: "Geocoding to Characterize Community and Environmental Exposures for Multi-site Studies"
@@ -312,6 +356,7 @@ bmiseminar-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_Hutton.pdf
+  type: seminar
 
 bmi-2017:
   title: "GIS Tools for Environmental Epidemiology"
@@ -319,6 +364,7 @@ bmi-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/BMIN8001_environmental_epidemiology.pdf
+  type: teaching
 
 academyhealth-2017:
   title: "Building A Platform for Data Sharing"
@@ -326,6 +372,7 @@ academyhealth-2017:
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/academy_health_visit.pdf
+  type: seminar
 
 ises-2016:
   title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
@@ -333,6 +380,7 @@ ises-2016:
   year: 2016
   location: Utrecht, NL
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf
+  type: conference
 
 dbe-2016:
   title: "Predictive Comparisons: Interpreting Input Effects for Any Supervised Learner"
@@ -340,6 +388,7 @@ dbe-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/APC_talk.pdf
+  type: seminar
 
 ucbiostat-2016:
   title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
@@ -347,6 +396,7 @@ ucbiostat-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf
+  type: seminar
 
 allin-2016:
   title: "Data Visualization for Population Health Initiatives"
@@ -354,6 +404,7 @@ allin-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/all_in_webinar_Beck_Brokamp.pdf
+  type: seminar
 
 ucanalytics-2016:
   title: "Using Machine Learning and Interactive Dashboards to Understand How Children's Health is Impacted by their Community and Surrounding Environment"
@@ -361,6 +412,7 @@ ucanalytics-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/data_analytics_showcase_cole_brokamp.pdf
+  type: invited
 
 dbeseminar-2016:
   title: "Combined Sewer Overflow and Childhood Hospital Admissions"
@@ -368,6 +420,7 @@ dbeseminar-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Combined%20Sewer%20Overflow%20and%20Hospital%20Admissions.pdf
+  type: seminar
 
 dissertation-2016:
   title: "Land Use Random Forests for Estimation of Exposure to Elemental Components of Particulate Matter"
@@ -375,6 +428,7 @@ dissertation-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Cole%20Brokamp%20Dissertation%20Defense%2023March2016.pdf
+  type: seminar
 
 dbeinterest-2016:
   title: "Geospatial Data for Environmental Epidemiology"
@@ -382,6 +436,7 @@ dbeinterest-2016:
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/GIS_env_epi.pdf
+  type: seminar
 
 ucbiostat-2015:
   title: "Confidence Intervals for Random Forest Predictions Using the Infinitesimal Jackknife"
@@ -389,6 +444,7 @@ ucbiostat-2015:
   year: 2015
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Confidence_Intervals_for_Random_Forest_Predictions_Using_the_Infinitesimal_Jackknife.pdf
+  type: seminar
 
 ises-2015:
   title: "Childhood Residential Changes are Associated with Decreased Traffic Exposure and Improved Neighborhood Characteristics"
@@ -396,6 +452,7 @@ ises-2015:
   year: 2015
   location: Las Vegas, NV
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Cole_Brokamp_ISES_2015.pdf
+  type: conference
 
 intro-2015:
   title: "R Studio and R Markdown: An integrated IDE and report generator for R"
@@ -403,6 +460,7 @@ intro-2015:
   year: 2015
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/RStudio_and_RMarkdown.pdf
+  type: teaching
 
 ucepi-2014:
   title: "Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately Represent the Elemental Composition of Personal PM2.5?"
@@ -410,6 +468,7 @@ ucepi-2014:
   year: 2014
   location: Cincinnati, OH
   homepage: ""
+  type: seminar
 
 jsm-2014:
   title: "Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements"
@@ -417,6 +476,7 @@ jsm-2014:
   year: 2014
   location: Boston, MA
   homepage: ""
+  type: conference
 
 ucepi-2013:
   title: "Exact Sampling and Counting for Fixed-Margin Matrices"
@@ -424,6 +484,7 @@ ucepi-2013:
   year: 2013
   location: Cincinnati, OH
   homepage: ""
+  type: seminar
 
 ucpharm-2011a:
   title: "Small Molecule Disruption of G Beta Gamma Signaling Inhibits the Progression of Heart Failure"
@@ -431,6 +492,7 @@ ucpharm-2011a:
   year: 2011
   location: Cincinnati, OH
   homepage: ""
+  type: seminar
 
 ucpharm-2011:
   title: "Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid to the Heart"
@@ -438,6 +500,7 @@ ucpharm-2011:
   year: 2011
   location: Cincinnati, OH
   homepage: ""
+  type: seminar
 
 ucbme-2011:
   title: "An academic research cooperative education experience"
@@ -445,3 +508,4 @@ ucbme-2011:
   year: 2011
   location: Cincinnati, OH
   homepage: ""
+  type: seminar

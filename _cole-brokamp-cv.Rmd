@@ -67,6 +67,12 @@ yaml::yaml.load_file("data/pubs.yaml") |>
 #| child: children/patents.Rmd
 ```
 
+# Selected Abstracts (First or Senior Author)
+
+```{r}
+#| child: children/selected_abstracts.Rmd
+```
+
 # Talks
 
 ```{r echo = FALSE, results = 'asis'}

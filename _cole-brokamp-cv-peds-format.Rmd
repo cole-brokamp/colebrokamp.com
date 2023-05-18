@@ -136,9 +136,33 @@ Publications I have authored have 1,819 total citations (1,593 since 2018), with
 #| child: children/patents.Rmd
 ```
 
+## Selected Abstracts (First or Senior Author)
+
+\* denotes the presenting author
+
+```{r echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("data/abstracts.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "1",
+                         "{paste(author, collapse = ', ')}",
+                         "{title}",
+                         "*{event}*",
+                         "{location}",
+                         "{year}.",
+                         .sep = ". ",
+                         .na = character())) |>
+  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
+  rev() |>
+  cat(sep = "\n")
+```
+
+# Teaching and Mentoring
+
+## Invited Lectures
 
 ```{r echo = FALSE, results = 'asis'}
 yaml::yaml.load_file("data/talks.yaml") |>
+  purrr::keep(\(.) pluck(., "type") == "invited") |>
   map_chr(\(x) glue_data(x,
                          "**{title}**",
                          "*{event}*",
@@ -149,15 +173,35 @@ yaml::yaml.load_file("data/talks.yaml") |>
   cat(sep = "\n\n")
 ```
 
-## Selected Abstracts (First or Senior Author)
-
-# Teaching and Mentoring
-
-## Invited Lectures
-
 ## Seminars
 
+```{r echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("data/talks.yaml") |>
+  purrr::keep(\(.) pluck(., "type") == "seminar") |>
+  map_chr(\(x) glue_data(x,
+                         "**{title}**",
+                         "*{event}*",
+                         "{location}",
+                         "{year}",
+                         .sep = ". ",
+                         .na = character())) |>
+  cat(sep = "\n\n")
+```
+
 ## Teaching
+
+```{r echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("data/talks.yaml") |>
+  purrr::keep(\(.) pluck(., "type") == "teaching") |>
+  map_chr(\(x) glue_data(x,
+                         "**{title}**",
+                         "*{event}*",
+                         "{location}",
+                         "{year}",
+                         .sep = ". ",
+                         .na = character())) |>
+  cat(sep = "\n\n")
+```
 
 ## Mentoring
 
