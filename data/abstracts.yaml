@@ -15,6 +15,32 @@ brokamp-pas-2023:
   year: 2023
   location: Washington DC
 
+amiasummit-2023:
+  title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale"
+  author:
+    - Cole Brokamp\*
+  event: American Medical Informatics Association Summit
+  year: 2023
+  location: Seattle, WA
+  type: conference
+
+PAS-2022:
+  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
+  author:
+    - Cole Brokamp\*
+  event: Pediatric Academic Societies Annual Meeting
+  year: 2022
+  location: Denver, CO
+  type: invited
+  
+brokamp_ises-2021a:
+  title: "Efficient and Secure High Resolution Spatiotemporal Exposure Assessment"
+  author:
+    - Cole Brokamp\*
+  event: International Society of Exposure Science Annual Meeting
+  year: 2021
+  location: Online
+
 brokamp_ises-2021:
   title: "A Nationwide High Resolution Spatiotemporal Fine Particulate Matter Exposure Assessment Model"
   author:
@@ -22,6 +48,30 @@ brokamp_ises-2021:
   event: International Society of Exposure Science
   year: 2021
   location: Online
+
+isee-2020:
+  title: "Short-term Ambient Fine Particulate Matter and Anxiety Symptoms in Adolescents with Generalized Anxiety Disorder"
+  author:
+    - Cole Brokamp\*
+  event: International Society of Environmental Epidemiology Annual Meeting
+  year: 2020
+  location: Online
+
+user-2020:
+  title: "Decentralized Geomarker Assessment for Multi-Site Studies (DeGAUSS)"
+  author:
+    - Cole Brokamp\*
+  event: UseR! 2020 Conference (Conference Canceled)
+  year: 2020
+  location: St. Louis, MO
+
+enar-2019:
+  title: "Non-Parametric and Data-Driven Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
+  author:
+    - Cole Brokamp\*
+  event: "International Biometric Society (Eastern North American Region) Spring Meeting"
+  year: 2019
+  location: Philadelphia, PA
 
 bhuiyan_jsm-2019:
   title: "Source-specific contributions of particulate matter to asthma-related pediatric emergency department utilization"
@@ -32,6 +82,14 @@ bhuiyan_jsm-2019:
   year: 2019
   location: Denver, CO
 
+ace-2018:
+  title: "Reproducible Research in R: Geoinformatics, Epidemiology, and Publicly Available Health and GIS Data"
+  author:
+    - Cole Brokamp\*
+  event: Workshop at the American College of Epidemiology Annual Meeting
+  year: 2018
+  location: Cincinnati, OH
+
 madzia-2018:
   title: "Residential Greenspace is Associated with Childhood Behavioral Outcomes"
   author:
@@ -40,6 +98,24 @@ madzia-2018:
   event: Pediatric Academic Societies Meeting
   year: 2018
   location: Toronto, Canada
+
+ises-2017:
+  title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
+  author:
+    - Cole Brokamp
+    - Patrick Ryan\*
+  event: International Society of Exposure Science Annual Meeting
+  year: 2017
+  location: Research Triangle Park, NC
+
+ises-2017a:
+  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
+  author:
+    - Cole Brokamp
+    - Patrick Ryan\*
+  event: International Society of Exposure Science Annual Meeting
+  year: 2017
+  location: Research Triangle Park, NC
 
 ryan_cso-2017:
   title: "Combined Sewer Overflows and Pediatric Emergency Department Utilization: A Case-Crossover Study"
@@ -50,3 +126,29 @@ ryan_cso-2017:
   year: 2017
   location: Sydney, Australia
 
+ises-2016:
+  title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
+  author:
+    - Cole Brokamp\*
+    - Patrick Ryan
+  event: International Society of Exposure Science Annual Meeting
+  year: 2016
+  location: Utrecht, NL
+
+ises-2015:
+  title: "Childhood Residential Changes are Associated with Decreased Traffic Exposure and Improved Neighborhood Characteristics"
+  author:
+    - Cole Brokamp\*
+    - Patrick Ryan
+  event: International Society of Exposure Science Annual Meeting
+  year: 2015
+  location: Las Vegas, NV
+
+jsm-2014:
+  title: "Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements"
+  author:
+    - Cole Brokamp\*
+    - Patrick Ryan
+  event: Joint Statistical Meeting
+  year: 2014
+  location: Boston, MA

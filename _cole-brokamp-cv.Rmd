@@ -16,7 +16,7 @@ library(glue)
 # Personal Data
 
 ```{r}
-#| child: children/personal_data.Rmd
+#| child: data/personal_data.Rmd
 ```
 
 # Research Interests
@@ -30,13 +30,13 @@ library(glue)
 # Education
 
 ```{r}
-#| child: children/education.Rmd
+#| child: data/education.Rmd
 ```
 
 # Academic Appointments
 
 ```{r}
-#| child: children/academic_appointments.Rmd
+#| child: data/academic_appointments.Rmd
 ```
 
 # Grants and Contracts
@@ -61,16 +61,22 @@ yaml::yaml.load_file("data/pubs.yaml") |>
   cat(sep = "\n\n")
 ```
 
-# Patents
+## Selected Abstracts (First or Senior Author)
 
-```{r}
-#| child: children/patents.Rmd
-```
+\* denotes the presenting author
 
-# Selected Abstracts (First or Senior Author)
-
-```{r}
-#| child: children/selected_abstracts.Rmd
+```{r echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("data/abstracts.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "{paste(author, collapse = ', ')}",
+                         "{title}",
+                         "*{event}*",
+                         "{location}",
+                         "{year}.",
+                         .sep = ". ",
+                         .na = character())) |>
+  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
+  cat(sep = "\n\n")
 ```
 
 # Talks
@@ -90,13 +96,13 @@ yaml::yaml.load_file("data/talks.yaml") |>
 # Awards and Honors
 
 ```{r}
-#|child: children/awards_and_honors.Rmd
+#| child: data/awards_and_honors.Rmd
 ```
 
 # Service and Leadership
 
 ```{r}
-#| child: children/service_and_leadership.Rmd
+#| child: data/service_and_leadership.Rmd
 ```
 
 \vfill

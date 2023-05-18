@@ -6,14 +6,6 @@ codec-rug-2023:
   homepage: "https://geomarker.io/codec_talk"
   type: seminar
 
-amiasummit-2023:
-  title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale"
-  event: American Medical Informatics Association Summit
-  year: 2023
-  location: Seattle, WA
-  homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/S29_Brokamp.pdf"
-  type: conference
-
 bmipracticum-2023:
   title: "Geomarker Curation and Computation"
   event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
@@ -62,14 +54,6 @@ RUG-2022:
   homepage: "https://cchmc-rug.github.io/cv_automate"
   type: seminar
 
-PAS-2022:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
-  event: Pediatric Academic Societies Annual Meeting
-  year: 2022
-  location: Denver, CO
-  homepage: ""
-  type: conference
-  
 RDCRN-2022:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies"
   event: Rare Diseases Clinical Research Network (RDCRN) Steering Committee Meeting
@@ -101,14 +85,6 @@ introbmi-2021:
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/gfph_informatics_2021.pdf"
   type: teaching
-
-ISES-2021:
-  title: "Efficient and Secure High Resolution Spatiotemporal Exposure Assessment"
-  event: International Society of Exposure Science Annual Meeting
-  year: 2021
-  location: Online
-  homepage: ""
-  type: conference
 
 NIH-2021:
   title: "Decentralized, Efficient, and Secure High Resolution Spatiotemporal Exposure Assessment at Scale"
@@ -166,22 +142,6 @@ introbmi-2020:
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/GRAPPH_talk_informatics_2020.pdf"
   type: teaching
 
-isee-2020:
-  title: "Short-term Ambient Fine Particulate Matter and Anxiety Symptoms in Adolescents with Generalized Anxiety Disorder"
-  event: International Society of Environmental Epidemiology Annual Meeting
-  year: 2020
-  location: Virtual
-  homepage: ""
-  type: conference
-
-user-2020:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies (DeGAUSS)"
-  event: UseR! 2020 Conference (Conference Canceled)
-  year: 2020
-  location: St. Louis, MO
-  homepage: ""
-  type: conference
-
 bmi-2020:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
@@ -214,14 +174,6 @@ ml-2019:
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_hce_2019_11_06.pdf"
   type: seminar
 
-enar-2019:
-  title: "Non-Parametric and Data-Driven Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
-  event: "International Biometric Society (Eastern North American Region) Spring Meeting"
-  year: 2019
-  location: Philadelphia, PA
-  homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_hce_ENAR2019.pdf"
-  type: conference
-
 cctst-2019:
   title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: "Center for Clinical & Translational Science & Training Grand Rounds"
@@ -245,14 +197,6 @@ introbmi-2018:
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_informatics_2018.pdf"
   type: teaching
-
-ace-2018:
-  title: "Reproducible Research in R: Geoinformatics, Epidemiology, and Publicly Available Health and GIS Data"
-  event: Workshop at the American College of Epidemiology Annual Meeting
-  year: 2018
-  location: Cincinnati, OH
-  homepage: "https://github.com/cole-brokamp/geoinformatics_and_population_health_in_R"
-  type: conference
 
 ucinnovation-2018:
   title: "Climate Change and Health Disparities in the Urban Environment"
@@ -310,22 +254,6 @@ harvard-2017:
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_13_NOV_2017.pdf
   type: invited
 
-ises-2017a:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
-  event: International Society of Exposure Science Annual Meeting
-  year: 2017
-  location: Research Triangle Park, NC
-  homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_ISES2017.pdf"
-  type: conference
-
-ises-2017:
-  title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
-  event: International Society of Exposure Science Annual Meeting
-  year: 2017
-  location: Research Triangle Park, NC
-  homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/spatiotemporal_pm_model_talk_ISES2017.pdf"
-  type: conference
-
 dbe-2017:
   title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
   event: Cincinnati Children's Hospital Medical Center Division of Biostatistics and Epidemiology Seminar
@@ -373,14 +301,6 @@ academyhealth-2017:
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/academy_health_visit.pdf
   type: seminar
-
-ises-2016:
-  title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
-  event: International Society of Exposure Science Annual Meeting
-  year: 2016
-  location: Utrecht, NL
-  homepage: http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf
-  type: conference
 
 dbe-2016:
   title: "Predictive Comparisons: Interpreting Input Effects for Any Supervised Learner"
@@ -446,14 +366,6 @@ ucbiostat-2015:
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Confidence_Intervals_for_Random_Forest_Predictions_Using_the_Infinitesimal_Jackknife.pdf
   type: seminar
 
-ises-2015:
-  title: "Childhood Residential Changes are Associated with Decreased Traffic Exposure and Improved Neighborhood Characteristics"
-  event: International Society of Exposure Science Annual Meeting
-  year: 2015
-  location: Las Vegas, NV
-  homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Cole_Brokamp_ISES_2015.pdf
-  type: conference
-
 intro-2015:
   title: "R Studio and R Markdown: An integrated IDE and report generator for R"
   event: University of Cincinnati BE7022 (Intro To Biostatistics) Guest Lecture
@@ -469,14 +381,6 @@ ucepi-2014:
   location: Cincinnati, OH
   homepage: ""
   type: seminar
-
-jsm-2014:
-  title: "Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements"
-  event: Joint Statistical Meeting
-  year: 2014
-  location: Boston, MA
-  homepage: ""
-  type: conference
 
 ucepi-2013:
   title: "Exact Sampling and Counting for Fixed-Margin Matrices"

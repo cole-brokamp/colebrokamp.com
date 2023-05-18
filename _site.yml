@@ -8,6 +8,8 @@ navbar:
       href: index.html#publications
     - text: Talks
       href: index.html#talks
+    - text: Abstracts
+      href: index.html#abstracts
   right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp
@@ -29,5 +31,4 @@ output:
       fg: "#396175"
       primary: "#C28273"
 include: ["cole-brokamp-cv.pdf", "cole-brokamp-cv-peds-format.docx", "cole-brokamp-nih-biosketch.pdf"]
-exclude: ["data", "children"]
-new_session: true
+exclude: ["data"]

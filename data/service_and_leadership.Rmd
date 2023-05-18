@@ -4,14 +4,18 @@
 
 - 2014 - present: Member, International Society of Exposure Science
 - 2018 - present: Member, International Society of Environmental Epidemiology
-- itutional Committees
+
+### Institutional Committees
+
 - 2023 - present: Member CCHMC Biomedical Informatics Faculty Search Committee
 - 2022 - present: Member, CCHMC Artificial Intelligence Governance Council
 - 2019 - present: Member, CCHMC DBE Faculty Career Development Committee
-- 2022: Chair, CCHMC DBE Strategic Plan Steering Committee
+- 2022 - present: Chair, CCHMC DBE Strategic Plan Steering Committee
 - 2017 - present: Member, CCHMC DBE Strategic Plan Steering Committee
 - 2017 - present: Member, CCHMC DBE Research Committee
-- erence Leadership
+
+### Conference Leadership
+
 - 2016: Chair of the Land Use Regression Modeling Session, International Society of Exposure Science Annual Meeting
 - 2017: Chair of the Ensemble Learning for Air Pollution Exposure Assessment Session, International Society of Exposure Science Annual Meeting
 - 2021: Chair of the Harnessing Big Data in Exposure Science Session, International Society of Exposure Science Annual Meeting

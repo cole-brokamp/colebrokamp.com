@@ -54,3 +54,21 @@ yaml::yaml.load_file("data/talks.yaml") |>
                          .na = character())) |>
   cat(sep = "\n\n")
 ```
+
+<hr>
+
+## Abstracts
+
+```{r echo = FALSE, results = 'asis'}
+yaml::yaml.load_file("data/abstracts.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "{paste(author, collapse = ', ')}",
+                         "{title}",
+                         "*{event}*",
+                         "{location}",
+                         "{year}.",
+                         .sep = ". ",
+                         .na = character())) |>
+  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
+  cat(sep = "\n\n")
+```
