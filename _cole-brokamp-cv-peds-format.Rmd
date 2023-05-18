@@ -2,7 +2,7 @@
 title: "Curriculum Vitae: Cole Brokamp, Ph.D."
 output:
   word_document:
-    reference_docx: assets/reference.docx
+    reference_docx: reference.docx
 ---
 
 ```{r setup, include=FALSE}

@@ -14,7 +14,7 @@ library(glue)
 
 ##
 
-<img src='assets/cole_circle.png' align='right' style="max-height: 270px">
+<img src='cole_circle.png' align='right' style="max-height: 270px">
 
 Cole Brokamp, PhD is an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati interested in geospatial data science, environmental epidemiology, and fairness in precision medicine.
 
