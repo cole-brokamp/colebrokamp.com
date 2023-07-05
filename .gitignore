@@ -3,3 +3,5 @@
 .DS_Store
 *.synctex.gz 
 cole-brokamp-cv-signed.pdf
+/make.Rout
+/docs/make.Rout
