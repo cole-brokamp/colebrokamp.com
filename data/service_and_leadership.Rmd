@@ -24,6 +24,25 @@
 
 ### Scientific Reviewer
 
+- Grant Reviewer:
+  - 2017: Puerto Rico Science, Technology & Research Trust
+  - 2018 - 2021: Arnold S. Strauss Fellowship Award, CCHMC
+  - 2018 – 2020, 2022: University of Rochester Processes and Methods Grant
+  - October 2019: NIH SIEE Study Section, Early Career Reviewer
+  - 2020: University of Michigan M-LEEaD Center Pilot Projects
+  - 2020: Ohio State University CCTS Pilot Projects
+  - 2021: University of Louisville CCTS Pilot Translational & Clinical Studies Program
+  - March 2022: NIH ZES1 LKB-S (KS)
+  - March 2022: NIH ZES1 LWF-S (K9)
+  - November 2022: NIH ZES1 WL-W (K)
+  - February 2023: NIH ZCTA1 TCRB-J (M2)
+  - June 2023: NIH ZRG1 MCST - B (14)
+  - August 2023: NIH ZES1 LKB-K (P2)
+- Abstract Reviewer:
+  - 2018, 2019, 2022: International Societies of Exposure Science 
+  - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
+  - 2021, 2022, 2023: American Medical Informatics Association Clinical Informatics Conference
+  - 2023: American Medical Informatics Association Annual Symposium
 - Journal Reviewer (12 manuscripts reviewed per year, on average):
   - Academic Pediatrics
   - American Journal of Public Health
@@ -45,23 +64,6 @@
   - Pediatrics
   <!-- - Stochastic Environmental Research and Risk Assessment -->
   - Science of the Total Environment
-- Grant Reviewer:
-  - 2017: Puerto Rico Science, Technology & Research Trust
-  - 2018 - 2021: Arnold S. Strauss Fellowship Award, CCHMC
-  - 2018 – 2020, 2022: University of Rochester Processes and Methods Grant
-  - October 2019: NIH SIEE Study Section, Early Career Reviewer
-  - 2020: University of Michigan M-LEEaD Center Pilot Projects
-  - 2020: Ohio State University CCTS Pilot Projects
-  - 2021: University of Louisville CCTS Pilot Translational & Clinical Studies Program
-  - March 2022: NIH NIEHS ZES1 LKB-S (KS) Special Emphasis Panel
-  - March 2022: NIH NIEHS ZES1 LWF-S (K9) Special Emphasis Panel
-  - November 2022: NIH NIEHS ZES1 WL-W (K) Special Emphasis Panel
-  - February 2023: NIH NCI ZCTA1 TCRB-J (M2) R Review Panel
-- Abstract Reviewer:
-  - 2018, 2019, 2022: International Societies of Exposure Science 
-  - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
-  - 2021, 2022, 2023: American Medical Informatics Association Clinical Informatics Conference
-  - 2023: American Medical Informatics Association Annual Symposium
 
 ## Leadership
 
