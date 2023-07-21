@@ -65,6 +65,18 @@ library(glue)
 
 # Research and Scholarly Activities
 
+```{r}
+make_support_entry <- function(x) {
+  glue::glue_data(
+    x,
+    "*{title}*",
+    "{source} {number}, PI: {pi_name}",
+    "{status}. {scales::dollar(amount)}. {start_date} - {end_date}.",
+    .sep = "  \n", .na = " "
+  ) 
+}
+```
+
 ## Research and Scholarly Activities
 
 My main research focus has been to elucidate the effects of environmental exposures and community characteristics on the psychiatric well-being and mental health of children and adolescents. Through creating new place-based data science tools and environmental exposure methods, I have been able to both lead my own research program based on existing cohorts and the CCHMC electronic health records, as well as make methodological contributions to several different nationwide multi-site studies. 
@@ -72,6 +84,23 @@ My main research focus has been to elucidate the effects of environmental exposu
 ## Grants and Contracts
 
 ### Current
+
+```{r}
+#| results: asis
+yaml::yaml.load_file("data/support.yaml") |>
+  purrr::keep(\(x) x$status == "Active") |>
+  purrr::map_chr(make_support_entry) |>
+  cat(sep = "\n\n")
+```
+
+```{r}
+#| results: asis
+yaml::yaml.load_file("data/support.yaml") |>
+  purrr::keep(\(x) x$status == "Completed") |>
+  purrr::keep(\(x) x$pi_name == "Brokamp C") |>
+  purrr::map_chr(make_support_entry) |>
+  cat(sep = "\n\n")
+```
 
 ### Selected Previous (Brokamp, PI)
 

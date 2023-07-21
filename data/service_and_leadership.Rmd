@@ -7,12 +7,13 @@
 
 ### Institutional Committees
 
-- 2023 - present: Member CCHMC Biomedical Informatics Faculty Search Committee
-- 2022 - present: Member, CCHMC Artificial Intelligence Governance Council
-- 2022 - present: Chair, CCHMC DBE Strategic Plan Steering Committee
-- 2019 - present: Member, CCHMC DBE Faculty Career Development Committee
-- 2017 - present: Member, CCHMC DBE Strategic Plan Steering Committee
 - 2017 - 2019: Member, CCHMC DBE Research Committee
+- 2017 - 2023: Member, CCHMC DBE Strategic Plan Steering Committee
+- 2019 - present: Member, CCHMC DBE Faculty Career Development Committee
+- 2021 - 2022: Member, CCHMC DBE Faculty Search Committee
+- 2022 - present: Member, CCHMC Artificial Intelligence Governance Council
+- 2023 - present: Member, CCHMC Biomedical Informatics Faculty Search Committee
+- 2022 - present: Chair, CCHMC DBE Strategic Plan Steering Committee
 
 ### Conference Leadership
 
@@ -20,7 +21,7 @@
 - 2017: Chair of the Ensemble Learning for Air Pollution Exposure Assessment Session, International Society of Exposure Science Annual Meeting
 - 2021: Chair of the Harnessing Big Data in Exposure Science Session, International Society of Exposure Science Annual Meeting
 - 2021: Chair of the Environmental Exposures and Mental Health Session, International Society of Environmental Epidemiology
-- 2023: Chair of Fairness in Precision Environmental Health, International Society of Exposure Science Annual Meeting (*cancelled*)
+- 2023: Chair of Fairness in Precision Environmental Health Session (*cancelled*), International Society of Exposure Science Annual Meeting
 
 ### Scientific Reviewer
 

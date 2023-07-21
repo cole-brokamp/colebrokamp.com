@@ -41,13 +41,54 @@ library(glue)
 
 # Grants and Contracts
 
+```{r}
+make_support_entry <- function(x) {
+  glue::glue_data(
+    x,
+    "*{title}*",
+    "{source} {number}, PI: {pi_name}",
+    "{status}. {scales::dollar(amount)}. {start_date} - {end_date}.",
+    .sep = "  \n", .na = " "
+  ) 
+}
+```
+
 ### Current
+
+```{r}
+#| results: asis
+yaml::yaml.load_file("data/support.yaml") |>
+  purrr::keep(\(x) x$status == "Active") |>
+  purrr::map_chr(make_support_entry) |>
+  cat(sep = "\n\n")
+```
+
+<!-- ### Pending (Brokamp, PI) -->
+
+<!-- ```{r} -->
+<!-- #| results: asis -->
+<!-- yaml::yaml.load_file("data/support.yaml") |> -->
+<!--   purrr::keep(\(x) x$status == "Pending") |> -->
+<!--   purrr::keep(\(x) x$pi_name == "Brokamp C") |> -->
+<!--   purrr::map_chr(make_support_entry) |> -->
+<!--   cat(sep = "\n\n") -->
+<!-- ``` -->
 
 ### Selected Previous (Brokamp, PI)
 
+```{r}
+#| results: asis
+yaml::yaml.load_file("data/support.yaml") |>
+  purrr::keep(\(x) x$status == "Completed") |>
+  purrr::keep(\(x) x$pi_name == "Brokamp C") |>
+  purrr::map_chr(make_support_entry) |>
+  cat(sep = "\n\n")
+```
+
 # Publications
 
-```{r, echo = FALSE, results = 'asis'}
+```{r}
+#| results: asis
 yaml::yaml.load_file("data/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "{paste(author, collapse = ', ')}",
@@ -65,7 +106,8 @@ yaml::yaml.load_file("data/pubs.yaml") |>
 
 \* denotes the presenting author
 
-```{r echo = FALSE, results = 'asis'}
+```{r}
+#| results: asis
 yaml::yaml.load_file("data/abstracts.yaml") |>
   map_chr(\(x) glue_data(x,
                          "{paste(author, collapse = ', ')}",
