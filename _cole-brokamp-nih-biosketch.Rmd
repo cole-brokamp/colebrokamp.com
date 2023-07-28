@@ -73,7 +73,7 @@ d$education_and_training |>
 ```{r}
 # function that takes in a vector of **four** (or less) identifers from pubs.yaml and inserts the citations in that order
 
-cite_four <- function(.x = c("brokamp-2023", "pennington-2022", "vancil-2022")) {
+cite_four <- function(.x = c("rasnick-2023", "pennington-2022", "vancil-2022")) {
   stopifnot(length(.x) <= 4)
   pubs <- yaml::yaml.load_file("data/pubs.yaml")
   stopifnot(all(.x %in% names(pubs)))
@@ -179,7 +179,7 @@ I have developed a novel approach and accompanying software package called DeGAU
 
 ```{r}
 #| results: asis
-cite_four(c("brokamp-2023", "ryan-2020", "brokamp-2018a", "brokamp-2017b"))
+cite_four(c("rasnick-2023", "ryan-2020", "brokamp-2018a", "brokamp-2017b"))
 ```
 
 <!-- ## Fairness in Precision Medicine -->

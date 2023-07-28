@@ -70,7 +70,7 @@ gecili-2023:
   issue_pages: In Press
   year: 2023
 
-brokamp-2023:
+rasnick-2023:
   title: High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale
   author:
     - Erika Rasnick
@@ -85,8 +85,9 @@ brokamp-2023:
     - James E Gern
     - Cole Brokamp
   journal: AMIA Summits on Translational Science Proceedings
-  issue_pages: In Press
+  issue_pages: 2023:62-70
   year: 2023
+  pmid: 37350915
   
 zundel-2022:
   title: "Air Pollution, Depressive and Anxiety Disorders, and Brain Effects: A Systematic Review"
