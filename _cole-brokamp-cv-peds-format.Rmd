@@ -248,22 +248,24 @@ yaml::yaml.load_file("data/talks.yaml") |>
 
 #### PhD or MD Students
 
+- Madhumitaa Roy, UC College of Engineering: Dissertation committee member (2021 - 2023)
 - Harsimran Makkad: CCHMC Summer Medical Student Respiratory Research Fellowship: Primary Mentor (2023)
 - Stephen Colegate: UC College of Medicine Biostatistics: Dissertation committee member (2020 - 2022)
-- Ziyun Wang: UC College of Medicine Biostatistics: Dissertation committee member (2022 - present)
+- Ziyun Wang: UC College of Medicine Biostatistics: Dissertation committee member (2022 - 2023)
 - Kacey Apple: UC College of Medicine Epidemiology: Dissertation committee member (2018 - 2022)
 - Jordan Pennington, CCHMC Summer Medical Student Respiratory Research Fellowship: Primary Mentor (2020)
 - Ashley Turner: UC College of Medicine Industrial Hygiene: Dissertation committee member (2020 - 2021)
 - Shannon Conrey: UC College Of Medicine Epidemiology: Dissertation committee member (2019 - 2021)
 - Mohammad Alfrad Nobel Bhuiyan, UC College of Medicine Biostatistics: Research Mentor (2018-2019)
-- Lei Liu, UC College of Medicine Biomedical Informatics: Dissertation committee member (2019 - present)
+- Lei Liu, UC College of Medicine Biomedical Informatics: Dissertation committee member (2019 - 2021)
 - Kim Hartley, UC College of Medicine Nursing: Dissertation committee member (2019 - 2020)
 - Zana Percy, UC College of Medicine Medical Scientist Training Program: Qualifying exam committee member (2018 - 2019)
 - Juliana Madzia, UC College of Medicine Medical Scientist Training Program: PhD dissertation committee co-chair (2018 - 2020)
 
 #### Post Graduate Clinical and Research Fellows
 
-- Anushka Palipana, CCHMC Research Fellow: Member of Career Development Committee (2022 - present)
+- Clara Zundel, Wayne State University Research Fellow: Member of F32 Mentorship Committee (2022 - present)
+- Anushka Palipana, CCHMC Research Fellow: Member of Career Development Committee (2022 - 2023)
 - Stephen Colegate, CCHMC Research Fellow: Chair of Career Development Committee and Primary Research Mentor (2022 – present)
 - Kim Hartley, CCHMC General Pediatric Research Fellowship: Scholarship Overshight Committee (2020 - 2023)
 - Sharad Wadhwani, CCHMC Clinical Research Fellow: Research mentor (2017 - 2019)
