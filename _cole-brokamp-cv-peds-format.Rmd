@@ -93,6 +93,8 @@ yaml::yaml.load_file("data/support.yaml") |>
   cat(sep = "\n\n")
 ```
 
+### Selected Previous (Brokamp, PI)
+
 ```{r}
 #| results: asis
 yaml::yaml.load_file("data/support.yaml") |>
@@ -102,13 +104,12 @@ yaml::yaml.load_file("data/support.yaml") |>
   cat(sep = "\n\n")
 ```
 
-### Selected Previous (Brokamp, PI)
-
 ## Publications
 
 ### Peer reviewed articles
 	
-```{r, echo = FALSE, results = 'asis'}
+```{r}
+#| results: asis
 yaml::yaml.load_file("data/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "1",
