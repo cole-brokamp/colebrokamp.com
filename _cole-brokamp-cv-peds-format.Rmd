@@ -264,7 +264,7 @@ yaml::yaml.load_file("data/talks.yaml") |>
 
 #### Post Graduate Clinical and Research Fellows
 
-- Clara Zundel, Wayne State University Research Fellow: Member of F32 Mentorship Committee (2022 - present)
+- Clara Zundel, Wayne State University Research Fellow: Member of F32 Mentorship Committee (2023 - present)
 - Anushka Palipana, CCHMC Research Fellow: Member of Career Development Committee (2022 - 2023)
 - Stephen Colegate, CCHMC Research Fellow: Chair of Career Development Committee and Primary Research Mentor (2022 – present)
 - Kim Hartley, CCHMC General Pediatric Research Fellowship: Scholarship Overshight Committee (2020 - 2023)
