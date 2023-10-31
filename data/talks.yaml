@@ -1,3 +1,19 @@
+cilc-2023:
+  title: "Geomarker Curation and Computation"
+  event: CCHMC Clinical Informatics Learning Community
+  year: 2023
+  location: Cincinnati, OH
+  homepage: "https://cole-brokamp.github.io/gcc"
+  type: seminar
+
+introbmi-2023:
+  title: "Geomarker Curation and Computation"
+  event: University of Cincinnati Introduction to Medical Informatics course guest lecture
+  year: 2023
+  location: Cincinnati, OH
+  homepage: "https://cole-brokamp.github.io/gcc/"
+  type: teaching
+
 codec-rug-2023:
   title: "Using R to Build a Community Data Explorer for Cincinnati (CoDEC)"
   event: "CCHMC R Users Group Meeting"
