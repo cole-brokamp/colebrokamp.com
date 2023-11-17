@@ -6,6 +6,14 @@ cilc-2023:
   homepage: "https://cole-brokamp.github.io/gcc"
   type: seminar
 
+dplyr-tidyr-rug-2023:
+  title: "Data Wrangling in R with dplyr and tidyr"
+  event: "CCHMC R Users Group Meeting"
+  year: 2023
+  location: Cincinnti, OH
+  homepage: "https://cole-brokamp.github.io/rug_talk_dplyr_tidyr/"
+  type: seminar
+
 introbmi-2023:
   title: "Geomarker Curation and Computation"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
