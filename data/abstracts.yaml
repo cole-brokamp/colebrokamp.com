@@ -1,3 +1,33 @@
+brokamp-amia-summit-2024:
+  title: "A Multi-Modal Geomarker Pipeline for Assessing the Impact of Social, Economic, and Environmental Factors on Pediatric Hospitalization"
+  author:
+    - Erika Rasnick Manning
+    - Qing Duan
+    - Stuart Taylor
+    - Joseph Michael
+    - Ryan Gillette
+    - Ndidi Unaka
+    - David Hartley
+    - Andrew F. Beck
+    - Cole Brokamp\*
+  event: American Medical Informatics Association Summit
+  year: 2024
+  location: Boston, MA
+
+brokamp-pas-2024:
+  title: "Parcel-level Housing Characteristics Associated with Historical Pediatric Hospitalizations"
+  author:
+    - Cole Brokamp
+    - Qing Duan
+    - Sarah Ray
+    - Erika Rasnick Manning
+    - Stuart Taylor
+    - Ndidi Unaka
+    - Andrew F. Beck\*
+  event: Pediatric Academic Societies Annual Meeting
+  year: 2024
+  location: Toronto, Canada
+
 colegate-ises-2023a:
   title: "Estimating Bias Introduced by Within-Individual Autocorrelation in a Case-Crossover Design: Simulating Daily Fine Particulate Matter and Pulmonary Exacerbation Cases in Cystic Fibrosis Patient"
   author:
@@ -126,17 +156,7 @@ amiasummit-2023:
   event: American Medical Informatics Association Summit
   year: 2023
   location: Seattle, WA
-  type: conference
 
-PAS-2022:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
-  author:
-    - Cole Brokamp\*
-  event: Pediatric Academic Societies Annual Meeting
-  year: 2022
-  location: Denver, CO
-  type: invited
-  
 brokamp_ises-2021a:
   title: "Efficient and Secure High Resolution Spatiotemporal Exposure Assessment"
   author:

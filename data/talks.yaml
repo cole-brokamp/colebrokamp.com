@@ -86,6 +86,14 @@ RDCRN-2022:
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_15-2-2022.pdf"
   type: invited
 
+PAS-2022:
+  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
+  event: Pediatric Academic Societies Annual Meeting
+  year: 2022
+  location: Denver, CO
+  homepage: ""
+  type: invited
+  
 BD2K-2022:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies"
   event: NIH Bench to Bassinet PCGC EMR Extraction Working Group Meeting
