@@ -1,4 +1,4 @@
 ## colebrokamp.com
 
-use the code in `make.R` to create the site and documents
+drive with [just](https://github.com/casey/just?tab=readme-ov-file#shell)
 
