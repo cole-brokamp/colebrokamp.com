@@ -97,13 +97,13 @@ cite_four <- function(.x = c("rasnick-2023", "pennington-2022", "vancil-2022")) 
 
 # A. Personal Statement
 
-As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to large environmental and health outcome datasets. Recent democratization of “big spatial data” and advances in geoinformatics have allowed unprecedented access to environmental and socioeconomic characteristics that vary highly with respect to both time and space. More precise environmental features require more complex modeling and I have dedicated my career to furthering exposure science methodology in order to bring more precise exposure assessment tools to environmental and population health studies. This includes high resolution spatiotemporal exposure assessment models for fine particulate matter as well as a longitudinal measure of material community deprivation. Leveraging these models, I’ve also lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I have developed a novel approach and accompanying software package called DeGAUSS which allows for user-friendly attachment of geospatial variables to existing research cohorts while mitigating key privacy challenges. I am the founding director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH), which is a shared facility at Cincinnati Children’s Hospital Medical Center that works to develop and democratize geospatial data and methodologies across the institution.
+As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to large environmental, community, and health outcome datasets. Recent democratization of “big spatial data” and advances in geoinformatics have allowed unprecedented access to environmental and socioeconomic characteristics that vary highly with respect to both time and space. More precise environmental features require more complex modeling and I have dedicated my early career to furthering exposure science methodology in order to bring more precise exposure assessment tools to environmental and population health studies. This includes high resolution spatiotemporal exposure assessment models for fine particulate matter as well as a longitudinal measure of material community deprivation. Furthermore, I have developed a novel approach and accompanying software package called DeGAUSS which allows for user-friendly attachment of geospatial variables to existing research cohorts while mitigating key privacy challenges. I am the founding director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH), which is a shared facility at Cincinnati Children’s Hospital Medical Center that works to develop and democratize geospatial data and methodologies across the institution.
 
-In addition to statistical and epidemiologic methodological developments, I have also contributed as the lead biostatistician in other biomedical clinical and observational studies. I look forward to contributing as a consultant and biostatistician to your proposed R01 project as a part of our ongoing collaborations, which includes NIH-funded awards and co-mentorship of your postdoctoral research fellow. My experience and expertise in data processing, statistical methods, as well as analyses interpretation will contribute to the success of this proposed project. 
+Leveraging these advanced exposure assessment models, I’ve lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures.
 
 ```{r}
 #| results: asis
-cite_four(c("zundel-2022", "vancil-2022", "hartley-2020", "gecili-2023"))
+cite_four(c("rasnick-2023", "vancil-2022", "pennington-2022", "brokamp-2024"))
 ```
 
 # B. Positions, Scientific Appointments, and Honors
@@ -158,7 +158,7 @@ I created a nationwide, census tract-level, and validated community material dep
 
 ```{r}
 #| results: asis
-cite_four(c("brokamp-2019", "trinidad-2022", "esteban-2022", "trinidad-2022b"))
+cite_four(c("brokamp-2019", "trinidad-2022", "trinidad-2022b", "brokamp-2024"))
 ```
 
 ## Built Environment and Pediatric Psychiatric Disorders
@@ -167,8 +167,17 @@ Building on advanced exposure assessment has allowed me to lead epidemiological 
   
 ```{r}
 #| results: asis
-cite_four(c("vancil-2022", "rasnick-2021", "brokamp-2019b", "madzia-2018"))
+cite_four(c("vancil-2022", "zundel-2022", "rasnick-2021", "brokamp-2019b"))
 # zundel-2022
+```
+
+## Causal Mediation of Place-Based Factors on Health Disparities
+
+I have used advanced causal modeling techniques coupled with population-wide health registries linked to extant social and environmental determinants of health data sources to study the mechanisms behind racial health disparities. This has included neighborhood-level drivers of all-cause hospitalization disparities and more detailed analyses within specific disease groups, including pediatric inflammatory bowel disease, asthma, sickle cell anemia, type I diabetes, and psychiatric disorders. 
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2024", "smith-2023", "esteban-2022", "zanobetti-2022"))
 ```
   
 ## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
