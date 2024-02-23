@@ -196,15 +196,6 @@ cite_four(c("rasnick-2023", "ryan-2020", "brokamp-2018a", "brokamp-2017b"))
 <!-- cite_four(c("pennington-2022")) -->
 <!-- ``` -->
 
-## Clinical forecasting in cystic fibrosis with geomarkers
-
-I have contributed to a research team that has recently used functional data analysis combined with joint modeling (FD-JM) to identify and predict rapid decline in lung function among patients with cystic fibrosis (CF) lung disease. My work in translating this predictive model into an interactive application has allowed for patients and clinicians to take advantage of it at the bedside.  Focus groups and partnerships with clinicians have allowed us to iteratively develop the application based on end-user feedback. Work with the CF Foundation Patient Registry (CFFPR) to implement these models and visualizations into clinical settings has improved prognostic care. Recent work has incorporate place-based geomarkers of poverty, greenspace, and air pollution to further enhance the accuracy and clinical-utility of the prediction tool.
-
-```{r}
-#| results: asis
-cite_four(c("gecili-2023", "wolfe-2020", "szczesniak-2020a", "szczesniak-2017a" ))
-```
-
 **Complete list of published work in ORCID**:
 
 [https://orcid.org/0000-0002-0289-3151](https://orcid.org/0000-0002-0289-3151)
