@@ -111,7 +111,7 @@ brunst-epigenetics:
 cf-geomarker:
   title: "Mapping environmental contributions to rapid lung disease progression in cystic fibrosis"
   goals: "Leverage a rich CF registry, extant national and local environmental data sources and prospectively collected study data to accurately forecast the onset of rapid decline progression."
-  status: Active
+  status: Completed
   number: R01HL141286
   pi_name: Szczesniak R
   source: NIH/NHLBI

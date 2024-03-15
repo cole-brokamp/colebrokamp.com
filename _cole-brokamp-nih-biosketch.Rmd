@@ -91,6 +91,17 @@ cite_four <- function(.x = c("rasnick-2023", "pennington-2022", "vancil-2022")) 
     purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
     cat(sep = "\n\n")
 }
+
+make_support_entry <- function(x) {
+  glue::glue_data(
+    x,
+    "{source} {number}",
+    "{pi_name} (PI)",
+    "{start_date} - {end_date}",
+    "*{title}*",
+    .sep = "  \n", .na = " "
+  ) 
+}
 ```
 
 \setlength{\parskip}{6pt}
@@ -99,7 +110,21 @@ cite_four <- function(.x = c("rasnick-2023", "pennington-2022", "vancil-2022")) 
 
 As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to large environmental, community, and health outcome datasets. Recent democratization of “big spatial data” and advances in geoinformatics have allowed unprecedented access to environmental and socioeconomic characteristics that vary highly with respect to both time and space. More precise environmental features require more complex modeling and I have dedicated my early career to furthering exposure science methodology in order to bring more precise exposure assessment tools to environmental and population health studies. This includes high resolution spatiotemporal exposure assessment models for fine particulate matter as well as a longitudinal measure of material community deprivation. Furthermore, I have developed a novel approach and accompanying software package called DeGAUSS which allows for user-friendly attachment of geospatial variables to existing research cohorts while mitigating key privacy challenges. I am the founding director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH), which is a shared facility at Cincinnati Children’s Hospital Medical Center that works to develop and democratize geospatial data and methodologies across the institution.
 
-Leveraging these advanced exposure assessment models, I’ve lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures. Specific to this application, I look forward to using my expertise and experience in assessing socio-environmental exposures to contribute to the overall objective of using ancestry-specific metabolomoic risk scores to identify their association with and mediation of socio-economic exposures on asthma risk.
+Leveraging these advanced exposure assessment models, I’ve lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures.
+
+Specific to this application, I look forward to using my expertise and experience in assessing socio-environmental exposures to contribute to the overall objective of using ancestry-specific metabolomoic risk scores to identify their association with and mediation of socio-economic exposures on asthma risk.
+
+Ongoing projects I would like to highlight include:
+
+```{r}
+#| results: asis
+yaml::yaml.load_file("data/support.yaml") |>
+  purrr::keep_at(c("tes-r01", "degauss-r01", "beck-riseup", "nancy-r01", "c4", "brunst-epigenetics")) |>
+  purrr::map_chr(make_support_entry) |>
+  cat(sep = "\n\n")
+```
+
+Citations:
 
 ```{r}
 #| results: asis
