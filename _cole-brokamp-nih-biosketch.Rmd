@@ -112,8 +112,6 @@ As a biostatistician, epidemiologist, and geospatial data scientist, I have spec
 
 Leveraging these advanced exposure assessment models, I’ve lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures.
 
-Specific to this application, I look forward to using my expertise and experience in assessing socio-environmental exposures to contribute to the overall objective of using ancestry-specific metabolomoic risk scores to identify their association with and mediation of socio-economic exposures on asthma risk.
-
 Ongoing projects I would like to highlight include:
 
 ```{r}
