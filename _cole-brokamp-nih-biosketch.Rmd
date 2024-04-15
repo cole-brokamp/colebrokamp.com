@@ -122,7 +122,7 @@ yaml::yaml.load_file("data/support.yaml") |>
   cat(sep = "\n\n")
 ```
 
-Citations:
+Peer-review publications I would like to highlight include:
 
 ```{r}
 #| results: asis
@@ -209,7 +209,7 @@ I have developed a novel approach and accompanying software package called DeGAU
 
 ```{r}
 #| results: asis
-cite_four(c("rasnick-2023", "ryan-2020", "brokamp-2018a", "brokamp-2017b"))
+cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
 ```
 
 <!-- ## Fairness in Precision Medicine -->
