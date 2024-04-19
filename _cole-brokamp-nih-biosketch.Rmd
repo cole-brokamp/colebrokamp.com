@@ -112,6 +112,8 @@ As a biostatistician, epidemiologist, and geospatial data scientist, I have spec
 
 Leveraging these advanced exposure assessment models, I’ve lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures.
 
+I look forward to contributing to Szczesniak_HEAL: Genome-sociome informed risk (G-SIR) risk prediction tools for enhanced clinical management and promotion of health equity across the lifespan (HEAL) as a project co- investigator helping to lead the geomarker assessment and algorithm fairness in precision public health. Specif- ically, I recently published a racial algorithmic fairness evaluation of a widely used pediatric asthma prediction algorithm. Additionally, I have studied the impacts of daily fluctuations in air pollution and psychiatric exacerbations. Most importantly, I have expertise in creating geomarker assessment pipelines and have experience doing so with Dr. Szczesniak within the context of Cystic Fibrosis Foundation funding and goals.
+
 Ongoing projects I would like to highlight include:
 
 ```{r}
