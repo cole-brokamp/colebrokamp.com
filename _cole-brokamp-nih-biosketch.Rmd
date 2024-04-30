@@ -110,16 +110,16 @@ make_support_entry <- function(x) {
 
 As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to large environmental, community, and health outcome datasets. Recent democratization of “big spatial data” and advances in geoinformatics have allowed unprecedented access to environmental and socioeconomic characteristics that vary highly with respect to both time and space. More precise environmental features require more complex modeling and I have dedicated my early career to furthering exposure science methodology in order to bring more precise exposure assessment tools to environmental and population health studies. This includes high resolution spatiotemporal exposure assessment models for fine particulate matter as well as a longitudinal measure of material community deprivation. Furthermore, I have developed a novel approach and accompanying software package called DeGAUSS which allows for user-friendly attachment of geospatial variables to existing research cohorts while mitigating key privacy challenges. I am the founding director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH), which is a shared facility at Cincinnati Children’s Hospital Medical Center that works to develop and democratize geospatial data and methodologies across the institution.
 
-Leveraging these advanced exposure assessment models, I’ve lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures.
+Leveraging these advanced exposure assessment models, I've lead epidemiologic studies demonstrating the roles of air pollution, greenspace, and poverty on psychiatric and neurobehavioral child health outcomes. Furthermore, I co-lead health equity research with investigators who are seeking to quantify and identify causal drivers of racial and ethnic health disparities. My research also extends into the racial and ethnic fairness of precision health algorithms, including applications within asthma, cystic fibrosis, and assessment of socioeconomic status and environmental exposures.
 
-I look forward to contributing to Szczesniak_HEAL: Genome-sociome informed risk (G-SIR) risk prediction tools for enhanced clinical management and promotion of health equity across the lifespan (HEAL) as a project co- investigator helping to lead the geomarker assessment and algorithm fairness in precision public health. Specif- ically, I recently published a racial algorithmic fairness evaluation of a widely used pediatric asthma prediction algorithm. Additionally, I have studied the impacts of daily fluctuations in air pollution and psychiatric exacerbations. Most importantly, I have expertise in creating geomarker assessment pipelines and have experience doing so with Dr. Szczesniak within the context of Cystic Fibrosis Foundation funding and goals.
+I look forward to continuing my close mentor/mentee relationship with Dr. Colegate throughout the Strauss Award and his postdoctoral fellowship. I have used my experience and expertise in mentoring junior scientists throughout Stephen’s dissertation work and the first 20 months of his fellowship. This line of work is already benefiting from previous work completed by two Summer Undergraduate Research Fellows (SURF) and and two Summer Medical Student Respiratory Research Fellows (SMSRFF), who have gone on to publish manuscripts and abstracts about early findings in racial fairness. Specifically, I mentored a SMSRFF fellow on a similar precision medicine project with asthma, which results in a first author publication for the mentee. I look forward to continuing my work with Stephen in precision medicine for lung exacerbation forecasting with specific applications to fairness. My unique background in cystic fibrosis research, predictive modeling, and racial/ethnic fairness will provide Dr. Colegate with the ideal mentor to accomplish his professional and scientific goals.
 
 Ongoing projects I would like to highlight include:
 
 ```{r}
 #| results: asis
 yaml::yaml.load_file("data/support.yaml") |>
-  purrr::keep_at(c("tes-r01", "degauss-r01", "beck-riseup", "nancy-r01", "c4", "brunst-epigenetics")) |>
+  purrr::keep_at(c("tes-r01", "degauss-r01", "beck-riseup", "c4", "brunst-epigenetics")) |>
   purrr::map_chr(make_support_entry) |>
   cat(sep = "\n\n")
 ```
@@ -128,7 +128,7 @@ Peer-review publications I would like to highlight include:
 
 ```{r}
 #| results: asis
-cite_four(c("rasnick-2023", "vancil-2022", "pennington-2022", "brokamp-2024"))
+cite_four(c("colegate-2024", "pennington-2022", "brokamp-2024", "wolfe-2020"))
 ```
 
 # B. Positions, Scientific Appointments, and Honors
@@ -174,16 +174,15 @@ My early career was spent developing spatiotemporal exposure assessment models f
 
 ```{r}
 #| results: asis
-cite_four(c("brokamp-2022", "brokamp-2019a", "brokamp-2018", "brokamp-2017"))
+cite_four(c("brokamp-2022", "brokamp-2018", "brokamp-2017"))
 ```
 
-## Community Material Deprivation Index
-
-I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. Additionally, I recently co-mentored a fellow to publish a scoping review and set of recommendations for the use of area based socioeconomic deprivation indices.
+I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. 
 
 ```{r}
 #| results: asis
-cite_four(c("brokamp-2019", "trinidad-2022", "trinidad-2022b", "brokamp-2024"))
+cite_four(c("brokamp-2019"))
+# lead paper??
 ```
 
 ## Built Environment and Pediatric Psychiatric Disorders
@@ -203,6 +202,7 @@ I have used advanced causal modeling techniques coupled with population-wide hea
 ```{r}
 #| results: asis
 cite_four(c("brokamp-2024", "smith-2023", "esteban-2022", "zanobetti-2022"))
+# housing infraction paper
 ```
   
 ## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
@@ -214,12 +214,16 @@ I have developed a novel approach and accompanying software package called DeGAU
 cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
 ```
 
-<!-- ## Fairness in Precision Medicine -->
+## Fairness in Precision Medicine
 
-<!-- ```{r} -->
-<!-- #| results: asis -->
-<!-- cite_four(c("pennington-2022")) -->
-<!-- ``` -->
+My research group has lead several studies on the racial and ethnic fairness of precision medicine tools used in clinical and epidemiologic settings. We have been the first to uncover racial biases in commonly used asthma diagnosis and cystic fibrosis exacerbation clinical precision medicine tools. Additionally, we have focused on the racial biases that can be introduced into epidemiologic research through the use of commonly used exposure assessment and community characteristics tools.
+
+```{r}
+#| results: asis
+cite_four(c("colegate-2024", "pennington-2022"))
+# vancil-roadways
+# makkad-jrehd
+```
 
 **Complete list of published work in ORCID**:
 
