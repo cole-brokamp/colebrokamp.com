@@ -1,10 +1,11 @@
 # render all content and view website
-all: render_cv render_peds_cv render_biosketch render_website
+all: render_cv render_peds_cv render_website
   open docs/index.html
 
 # render website
 render_website:
   Rscript -e "rmarkdown::render_site('encoding' = 'UTF-8')"
+  open docs/index.html
 
 # render CV
 render_cv:
@@ -25,27 +26,6 @@ render_peds_cv:
     output_file = "cole-brokamp-cv-peds-format.docx"
   ) |>
   browseURL()
-
-# download (in R) and edit this file for personal details:
-## download.file("https://grants.nih.gov/grants/forms/biosketch-blank-format-rev-10-2021.docx", "biosketch_stub.docx")
-
-# render biosketch in word
-render_biosketch_word:
-    pandoc \
-    test.md \
-    -o biosketch_stub.docx \
-    --output="cole-brokamp-nih-biosketch.docx"
-
-# render NIH-formatted biosketch
-render_biosketch:
-  #!/usr/bin/env Rscript
-  rmarkdown::render(
-    "_cole-brokamp-nih-biosketch.Rmd",
-    output_format = "pdf_document",
-    output_file = "cole-brokamp-nih-biosketch.pdf"
-  ) |>
-  browseURL()
-
 
 # snapshot with a git commit
 snapshot:

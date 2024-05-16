@@ -1,0 +1,18 @@
+---
+title: "Talks"
+---
+
+```{r}
+#| echo: false
+#| results: asis
+yaml::yaml.load_file("data/talks.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "{title}",
+                         "*{event}*",
+                         "{location}",
+                         "{year}",
+                         "[📄]({homepage})",
+                         .sep = ". ",
+                         .na = character())) |>
+  cat(sep = "\n\n")
+```

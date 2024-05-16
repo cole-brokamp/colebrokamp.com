@@ -5,11 +5,11 @@ navbar:
   type: inverse
   left:
     - text: Publications
-      href: index.html#publications
+      href: publications.html
     - text: Talks
-      href: index.html#talks
+      href: talks.html
     - text: Abstracts
-      href: index.html#abstracts
+      href: abstracts.html
   right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp
@@ -20,7 +20,7 @@ navbar:
     - icon: fa-file-text
       href: cole-brokamp-cv.pdf
     - icon: fa-user
-      href: cole-brokamp-nih-biosketch.pdf
+      href: cole-brokamp-nih-biosketch.docx
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
 output:
@@ -30,5 +30,5 @@ output:
       bg: "#cbd6d5"
       fg: "#396175"
       primary: "#C28273"
-include: ["cole-brokamp-cv.pdf", "cole-brokamp-cv-peds-format.docx", "cole-brokamp-nih-biosketch.pdf"]
+include: ["cole-brokamp-cv.pdf", "cole-brokamp-cv-peds-format.docx", "cole-brokamp-nih-biosketch.docx"]
 exclude: ["data", "Justfile"]

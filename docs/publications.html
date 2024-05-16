@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Publications</title>
+
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="site_libs/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-5.3.1/bootstrap.bundle.min.js"></script>
+<script src="site_libs/bs3compat-0.7.0/transition.js"></script>
+<script src="site_libs/bs3compat-0.7.0/tabs.js"></script>
+<script src="site_libs/bs3compat-0.7.0/bs3compat.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Cole Brokamp</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="talks.html">Talks</a>
+</li>
+<li>
+  <a href="abstracts.html">Abstracts</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/cole_brokamp">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/cole-brokamp">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:cole@colebrokamp.com">
+    <span class="fa fa-envelope"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="cole-brokamp-cv.pdf">
+    <span class="fa fa-file-text"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="cole-brokamp-nih-biosketch.docx">
+    <span class="fa fa-user"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=N_CkwfoAAAAJ&amp;hl=en">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Publications</h1>
+
+</div>
+
+
+<p>Stephen P Colegate, Anushka Palipana, Emrah Gecili, Rhonda D
+Szczesniak, Cole Brokamp. Evaluating Precision Medicine Tools in Cystic
+Fibrosis for Racial and Ethnic Fairness. <em>Journal of Clinical and
+Translational Science</em>. In press. 2024.</p>
+<p>Andrew F Beck, Tiffany Mattingly, Cole Brokamp, Rashmi Sahay, Erika R
+Manning, Stuart Taylor, Pierce Kuhnell, Brian Kegley, Kiana Trabue,
+Peter A Margolis, Robert S Kahn, David M Hartley. The Test and Protect
+Program: A data-driven, community-engaged approach to COVID-19 testing
+site localization. <em>Journal of Public Health Management &amp;
+Practice</em>. In press. 2024.</p>
+<p>Erika Rasnick Manning, Qing Duan, Stuart Taylor, Sarah Ray, Alexandra
+MS Corley, Joseph Michael, Ryan Gillette, Ndidi Unaka, David Hartley,
+Andrew F Beck, Cole Brokamp. Development of a Multimodal Geomarker
+Pipeline to Assess the Impact of Social, Economic, and Environmental
+Factors on Pediatric Health Outcomes. <em>Journal of the American
+Medical Informatics Association</em>. In press. 2024.</p>
+<p>Antonella Zanobetti, Patrick H Ryan, Brent A Coull, Heike
+Luttmann-Gibson, Soma Datta, Jeffrey Blosson, Cole Brokamp, Nathan
+Lothrop, Rachel L Miller, Paloma I Beamer, Cynthis M Visness, Howard
+Andrews, Leonard B Bacharier, Tine Hartert, Christine C Johnson, Dennis
+R Ownby, Gurjit K Khurana Hershey, Christine LM Joseph, Eneida A
+Mendonca, Daniel J Jackson, Edward M Zoratti, Anne L Wright, Fernando D
+Martinez, Christine M Seroogy, Sima K Ramratnam, Agustin Calatroni,
+James E Gern, Diane R Gold. Early-life exposure to air pollution and
+childhood asthma cumulative incidence in the ECHO CREW consortium.
+<em>JAMA Network Open</em>. 7(2):e240535. 2024.</p>
+<p>Kimberly L Klages, Laura E Schwartz, Endia J Santee Crabtree, Cole
+Brokamp, Erika Rasnick, Christopher E Dandoy, Stella M Davies, Ahna LH
+Pai. Social determinants of health predict health outcomes following
+pediatric allogeneic hematopoietic stem cell transplant. <em>Pediatric
+Blood &amp; Cancer</em>. In Press. 2024.</p>
+<p>Cole Brokamp, Margaret N Jones, Qing Duan, Erika Rasnick Manning,
+Sarah Ray, Alexandra MS Corley, Joseph Michael, Stuart Taylor, Ndidi
+Unaka, Andrew F Beck. Causal Mediation of Neighborhood-Level Pediatric
+Hospitalization Inequities. <em>Pediatrics</em>. In Press. 2024.</p>
+<p>Patrick Ryan, Chris Wolfe, Allison Parsons, Cole Brokamp, Ashley
+Turner, Sherrill Ingram, Erin Haynes. Report-Back of Personal Air
+Sampling Results and Study Participants’ Perceived Knowledge, Attitudes,
+and Awareness of Air Pollution. <em>Environmental Health
+Perspectives</em>. 131:11. 2023.</p>
+<p>Anushka Palipana, Andrew Vancil, Emrah Gecili, Erika Rasnick, Daniel
+Ehrlich, Teresa Pestian, Eleni-Rosalina Andrinopoulou, Pedro Afonso,
+Ruth Keogh, Yizhao Ni, Judith Dexheimer, John Clancy, Patrick Ryan, Cole
+Brokamp, Rhonda Sczcesniak. Social-environmental phenotypes of rapid
+cystic fibrosis lung disease progression in adolescents and young adults
+living in the United States. <em>Environmental Advances</em>. 14:100449.
+2023.</p>
+<p>Julia Smith, Chunyan Liu, Andrew Beck, Lin Fei, Cole Brokamp, Syeda
+Meryum, Kaitlin G Whaley, Philip Minar, Jennifer Hellmann, Lee A Denson,
+Peter Margolis, Jasbir Dhaliwal. Racial Disparities in Pediatric
+Inflammatory Bowel Disease Care: Differences in Outcomes and Health
+Service Utilization Between Black and White Children. <em>Journal of
+Pediatrics</em>. 260:113522. 2023.</p>
+<p>Jack Reifenberg, Emrah Gecili, Teresa Pestian, Eleni-Rosalina
+Andrinopoulou, Patrick H Ryan, Cole Brokamp, Joseph M Collaco, Rhonda D
+Szczesniak. Lung function and secondhand smoke exposure among children
+with cystic fibrosis: A Bayesian meta-analysis. <em>Journal of Cystic
+Fibrosis</em>. S1569-1993(23)00126-1. 2023.</p>
+<p>Nidhi Iyanna, Kimberly Yolton, Grace LeMasters, Bruce P Lanphear, Kim
+M Cecil, Joel Schwartz, Cole Brokamp, Erika Rasnick, Yingying Xu,
+Melinda C. MacDougall, Patrick Ryan. Air Pollution Exposure and Social
+Responsiveness in Childhood: The Cincinnati Combined Childhood Cohorts.
+<em>International Journal of Hygiene and Environmental Health</em>. In
+Press. 2023.</p>
+<p>Patrick H Ryan, Christopher Wolfe, Allison Parsons, Cole Brokamp,
+Ashley Turner, Erin Haynes. Participant Engagement to Develop
+Report-Back Materials for Personal Air Sampling. <em>Journal of Clinical
+and Translational Science</em>. In Press. 2023.</p>
+<p>Emrah Gecili, Cole Brokamp, Erika Rasnick, Pedro M Afonso,
+Eleni-Rosalina Andrinopoulou, Judith W Dexheimer, John P Clancy, Ruth H
+Keogh, Yizhao Ni, Anushka Palipana, Teresa Pestian, Andrew Vancil, Grace
+Chen Zhou, Weiji Su, Christopher Siracusa, Patrick Ryan, Rhonda D
+Szczesniak. Built environment factors predictive of early rapid lung
+function decline in cystic fibrosis. <em>Pediatric Pulmonology</em>. In
+Press. 2023.</p>
+<p>Erika Rasnick, Patrick Ryan, Jeff Blossom, Heike Luttmann-Gibson,
+Nathan Lothrop, Rima Habre, Diane R Gold, Andrew Vancil, Joel Schwartz,
+James E Gern, Cole Brokamp. High Resolution and Spatiotemporal
+Place-Based Computable Exposures at Scale. <em>AMIA Summits on
+Translational Science Proceedings</em>. 2023:62-70. 2023.</p>
+<p>Clara Zundel, Patrick Ryan, Cole Brokamp, Autumn Heeter, Yaoxian
+Huang, Jeffrey Strawn, Hilary Marusak. Air Pollution, Depressive and
+Anxiety Disorders, and Brain Effects: A Systematic Review.
+<em>NeuroToxicology</em>. In Press. 2022.</p>
+<p>Andrew Vancil, Jeffrey R Strawn, Erika Rasnick, Amir Levine, Heidi K
+Schroeder, Ashley M Specht, Ashley L Turner, Patrick H Ryan, Cole
+Brokamp. Pediatric Anxiety and Daily Fine Particulate Matter: A
+Longitudinal Study. <em>Psychiatry Research Communications</em>. In
+Press. 2022.</p>
+<p>Stephen Trinidad, Cole Brokamp, Andres Mor Huertas, Andrew Beck,
+Carley Riley, Erika Rasnick, Richard Falcone, Meera Kotagal. Use of Area
+Based Socioeconomic Deprivation Indices: A Scoping Review and
+Qualitative Analysis. <em>Health Affairs</em>. In Press. 2022.</p>
+<p>Milan N. Parikh, Cole Brokamp, Erika Rasnick, Lili Ding, Tesfaye B.
+Mersha, Katherine Bowers, Alonzo T. Folger. Epigenome-Wide Association
+of Neonatal Methylation and Trimester-Specific Prenatal PM2.5 Exposure.
+<em>Environmental Epidemiology</em>. In Press. 2022.</p>
+<p>Shannon C. Conrey, Allison R. Burrell, Cole Brokamp, Rachel M. Burke,
+Sarah C. Couch, Liang Niu, Claire P. Mattison, Alexandra Piasecki,
+Daniel C. Payne, Mary A. Staat, Ardythe L. Morrow. Neighbourhood
+socio-economic environment predicts adiposity and obesity risk in
+children under two. <em>Pediatric Obesity</em>. Online. 2022.</p>
+<p>Jordan Pennington, Erika Rasnick, Lisa J. Martin, Jocelyn M. Biagini,
+Tesfaye B. Mersha, Allison Parsons, Gurjit K. Khurana Hershey, Patrick
+Ryan, Cole Brokamp. Racial Fairness in Precision Medicine: Pediatric
+Asthma Prediction Algorithms. <em>American Journal of Health
+Promotion</em>. 37(2). 2022.</p>
+<p>Esteban Correa, Lili Ding, Andrew F. Beck, Cole Brokamp, Mekibib
+Altayeb, Robert S. Kahn, Tesfay Mersha. Understanding Racial Disparities
+in Childhood Asthma Using Individual- and Neighborhood-Level Risk
+Factors. <em>Journal of Allergy and Clinical Immunology</em>. In Press.
+2022.</p>
+<p>Stephen Trinidad, Cole Brokamp, Rashmi Sahay, Suzanne Moody, Dawne
+Gardner, Allison A.Parsons, Carley Riley, Nicole Sofer, Andrew F.Beck,
+Richard A. Falcone Jr., Meera Kotagal. Children from Disadvantaged
+Neighborhoods Experience Disproportionate Injury from Interpersonal
+Violence. <em>Journal of Pediatric Surgery</em>. Online. 2022.</p>
+<p>Anita N. Shah, Erika Rasnick, Mohammad An Bhuiyan, Chris Wolfe,
+Dianna Bosse, Jeffrey M. Simmons, Samir S. Shah, Cole Brokamp, Andrew F.
+Beck. Using Geomarkers and Sociodemographics to Inform Assessment of
+Caregiver Adversity and Resilience. <em>Hospital Pediatrics</em>.
+12(8):689-695. 2022.</p>
+<p>Ashley Lynn Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Kelly
+J. Brunst, Patrick H. Ryan. Mental and Physical Stress Responses to
+Personal Ultrafine Particle Exposure in Adolescents. <em>International
+Journal of Environmental Research and Public Health</em>. In Press.
+2022.</p>
+<p>Antonella Zanobetti, Patrick H. Ryan, Brent Coull, Cole Brokamp, Soma
+Datta, Jeffrey Blossom, Nathan Lothrop, Rachel L. Miller, Paloma I.
+Beamer, Cynthia M. Visness, Howard Andrews, Leonard B. Bacharier, Tina
+Hartert, Christine C. Johnson, Dennis Ownby, Gurjit K. Khurana Hershey,
+Christine Joseph, Song Yiqiang, Eneida Mendoza, Daniel J. Jackson, Heike
+Luttmann-Gibson, Edward M. Zoratti, Anne L. Wright, Fernando D.
+Martinez, Christine M. Seroogy, James E. Gern, Diane R. Gold, for the
+Children’s Respiratory and Environmental Workgroup (CREW) Consortium.
+Childhood Asthma Incidence, Early and Persistent Wheeze, and
+Neighborhood Socioeconomic Factors in the ECHO/CREW Consortium. <em>JAMA
+Pediatrics</em>. Online. 2022.</p>
+<p>Stephen Trinidad, Andrew Vancil, Cole Brokamp, Suzanne Moody, Dawne
+Gardner, Allison A. Parsons, Carley Riley, Rashmi Sahay, Nicole Sofer,
+Andrew F. Beck, Richard A. Falcone Jr., Meera Kotagal. Relationships
+Between Socioeconomic Deprivation and Pediatric Firearm-Related Injury
+at the Neighborhood Level. <em>Journal of Trauma and Acute Care
+Surgery</em>. Online. 2022.</p>
+<p>Kim Hartley, Patrick Ryan, Gordon Gillespie, Joseph Perazzo, J.
+Michael Wright, Glenn Rice, Geoffrey Donovan, Rebecca Gernes, Gurjit
+Khurana Hershey, Grace LeMasters, Cole Brokamp. Residential Greenness,
+Asthma, and Lung Function Among Children at High Risk of Allergic
+Sensitization: A Prospective Cohort Study. <em>Environmental
+Health</em>. In Press. 2022.</p>
+<p>Madhumitaa Roy, Cole Brokamp, Sivaraman Balachandran. Clustering and
+Regression-Based Analysis of PM2.5 Sensitivity to Meteorology in
+Cincinnati, Ohio. <em>Atmosphere</em>. 13(4):545. 2022.</p>
+<p>Joanna Thomson, Breann Butts, Saige Camara, Erika Rasnick, Cole
+Brokamp, Caroline Heyd, Rebecca Steuart, Scott Callahan, Stuart Taylor,
+Andrew Beck. Neighborhood Socioeconomic Deprivation and Health Care
+Utilization of Medically Complex Children. <em>Pediatrics</em>.
+e2021052592. 2022.</p>
+<p>Cole Brokamp. A High Resolution Spatiotemporal Fine Particulate
+Matter Exposure Assessment Model for the Contiguous United States.
+<em>Environmental Advances</em>. 7:100155. 2022.</p>
+<p>Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick
+Ryan. Impact of Personal, Sub-hourly Exposure to Ultrafine Particles on
+Respiratory Health in Adolescents With Asthma. <em>Annals of the
+American Thoracic Society</em>. Online. 2022.</p>
+<p>Lei Liu, Yizhao Ni, Andrew F Beck, Cole Brokamp, Ryan C Ramphul,
+Linda D Highfield, Megha Karkera Kanjia, J Nick Pratap. Understanding
+Pediatric Surgery Cancellation: Geospatial Analysis. <em>Journal of
+Medical Internet Research</em>. 23(8):e26231. 2021.</p>
+<p>Ashley Turner, Cole Brokamp, Chris Wolfe, Tiina Reponen, Patrick
+Ryan. Personal exposure to average weekly ultrafine particles, lung
+function, and respiratory symptoms in asthmatic and non-asthmatic
+adolescents. <em>Environment International</em>. 156:106740. 2021.</p>
+<p>Linnea Lowe, Cole Brokamp, Erika Rasnick, Eric S. Hall, Shauna
+Acquavita. A Geographic Perspective on Opioid Misuse: Substance Abuse
+Treatment Deserts in Southwestern Ohio. <em>Ohio Journal of Public
+Health</em>. 4(1). 2021.</p>
+<p>Sarah de Loizaga, Lindsay Arthur, Bhawna Arya, Brian Beckman,
+Wubishet Belay, Cole Brokamp, Nak Hyun Choi, Sean Connolly, Soham
+Dasgupta, Tavenner Dibert, Marylou Dryer, Lakshmi Gokanapudy Hahn,
+Elizabeth Greene, Daphney Kernizan, Omar Khalid, Jennifer Klein, Ryan
+Kobayashi, Subhrajit Lahiri, Raymond Lorenzoni, Jennifer Marshall,
+Theodore Millette, Lily Moore, Babu Muhamed, Meghna Murali, Andrea Otero
+Luna, Kinjal Parikh, Amy Sanyahumbi, Divya Shakti, Elizabeth Stein,
+Sanket Shah, Hannah Wilkins, McAllister Windom, Scott Wirth, Meghan
+Zimmerman, Andrew Beck, Nicholas Ollberding, Craig Sable, Andrea Beaton.
+Rheumatic Heart Disease in the United States: Forgotten but not Gone.
+Results of a 10 Year Multicenter Review. <em>Journal of the American
+Heart Association</em>. In Press. 2021.</p>
+<p>Andrea R. Maxwell, Nana-Hawa Yayah Jones, Stuart Taylor, Sarah D.
+Corathers, Erika Rasnick, Cole Brokamp, Carley L. Riley, Allison
+Parsons, Jessica C. Kichler, Andrew F. Beck. Socioeconomic and racial
+disparities in diabetic ketoacidosis admissions in youth with type 1
+diabetes. <em>Journal of Hospital Medicine</em>. In Press. 2021.</p>
+<p>Emrah Gecili, Weiji Su, Cole Brokamp, Eleni-Rosalina Andrinopoulou,
+Francis J LaRosa Iii, Teresa Pestian, John P Clancy, George M Solomon,
+John J Brewington, Rhonda D Szczesniak. Rapid cystic fibrosis
+lung-function decline and in-vitro CFTR modulation. <em>Journal of
+Cystic Fibrosis</em>. S1569-1993(21)00111-9. 2021.</p>
+<p>Grace Kelly, Jordan Pennington, Yonatan Segev, Cole Brokamp, Margaret
+N Jones, Saige Camara, Adrienne W Henize, Robert S Kahn, Andrew F Beck.
+Voter Participation is Associated with Child Health Outcomes at the
+Population Level. <em>Journal of Pediatrics</em>. In Press. 2021.</p>
+<p>Mohammad Bhuiyan, Patrick Ryan, Farzan Oroumyeh, Yajna Jathan,
+Madhumitaa Roy, Siv Balachandran, Cole Brokamp. Source-specific
+contributions of particulate matter to asthma-related pediatric
+emergency department utilization. <em>Health Information Science and
+Systems</em>. 9(12). 2021.</p>
+<p>Erika Rasnick, Patrick H. Ryan, A. John Bailer, Thomas Fisher,
+Patrick J. Parsons, Kimberly Yolton, Nicholas C. Newman, Bruce P.
+Lanphear, Cole Brokamp. Identifying Sensitive Windows of Airborne Lead
+Exposure Associated with Behavioral Outcomes at Age 12.
+<em>Environmental Epidemiology</em>. 5(2):e144. 2021.</p>
+<p>Emrah Gecilia, Anushka Palipana, Cole Brokamp, Rui Huang,
+Eleni-Rosalina Andrinopoulou, Teresa Pestian, Erika Rasnick, Ruth H.
+Keogh, Yizhao Ni, John P.Clancy, Patrick Ryan, Rhonda D. Szczesniak.
+Seasonality, mediation and comparison (SMAC) methods to identify
+influences on lung function decline. <em>MethodsX</em>. 8:101313.
+2021.</p>
+<p>Emrah Gecili, Cole Brokamp, Anushka Palipana, Rui Huang,
+Eleni-Rosalina Andrinopoulou, Teresa Pestian, Erika Rasnick, Ruth
+H.Keoghe, Yizhao Ni, John P.Clancy, Patrick Ryan, Rhonda D.Szczesniak.
+Seasonal variation of lung function in cystic fibrosis: longitudinal
+modeling to compare a Midwest US cohort to international populations.
+<em>Science of the Total Environment</em>. Online. 2020.</p>
+<p>Patrick H. Ryan, Cole Brokamp, Jeff Blossom, Nathan Lothrop, Rachel
+L. Miller, Paloma I. Beamer, Cynthia M. Visness, Antonella Zanobetti,
+Howard Andrews, Leonard B. Bacharier, Tina Hartert, Christine C.
+Johnson, Dennis Ownby, Robert F. Lemanske Jr., Heike Gibson, Weeberb
+Requia, Brent Coull, Edward M. Zoratti, Anne L. Wright, Fernando D.
+Martinez, Christine M. Seroogy, James E. Gern, Diane R. Gold, on behalf
+of the CREW Consortium. A Distributed Geospatial Approach to Describe
+Community Characteristics for Multi-Site Studies. <em>Journal of
+Clinical and Translational Science</em>. 5:e86, 1-8. 2021.</p>
+<p>Christopher Wolfe, Teresa Pestian, Emrah Gecili, Weiji Su, Ruth H.
+Keogh, John P. Pestian, Michael Seid, Peter J. Diggle, Assem Ziady, John
+P. Clancy, Daniel H. Grossoehme, Rhonda D. Szczesniak, Cole Brokamp.
+Cystic Fibrosis Point of Personalized Detection (CFPOPD): An Interactive
+Web Application. <em>JMIR Med Inform</em>. 8(12):e23530. 2020.</p>
+<p>Kim Hartley, Joseph Perazzo, Cole Brokamp, Gordon Lee Gillespie, Kim
+M. Cecil, Grace LeMasters, Kimberly Yolton, Patrick Ryan. Residential
+Surrounding Greenness and Self-Reported Symptoms of Anxiety and
+Depression in Adolescents. <em>Environmental Research</em>. 194:110628.
+2020.</p>
+<p>Todd A Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Eric S
+Nylen, Mantosh Rattan, Eric Crotty, Michael A Belsky, Sara Krueger,
+Thomas N Epperson, Andrea Kachelmeyer, Richard M Ruddy, Samir S Shah.
+Proadrenomedullin Predicts Severe Disease in Children with Suspected
+Community-Acquired Pneumonia. <em>Clinical Infectious Diseases</em>.
+ciaa1138. 2020.</p>
+<p>Sharad I. Wadhwani, Cole Brokamp, Erika Rasnick, John C. Bucuvalas,
+Jennifer C. Lai, Andrew F. Beck. Neighborhood Socioeconomic Deprivation,
+Racial Segregation, and Organ Donation Across 5 States. <em>American
+Journal of Transplantation</em>. Online. 2020.</p>
+<p>Jaron Arbet, Cole Brokamp, Jareen Meinzen-Derr, Katy E. Trinkley,
+Heidi M Spratt. Lessons and Tips for Designing a Machine Learning Study
+Using EHR Data. <em>Journal of Clinical and Translational Science</em>.
+Online. 2020.</p>
+<p>Todd Florin, Lilliam Ambroggio, Cole Brokamp, Yin Zhang, Mantosh
+Rattan, Eric Crotty, Michael A Belsky, Sara Krueger, Thomas N Epperson,
+Andrea Kachelmeyer, Richard Ruddy, Samir S Shaw. Biomarkers and Disease
+Severity in Children with Community-Acquired Pneumonia.
+<em>Pediatrics</em>. Online. 2020.</p>
+<p>Rhonda Szczesniak, Jessica L. Rice, Cole Brokamp, Patrick Ryan,
+Teresa Pestian, Yizhao Ni, Eleni-Rosalina Andrinopoulou, Ruth H. Keogh,
+Emrah Gecili, Rui Huang, John P. Clancy, Joseph M. Collaco. Influences
+of Environmental Exposures On Individuals Living with Cystic Fibrosis.
+<em>Expert Review of Respiratory Medicine</em>. Online. 2020.</p>
+<p>Zana Percy, Cole Brokamp, Jennifer M McAllister, Patrick Ryan, Scott
+L Wexelblatt, Eric Hall. Subclinical and Overt Newborn Opioid Exposure:
+Prevalence and First Year Healthcare Utilization. <em>Journal of
+Pediatrics</em>. Online. 2020.</p>
+<p>Sharad Wadhwani, John Bucuvalas, Cole Brokamp, Ravinder Anand,
+Ashutosh Gupta, Stuart Taylor, Eyal Shemesh, Andrew Beck. Association
+Between Neighborhood-level Socioeconomic Deprivation and the Medication
+Level Variability Index for Children Following Liver Transplantation.
+<em>Transplantation</em>. Online. 2020.</p>
+<p>Kim Hartley, Patrick Ryan, Cole Brokamp, Gordon L. Gillespie. Effect
+of greenness on asthma in children: A systematic review. <em>Public
+Health Nursing</em>. 37(3). 453-460. 2020.</p>
+<p>Robert M. Rossi, Chris Wolfe, Cole Brokamp, Jennifer M. McAllister,
+Scott Wexelblatt, Carri R. Warshak, Eric S. Hall. Reported Prevalence of
+Maternal Hepatitis C Virus Infection in the United States.
+<em>Obstetrics and Gynecology</em>. 135. 1-10. 2020.</p>
+<p>Rhonda D. Szczesniak, Weiji Su, Cole Brokamp, Ruth H. Keogh, John P.
+Pestian, Michael Seid, Peter J. Diggle, John P. Clancy. Dynamic
+Predictive Probabilities to Monitor Rapid Cystic Fibrosis Disease
+Progression. <em>Statistics in Medicine</em>. 39. 740-756. 2020.</p>
+<p>Sarah Orkin, Cole Brokamp, Toshifumi Yodoshi, Andrew T. Trout,
+Chunyan Liu, Syeda Meryum, Stuart Taylor, Christopher Wolfe, Rachel
+Sheridan, Aradhna Seth, Mohammad Alfrad Nobel Bhuiyan, Sanita Ley, Ana
+Catalina Arce-Clachar, Kristin Bramlage, Robert Kahn, Stavra Xanthakos,
+Andrew F. Beck, Marialena Mouzaki. Community Socioeconomic Deprivation
+and Non-Alcoholic Fatty Liver Disease Severity. <em>Journal of Pediatric
+Gastroenterology and Nutrition</em>. . 2019.</p>
+<p>Cole Brokamp, Jeffrey R. Strawn, Andrew F. Beck, Pat Ryan. Pediatric
+Psychiatric Emergency Department Utilization and Fine Particulate
+Matter: A Case-Crossover Study. <em>Environmental Health
+Perspectives</em>. 127(9). 2019.</p>
+<p>Erica Andrist, Cole Brokamp, Stuart Taylor, Carley Riley, Andrew
+Beck. Neighborhood Poverty and Pediatric Intensive Care Use.
+<em>Pediatrics</em>. . 2019.</p>
+<p>Cole Brokamp, Eric B. Brandt, Patrick H. Ryan. Assessing Exposure to
+Outdoor Air Pollution for Epidemiological Studies: Model-based and
+Personal Sampling Strategies. <em>Journal of Allergy and Clinical
+Immunology</em>. . 2019.</p>
+<p>Lilliam Ambroggio, Cole Brokamp, Rachel Mantyla, Brad DePaoli,
+Richard Ruddy, Samir Shah, Todd Florin. Validation of the British
+Thoracic Society Severity Criteria for Pediatric Community-Acquired
+Pneumonia. <em>Pediatric Infectious Diseases Journal</em>. . 2019.</p>
+<p>Rebecca Gernes, Cole Brokamp, Glenn Rice, J. Michael Wright, Michelle
+Kondo, Yvonne Michael, Geoffrey Donovan, Demetrios Gatziolis, David
+Bernstein, Grace LeMasters, James Lockey, G. Khurana Hershey, Patrick
+Ryan. Using high-resolution residential greenspace measures in an urban
+environment to assess risks of allergy outcomes in a cohort of children.
+<em>Science of the Total Environment</em>. 668. 2019.</p>
+<p>Cole Brokamp, Andrew F. Beck, Neera K. Goyal, Patrick Ryan, James M.
+Greenberg, Eric S. Hall. Material Community Deprivation and Hospital
+Utilization During the First Year of Life: An Urban Population-Based
+Cohort Study. <em>Annals of Epidemiology</em>. 30. 2019.</p>
+<p>Juliana Madzia, Patrick Ryan, Kimberly Yolton, Zana Percy, Nick
+Newman, Grace LeMasters, Cole Brokamp. Residential Greenspace Is
+Associated with Childhood Behavioral Outcomes. <em>Journal of
+Pediatrics</em>. . 2018.</p>
+<p>Cole Brokamp. DeGAUSS: Decentralized Geomarker Assessment for
+Multi-Site Studies. <em>Journal of Open Source Software</em>. Online.
+2018.</p>
+<p>Rhonda D. Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John
+Pestian, John P. Clancy. Improving Detection of Rapid Cystic Fibrosis
+Disease Progression—Early Translation of a Predictive Algorithm into a
+Point-of-Care Tool. <em>IEEE Journal of Translational Engineering in
+Health and Medicine</em>. 7(1); 1-8. 2019.</p>
+<p>Lauren C. Riney, Cole Brokamp, Andrew F. Beck, Wendy Pomerantz,
+Hamilton Schwartz, Todd A. Florin. Emergency Medical Services
+Utilization is Associated with Community Deprivation in Children.
+<em>Prehospital Emergency Care</em>. Online. 2018.</p>
+<p>Cole Brokamp, Roman Jandarov, Monir Hossain, Patrick Ryan. Predicting
+Daily Urban Fine Particulate Matter Concentrations Using Random Forest.
+<em>Environmental Science &amp; Technology</em>. 52 (7); 4173-4179.
+2018.</p>
+<p>Andrew F. Beck, Carley L. Riley, Stuart Taylor, Cole Brokamp, Robert
+S. Kahn. Toward a Culture of Health in Hospitals: Pervasive population
+disparities in inpatient bed-day rates across conditions and
+subspecialties. <em>Health Affairs</em>. 37(4); 551-559. 2018.</p>
+<p>Todd A. Florin, Cole Brokamp, Rachel Mantyla, Bradley DePaoli,
+Richard Ruddy, Samir S. Shah, Lilliam Ambroggio. Validation of the
+IDSA/PIDS Severity Criteria in Children with Community-Acquired
+Pneumonia. <em>Clinical Infectious Diseases</em>. ciy031; 1-29.
+2018.</p>
+<p>Rhonda Szczesniak, Cole Brokamp, Weiji Su, Gary L. McPhail, John
+Pestian, John P. Clancy. Early Detection of Rapid Cystic Fibrosis
+Disease Progression Tailored to Point of Care: A Proof-of-Principle
+Study. <em>Healthcare Innovations and Point of Care Technologies</em>.
+(HI-POCT), 2017 IEEE; 204-207. 2017.</p>
+<p>Cole Brokamp, MB Rao, Patrick Ryan, Roman Jandarov. A comparison of
+resampling and recursive partitioning methods in random forest for
+estimating the asymptotic variance using the infinitesimal jackknife.
+<em>Stat</em>. 6(1); 360-372. 2017.</p>
+<p>Cole Brokamp, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan.
+Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures for Multi-Site Studies.
+<em>Journal of American Medical Informatics Association</em>. 25(3);
+309-314. 2017.</p>
+<p>Rhonda D. Szczesniak, Dan Li, Weiji Su, Cole Brokamp, John Pestian,
+Michael Seid, John P. Clancy. Phenotypes of Rapid Cystic Fibrosis Lung
+Disease Progression during Adolescence and Young Adulthood. <em>American
+Journal of Respiratory And Critical Care Medicine</em>. 196(4); 471-478.
+2017.</p>
+<p>Todd Florin, Lilliam Ambroggio, Cole Brokamp, Mantosh S. Rattan, Eric
+J. Crotty, Andrea Kachelmeyer, Richard M. Ruddy, Samir Shah. Reliability
+of Examination Findings in Suspected Community-Acquired Pneumonia.
+<em>Pediatrics</em>. 140(3); e20170310. 2017.</p>
+<p>Cole Brokamp, Andrew F. Beck, Louis Muglia, Patrick Ryan. Combined
+Sewer Overflow Events and Childhood Emergency Department Visits: A
+Case-Crossover Study. <em>Science of the Total Environment</em>.
+607-608; 1180-1187. 2017.</p>
+<p>Patrick Ryan, James E. Lockey, Brad Black, Carol H. Rice, Jeff
+Burkle, Tim Hilbert, Linda Levin, Cole Brokamp, Roy McKay, Ted Larson,
+Grace K. LeMasters. Childhood exposure to libby amphibole asbestos and
+respiratory symptoms in young adulthood. <em>Environmental
+Research</em>. 158; 470-479. 2017.</p>
+<p>Lusine Yaghjyan, R Aroa, Cole Brokamp, E O’Meara, B Sprague, G Ghita,
+Patrick Ryan. Association of air pollution with mammographic breast
+density in the Breast Cancer Surveillance Consortium. <em>Breast Cancer
+Research</em>. 19(36); 1-10. 2017.</p>
+<p>Cole Brokamp, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan.
+Exposure assessment models for elemental components of particulate
+matter in an urban environment: A comparison of regression and random
+forest approaches. <em>Atmospheric Environment</em>. 151; 1-11.
+2017.</p>
+<p>Hong Ji, Jocelyn M Biagini Myers, Eric B Brandt, Cole Brokamp,
+Patrick H Ryan, Gurjit K Khurana Hershey. Air pollution, epigenetics,
+and asthma. <em>Allergy, Asthma &amp; Clinical Immunology</em>. 12(1);
+51. 2016.</p>
+<p>Jennifer Kannan, Cole Brokamp, David I. Bernstein, Grace K.
+LeMasters, Gurjit K. Khurana Hershey, Manuel Villareal, James E. Lockey,
+Patrick Ryan. Parental Snoring and Environmental Pollutants, but Not
+Aeroallergen Sensitization, Are Associated with Childhood Snoring in a
+Birth Cohort. <em>Pediatric Allergy, Immunology, and Pulmonology</em>. .
+2016.</p>
+<p>Cole Brokamp, Grace LeMasters, Patrick Ryan. Residential mobility
+impacts exposure assessment and community socioeconomic characteristics
+in longitudinal epidemiology studies. <em>Journal of Exposure Science
+and Environmental Epidemiology</em>. 26(4); 428-34. 2016.</p>
+<p>Kanistha C. Coombs, Ginger L. Chew, Christopher Schaffer, Patrick H.
+Ryan, Cole Brokamp, Sergey A. Grinshpun, Gary Adamkiewicz, Steve
+Chillrude, Curtis Hedman, Meryl Colton, Jamie Ross, Tiina Reponen.
+Indoor air quality in green-renovated vs. non-green low-income homes of
+children living in a temperate region of US (Ohio). <em>Science of The
+Total Environment</em>. 554-555; 178-185. 2016.</p>
+<p>Patrick Ryan, Cole Brokamp, ZH Fan, MB Rao. Analysis of personal and
+home characteristics associated with the elemental composition of PM2.5
+in indoor, outdoor, and personal air in the RIOPA study. <em>Health
+Effects Institute Research Reports</em>. Report 185. 2015.</p>
+<p>Kelly J Brunst, Patrick H Ryan, Cole Brokamp, David Bernstein, Tiina
+Reponen, James Lockey, Gurjit K Khurana Hershey, Linda Levin, Sergey A
+Grinshpun, Grace LeMasters. Timing and duration of traffic-related air
+pollution exposure and the risk for childhood wheeze and asthma.
+<em>American Journal of Respiratory and Critical Care Medicine</em>.
+192(4); 421-427. 2015.</p>
+<p>Patrick H Ryan, Sang Young Son, Christopher Wolfe, James Lockey, Cole
+Brokamp, Grace LeMasters. A field application of a personal sensor for
+ultrafine particle exposure in children. <em>Science of The Total
+Environment</em>. 508; 366-373. 2015.</p>
+<p>Cole Brokamp, MB Rao, Tina Zhihua Fan, Patrick H Ryan. Does the
+elemental composition of indoor and outdoor PM2.5 accurately represent
+the elemental composition of personal PM2.5?. <em>Atmospheric
+Environment</em>. 101; 226-234. 2015.</p>
+<p>Cole Brokamp, Jacob Todd, Carlo Montemagno, David Wendell.
+Electrophysiology of single and aggregate Cx43 hemichannels. <em>PLoS
+ONE</em>. 7(10);e47775. 2012.</p>
+<p>Sheryl E Koch, Xiaoqian Gao, Lauren Haar, Min Jiang, Valerie M Lasko,
+Nathan Robbins, Wenfeng Cai, Cole Brokamp, Priyanka Varma, Michael
+Tranter, Yong Liu, Xiaoping Ren, John N. Lorenz, Hong-Sheng Wang, W
+Keith Jones, Jack Rubinstein. Probenecid: novel use as a non-injurious
+positive inotrope acting via cardiac TRPV2 stimulation. <em>Journal of
+Molecular and Cellular Cardiology</em>. 53(1); 134-144. 2012.</p>
+<p>Michael Tranter, Robert N Helsley, Waltke R Paulding, Michael
+McGuinness, Cole Brokamp, Lauren Haar, Yong Liu, Xiaoping Ren, W Keith
+Jones. Coordinated post-transcriptional regulation of HSP70. 3 gene
+expression by microRNA and alternative polyadenylation. <em>Journal of
+Biological Chemistry</em>. 286(34); 29828-29837. 2011.</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

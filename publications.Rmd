@@ -1,0 +1,23 @@
+---
+title: "Publications"
+---
+
+```{r}
+#| echo: false
+#| results: asis
+
+library(dplyr)
+library(purrr)
+library(glue)
+
+yaml::yaml.load_file("data/pubs.yaml") |>
+  map_chr(\(x) glue_data(x,
+                         "{paste(author, collapse = ', ')}",
+                         "{title}",
+                         "*{journal}*",
+                         "{issue_pages}",
+                         "{year}.",
+                         .sep = ". ",
+                         .na = character())) |>
+  cat(sep = "\n\n")
+```

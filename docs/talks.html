@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Talks</title>
+
+<script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link href="site_libs/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-5.3.1/bootstrap.bundle.min.js"></script>
+<script src="site_libs/bs3compat-0.7.0/transition.js"></script>
+<script src="site_libs/bs3compat-0.7.0/tabs.js"></script>
+<script src="site_libs/bs3compat-0.7.0/bs3compat.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Cole Brokamp</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="talks.html">Talks</a>
+</li>
+<li>
+  <a href="abstracts.html">Abstracts</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://twitter.com/cole_brokamp">
+    <span class="fa fa-twitter"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://github.com/cole-brokamp">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="mailto:cole@colebrokamp.com">
+    <span class="fa fa-envelope"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="cole-brokamp-cv.pdf">
+    <span class="fa fa-file-text"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="cole-brokamp-nih-biosketch.docx">
+    <span class="fa fa-user"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://scholar.google.com/citations?user=N_CkwfoAAAAJ&amp;hl=en">
+    <span class="fa fa-graduation-cap"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Talks</h1>
+
+</div>
+
+
+<p>Ambient Air Pollution and Pediatric Mental Health. <em>Lifespan
+Cognitive Neuroscience Seminar</em>. Detroit, MI. 2024. <a
+href="https://cole-brokamp.github.io/aap_and_pmh">📄</a></p>
+<p>Geomarker Curation and Computation. <em>CCHMC Clinical Informatics
+Learning Community</em>. Cincinnati, OH. 2023. <a
+href="https://cole-brokamp.github.io/gcc">📄</a></p>
+<p>Data Wrangling in R with dplyr and tidyr. <em>CCHMC R Users Group
+Meeting</em>. Cincinnti, OH. 2023. <a
+href="https://cole-brokamp.github.io/rug_talk_dplyr_tidyr/">📄</a></p>
+<p>Geomarker Curation and Computation. <em>University of Cincinnati
+Introduction to Medical Informatics course guest lecture</em>.
+Cincinnati, OH. 2023. <a
+href="https://cole-brokamp.github.io/gcc/">📄</a></p>
+<p>Using R to Build a Community Data Explorer for Cincinnati (CoDEC).
+<em>CCHMC R Users Group Meeting</em>. Cincinnati, OH. 2023. <a
+href="https://geomarker.io/codec_talk">📄</a></p>
+<p>Geomarker Curation and Computation. <em>University of Cincinnati
+Biomedical Informatics Practicum (BMIN8001) guest lecture</em>.
+Cincinnati, OH. 2023. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_degauss_2023-02-20.html">📄</a></p>
+<p>Air Pollution and Pediatric Mental Health. <em>Citizens Climate
+Lobby, Cincinnati Chapter Meeting</em>. Cincinnati, OH. 2023. <a
+href="">📄</a></p>
+<p>Functional Programming in R with {purrr}. <em>CCHMC R Users Group
+Meeting</em>. Cincinnati, OH. 2023. <a
+href="https://cchmc-rug.github.io/purrr">📄</a></p>
+<p>A Framework for Automated and Reproducible Geomarker Curation and
+Computation at Scale. <em>Yale Biostatistics Seminar</em>. Online. 2022.
+<a href="">📄</a></p>
+<p>Introduction to Geoinformatics. <em>University of Cincinnati
+Introduction to Medical Informatics course guest lecture</em>.
+Cincinnati, OH. 2022. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/introbmi_brokamp_geoinformatics.html">📄</a></p>
+<p>Automating Your Academic CV, Biosketch, and Website with R. <em>CCHMC
+R Users Group Meeting</em>. Cincinnati, OH. 2022. <a
+href="https://cchmc-rug.github.io/cv_automate">📄</a></p>
+<p>Decentralized Geomarker Assessment for Multi-Site Studies. <em>Rare
+Diseases Clinical Research Network (RDCRN) Steering Committee
+Meeting</em>. Online. 2022. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_15-2-2022.pdf">📄</a></p>
+<p>Decentralized Geomarker Assessment for Multi-Site Studies.
+<em>Pediatric Academic Societies Annual Meeting</em>. Denver, CO. 2022.
+<a href="">📄</a></p>
+<p>Decentralized Geomarker Assessment for Multi-Site Studies. <em>NIH
+Bench to Bassinet PCGC EMR Extraction Working Group Meeting</em>.
+Online. 2022. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_10-2-2022.pdf">📄</a></p>
+<p>Challenges and Solutions for Private and Reproducible Environmental
+Exposure Assessment at Scale. <em>NIH Ethical, Legal, and Social
+Implications of Gene-Environment Interaction Research Workshop</em>.
+Online. 2022. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/GxE_ELSI_Brokamp.pdf">📄</a></p>
+<p>Geoinformatics for Population Health. <em>University of Cincinnati
+Introduction to Medical Informatics course guest lecture</em>.
+Cincinnati, OH. 2021. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/gfph_informatics_2021.pdf">📄</a></p>
+<p>Decentralized, Efficient, and Secure High Resolution Spatiotemporal
+Exposure Assessment at Scale. <em>NIH Integrating Multiscale Geospatial
+Environmental Data into Large Population Health Studies Workshop</em>.
+Online. 2021. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_DeGAUSS_16_06_2020.pdf">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Geomarker Assessment for
+Multi-Site Studies. <em>Pediatric Acute Care Cardiology Collaborative
+Spring Conference</em>. Online. 2021. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/DeGAUSS_quick_pitch_PAC3.pdf">📄</a></p>
+<p>Geomarkers and Health. <em>Rutgers University Social Epidemiology
+guest lecture</em>. Online. 2021. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/deprivation_index.pdf">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures at Scale. <em>University of
+Cincinnati Biomedical Informatics Practicum (BMIN8001) guest
+lecture</em>. Cincinnati, OH. 2021. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2021_02_01.pdf">📄</a></p>
+<p>Three Levels of Computational Mobility in R. <em>SatRday
+Columbus</em>. Virtual. 2020. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/cole_brokamp_three_levels_of_computational_mobility.pdf">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures at Scale. <em>Pediatric
+Musculoskeletal &amp; Rheumatology Innovation Core Center Seminar
+Series</em>. Virtual. 2020. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_10_27.pdf">📄</a></p>
+<p>Introduction to Geoinformatics for Precision Population Health.
+<em>University of Cincinnati Introduction to Medical Informatics course
+guest lecture</em>. Cincinnati, OH. 2020. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/GRAPPH_talk_informatics_2020.pdf">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures at Scale. <em>University of
+Cincinnati Biomedical Informatics Practicum (BMIN8001) guest
+lecture</em>. Cincinnati, OH. 2020. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_02_24.pdf">📄</a></p>
+<p>Pediatric Psychiatric Emergency Department Utilization and Fine
+Particulate Matter: A Case-Crossover Study. <em>University of Cincinnati
+Department of Epidemiology Seminar</em>. Cincinnati, OH. 2020. <a
+href="https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_PM_psych_ED_2020_01_23.pdf">📄</a></p>
+<p>Using Twitter for Academic Networking. <em>Cincinnati Children’s
+Faculty Career Development Seminar Series</em>. Cincinnati, OH. 2019. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/twitter_for_academia.html">📄</a></p>
+<p>Causal Inference Machine Learning Methods for Identifying
+Subpopulations Susceptible to the Health Effects of Air Pollution.
+<em>Cincinnati Children’s Machine Learning Focus Group</em>. Cincinnati,
+OH. 2019. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_hce_2019_11_06.pdf">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures at Scale. <em>Center for Clinical
+&amp; Translational Science &amp; Training Grand Rounds</em>.
+Cincinnati, OH. 2019. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_degauss_2019_15MAR2019.pdf">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures at Scale. <em>Northwestern
+Institute for Public Health and Medicine Seminar Series</em>. Chicago,
+IL. 2018. <a href="">📄</a></p>
+<p>Introduction to Geoinformatics for Precision Population Health.
+<em>University of Cincinnati Introduction to Medical Informatics course
+guest lecture</em>. Cincinnati, OH. 2018. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_informatics_2018.pdf">📄</a></p>
+<p>Climate Change and Health Disparities in the Urban Environment.
+<em>University of Cincinnati Research and Innovation Week</em>.
+Cincinnati, OH. 2018. <a href="">📄</a></p>
+<p>Geoinformatics for Environmental Epidemiology. <em>Biomedical
+Informatics (BMIN8001) Practicum Guest Lecture</em>. Cincinnati, OH.
+2018. <a href="">📄</a></p>
+<p>Hot Topics in Pediatric Research Methodology: CART and Random Forest.
+<em>Pediatric Academic Society Annual Meeting</em>. Toronto, ON. 2018.
+<a href="">📄</a></p>
+<p>Ensemble Machine Learning for Air Pollution Exposure Assessment.
+<em>American Statistical Association, Cincinnati Chapter Meeting</em>.
+Cincinnati, OH. 2018. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/LURF_talk_20_FEB_2018.pdf">📄</a></p>
+<p>Combined Sewer Overflow Events and Childhood Emergency Department
+Visits: A Case-Crossover Study. <em>University of Cincinnati
+Environmental Health Seminar</em>. Cincinnati, OH. 2017. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_30_November_2017.pdf">📄</a></p>
+<p>The Cincinnati Childhood Allergy and Air Pollution Study: An Overview
+and New Approaches to Exposure Assessment. <em>Harvard School of Public
+Health Air, Climate &amp; Energy Center Research Meeting</em>. Boston,
+MA. 2017. <a href="">📄</a></p>
+<p>Decentralized and Reproducible Geocoding and Characterization of
+Community and Environmental Exposures for Multi-Site Studies.
+<em>Harvard School of Public Health Air, Climate &amp; Energy Center
+Research Meeting</em>. Boston, MA. 2017. <a
+href="https://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_13_NOV_2017.pdf">📄</a></p>
+<p>Assessing Daily Exposure to PM2.5 with Machine Learning and Remote
+Sensing. <em>Cincinnati Children’s Hospital Medical Center Division of
+Biostatistics and Epidemiology Seminar</em>. Cincinnati, OH. 2017. <a
+href="">📄</a></p>
+<p>Using GRAPPH to Leverage Geoinformatics for Innovative Research,
+Place-based Clinical Care, and Community-Centered Quality Improvement.
+<em>Cincinnati Children’s Hospital Medical Center Mayerson Center for
+Safe and Healthy Children Quarterly Research Meeting</em>. Cincinnati,
+OH. 2017. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_MayersonCenter_16June2017.pdf">📄</a></p>
+<p>Combined Sewer Overflow Events and Childhood Emergency Department
+Visits: A Case-Crossover Study. <em>Cincinnati Children’s Hospital
+Medical Center Postdoc and Research Associate Meeting</em>. Cincinnati,
+OH. 2017. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_3_April_2017.pdf">📄</a></p>
+<p>Geocoding to Characterize Community and Environmental Exposures for
+Multi-site Studies. <em>Cincinnati Children’s Hospital Medical Center
+Division of Biomedical Informatics Hutton Lecture Series</em>.
+Cincinnati, OH. 2017. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_Hutton.pdf">📄</a></p>
+<p>GIS Tools for Environmental Epidemiology. <em>University of
+Cincinnati Biomedical Informatics (BMIN8001) Practicum course guest
+lecture</em>. Cincinnati, OH. 2017. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/BMIN8001_environmental_epidemiology.pdf">📄</a></p>
+<p>Building A Platform for Data Sharing. <em>Cincinnati Children’s
+Hospital Medical Center Academy Health Site Visit</em>. Cincinnati, OH.
+2017. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/academy_health_visit.pdf">📄</a></p>
+<p>Predictive Comparisons: Interpreting Input Effects for Any Supervised
+Learner. <em>Cincinnati Children’s Hospital Medical Center Division of
+Biostatistics &amp; Epidemiology Journal Club</em>. Cincinnati, OH.
+2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/APC_talk.pdf">📄</a></p>
+<p>Land Use Models for Elemental Components of Particulate Matter in an
+Urban Environment: A Comparison of Regression and Random Forest Models.
+<em>University of Cincinnati Division of Biostatistics and
+Bioinformatics Seminar Series</em>. Cincinnati, OH. 2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf">📄</a></p>
+<p>Data Visualization for Population Health Initiatives. <em>All In Data
+Visualization Webinar</em>. Cincinnati, OH. 2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/all_in_webinar_Beck_Brokamp.pdf">📄</a></p>
+<p>Using Machine Learning and Interactive Dashboards to Understand How
+Children’s Health is Impacted by their Community and Surrounding
+Environment. <em>University of Cincinnati Institute for Analytics
+Innovation Showcase and Networking Event</em>. Cincinnati, OH. 2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/data_analytics_showcase_cole_brokamp.pdf">📄</a></p>
+<p>Combined Sewer Overflow and Childhood Hospital Admissions.
+<em>Cincinnati Children’s Hospital Medical Center Division of
+Biostatistics &amp; Epidemiology Seminar Series</em>. Cincinnati, OH.
+2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/Combined%20Sewer%20Overflow%20and%20Hospital%20Admissions.pdf">📄</a></p>
+<p>Land Use Random Forests for Estimation of Exposure to Elemental
+Components of Particulate Matter. <em>University of Cincinnati Division
+of Biostatistics and Bioinformatics Doctoral Dissertation Defense</em>.
+Cincinnati, OH. 2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/Cole%20Brokamp%20Dissertation%20Defense%2023March2016.pdf">📄</a></p>
+<p>Geospatial Data for Environmental Epidemiology. <em>Cincinnati
+Children’s Hospital Medical Center Environmental Epidemiology Shared
+Interest Group Seminar Series</em>. Cincinnati, OH. 2016. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/GIS_env_epi.pdf">📄</a></p>
+<p>Confidence Intervals for Random Forest Predictions Using the
+Infinitesimal Jackknife. <em>University of Cincinnati Division of
+Biostatistics and Bioinformatics Seminar Series</em>. Cincinnati, OH.
+2015. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/Confidence_Intervals_for_Random_Forest_Predictions_Using_the_Infinitesimal_Jackknife.pdf">📄</a></p>
+<p>R Studio and R Markdown: An integrated IDE and report generator for
+R. <em>University of Cincinnati BE7022 (Intro To Biostatistics) Guest
+Lecture</em>. Cincinnati, OH. 2015. <a
+href="http://colebrokamp-website.s3.amazonaws.com/talks/RStudio_and_RMarkdown.pdf">📄</a></p>
+<p>Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately
+Represent the Elemental Composition of Personal PM2.5?. <em>University
+of Cincinnati Division of Epidemiology Seminar Series</em>. Cincinnati,
+OH. 2014. <a href="">📄</a></p>
+<p>Exact Sampling and Counting for Fixed-Margin Matrices. <em>University
+of Cincinnati Division of Epidemiology Seminar Series</em>. Cincinnati,
+OH. 2013. <a href="">📄</a></p>
+<p>Small Molecule Disruption of G Beta Gamma Signaling Inhibits the
+Progression of Heart Failure. <em>University of Cincinnati Department of
+Pharmacology and Biophysics Seminar Series</em>. Cincinnati, OH. 2011.
+<a href="">📄</a></p>
+<p>Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid
+to the Heart. <em>University of Cincinnati Department of Pharmacology
+and Biophysics Seminar Series</em>. Cincinnati, OH. 2011. <a
+href="">📄</a></p>
+<p>An academic research cooperative education experience. <em>University
+of Cincinnati BME321 Guest Lecture</em>. Cincinnati, OH. 2011. <a
+href="">📄</a></p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
