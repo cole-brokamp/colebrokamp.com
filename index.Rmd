@@ -31,6 +31,25 @@ cite_four <- function(.x) {
 	}
 ```
 
+```{css}
+#| echo: false
+details {
+  padding: 5px;
+  border: 1px solid #396175;
+  background: #b6c0bf;
+  border-radius: 4px;
+}
+summary {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #cbd6d5;
+  background-color: #396175;
+  border-radius: 4px;
+}
+
+```
+
 ##
 
 <img src='cole_circle.png' align='right' style="max-height: 270px">
@@ -40,7 +59,6 @@ As a biostatistician, epidemiologist, and geospatial data scientist, I have spec
 I develop new methods and technologies to support environmental and population health research, including tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.
 I lead research on the roles of environmental exposures and community characteristics on pediatric psychiatric health by applying these methods and tools to large databases of electronic health records, observational cohort studies, clinical registries, and vital records.
 
-## 
 
 <details><summary> Built Environment and Pediatric Psychiatric Disorders </summary>
 Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I lead the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as smaller, longitudinal panel studies.
@@ -91,6 +109,5 @@ My research group has lead several studies on the racial and ethnic fairness of 
 #| results: asis
 cite_four(c("colegate-2024", "pennington-2022"))
 ```
-
-<details>
+</details>
 

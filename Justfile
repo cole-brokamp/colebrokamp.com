@@ -5,7 +5,6 @@ all: render_cv render_peds_cv render_website
 # render website
 render_website:
   Rscript -e "rmarkdown::render_site('encoding' = 'UTF-8')"
-  open docs/index.html
 
 # render CV
 render_cv:

@@ -8,8 +8,6 @@ navbar:
       href: publications.html
     - text: Talks
       href: talks.html
-    - text: Abstracts
-      href: abstracts.html
   right:
     - icon: fa-twitter
       href: https://twitter.com/cole_brokamp
