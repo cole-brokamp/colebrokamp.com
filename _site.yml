@@ -27,6 +27,6 @@ output:
       version: 5
       bg: "#cbd6d5"
       fg: "#396175"
-      primary: "#C28273"
+      primary: "#396175"
 include: ["cole-brokamp-cv.pdf", "cole-brokamp-cv-peds-format.docx", "cole-brokamp-nih-biosketch.docx"]
 exclude: ["data", "Justfile"]
