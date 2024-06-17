@@ -2,7 +2,7 @@ name: 'colebrokamp.com'
 output_dir: 'docs'
 navbar:
   title: "Cole Brokamp"
-  type: inverse
+  type: normal
   left:
     - text: Publications
       href: publications.html
@@ -11,8 +11,6 @@ navbar:
     - text: CV
       href: cole-brokamp-cv.html
   right:
-    - icon: fa-twitter
-      href: https://twitter.com/cole_brokamp
     - icon: fa-github
       href: https://github.com/cole-brokamp
     - icon: fa-envelope
