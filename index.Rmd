@@ -61,6 +61,7 @@ I lead research on the roles of environmental exposures and community characteri
 
 <details><summary> Built Environment and Pediatric Psychiatric Disorders </summary>
 Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I lead the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as smaller, longitudinal panel studies.
+
 ```{r}
 #| results: asis
 cite_four(c("vancil-2022", "zundel-2022", "rasnick-2021", "brokamp-2019b"))
