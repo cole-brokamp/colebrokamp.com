@@ -2,7 +2,7 @@ name: 'colebrokamp.com'
 output_dir: 'docs'
 navbar:
   title: "Cole Brokamp"
-  type: normal
+  bg: "#cbd6d5"
   left:
     - text: Publications
       href: publications.html
@@ -27,6 +27,6 @@ output:
       version: 5
       bg: "#cbd6d5"
       fg: "#396175"
-      primary: "#396175"
+      primary: "#cbd6d5"
 include: ["out", "cole-brokamp-nih-biosketch.docx"]
 exclude: ["src", "Justfile"]
