@@ -60,17 +60,17 @@ I lead research on the roles of environmental exposures and community characteri
 
 
 <details><summary> Built Environment and Pediatric Psychiatric Disorders </summary>
-Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I lead the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as smaller, longitudinal panel studies.
+Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I led the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as more detailed longitudinal panel studies. Multi-site cohort studies, such as the Adolescent Brain Cognitive Development (ABCD) study, has facilitated a step towards understanding the neurodevelopmental mechanisms underlying the associations between air pollution, cognition, and mental health.
 
 ```{r}
 #| results: asis
-cite_four(c("vancil-2022", "zundel-2022", "rasnick-2021", "brokamp-2019b"))
+cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
 ```
 </details>
 
 <details><summary>Causal Mediation of Place-Based Factors on Pediatric Health Disparities</summary>
 
-I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind racial and socioeconmic disparities in pediatric health outcomes. 
+I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind racial and socioeconomic disparities in pediatric health outcomes. 
 
 ```{r}
 #| results: asis
