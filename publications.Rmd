@@ -10,7 +10,7 @@ library(dplyr)
 library(purrr)
 library(glue)
 
-yaml::yaml.load_file("data/pubs.yaml") |>
+yaml::yaml.load_file("src/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "{paste(author, collapse = ', ')}",
                          "{title}",

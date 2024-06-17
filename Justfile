@@ -6,13 +6,23 @@ all: render_cv render_peds_cv render_website
 render_website:
   Rscript -e "rmarkdown::render_site('encoding' = 'UTF-8')"
 
+# render CV webpage
+render_cv_web:
+  #!/usr/bin/env Rscript
+  rmarkdown::render(
+    "src/cole-brokamp-cv.Rmd",
+    output_format = "html_document",
+    output_file = "../out/cole-brokamp-cv.html"
+  ) |>
+  browseURL()
+
 # render CV
 render_cv:
   #!/usr/bin/env Rscript
   rmarkdown::render(
-    "_cole-brokamp-cv.Rmd",
-    output_format = "pdf_document",
-    output_file = "cole-brokamp-cv.pdf"
+    "src/cole-brokamp-cv.Rmd",
+    output_format = "word_document",
+    output_file = "../out/cole-brokamp-cv.docx"
   ) |>
   browseURL()
 
@@ -20,9 +30,9 @@ render_cv:
 render_peds_cv:
   #!/usr/bin/env Rscript
   rmarkdown::render(
-    "_cole-brokamp-cv-peds-format.Rmd",
+    "src/cole-brokamp-cv.Rmd",
     output_format = "word_document",
-    output_file = "cole-brokamp-cv-peds-format.docx"
+    output_file = "../out/cole-brokamp-cv-peds-format.docx"
   ) |>
   browseURL()
 
