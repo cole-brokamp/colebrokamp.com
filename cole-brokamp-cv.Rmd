@@ -15,14 +15,6 @@ library(purrr)
 library(glue)
 ```
 	
-# Research Interests
-
-- Place-based data science
-- Environmental epidemiology
-- Population health
-- Causal inference machine learning methods
-- Fairness in precision medicine
-
 # Personal Data
 
 - Name: Richard "Cole" Brokamp, Ph.D.
