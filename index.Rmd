@@ -67,6 +67,36 @@ cite_four(c("vancil-2022", "zundel-2022", "rasnick-2021", "brokamp-2019b"))
 ```
 </details>
 
+<details><summary>Causal Mediation of Place-Based Factors on Pediatric Health Disparities</summary>
+
+I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind racial and socioeconmic disparities in pediatric health outcomes. 
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2024", "esteban-2022", "zanobetti-2022", "ryan-2024"))
+```
+</details>
+
+<details><summary>Fairness in Pediatric Precision Medicine</summary>
+
+My research group has lead several studies on the racial and ethnic fairness of pediatric precision medicine tools used in clinical and epidemiologic settings. We have been the first to uncover racial biases in commonly used asthma diagnosis and cystic fibrosis exacerbation clinical precision medicine tools. Additionally, we have focused on the racial biases that can be introduced into epidemiologic research through the use of common exposure and socioeconomic status assessment tools.
+
+```{r}
+#| results: asis
+cite_four(c("makkad-2024", "colegate-2024", "pennington-2022"))
+```
+</details>
+
+<details><summary>Privacy-based Methods and Software for Geocoding and Geomarker Assessment</summary>
+
+Our group developed and maintains a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies and in several clinical electronic health data warehouses. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
+
+```{r}
+#| results: asis
+cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
+```
+</details>
+
 <details><summary> Spatiotemporal Exposure Assessment Methods and Machine Learning Models </summary>
 
 My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
@@ -76,37 +106,4 @@ I created a nationwide, census tract-level, and validated community material dep
 #| results: asis
 cite_four(c("brokamp-2022", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
 ```
-
 </details>
-
-<details><summary>Causal Mediation of Place-Based Factors on Health Disparities</summary>
-
-I have used advanced causal modeling techniques coupled with population-wide health registries linked to extant social and environmental determinants of health data sources to study the mechanisms behind racial health disparities. This has included neighborhood-level drivers of all-cause hospitalization disparities and more detailed analyses within specific disease groups, including pediatric inflammatory bowel disease, asthma, sickle cell anemia, type I diabetes, and psychiatric disorders. 
-
-```{r}
-#| results: asis
-cite_four(c("brokamp-2024", "smith-2023", "esteban-2022", "zanobetti-2022"))
-```
-
-</details>
-  
-<details><summary>Privacy-based Methods and Software for Geocoding and Geomarker Assessment</summary>
-
-I have developed a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
-
-```{r}
-#| results: asis
-cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
-```
-</details>
-
-<details><summary>Fairness in Precision Medicine</summary>
-
-My research group has lead several studies on the racial and ethnic fairness of precision medicine tools used in clinical and epidemiologic settings. We have been the first to uncover racial biases in commonly used asthma diagnosis and cystic fibrosis exacerbation clinical precision medicine tools. Additionally, we have focused on the racial biases that can be introduced into epidemiologic research through the use of commonly used exposure assessment and community characteristics tools.
-
-```{r}
-#| results: asis
-cite_four(c("colegate-2024", "pennington-2022"))
-```
-</details>
-
