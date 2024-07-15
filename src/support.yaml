@@ -12,7 +12,7 @@ odh-lead-update:
 aft-harmony:
   title: "All Families Thrive"
   goals: "Reduce childhood abuse and neglect in Cincinnati, OH by using place-based tools and interventions."
-  status: Active
+  status: Completed
   number: N/A
   pi_name: Kahn R
   source: Harmony Foundation
@@ -53,17 +53,6 @@ beck-riseup:
   start_date: 11/1/21
   end_date: 10/31/26
   amount: 1995559
-pedsnet-pm:
-  title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study to Identify Susceptible Subpopulations"
-  goals: "Determine if short-term air pollution contributes to psychiatric exacerbations in children and adolescents. Furthermore, subpopulations susceptible to short term air pollution related psychiatric health effects will be identified based on individual- and community-level characteristics, co-exposures, time, and space."
-  status: Pending
-  number: "R01ES032812"
-  pi_name: Brokamp C
-  source: NIH/NIEHS
-  ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 4/1/21
-  end_date: 3/31/25
-  amount: 1129325
 c4:
   title: "Longitudinal Impact of Air Pollution on Mental Health and Neuroimaging Outcomes during Adolescence in the Cincinnati Combined Childhood Cohorts (C4)"
   goals: "This project will merge two ongoing, prospective cohorts, the Cincinnati Childhood Allergy and Air Pollution Study (CCAAPS) and the Health Outcomes and Measures of the Environment (HOME) Study, to examine the role of air pollution on adverse mental health and neuroimaging outcomes and in early adolescence."

@@ -18,7 +18,7 @@ navbar:
     - icon: fa-file-text
       href: out/cole-brokamp-cv.pdf
     - icon: fa-user
-      href: cole-brokamp-nih-biosketch.docx
+      href: out/cole-brokamp-nih-biosketch.docx
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
 output:
