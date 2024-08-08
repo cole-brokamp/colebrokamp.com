@@ -9,17 +9,6 @@ odh-lead-update:
   start_date: 4/01/23
   end_date: 6/30/23
   amount:  65000
-aft-harmony:
-  title: "All Families Thrive"
-  goals: "Reduce childhood abuse and neglect in Cincinnati, OH by using place-based tools and interventions."
-  status: Completed
-  number: N/A
-  pi_name: Kahn R
-  source: Harmony Foundation
-  ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 1/1/20
-  end_date: 6/30/24
-  amount: 835800
 nancy-r01:
   title: "Enhanced Injury Surveillance Using Near Real-Time Reporting among Healthcare Workers"
   goals: "To design and evaluation of an innovative, sustainable near real-time injury surveillance system that employs accurate risk assessment tools to trigger interventions that will change hazardous conditions and prevent future injuries in a real-world setting."
