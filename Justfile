@@ -19,7 +19,7 @@ render_biosketch:
 render_cv:
   #!/usr/bin/env Rscript
   rmarkdown::render(
-    "src/cole-brokamp-cv.Rmd",
+    "src/peds-cv.Rmd",
     output_format = "word_document",
     output_file = "../out/peds-cv-brokamp.docx"
   )
