@@ -13,8 +13,7 @@ render_biosketch:
     "src/nih_biosketch.Rmd",
     output_format = "word_document",
     output_file = "../out/nih-biosketch-brokamp.docx"
-  ) |>
-  browseURL()
+  )
   
 # render CV
 render_cv:
@@ -23,8 +22,7 @@ render_cv:
     "src/cole-brokamp-cv.Rmd",
     output_format = "word_document",
     output_file = "../out/peds-cv-brokamp.docx"
-  ) |>
-  browseURL()
+  )
 
 # snapshot with a git commit
 snapshot:
