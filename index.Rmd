@@ -3,36 +3,12 @@ title: ""
 pagetitle: "Cole Brokamp"
 ---
 
-```{r setup, include=FALSE}
+```{r setup}
+#| include: false
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-```
-```{r}
-library(dplyr)
-library(purrr)
-library(glue)
-
-cite_four <- function(.x) {
-  stopifnot(length(.x) <= 4)
-  pubs <- yaml::yaml.load_file("src/pubs.yaml")
-  stopifnot(all(.x %in% names(pubs)))
-  the_pubs <- purrr::map(.x, \(.) purrr::pluck(pubs, .))
-  the_pubs |>
-    purrr::map_chr(\(.) glue::glue_data(.,
-                           "1",
-                           "{paste(author, collapse = ', ')}",
-                           "{title}",
-                           "*{journal}*",
-                           "{issue_pages}",
-                           "{year}.",
-                           .sep = ". ",
-                           .na = character())) |>
-    purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
-    cat(sep = "\n\n")
-	}
 ```
 
 ```{css}
-#| echo: false
 summary {
   padding: 5px;
   display: flex;
@@ -53,58 +29,11 @@ details {
 
 <img src='cole_circle.png' align='right' style="max-height: 270px">
 
-I am an Associate Professor of Pediatrics at Cincinnati Children’s Hospital Medical Center and the University of Cincinnati.
-As a biostatistician, epidemiologist, and geospatial data scientist, I have specialized myself in the areas of informatics and machine learning with applications to population-level environmental, community, and health outcome data.
-I develop new methods and technologies to support environmental and population health research, including tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.
-I lead research on the roles of environmental exposures and community characteristics on pediatric psychiatric health by applying these methods and tools to large databases of electronic health records, observational cohort studies, clinical registries, and vital records.
-
-
-<details><summary> Built Environment and Pediatric Psychiatric Disorders </summary>
-Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I led the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as more detailed longitudinal panel studies. Multi-site cohort studies, such as the Adolescent Brain Cognitive Development (ABCD) study, has facilitated a step towards understanding the neurodevelopmental mechanisms underlying the associations between air pollution, cognition, and mental health.
+I am a member of the Division of Biostatistics and Epidemiology at Cincinnati Children’s Hospital Medical Center and an Associate Professor of Pediatrics at the University of Cincinnati College of Medicine.
+```{r}
+#| child: "src/bio.Rmd"
+```
 
 ```{r}
-#| results: asis
-cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
+#| child: "src/biosketch_contrib_science.Rmd"
 ```
-</details>
-
-<details><summary>Causal Mediation of Place-Based Factors on Pediatric Health Disparities</summary>
-
-I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind racial and socioeconomic disparities in pediatric health outcomes. 
-
-```{r}
-#| results: asis
-cite_four(c("brokamp-2024", "esteban-2022", "zanobetti-2022", "ryan-2024"))
-```
-</details>
-
-<details><summary>Fairness in Pediatric Precision Medicine</summary>
-
-My research group has lead several studies on the racial and ethnic fairness of pediatric precision medicine tools used in clinical and epidemiologic settings. We have been the first to uncover racial biases in commonly used asthma diagnosis and cystic fibrosis exacerbation clinical precision medicine tools. Additionally, we have focused on the racial biases that can be introduced into epidemiologic research through the use of common exposure and socioeconomic status assessment tools.
-
-```{r}
-#| results: asis
-cite_four(c("makkad-2024", "colegate-2024", "pennington-2022"))
-```
-</details>
-
-<details><summary>Privacy-based Methods and Software for Geocoding and Geomarker Assessment</summary>
-
-Our group developed and maintains a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies and in several clinical electronic health data warehouses. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
-
-```{r}
-#| results: asis
-cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
-```
-</details>
-
-<details><summary> Spatiotemporal Exposure Assessment Methods and Machine Learning Models </summary>
-
-My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
-I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. 
-
-```{r}
-#| results: asis
-cite_four(c("brokamp-2022", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
-```
-</details>

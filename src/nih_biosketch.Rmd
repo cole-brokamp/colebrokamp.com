@@ -1,0 +1,107 @@
+---
+output:
+  word_document:
+    reference_docx: reference_biosketch.docx
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+
+# A. Personal Statement
+
+```{r}
+#| child: bio.Rmd
+```
+
+In addition, I have contributed as the lead biostatistician in other biomedical clinical and observational studies. I look forward to contributing as a consultant and biostatistician to your proposed R01 project as a part of our ongoing collaborations, which includes NIH-funded awards and co-mentorship of your postdoctoral fellow. My experience and expertise in data processing, statistical methods, as well as analyses and interpretation will contribute to the success of this proposed project.
+
+## Ongoing projects that I would like to highlight include:
+
+```{r}
+make_support_entry <- function(x) {
+  glue::glue_data(
+    x,
+    "{source} {number}",
+	"{pi_name} (PI)",
+    "{start_date} - {end_date}",
+    "*{title}*",
+    .sep = "  \n", .na = ""
+  ) 
+}
+```
+
+```{r}
+#| results: asis
+yaml::yaml.load_file("support.yaml") |>
+  purrr::keep(\(x) x$status == "Active") |>
+  purrr::map_chr(make_support_entry) |>
+  cat(sep = "\n\n")
+```
+
+## Peer-reviewed publications I would like to highlight include:
+
+```{r}
+cite_four <- function(.x) {
+  stopifnot(length(.x) <= 4)
+  pubs <- yaml::yaml.load_file("pubs.yaml")
+  stopifnot(all(.x %in% names(pubs)))
+  the_pubs <- purrr::map(.x, \(.) purrr::pluck(pubs, .))
+  the_pubs |>
+    purrr::map_chr(\(.) glue::glue_data(.,
+                           "1",
+                           "{paste(author, collapse = ', ')}",
+                           "{title}",
+                           "*{journal}*",
+                           "{issue_pages}",
+                           "{year}.",
+                           .sep = ". ",
+                           .na = character())) |>
+    purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
+    cat(sep = "\n\n")
+}
+```
+
+```{r}
+#| results: asis
+cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
+```
+
+# B. Positions, Scientific Appointments, and Honors
+
+## Positions
+
+|||
+|:-----|:--------------------------|
+|2022 – Present |	Associate Professor, Division of Biostatistics and Epidemiology, Cincinnati Children’s Hospital Medical Center, Department of Pediatrics, University of Cincinnati, College of Medicine |
+|2017 – 2022 | Assistant Professor, Division of Biostatistics and Epidemiology, Cincinnati Children’s Hospital Medical Center, Department of Pediatrics, University of Cincinnati, College of Medicine|
+
+## Scientific Appointments
+
+|||
+|:-----|:------|
+| 2023 | NIH ZES1 BWD-D (HS) |
+| 2023 | NIH ZES1 LWJ-W (K) |
+| 2023 | NIH ZES1 LKB-K (P2) |
+| 2023 | NIH ZRG1 MCST – B (14) |
+| 2023 | NIH ZCTA1 TCRB-J (M2) |
+| 2022 | NIH ZES1 WL-W (K) |
+| 2022 | NIH ZES1 LWF-S (K9) |
+| 2022 | NIH ZES1 LKB-S (KS) |
+| 2019 | NIH SIEE study section, early career reviewer |
+
+## Awards
+
+|      |                                                         |
+|:-----|:--------------------------------------------------------|
+| 2020 | Cincinnati Children's Epidemiology and Biostatistics Top Publication |
+| 2017 | Cincinnati Children's Epidemiology and Biostatistics Top Publication and Top Research Achievement |
+| 2016 | Cincinnati Children's Arnold Strauss Fellowship Awardee |
+
+# C. Contributions to Science
+
+```{r}
+#| child: biosketch_contrib_science.Rmd
+```

@@ -1,0 +1,3 @@
+As a biostatistician, epidemiologist, and data scientist, I have specialized myself in the areas of informatics and machine learning with applications in population-level environmental, community, and health outcome data.
+I develop new methods and technologies to support environmental and population health research, including tools for geocoding and geomarker assessment, high resolution spatiotemporal exposure assessment models, and causal inference machine learning methods.
+I lead research on the roles of environmental exposures and community characteristics on pediatric psychiatric health by applying these methods and tools to large databases of electronic health records, observational cohort studies, clinical registries, and vital records.

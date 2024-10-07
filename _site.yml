@@ -8,17 +8,15 @@ navbar:
       href: publications.html
     - text: Talks
       href: talks.html
-    - text: CV
-      href: cole-brokamp-cv.html
   right:
     - icon: fa-github
       href: https://github.com/cole-brokamp
     - icon: fa-envelope
       href: mailto:cole@colebrokamp.com
     - icon: fa-file-text
-      href: out/cole-brokamp-cv.pdf
+      href: out/peds-cv-brokamp.docx
     - icon: fa-user
-      href: out/cole-brokamp-nih-biosketch.docx
+      href: out/nih-biosketch-brokamp.docx
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
 output:
@@ -28,5 +26,5 @@ output:
       bg: "#cbd6d5"
       fg: "#396175"
       primary: "#cbd6d5"
-include: ["out", "cole-brokamp-nih-biosketch.docx"]
-exclude: ["src", "Justfile"]
+include: ["out"]
+exclude: ["src", "Justfile", "biosketch_head.docx"]
