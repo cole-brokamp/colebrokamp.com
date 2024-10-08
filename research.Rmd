@@ -1,3 +1,14 @@
+---
+title: "Research"
+---
+
+```{css}
+#| echo: false
+h1 {
+  display: none;
+}
+```
+
 ```{r}
 #| echo: false
 #| child: "src/contrib_science.Rmd"

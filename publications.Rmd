@@ -2,18 +2,23 @@
 title: "Publications"
 ---
 
+```{css}
+#| echo: false
+h1 {
+  display: none;
+}
+```
+
+##
+
 ```{r}
 #| echo: false
 #| warning: false
 #| message: false
 #| results: asis
 
-library(dplyr)
-library(purrr)
-library(glue)
-
 yaml::yaml.load_file("src/pubs.yaml") |>
-  map_chr(\(x) glue_data(x,
+  purrr::map_chr(\(x) glue::glue_data(x,
                          "{paste(author, collapse = ', ')}",
                          "{title}",
                          "*{journal}*",

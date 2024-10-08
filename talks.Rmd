@@ -2,11 +2,20 @@
 title: "Talks"
 ---
 
+```{css}
+#| echo: false
+h1 {
+  display: none;
+}
+```
+
+##
+
 ```{r}
 #| echo: false
 #| results: asis
 yaml::yaml.load_file("src/talks.yaml") |>
-  map_chr(\(x) glue_data(x,
+  purrr::map_chr(\(x) glue::glue_data(x,
                          "{title}",
                          "*{event}*",
                          "{location}",

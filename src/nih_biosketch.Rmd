@@ -81,7 +81,7 @@ cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
 ## Scientific Appointments
 
 |||
-|:-----|:------|
+|:-----|:------------------|
 | 2023 | NIH ZES1 BWD-D (HS) |
 | 2023 | NIH ZES1 LWJ-W (K) |
 | 2023 | NIH ZES1 LKB-K (P2) |

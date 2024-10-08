@@ -4,8 +4,12 @@ h2 {
   font-weight: bold;
   text-decoration: underline;
 }
-p {
-  margin-bottom: 1rem;
+ol li {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+li {
+  font-size: 14px;
 }
 ```
 
