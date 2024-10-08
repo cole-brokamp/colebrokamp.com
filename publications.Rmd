@@ -4,6 +4,8 @@ title: "Publications"
 
 ```{r}
 #| echo: false
+#| warning: false
+#| message: false
 #| results: asis
 
 library(dplyr)

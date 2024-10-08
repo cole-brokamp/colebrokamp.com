@@ -1,0 +1,4 @@
+```{r}
+#| echo: false
+#| child: "src/contrib_science.Rmd"
+```

@@ -4,6 +4,8 @@ navbar:
   title: "Cole Brokamp"
   bg: "#cbd6d5"
   left:
+    - text: Research
+      href: research.html
     - text: Publications
       href: publications.html
     - text: Talks

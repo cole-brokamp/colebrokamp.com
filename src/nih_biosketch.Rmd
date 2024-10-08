@@ -103,5 +103,5 @@ cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
 # C. Contributions to Science
 
 ```{r}
-#| child: biosketch_contrib_science.Rmd
+#| child: contrib_science.Rmd
 ```

@@ -33,7 +33,3 @@ I am a member of the Division of Biostatistics and Epidemiology at Cincinnati Ch
 ```{r}
 #| child: "src/bio.Rmd"
 ```
-
-```{r}
-#| child: "src/biosketch_contrib_science.Rmd"
-```
