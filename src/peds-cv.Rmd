@@ -338,10 +338,11 @@ format_talks("teaching")
   - March 2022: NIH ZES1 LWF-S (K9)
   - November 2022: NIH ZES1 WL-W (K)
   - February 2023: NIH ZCTA1 TCRB-J (M2)
-  - June 2023: NIH ZRG1 MCST - B (14)
+  - June 2023: NIH ZRG1 MCST-B (14)
   - August 2023: NIH ZES1 LKB-K (P2)
   - November 2023: NIH ZES1 LWJ-W (K)
   - November 2023: NIH ZES1 BWD-D (HS)
+  - January 2025: NIH ZES1 LWJ-W (KA)
 - Abstract Reviewer:
   - 2018, 2019, 2022: International Societies of Exposure Science 
   - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
