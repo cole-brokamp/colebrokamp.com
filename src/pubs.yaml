@@ -1,3 +1,17 @@
+gecili-2024:
+  title: "Spike and Slab Regression for Nonstationary Gaussian Linear Mixed Effects Modeling of Rapid Disease Progression"
+  author:
+    - Emrah Gecili
+    - Cole Brokamp
+    - Özgür Asar
+    - Elini-Roalina Andrinopoulou
+    - John J Brewington
+    - Rhonda D Szczesniak
+  journal: Environmetrics
+  issue_pages: e2884
+  year: 2024
+  doi: "https://doi.org/10.1002/env.2884"
+
 parikh-2024:
   title: "Increasing Temporal Sensitivity of Omics Association Studies with Epigenome-Wide Distributed Lag Models"
   author:
@@ -12,6 +26,7 @@ parikh-2024:
   issue_pages: In Press
   year: 2024
   doi: ""
+
 peterson-2024:
   title: "Robust Identification of Environmental Exposures and Community Characteristics Predictive of Rapid Lung Disease Progression"
   author:
