@@ -34,6 +34,25 @@ cite_four <- function(.x) {
 }
 ```
 
+## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
+
+Our group developed and maintains a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies and in several clinical electronic health data warehouses. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
+
+```{r}
+#| results: asis
+cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
+```
+
+## Spatiotemporal Exposure Assessment Methods and Machine Learning Models
+
+My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
+I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. 
+
+```{r}
+#| results: asis
+cite_four(c("brokamp-2022", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
+```
+
 ## Built Environment and Pediatric Psychiatric Disorders
 
 Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I led the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as more detailed longitudinal panel studies. Multi-site cohort studies, such as the Adolescent Brain Cognitive Development (ABCD) study, have facilitated steps towards understanding the neurodevelopmental mechanisms underlying the associations between air pollution, cognition, and mental health.
@@ -59,23 +78,4 @@ My research group has lead several studies on the racial and ethnic fairness of 
 ```{r}
 #| results: asis
 cite_four(c("makkad-2024", "colegate-2024", "pennington-2022"))
-```
-
-## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
-
-Our group developed and maintains a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies and in several clinical electronic health data warehouses. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
-
-```{r}
-#| results: asis
-cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
-```
-
-## Spatiotemporal Exposure Assessment Methods and Machine Learning Models
-
-My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
-I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. 
-
-```{r}
-#| results: asis
-cite_four(c("brokamp-2022", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
 ```

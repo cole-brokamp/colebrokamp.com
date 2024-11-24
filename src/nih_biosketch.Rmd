@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
-In addition, I have contributed as the lead biostatistician in other biomedical clinical and observational studies. I look forward to contributing as a consultant and biostatistician to your proposed R01 project as a part of our ongoing collaborations, which includes NIH-funded awards and co-mentorship of your postdoctoral fellow. My experience and expertise in data processing, statistical methods, as well as analyses and interpretation will contribute to the success of this proposed project.
+As the PI of the proposed project and the creator and lead developer for DeGAUSS, I will work to oversee the successful completion of all project deliverables and objectives.
+I am uniquely positioned to lead this work due to my expertise in developing DeGAUSS software and my experience conducting patient-level biomedical health research that leverages environmental exposures and community characteristics made possible by the DeGAUSS approach.
+Additionally, my research group’s strong connection to open-source and data science communities convened by the National Institutes of Environmental Health Sciences enables us to facilitate the adoption of DeGAUSS, thereby enhancing its impact and fostering increased scientific research on a broader scale.
 
 ## Ongoing projects that I would like to highlight include:
 
@@ -66,7 +68,7 @@ cite_four <- function(.x) {
 
 ```{r}
 #| results: asis
-cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
+cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
 ```
 
 # B. Positions, Scientific Appointments, and Honors
@@ -82,7 +84,7 @@ cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
 
 |||
 |:-----|:------------------|
-| 2025 | NIH ZES1 LWJ-W (KA) |
+| 2024 | NIH ZES1 LWJ-W (KA) |
 | 2023 | NIH ZES1 BWD-D (HS) |
 | 2023 | NIH ZES1 LWJ-W (K) |
 | 2023 | NIH ZES1 LKB-K (P2) |
