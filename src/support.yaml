@@ -1,3 +1,36 @@
+hartley-salt:
+  title: "Enhancing Public Health Data Systems for COVID-19: A Situational Awareness and Learning Tool (SALT)"
+  goals: "Create and disseminate a SALT for enhancing public health data systems related to future pandemics."
+  status: Active
+  number: Federal award 21.027 
+  pi_name: Hartley D
+  source: Hamilton County and US Department of Treasury
+  ppp: Cincinnati Children's Hospital Medical Center
+  start_date: 3/1/23
+  end_date: 6/30/25
+  amount: 1178855
+szczesniak-heal:
+  title: "HEAL: Genome-sociome informed risk (G-SIR)"
+  goals: "Create a genome-sociome informed risk score for rapid decline in lung function by children with cystic fibrosis."
+  status: Active
+  number: CFF
+  pi_name: Szczesniak R
+  source: Cystic Fibrosis Foundation
+  ppp: Cincinnati Children's Hospital Medical Center
+  start_date: 2/1/24
+  end_date: 1/31/28
+  amount: 0
+ryan-purpleair:
+  title: "Research Innovations using Sensor Technology in Environmental Justice Communities (RISE Communities)"
+  goals: Facilitate innovative research with environmental justice communities through the use of PurpleAir monitors and community-based participatory research.
+  status: Active
+  number: R25Es034592
+  pi_name: Ryan P and Knapke J
+  source: NIH/NIEHS
+  ppp: Cincinnati Children's Hospital Medical Center
+  start_date: 9/1/22
+  end_date: 8/31/27
+  amount: 667813
 odh-lead-update:
   title: "Updated Model Identifying Geographic Areas in Ohio for Blood Lead Testing"
   goals: "Update a predictive model to determine which children should be tested for potentially high blood lead during physician visits based on their residential location."
@@ -62,7 +95,7 @@ degauss-r01:
   source: NIH/NLM
   ppp: Cincinnati Children's Hospital Medical Center
   start_date: 8/1/20
-  end_date: 7/31/24
+  end_date: 7/31/25
   amount: 1351500
 echo-oif:
   title: "Decentralized and Reproducible Geomarker Assessment for Multi-Site Studies"
