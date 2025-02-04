@@ -318,6 +318,7 @@ format_talks("teaching")
 - 2022 - present: Chair, CCHMC DBE Strategic Plan Steering Committee
 - 2024 - present: Member, CCHMC DBE Faculty Search Committee
 - 2024 - present: Member, CCHMC AI/ML Workgroup
+- 2025 - present: Member, CCHMC Committee for Computational Resources Use
 
 ### Conference Leadership
 
