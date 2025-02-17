@@ -347,7 +347,7 @@ format_talks("teaching")
   - November 2023: NIH ZES1 LWJ-W (K)
   - November 2023: NIH ZES1 BWD-D (HS)
   - December 2024: NIH ZES1 LWJ-W (KA)
-  - March 2025: NIH Office of Data Science Strategy
+  - March 2025: NIH ZRG1 MCST-M (53) R
 - Abstract Reviewer:
   - 2018, 2019, 2022: International Societies of Exposure Science 
   - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
