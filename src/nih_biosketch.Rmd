@@ -16,10 +16,6 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
-As the PI of the proposed project and the creator and lead developer for DeGAUSS, I will work to oversee the successful completion of all project deliverables and objectives.
-I am uniquely positioned to lead this work due to my expertise in developing DeGAUSS software and my experience conducting patient-level biomedical health research that leverages environmental exposures and community characteristics made possible by the DeGAUSS approach.
-Additionally, my research group’s strong connection to open-source and data science communities convened by the National Institutes of Environmental Health Sciences enables us to facilitate the adoption of DeGAUSS, thereby enhancing its impact and fostering increased scientific research on a broader scale.
-
 ## Ongoing projects that I would like to highlight include:
 
 ```{r}
@@ -68,7 +64,7 @@ cite_four <- function(.x) {
 
 ```{r}
 #| results: asis
-cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
+cite_four(c("ryan-2024", "manning-2024", "brokamp-2024", "palipana-2023"))
 ```
 
 # B. Positions, Scientific Appointments, and Honors
