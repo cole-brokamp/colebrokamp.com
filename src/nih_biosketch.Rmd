@@ -16,6 +16,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
+For this study, I will serve as the principal investigator and work with the PEDSnet learning network, the study staff, and co-investigators to oversee all aspects of the research project, ensure the scientific integrity of the proposed study, and ensure its successful completion. My expertise and experience in leveraging high-resolution spatiotemporal exposure assessments in electronic health record to study psychiatric outcomes will contribute to the success of this proposed research. My personal hope is that this work will provide insight into biological mechanisms that mediate environmental risk to help identify modifiable primary interventions to reduce psychiatric morbidity in children and adolescents.
+
 ## Ongoing projects that I would like to highlight include:
 
 ```{r}
@@ -64,7 +66,7 @@ cite_four <- function(.x) {
 
 ```{r}
 #| results: asis
-cite_four(c("ryan-2024", "manning-2024", "brokamp-2024", "palipana-2023"))
+cite_four(c("manning-2024", "brokamp-2019b", "manning-2024a", "brokamp-2022"))
 ```
 
 # B. Positions, Scientific Appointments, and Honors
