@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
-For this study, I will serve as the principal investigator and work with the PEDSnet learning network, the study staff, and co-investigators to oversee all aspects of the research project, ensure the scientific integrity of the proposed study, and ensure its successful completion. My expertise and experience in leveraging high-resolution spatiotemporal exposure assessments in electronic health record to study psychiatric outcomes will contribute to the success of this proposed research. My personal hope is that this work will provide insight into biological mechanisms that mediate environmental risk to help identify modifiable primary interventions to reduce psychiatric morbidity in children and adolescents.
+As Carson's primary mentor for this training award, I am committed to providing a rigorous and supportive training environment that will equip him with the skills needed for an independent research career. His proposed training plan is strategically designed to integrate advanced computational methods, interdisciplinary collaboration, and translational research, ensuring he develops expertise in biomedical informatics and environmental epidemiology. Through structured mentorship, hands-on experience, and engagement with clinical and policy stakeholders, Carson will gain the technical proficiency, leadership skills, and professional network necessary to secure external funding and establish his own research program. I am confident that this training plan, combined with Carson’s strong analytical abilities and scientific curiosity, will position him for success as a leader in data-driven public health research.
 
 ## Ongoing projects that I would like to highlight include:
 
@@ -43,6 +43,8 @@ yaml::yaml.load_file("support.yaml") |>
 
 ## Peer-reviewed publications I would like to highlight include:
 
+These publications were selected to demonstrate my scientific productivity when I am the primary mentor of a clinician-scientist in training:
+
 ```{r}
 cite_four <- function(.x) {
   stopifnot(length(.x) <= 4)
@@ -56,7 +58,7 @@ cite_four <- function(.x) {
                            "{title}",
                            "*{journal}*",
                            "{issue_pages}",
-                           "{year}.",
+                           "{year}. \n &nbsp; &nbsp; \n",
                            .sep = ". ",
                            .na = character())) |>
     purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
@@ -66,7 +68,7 @@ cite_four <- function(.x) {
 
 ```{r}
 #| results: asis
-cite_four(c("manning-2024", "brokamp-2019b", "manning-2024a", "brokamp-2022"))
+cite_four(c("parikh-2024", "makkad-2024", "colegate-2024", "pennington-2022"))
 ```
 
 # B. Positions, Scientific Appointments, and Honors
