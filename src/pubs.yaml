@@ -1,3 +1,52 @@
+brokamp-2025:
+  title: "Parcel-Level Housing Conditions and Pediatric Asthma Hospital Utilization"
+  author:
+    - Cole Brokamp
+    - Sarah Ray
+    - Qing Duan
+    - Carson S Hartlage
+    - Stuart Taylor
+    - Erika Rasnick Manning
+    - Ndidi I Unaka
+    - Margaret N Jones
+    - Joseph Michael
+    - Adrienne W Henize
+    - Andrew F Beck
+  journal: Pediatrics
+  issue_pages: "In Press"
+  year: 2025
+  doi: ""
+
+haacker-2025:
+  title: "Anemia in Young Children and the Association With Socioeconomic Deprivation Indices"
+  author:
+    - Lindsay Haacker
+    - Lisa Littner
+    - Mathew Martin
+    - Cole Brokamp
+    - Andrew F Beck
+    - Lori Luchtman-Jones
+  journal: "Pediatric Blood & Cancer"
+  issue_pages: "In Press"
+  year: 2025
+  doi: "https://doi.org/10.1002/pbc.31663"
+
+afonso-2024:
+  title: "A joint model for (un)bounded longitudinal markers, competing risks, and recurrent events using patient registry data"
+  author:
+    - Pedro Miranda Afonso
+    - Dimitris Rizopoulos
+    - Anushka K Palipana
+    - Emrah Gecili
+    - Cole Brokamp
+    - John P Clancy
+    - Rhonda D Szczesniak
+    - Eleni-Rosalina Andrinopoulou
+  journal: "Statistics in Medicine"
+  issue_pages: "2024;00:1-15"
+  year: 2024
+  doi: ""
+
 ammerman-2025:
   title: "Community Implementation and Evaluation of the Chicago Parent Program"
   author:

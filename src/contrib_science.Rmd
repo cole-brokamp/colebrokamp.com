@@ -62,13 +62,14 @@ Building on advanced exposure assessment has allowed me to lead epidemiological 
 cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
 ```
 
-## Causal Mediation of Place-Based Factors on Pediatric Health Disparities
+## Causal Mediation of Place-Based Factors on Pediatric Health
 
-I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind racial and socioeconomic disparities in pediatric health outcomes. 
+I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind racial and socioeconomic disparities in pediatric health outcomes.
+Leveraging my innovative exposure assessment and data linkage methods, I led the first study to quantify the impact of substandard housing conditions on pediatric health at an address-specific level.
 
 ```{r}
 #| results: asis
-cite_four(c("brokamp-2024", "esteban-2022", "zanobetti-2022", "ryan-2024"))
+cite_four(c("brokamp-2025", "brokamp-2024", "zanobetti-2022", "ryan-2024"))
 ```
 
 ## Fairness in Pediatric Precision Medicine
