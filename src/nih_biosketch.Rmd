@@ -16,9 +16,9 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
-I look forward to collaborating with Dr. Sawyer on this proposal, titled "Characterizing the Frontotemporal Degeneration Exposome".
-As a co-investigator on this project, I will work with Dr. Sawyer and Dr. Ryan to complete the geocoding and environmental exposure assessment processes while overcoming key privacy and reproducibility issues, by using DeGAUSS, a software designed for this specific purpose.
-I will leverage my expertise and experience as a biostatistician specializing in environmental and population health to conduct data analyses, participate in the dissemination of study results, and consult with the investigative team on exposure assessment and biostatistical topics.
+I look forward to contributing to the "Better Respiratory Environment And Tobacco Harm Elimination in CF(BREATHE-CF)" study as a CCHMC site investigator.
+I will implement secure, HIPAA-compliant geocoding and geomarker assessment for study sites using methods and tools developed by my research group and supported by the NIH.
+I will also contribute to the statistical analysis, interpretation of results, and publication of results.
 
 ## Ongoing projects that I would like to highlight include:
 
