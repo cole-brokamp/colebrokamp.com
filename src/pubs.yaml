@@ -449,7 +449,7 @@ gecili-2023a:
   journal: Journal of Cystic Fibrosis
   issue_pages: S1569-1993(23)00126-1
   year: 2023
-  doi: 10.1016/j.jcf.2023.04.020 
+  doi: 10.1016/j.jcf.2023.04.020
 
 iyanna-2023:
   title: "Air Pollution Exposure and Social Responsiveness in Childhood: The Cincinnati Combined Childhood Cohorts"
@@ -486,23 +486,23 @@ ryan-2023:
 gecili-2023:
   title: Built environment factors predictive of early rapid lung function decline in cystic fibrosis
   author:
-  - Emrah Gecili
-  - Cole Brokamp
-  - Erika Rasnick
-  - Pedro M Afonso
-  - Eleni-Rosalina Andrinopoulou
-  - Judith W Dexheimer
-  - John P Clancy
-  - Ruth H Keogh
-  - Yizhao Ni
-  - Anushka Palipana
-  - Teresa Pestian
-  - Andrew Vancil
-  - Grace Chen Zhou
-  - Weiji Su
-  - Christopher Siracusa
-  - Patrick Ryan
-  - Rhonda D Szczesniak
+    - Emrah Gecili
+    - Cole Brokamp
+    - Erika Rasnick
+    - Pedro M Afonso
+    - Eleni-Rosalina Andrinopoulou
+    - Judith W Dexheimer
+    - John P Clancy
+    - Ruth H Keogh
+    - Yizhao Ni
+    - Anushka Palipana
+    - Teresa Pestian
+    - Andrew Vancil
+    - Grace Chen Zhou
+    - Weiji Su
+    - Christopher Siracusa
+    - Patrick Ryan
+    - Rhonda D Szczesniak
   journal: Pediatric Pulmonology
   issue_pages: In Press
   year: 2023
@@ -525,7 +525,7 @@ rasnick-2023:
   issue_pages: 2023:62-70
   year: 2023
   pmid: 37350915
-  
+
 zundel-2022:
   title: "Air Pollution, Depressive and Anxiety Disorders, and Brain Effects: A Systematic Review"
   author:
@@ -588,17 +588,17 @@ parikh-2022:
 conrey-2022:
   title: Neighbourhood socio-economic environment predicts adiposity and obesity risk in children under two
   author:
-  - Shannon C. Conrey
-  - Allison R. Burrell
-  - Cole Brokamp
-  - Rachel M. Burke
-  - Sarah C. Couch
-  - Liang Niu
-  - Claire P. Mattison
-  - Alexandra Piasecki
-  - Daniel C. Payne
-  - Mary A. Staat
-  - Ardythe L. Morrow
+    - Shannon C. Conrey
+    - Allison R. Burrell
+    - Cole Brokamp
+    - Rachel M. Burke
+    - Sarah C. Couch
+    - Liang Niu
+    - Claire P. Mattison
+    - Alexandra Piasecki
+    - Daniel C. Payne
+    - Mary A. Staat
+    - Ardythe L. Morrow
   journal: Pediatric Obesity
   issue_pages: Online
   year: 2022
@@ -734,9 +734,9 @@ trinidad-2022:
   journal: Journal of Trauma and Acute Care Surgery
   issue_pages: Online
   year: 2022
-  doi: 10.1097/TA.0000000000003679 
+  doi: 10.1097/TA.0000000000003679
 
-hartley-2022: 
+hartley-2022:
   title: "Residential Greenness, Asthma, and Lung Function Among Children at High Risk of Allergic Sensitization: A Prospective Cohort Study"
   author:
     - Kim Hartley
@@ -749,7 +749,7 @@ hartley-2022:
     - Rebecca Gernes
     - Gurjit Khurana Hershey
     - Grace LeMasters
-    - Cole Brokamp 
+    - Cole Brokamp
   journal: Environmental Health
   issue_pages: In Press
   year: 2022
@@ -833,7 +833,7 @@ turner-2021:
   journal: Environment International
   issue_pages: "156:106740"
   year: 2021
-  doi: 10.1016/j.envint.2021.106740 
+  doi: 10.1016/j.envint.2021.106740
 
 lowe-2021:
   title: "A Geographic Perspective on Opioid Misuse: Substance Abuse Treatment Deserts in Southwestern Ohio"
@@ -1063,7 +1063,7 @@ wolfe-2020:
     - John P. Clancy
     - Daniel H. Grossoehme
     - Rhonda D. Szczesniak
-    - Cole Brokamp 
+    - Cole Brokamp
   journal: JMIR Med Inform
   issue_pages: 8(12):e23530
   year: 2020
