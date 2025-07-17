@@ -78,5 +78,5 @@ My research group has lead several studies on the racial and ethnic fairness of 
 
 ```{r}
 #| results: asis
-cite_four(c("makkad-2024", "colegate-2024", "pennington-2022"))
+cite_four(c("vancil-2025", "makkad-2024", "colegate-2024", "pennington-2022"))
 ```
