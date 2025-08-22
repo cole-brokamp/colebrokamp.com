@@ -1,3 +1,28 @@
+manning-isee-2025:
+  title: "Impact of Short-Term Air Pollution and Extreme Heat on Pediatric Psychiatric Exacerbations: A Case-Crossover Study"
+  author:
+    - Erika Rasnick Manning\*
+    - Andrew Vancil
+    - Patrick Ryan
+    - Cole Brokamp
+  event: International Societies of Environmental Epidemiology and Exposure Science Combined Annual Meeting
+  year: 2025
+  location: Atlanta, GA
+
+hartlage-isee-2025:
+  title: "Integrating Hyperlocal Environmental, Social, and Healthcare Data to Create Address-Level Risk for Child Hospitalization (ARCH)"
+  author:
+    - Carson Hartlage\*
+    - Qing Duan
+    - Erika Rasnick Manning
+    - Joseph Michael
+    - Judith Dexheimer
+    - Andrew Beck
+    - Cole Brokamp
+  event: International Societies of Environmental Epidemiology and Exposure Science Combined Annual Meeting
+  year: 2025
+  location: Atlanta, GA
+
 colegate-ace-2024:
   title: "Integrating a Machine Learning Algorithm to Forecast Daily Asthma Hospitalizations"
   author:

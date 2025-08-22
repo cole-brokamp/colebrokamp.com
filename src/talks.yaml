@@ -1,3 +1,19 @@
+introbmi-2025:
+  title: "Geomarker Curation and Computation"
+  event: University of Cincinnati Introduction to Medical Informatics course guest lecture
+  year: 2025
+  location: Cincinnati, OH
+  homepage: "https://cole-brokamp.github.io/gcc/"
+  type: teaching
+
+rise-2025:
+  title: "Sensor Data Visualization in R"
+  event: Communities RISE 2025 Workshop
+  year: 2025
+  location: Cincinnati, OH
+  homepage: ""
+  type: seminar
+
 introbmi-2024:
   title: "Geomarker Curation and Computation"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
@@ -109,7 +125,7 @@ PAS-2022:
   location: Denver, CO
   homepage: ""
   type: invited
-  
+
 BD2K-2022:
   title: "Decentralized Geomarker Assessment for Multi-Site Studies"
   event: NIH Bench to Bassinet PCGC EMR Extraction Working Group Meeting
@@ -384,7 +400,7 @@ ucanalytics-2016:
 
 dbeseminar-2016:
   title: "Combined Sewer Overflow and Childhood Hospital Admissions"
-  event:  Cincinnati Children's Hospital Medical Center Division of Biostatistics & Epidemiology Seminar Series
+  event: Cincinnati Children's Hospital Medical Center Division of Biostatistics & Epidemiology Seminar Series
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Combined%20Sewer%20Overflow%20and%20Hospital%20Admissions.pdf
