@@ -16,11 +16,11 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
-I look forward to contributing to the "Better Respiratory Environment And Tobacco Harm Elimination in CF(BREATHE-CF)" study as a CCHMC site investigator.
+I look forward to contributing to the proposed project, "Molecular and Environmental Predictors of Early-Life Allergic Diseases: Insights from the SUNBEAM Birth Cohort", study as a CCHMC site co-investigator.
 I will implement secure, HIPAA-compliant geocoding and geomarker assessment for study sites using methods and tools developed by my research group and supported by the NIH.
 I will also contribute to the statistical analysis, interpretation of results, and publication of results.
 
-## Ongoing projects that I would like to highlight include:
+## Ongoing and recently completed projects relevant to this proposal that I would like to highlight include:
 
 ```{r}
 make_support_entry <- function(x) {
@@ -38,12 +38,12 @@ make_support_entry <- function(x) {
 ```{r}
 #| results: asis
 yaml::yaml.load_file("support.yaml") |>
-  purrr::keep(\(x) x$status == "Active") |>
+  purrr::keep(\(x) x$number %in% c("R03ES037996", "R01LM013222")) |>
   purrr::map_chr(make_support_entry) |>
   cat(sep = "\n\n")
 ```
 
-## Peer-reviewed publications I would like to highlight include:
+## Peer-reviewed publications relevant to this proposal I would like to highlight include:
 
 ```{r}
 cite_four <- function(.x) {
@@ -84,6 +84,7 @@ cite_four(c("manning-2024", "brokamp-2022", "rasnick-2023", "brokamp-2017b"))
 
 |||
 |:-----|:------------------|
+| 2025 | NIH ASPB |
 | 2024 | NIH ZES1 LWJ-W (KA) |
 | 2023 | NIH ZES1 BWD-D (HS) |
 | 2023 | NIH ZES1 LWJ-W (K) |

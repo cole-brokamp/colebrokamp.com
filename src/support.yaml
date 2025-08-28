@@ -1,8 +1,19 @@
+geomarker-r03:
+  title: "Enhancing the Sustainability and Impact of Geomarker Assessment Tools for Research"
+  goals: "Project Narrative This project aims to enhance DeGAUSS, a vital research tool that enables large-scale, privacy-preserving geocoding and geomarker assessment of health data. By improving its scalability, interoperability, and accessibility, we will make it easier for researchers to understand how environmental factors influence health outcomes. This work supports the NIH’s mission to leverage advanced data tools and technologies to improve public health."
+  status: Active
+  number: R03ES037996
+  pi_name: Brokamp C
+  source: NIH/NIEHS
+  ppp: Cincinnnati Children's Hospital Medical Center
+  start_date: 8/15/25
+  end_date: 8/14/27
+  amount: 481500
 hartley-salt:
   title: "Enhancing Public Health Data Systems for COVID-19: A Situational Awareness and Learning Tool (SALT)"
   goals: "Create and disseminate a SALT for enhancing public health data systems related to future pandemics."
-  status: Active
-  number: Federal award 21.027 
+  status: Completed
+  number: Federal award 21.027
   pi_name: Hartley D
   source: Hamilton County and US Department of Treasury
   ppp: Cincinnati Children's Hospital Medical Center
@@ -24,7 +35,7 @@ ryan-purpleair:
   title: "Research Innovations using Sensor Technology in Environmental Justice Communities (RISE Communities)"
   goals: Facilitate innovative research with environmental justice communities through the use of PurpleAir monitors and community-based participatory research.
   status: Active
-  number: R25Es034592
+  number: R25ES034592
   pi_name: Ryan P and Knapke J
   source: NIH/NIEHS
   ppp: Cincinnati Children's Hospital Medical Center
@@ -41,18 +52,7 @@ odh-lead-update:
   ppp: Cincinnati Children's Hospital Medical Center
   start_date: 4/01/23
   end_date: 6/30/23
-  amount:  65000
-nancy-r01:
-  title: "Enhanced Injury Surveillance Using Near Real-Time Reporting among Healthcare Workers"
-  goals: "To design and evaluation of an innovative, sustainable near real-time injury surveillance system that employs accurate risk assessment tools to trigger interventions that will change hazardous conditions and prevent future injuries in a real-world setting."
-  status: Completed
-  number: R01OH011581
-  pi_name: Daraiseh N, Macaluso M
-  source: NIH/NIOSH
-  ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 9/1/21
-  end_date: 9/30/25
-  amount: 2544000
+  amount: 65000
 tes-r01:
   title: "Epigenome-wide variations and socio-environmental exposures in African American asthmatic children"
   goals: "Determine the relationship between asthma severity, the epigenome, environmental exposures, and community characteristics in a cohort of African American asthmatic children."
@@ -89,7 +89,7 @@ c4:
 degauss-r01:
   title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
   goals: "Create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale."
-  status: Active
+  status: Completed
   number: R01LM013222
   pi_name: Brokamp C
   source: NIH/NLM
@@ -140,7 +140,7 @@ odh-lead:
   ppp: Cincinnati Children's Hospital Medical Center
   start_date: 4/01/20
   end_date: 9/30/20
-  amount:  72500
+  amount: 72500
 ses-pred:
   title: "Using machine learning to supplement electronic health record databases with individual socioeconomic status"
   goals: Create a novel machine learning approach to use open city and auditor databases to predict individual level income and family socioeconomic status. Determine its ability to mitigate bias in electronic health research studies that rely on insurance status to capture individual-level SES.
@@ -165,7 +165,7 @@ strauss:
   amount: 10000
 degauss-validate:
   title: "Validating a Geocoding Approach for Multi-Site Studies"
-  goals: Compare geocoding accuracy and ability to correctly estimate environmental exposures and community-level characteristics using DeGAUSS with other common geocoding software. 
+  goals: Compare geocoding accuracy and ability to correctly estimate environmental exposures and community-level characteristics using DeGAUSS with other common geocoding software.
   status: Completed
   number: "Processes and Methods Award"
   pi_name: Brokamp C
