@@ -6,6 +6,14 @@ introbmi-2025:
   homepage: "https://cole-brokamp.github.io/gcc/"
   type: teaching
 
+ga4gh-human-exposome:
+  title: "Geomarker Assessment Standards for the Human Exposome"
+  event: "Global Alliance for Genomics & Health Exposure and Geolocation Meeting"
+  year: 2025
+  location: Online
+  homepage: "https://cole-brokamp.github.io/gcc/"
+  type: invited
+
 rise-2025:
   title: "Sensor Data Visualization in R"
   event: Communities RISE 2025 Workshop
