@@ -16,9 +16,10 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 #| child: bio.Rmd
 ```
 
-I look forward to contributing to the proposed project, "Molecular and Environmental Predictors of Early-Life Allergic Diseases: Insights from the SUNBEAM Birth Cohort", study as a CCHMC site co-investigator.
+I look forward to contributing to the proposed project, "Ambient Air Pollution and Risk for Head and Neck Cancer", study as a CCHMC site co-investigator.
 I will implement secure, HIPAA-compliant geocoding and geomarker assessment for study sites using methods and tools developed by my research group and supported by the NIH.
-I will also contribute to the statistical analysis, interpretation of results, and publication of results.
+Additionally, I will work to apply our validated spatiotemporal PM2.5 exposure assessment model to characterize air pollution and other environmental exposures.
+I will also lead the statistical analysis for all aims and contribute to interpretation and publication of results.
 
 ## Ongoing and recently completed projects relevant to this proposal that I would like to highlight include:
 
