@@ -1,5 +1,5 @@
-name: 'colebrokamp.com'
-output_dir: 'docs'
+name: "colebrokamp.com"
+output_dir: "docs"
 navbar:
   title: "Cole Brokamp"
   bg: "#cbd6d5"
@@ -17,8 +17,6 @@ navbar:
       href: mailto:cole@colebrokamp.com
     - icon: fa-file-text
       href: out/peds-cv-brokamp.docx
-    - icon: fa-user
-      href: out/nih-biosketch-brokamp.docx
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
 output:
