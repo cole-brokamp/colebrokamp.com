@@ -1,3 +1,21 @@
+colegate-2026:
+  title: "Acute Exposure to Fine Ambient Particulate Matter and Pulmonary Exacerbations in Cystic Fibrosis: A Case-Crossover Study"
+  author:
+    - Stephen Colegate
+    - Erika Rasnick Manning
+    - Andrew Vancil
+    - Ziyun Wang
+    - Marepalli Rao
+    - Emrah Gecili
+    - Anushka Palipana
+    - Patrick Ryan
+    - Rhonda Szczesniak
+    - Cole Brokamp
+  journal: "Atmospheric Environment: X"
+  issue_pages: "In Press"
+  year: 2026
+  doi: "10.1016/j.aeaoa.2026.100414"
+
 gill-2025:
   title: "An Open-Source Application for Self-Service, HIPAA-Compliant Geocoding"
   author:
@@ -14,7 +32,7 @@ gill-2025:
     - Mark Hoffman
   journal: Journal of Clinical and Translational Science
   issue_pages: "In Press"
-  year: 2025
+  year: 2026
   doi: "10.1017/cts.2025.10220"
 
 colegate-2025:
