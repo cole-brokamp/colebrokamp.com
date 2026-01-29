@@ -250,6 +250,7 @@ format_talks("teaching")
 
 #### Undergraduate Students
 
+- Sia Vaish, UC RaMP student: Primary Mentor (2025); CCHMC Summer Undergraduate Research Fellowship: Primary Mentor (2026)
 - Amisha Saini, CCHMC Summer Undergraduate Research Fellowship: Primary Mentor (2021, 2022)
 - Milan Parikh, UC College of Medicine: Primary Research Mentor (2021 - 2023)
 - Daniel Ehrlich, Undergraduate Research Assistant (2018 - 2019)
