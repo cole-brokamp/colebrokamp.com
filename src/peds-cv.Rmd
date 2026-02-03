@@ -75,10 +75,11 @@ B.S., Biomedical Engineering, 2010
 # Licensing and Certification
 
 - CITI Training  
-  – 2019-07-31: Responsible Conduct of Research  
-  – 2019-07-31: Children Research  
-  – 2019-10-10: Clinical Research Conduct  
-  – 2024-12-31: Human Subjects Research Core  
+  - 2019-07-31: Responsible Conduct of Research  
+  - 2019-07-31: Children Research  
+  - 2019-10-10: Clinical Research Conduct  
+  - 2024-12-31: Human Subjects Research Core  
+  - 2025-09-18: Research Security Training
 
 # Awards and Honors
 
@@ -89,6 +90,7 @@ B.S., Biomedical Engineering, 2010
 - 2017: CCHMC Division of Biostatistics & Epidemiology Top Research Achievement
 - 2020: CCHMC Division of Biostatistics & Epidemiology Top Publication
 - 2020: CCHMC Division of Biostatistics & Epidemiology Top Research Achievement
+- 2025: CCHMC Division of Biostatistics & Epidemiology Top Publications
 
 # Research and Scholarly Activities
 
@@ -126,7 +128,6 @@ yaml::yaml.load_file("support.yaml") |>
 #| results: asis
 yaml::yaml.load_file("support.yaml") |>
   purrr::keep(\(x) x$status == "Completed") |>
-  purrr::keep(\(x) x$pi_name == "Brokamp C") |>
   purrr::map_chr(make_support_entry) |>
   cat(sep = "\n\n")
 ```
@@ -154,38 +155,38 @@ yaml::yaml.load_file("pubs.yaml") |>
 
 ### Quality Review of Publications
 
-Publications I have authored have 3,379 total citations (2,823 since 2020), with an h-index of 33 (31 since 2022), and an i10-index of 56 (55 since 2017). Below are quality reviews of seven selected publications:
+Publications I authored have 4,433 total citations (3,568 since 2021), with an h-index of 36 (32 since 2022), and an i10-index of 61 (60 since 2017). Below are quality reviews of seven selected publications:
 
 1. **Cole Brokamp**, Roman Jandarov, Monir Hossain, Patrick Ryan. Predicting Daily Urban Fine Particulate Matter Concentrations Using Random Forest. Environmental Science & Technology. 52 (7). 4173-4179. 2018.  
   – I lead this publication by designing and completing all of the analyses. We used satellite data combined with weather and land use data to create a machine learning model that can accurately estimate daily exposure to ambient fine particulate matter at any location in the Greater Cincinnati Area from 2000 to the present.  
-  – 182 total citations since publication on 2018-03-14 (2024: 32, 2023: 26, 2022: 35, 2021: 36, 2020: 26)  
+  – 222 total citations since publication on 2018-03-14 (2025: 39, 2024: 36, 2023: 28, 2022: 31, 2021: 38)  
 
 2.	**Cole Brokamp**, Chris Wolfe, Todd Lingren, John Harley, Patrick Ryan. Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies. Journal of American Medical Informatics Association. 25(3). 309-314. 2017.  
   – I lead and completed all of the software development and validation for this study which summarized our software tool that can be used to securely geocode and estimate community and environmental exposures (geomarker assessment) within multi-site studies where sharing of protected health information is not feasible.  
-  – 102 total citations since publication on 2018-03-01 (2024: 26, 2023: 25, 2022: 14, 2021: 9, 2020: 6)  
+  – 135 total citations since publication on 2018-03-01 (2025: 37, 2024: 25, 2023: 25, 2022: 15, 2021: 11)  
 
 3.	**Cole Brokamp**, Jeffrey R. Strawn, Andrew F. Beck, Pat Ryan. Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study. Environmental Health Perspectives. 127(9). 2019. PMID: 31553231  
   – As the lead author, I designed and executed this study utilizing CCHMC electronic health records and my spatiotemporal air pollution exposure assessment model. Notably, this was the first scientific publication to show that short-term air pollution is associated with psychiatric exacerbations in children and adolescents.  
-  – 67 total citations since publication on 2019-09-25 (2024: 17, 2023: 11, 2022: 18, 2021: 15, 2020: 4)  
+  – 78 total citations since publication on 2019-09-25 (2025: 13, 2024: 16, 2023: 12, 2022: 18, 2021: 15)  
   – Selected as the top publication and top research achievement of 2020 for the Division of Biostatistics and Epidemiology and featured in the Cincinnati Children’s 2020 Annual Research Report  
   – Featured in several high-profile media outlets, including Newsweek, CNN, The London Time, Forbes, and over 30 other outlets  
 
 4.	**Cole Brokamp**, Roman Jandarov, MB Rao, Grace LeMasters, Patrick Ryan. Exposure assessment models for elemental components of particulate matter in an urban environment: A comparison of regression and random forest approaches. Atmospheric Environment. 151. 1-11. 2017.  
   – I lead and completed all analyses for this study that was the first to utilize the machine learning method, random forest, to predict airborne concentrations of twelve different components of fine particulate matter air pollution. We showed that the random forest method outperformed traditional regression methods. The resulting exposure assessment models can be used to estimate air pollution exposures at any specific address in the seven counties surrounding Cincinnati, OH.  
-  – 235 total citations since publication on 2017-02-01 (2024: 28, 2023: 26, 2022: 47, 2021: 35, 2020: 31)  
+  – 270 total citations since publication on 2017-02-01 (2025: 34, 2024: 30, 2023: 25, 2022: 48, 2021: 35)  
   – Selected as the top publication of 2017 for the Division of Biostatistics and Epidemiology and featured in the Cincinnati Children’s 2017 Annual Research Report  
 
 5.	**Cole Brokamp**, Andrew F Beck, Neera K Goyal, Patrick Ryan, James M Greenberg, Eric S Hall. Material community deprivation and hospital utilization during the first year of life: an urban population-based cohort study. Annals of Epidemiology. 30. 37-43. 2019.  
   – As the primary author, I designed and completed all analyses for this manuscript which created a community material deprivation index and used a causal inference framework to show that community poverty causes increased healthcare utilization in newborns independently of their individual-level socioeconomic status and race. The created nationwide deprivation index has been used as a resource in numerous other publications and public health applications.  
-  – 80 total citations since publication on 2019-02-01 (2024: 54, 2023: 32, 2022: 35, 2021: 25, 2020: 18)  
+  – 243 total citations since publication on 2019-02-01 (2025: 58, 2024: 53, 2023: 35, 2022: 37, 2021: 25)  
 
 6.	**Cole Brokamp**, Grace LeMasters, Patrick Ryan. Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies. Journal of Exposure Science and Environmental Epidemiology. 26(4). 428-34. 2016.  
   – As the lead author, I completed all analyses for this manuscript which showed that ignoring unknown residential location changes in longitudinal epidemiology studies leads to bias in health outcome studies.  
-  – 98 total citations since publication on 2016-06-01 (2024: 14, 2023: 19, 2022: 18, 2021: 9, 2020: 12)  
+  – 117 total citations since publication on 2016-06-01 (2025: 18, 2024: 14, 2023: 17, 2022: 17, 2021: 10)  
 
 7.	Juliana Madzia, Patrick Ryan, Kimberly Yolton, Zana Percy, Nick Newman, Grace LeMasters, **Cole Brokamp**. Residential greenspace is associated with childhood behavioral outcomes. The Journal of Pediatrics. 207. 233-240. 2019.  
   – As the senior author, I designed and oversaw all analyses for this manuscript, including the work completed by my mentee, who was the first author. We used a cohort of Cincinnati children to show that increased greenspace around their residences was associated with reduced problems related to misconduct, anxiety, and depression.  
-  – 78 total citations since publication on 2019-04-01 (2024: 14, 2023: 17, 2022: 25, 2021: 16, 2020: 6)  
+  – 89 total citations since publication on 2019-04-01 (2025: 9, 2024: 14, 2023: 17, 2022: 26, 2021: 16)  
 
 ## Patents
 
@@ -282,7 +283,7 @@ format_talks("teaching")
 
 #### Post Graduate Clinical and Research Fellows
 
-- Teresa Pestian, CCHMC General Pediatric Research Fellowship: Scholarhip Oversight Committee (2025 - present)
+- Teresa Pestian, CCHMC General Pediatric Research Fellowship: Scholarship Oversight Committee (2025 - present)
 - Clara Zundel, Wayne State University Research Fellow: Member of F32 Mentorship Committee (2023 - present)
 - Anushka Palipana, CCHMC Research Fellow: Member of Career Development Committee (2022 - 2023)
 - Stephen Colegate, CCHMC Research Fellow: Chair of Career Development Committee and Primary Research Mentor (2022 – 2025)
@@ -318,9 +319,9 @@ format_talks("teaching")
 - 2019 - 2024: Member, CCHMC DBE Faculty Career Development Committee
 - 2021 - 2022: Member, CCHMC DBE Faculty Search Committee
 - 2022 - present: Member, CCHMC Artificial Intelligence Governance Council
-- 2023 - present: Member, CCHMC BMI Faculty Search Committee
+- 2023 - 2025: Member, CCHMC BMI Faculty Search Committee
 - 2022 - 2025: Chair, CCHMC DBE Strategic Plan Steering Committee
-- 2024 - present: Member, CCHMC DBE Faculty Search Committee
+- 2024 - 2025: Member, CCHMC DBE Faculty Search Committee
 - 2024 - present: Member, CCHMC AI/ML Workgroup
 - 2025 - present: Member, CCHMC Committee for Computational Resources Use
 
@@ -367,19 +368,15 @@ format_talks("teaching")
   - Annals of Epidemiology
   - Environmental Health Perspectives
   - Environment International
-  <!-- - Environmental Modeling & Assessment -->
   - Environmental Pollution
   - Environmental Research
   - Environmental Science & Technology
-  <!-- - Environmental Science & Technology Letters -->
   - Health & Place
-  <!-- - International Journal of Environmental Research and Public Health -->
   - International Journal of Epidemiology
   - Journal of Exposure Science and Environmental Epidemiology
   - Journal of Open Source Software
   - PLOS ONE
   - Pediatrics
-  <!-- - Stochastic Environmental Research and Risk Assessment -->
   - Science of the Total Environment
 
 ## Leadership

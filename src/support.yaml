@@ -9,17 +9,17 @@ geomarker-r03:
   start_date: 8/15/25
   end_date: 8/14/27
   amount: 481500
-hartley-salt:
-  title: "Enhancing Public Health Data Systems for COVID-19: A Situational Awareness and Learning Tool (SALT)"
-  goals: "Create and disseminate a SALT for enhancing public health data systems related to future pandemics."
+colegate-cctst:
+  title: "Evaluating Racial and Ethnic Fairness in Cystic Fibrosis Precision Medicine Tools"
+  goals: "Modify an existing precision medicine algorithm designed to predict exacerbations by optimizing it for clinician-defined balance between accuracy and fairness."
   status: Completed
-  number: Federal award 21.027
-  pi_name: Hartley D
-  source: Hamilton County and US Department of Treasury
+  number: "Processes and Method"
+  pi_name: Brokamp C
+  source: "Center for Clinical & Translational Science & Training"
   ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 3/1/23
-  end_date: 6/30/25
-  amount: 1178855
+  start_date: 5/1/24
+  end_date: 9/1/24
+  amount: 5000
 szczesniak-heal:
   title: "HEAL: Genome-sociome informed risk (G-SIR)"
   goals: "Create a genome-sociome informed risk score for rapid decline in lung function by children with cystic fibrosis."
@@ -53,17 +53,6 @@ odh-lead-update:
   start_date: 4/01/23
   end_date: 6/30/23
   amount: 65000
-tes-r01:
-  title: "Epigenome-wide variations and socio-environmental exposures in African American asthmatic children"
-  goals: "Determine the relationship between asthma severity, the epigenome, environmental exposures, and community characteristics in a cohort of African American asthmatic children."
-  status: Active
-  number: R01HG011411
-  pi_name: Mersha T
-  source: NIH/NHGRI
-  ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 9/1/21
-  end_date: 6/30/26
-  amount: 3318702
 beck-riseup:
   title: "Achieving Pediatric Health Equity by Responding to Identified Sociomedical risks with Effective Unified Purpose – Co-design and Evaluation of the RISEUP System"
   goals: "Enhance and test an integrated medical-social monitoring and response system that meets the needs of our patients and community."
@@ -75,17 +64,6 @@ beck-riseup:
   start_date: 11/1/21
   end_date: 10/31/26
   amount: 1995559
-c4:
-  title: "Longitudinal Impact of Air Pollution on Mental Health and Neuroimaging Outcomes during Adolescence in the Cincinnati Combined Childhood Cohorts (C4)"
-  goals: "This project will merge two ongoing, prospective cohorts, the Cincinnati Childhood Allergy and Air Pollution Study (CCAAPS) and the Health Outcomes and Measures of the Environment (HOME) Study, to examine the role of air pollution on adverse mental health and neuroimaging outcomes and in early adolescence."
-  status: Active
-  number: R01ES031621
-  pi_name: Yolton K, Ryan P, Cecil K
-  source: NIH/NIEHS
-  ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 3/3/21
-  end_date: 12/31/25
-  amount: 5319812
 degauss-r01:
   title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
   goals: "Create a framework for developing a standardized, free and open source library of reproducible and computable geomarkers that will enhance the efficiency and collaboration of biomedical researchers utilizing place-based data at scale."
@@ -108,28 +86,6 @@ echo-oif:
   start_date: 9/1/19
   end_date: 8/31/21
   amount: 199393
-brunst-epigenetics:
-  title: "Epigenetics, Air Pollution, and Childhood Mental Health"
-  goals: "Use data from three longitudinal birth cohorts to examine the impact of air pollution on the epigenome and the onset of childhood anxiety and depression symptoms. DNA methylation biomarkers are investigated to advance our understanding of potential molecular pathways involved in air pollution neurotoxicity and/or anxiety and depression pathophysiology."
-  status: Active
-  number: R01ES031054
-  pi_name: Brunst K
-  source: NIH/NIEHS
-  ppp: University of Cincinnati
-  start_date: 7/1/20
-  end_date: 4/29/25
-  amount: 1249527
-cf-geomarker:
-  title: "Mapping environmental contributions to rapid lung disease progression in cystic fibrosis"
-  goals: "Leverage a rich CF registry, extant national and local environmental data sources and prospectively collected study data to accurately forecast the onset of rapid decline progression."
-  status: Completed
-  number: R01HL141286
-  pi_name: Szczesniak R
-  source: NIH/NHLBI
-  ppp: Cincinnati Children's Hospital Medical Center
-  start_date: 1/18/19
-  end_date: 12/31/23
-  amount: 2286948
 odh-lead:
   title: "Model Identifying Geographic Areas in Ohio for Blood Lead Testing"
   goals: "Develop a predictive model to determine which children should be tested for potentially high blood lead during physician visits based on their residential location."
