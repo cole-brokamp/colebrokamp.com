@@ -255,7 +255,7 @@ format_talks("teaching")
 - Milan Parikh, UC College of Medicine: Primary Research Mentor (2021 - 2023)
 - Daniel Ehrlich, Undergraduate Research Assistant (2018 - 2019)
 
-#### MS Students
+#### MS or MPH Students
 
 - Erika Rasnick, Miami of Ohio Statistics: Thesis committee member (2018 - 2019)
 - Yajna Jathan, UC College of Engineering: Thesis committee member (2019 - 2020)
@@ -267,7 +267,7 @@ format_talks("teaching")
 - Joanne Osuchukwu, UC College of Medicine Department of Biostatistics, Health Informatics & Data Sciences: Dissertation committee member (2025 - present)
 - Carson Hartlage, UC College of Medicine Department of Biostatistics, Health Informatics & Data Sciences and the Cincinnati Medical Scientist Training Program: Primary Mentor (2024 - present)
 - Madhumitaa Roy, UC College of Engineering: Dissertation committee member (2021 - 2023)
-- Harsimran Makkad: CCHMC Summer Medical Student Respiratory Research Fellowship: Primary Mentor (2023)
+- Harsimran Makkad: CCHMC Summer Medical Student Respiratory Research Fellowship: Primary Mentor (2023); Research Mentor (2025-2026)
 - Stephen Colegate: UC College of Medicine Biostatistics: Dissertation committee member (2020 - 2022)
 - Ziyun Wang: UC College of Medicine Biostatistics: Dissertation committee member (2022 - 2023)
 - Kacey Apple: UC College of Medicine Epidemiology: Dissertation committee member (2018 - 2022)
@@ -297,6 +297,7 @@ format_talks("teaching")
 
 #### K/Training Award Mentees
 
+- Allan Joseph, UC College of Medicine: Research mentor committee member for K application (2025-present)
 - Anita Shaw, UC College of Medicine: Research mentor committee member for PEDSnet KL2 Training Award (2018 - 2020)
 - Meera Kotagal, UC College of Medicine: Research mentor committee member for CCTST KL2 Training Award (2023 - 2024)
 
