@@ -356,6 +356,7 @@ format_talks("teaching")
   - June 2025: NIH ZMD1 ML (A1) R (cancelled)
   - August 2025: NIH ASPB2
   - January 2026: NIH 2026/01 ZRG1 SCIL-Q(40)P
+  - April 2026: NIH 2026/05 ZRG1 MCST-J(56)R
 - Abstract Reviewer:
   - 2018, 2019, 2022: International Societies of Exposure Science 
   - 2018, 2020, 2022: International Society of Environmental Epidemiology Meeting
