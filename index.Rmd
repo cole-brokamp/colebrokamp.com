@@ -12,7 +12,6 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 <img src='cole_circle.png' align='right' style="max-height: 270px">
 
-I am a member of the Division of Biostatistics and Epidemiology at Cincinnati Children’s Hospital Medical Center and an Associate Professor of Pediatrics at the University of Cincinnati College of Medicine.
 ```{r}
 #| child: "src/bio.Rmd"
 ```

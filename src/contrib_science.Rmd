@@ -4,79 +4,24 @@ h2 {
   font-weight: bold;
   text-decoration: underline;
 }
-ol li {
-  margin-bottom: 0;
-  line-height: 1.2;
-}
-li {
-  font-size: 14px;
-}
 ```
 
-```{r}
-cite_four <- function(.x) {
-  stopifnot(length(.x) <= 4)
-  pubs <- yaml::yaml.load_file("pubs.yaml")
-  stopifnot(all(.x %in% names(pubs)))
-  the_pubs <- purrr::map(.x, \(.) purrr::pluck(pubs, .))
-  the_pubs |>
-    purrr::map_chr(\(.) glue::glue_data(.,
-                           "1",
-                           "{paste(author, collapse = ', ')}",
-                           "{title}",
-                           "*{journal}*",
-                           "{issue_pages}",
-                           "{year}.",
-                           .sep = ". ",
-                           .na = character())) |>
-    purrr::map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
-    cat(sep = "\n\n")
-}
-```
+## Privacy-preserving geomarker platforms for multi-site biomedical research
 
-## Privacy-based Methods and Software for Geocoding and Geomarker Assessment
+My research program has established privacy-preserving infrastructure for using address-linked environmental and community data in biomedical research. I developed and maintain DeGAUSS, a decentralized software platform that allows geocoding and geomarker assessment to occur locally and reproducibly, addressing a central barrier to multi-site studies: the need to characterize place-based exposures without sharing protected address data. My group has extended this approach from a geocoding tool into a sustainable framework for automated geomarker curation, computation, and linkage across heterogeneous spatial and temporal data sources. This work enables investigators without specialized GIS expertise to incorporate high-resolution social, economic, and environmental measures into clinical, epidemiologic, and informatics studies. These platforms now support national environmental health collaborations and clinical electronic health data warehouses, transforming geomarker assessment from an ad hoc analytic step into reproducible research infrastructure.
 
-Our group developed and maintains a novel approach and accompanying software package called DeGAUSS which overcomes multiple privacy-related challenges in the use of address data in multi-site studies and also serves as a more general reproducible and scalable research tool for geocoding and geomarker assessment. This approach is currently being implemented in a wide variety of national environmental health studies and in several clinical electronic health data warehouses. Extending this approach into a scalable and sustainable framework for automated integration of disparate and heterogeneous geomarkers via spatiotemporal location has reduced the need for manual data curation and specialized expertise required to utilize them within biomedical research studies.
+## High-resolution spatiotemporal exposure and deprivation models
 
-```{r}
-#| results: asis
-cite_four(c("manning-2024", "rasnick-2023", "ryan-2020", "brokamp-2017b"))
-```
+I have built a sustained methodological research program to improve measurement of environmental and community exposures at the time and place where health occurs. This work advanced machine-learning and ensemble approaches for estimating air pollution, including elemental components of particulate matter and daily fine particulate matter, by integrating monitoring data, land use, meteorology, and remote sensing. I also created a validated nationwide community material deprivation index to quantify area-level socioeconomic context and its effects on health. Together, these models have supplied reusable exposure data and analytic tools for pediatric epidemiology, environmental health, birth cohort research, electronic health record studies, and multi-site consortia. More recent work has extended these ideas to temporal windows of susceptibility and omics applications, improving the ability to link time-varying exposures to biological and clinical outcomes.
 
-## Spatiotemporal Exposure Assessment Methods and Machine Learning Models
+## Environmental and community determinants of pediatric mental health
 
-My early career was spent developing spatiotemporal exposure assessment models for environmental pollutants and community characteristics based on machine learning techniques.  This work includes the first machine learning or ensemble model used to assess exposure to elemental components of particulate matter. Recent introduction of remote sensing satellite data has allowed for extension of the land use random forest model to produce daily estimates of air pollution back to 2000 at a resolution of 1 x 1 km. 
-I created a nationwide, census tract-level, and validated community material deprivation index that has been used and cited by over 75 different published scientific studies. It was originally created to estimate the causal impact of community material deprivation on hospitalization during the first year of life, but has also been used across several medical subspecialties to quantify health disparities. 
+My research program uses advanced exposure assessment, electronic health records, cohort studies, and longitudinal designs to characterize environmental and place-based drivers of pediatric psychiatric and neurobehavioral outcomes. I led work demonstrating that acute ambient fine particulate matter exposure is associated with psychiatric exacerbations in children and adolescents, and my group has extended this line of research to anxiety symptoms, greenspace, community deprivation, extreme heat, inflammatory pathways, and neurodevelopmental mechanisms. This contribution helped move environmental epidemiology into pediatric mental health, a domain historically dominated by individual-level clinical and behavioral risk factors. The work provides a framework for quantifying how acute and chronic environmental stressors may contribute to psychiatric morbidity, identifying children and communities at heightened risk, and informing population-level strategies to reduce preventable pediatric mental health burden.
 
-```{r}
-#| results: asis
-cite_four(c("brokamp-2022", "brokamp-2019", "brokamp-2018", "brokamp-2017"))
-```
+## Precision population health using address- and parcel-level data
 
-## Built Environment and Pediatric Psychiatric Disorders
+My group develops and applies address-level data systems to move pediatric population health from coarse geographic summaries toward precise, actionable assessment. By linking electronic health record and registry data to social, economic, environmental, housing, and public-health infrastructure data, we have studied how place-based conditions generate pediatric hospitalization inequities and where interventions may be most effective. This work includes causal mediation studies of neighborhood-level hospitalization inequities, parcel-level analyses of housing conditions and pediatric asthma utilization, address-level approaches for predicting elevated blood lead, and precision risk assessment for pediatric hospitalization. The central contribution is both methodological and translational: transforming fragmented civic, environmental, and health data into computable, reproducible measures that can guide clinical population health, public health surveillance, and community intervention.
 
-Building on advanced exposure assessment has allowed me to lead epidemiological studies on the impacts of the built environment (e.g., fine particulate matter, greenspace, community deprivation) on psychiatric and neurobehavioral pediatric health outcomes. I led the first study to associate fine particulate matter with psychiatric outcomes in children and adolescents, using both electronic health record studies, as well as more detailed longitudinal panel studies. Multi-site cohort studies, such as the Adolescent Brain Cognitive Development (ABCD) study, have facilitated steps towards understanding the neurodevelopmental mechanisms underlying the associations between air pollution, cognition, and mental health.
+## Fairness in precision environmental health and clinical prediction
 
-```{r}
-#| results: asis
-cite_four(c("vancil-2022", "zundel-2024", "rasnick-2021", "brokamp-2019b"))
-```
-
-## Causal Mediation of Place-Based Factors on Pediatric Health
-
-I have applied advanced causal modeling techniques within population-wide health registries and multi-site prospective cohort studies. By linking study participants' addresses to extant social and environmental determinants of health data sources, we study the mechanisms behind pediatric health outcomes.
-Leveraging my innovative exposure assessment and data linkage methods, I led the first study to quantify the impact of substandard housing conditions on pediatric health at an address-specific level and oversaw the first study to use address-specific features to predict childhood lead exposure:
-
-```{r}
-#| results: asis
-cite_four(c("brokamp-2025", "brokamp-2024", "manning-2024a", "ryan-2024"))
-```
-
-## Fairness in Pediatric Precision Medicine
-
-My research group has lead several studies on the racial and ethnic fairness of pediatric precision medicine tools used in clinical and epidemiologic settings. We have been the first to uncover racial biases in commonly used asthma diagnosis and cystic fibrosis exacerbation clinical precision medicine tools. Additionally, we have focused on the racial biases that can be introduced into epidemiologic research through the use of common exposure and socioeconomic status assessment tools.
-
-```{r}
-#| results: asis
-cite_four(c("vancil-2025", "makkad-2024", "colegate-2024", "pennington-2022"))
-```
+My research group has established a focused line of work evaluating fairness in precision medicine, exposure assessment, and epidemiologic measurement. We have assessed racial and ethnic fairness in pediatric asthma and cystic fibrosis prediction tools, examined how common individual- and community-level proxies for socioeconomic status perform across birthing parent-child dyads, and evaluated whether air-pollution exposure aggregation can introduce racial and socioeconomic bias. This work extends algorithmic fairness beyond model performance by showing that upstream measurement choices - geocoding, exposure aggregation, socioeconomic proxies, and clinical prediction inputs - can affect equity in downstream inference and decision-making. The broader contribution is a framework for fairness-aware precision population health: precision tools should be evaluated not only for accuracy, but also for whether they preserve validity and clinical utility across groups.
