@@ -8,8 +8,6 @@ navbar:
       href: research.html
     - text: Publications
       href: publications.html
-    - text: Talks
-      href: talks.html
   right:
     - icon: fa-github
       href: https://github.com/cole-brokamp
