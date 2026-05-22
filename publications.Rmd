@@ -12,6 +12,16 @@ h2 {
   margin-top: 1.75rem;
   padding-bottom: 0.25rem;
 }
+.pub-id {
+  color: rgba(57, 97, 117, 0.72);
+  text-decoration: underline;
+  text-decoration-color: rgba(57, 97, 117, 0.35);
+  text-underline-offset: 2px;
+}
+.pub-id:hover {
+  color: #396175;
+  text-decoration-color: #396175;
+}
 ```
 
 ```{r}
@@ -27,15 +37,37 @@ years <- pubs |>
   sort(decreasing = TRUE)
 
 format_publication <- function(pub) {
-  glue::glue_data(pub,
-    "{paste(author, collapse = ', ')}",
-    "**{title}**",
-    "*{journal}*",
-    "{issue_pages}",
-    "{year}.",
-    .sep = ". ",
-    .na = character()
+  value <- function(key) {
+    item <- pub[[key]]
+    if (is.null(item) || length(item) == 0 || is.na(item)) {
+      return("")
+    }
+    as.character(item)
+  }
+
+  doi <- value("doi")
+  pmid <- value("pmid")
+  doi <- gsub("^https?://(dx[.])?doi[.]org/", "", doi, ignore.case = TRUE)
+  doi <- trimws(doi)
+  pmid <- trimws(pmid)
+
+  identifier <- ""
+  if (doi != "") {
+    identifier <- glue::glue('<a class="pub-id" href="https://doi.org/{doi}">doi: {doi}</a>')
+  } else if (pmid != "") {
+    identifier <- glue::glue('<a class="pub-id" href="https://pubmed.ncbi.nlm.nih.gov/{pmid}/">pmid: {pmid}</a>')
+  }
+
+  fields <- c(
+    paste(pub$author, collapse = ", "),
+    glue::glue("**{pub$title}**"),
+    glue::glue("*{pub$journal}*"),
+    value("issue_pages"),
+    value("year"),
+    identifier
   )
+
+  paste(fields[fields != ""], collapse = ". ")
 }
 
 years |>
