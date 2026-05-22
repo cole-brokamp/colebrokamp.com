@@ -1,8 +1,9 @@
 ```{css}
 h2 {
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: underline;
+  border-bottom: 1px solid rgba(57, 97, 117, 0.25);
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+  padding-bottom: 0.25rem;
 }
 ```
 

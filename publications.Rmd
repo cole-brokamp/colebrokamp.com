@@ -7,9 +7,12 @@ title: "Publications"
 h1 {
   display: none;
 }
+h2 {
+  border-bottom: 1px solid rgba(57, 97, 117, 0.25);
+  margin-top: 1.75rem;
+  padding-bottom: 0.25rem;
+}
 ```
-
-##
 
 ```{r}
 #| echo: false
@@ -17,14 +20,33 @@ h1 {
 #| message: false
 #| results: asis
 
-yaml::yaml.load_file("src/pubs.yaml") |>
-  purrr::map_chr(\(x) glue::glue_data(x,
-                         "{paste(author, collapse = ', ')}",
-                         "{title}",
-                         "*{journal}*",
-                         "{issue_pages}",
-                         "{year}.",
-                         .sep = ". ",
-                         .na = character())) |>
+pubs <- yaml::yaml.load_file("src/pubs.yaml")
+years <- pubs |>
+  purrr::map_int("year") |>
+  unique() |>
+  sort(decreasing = TRUE)
+
+format_publication <- function(pub) {
+  glue::glue_data(pub,
+    "{paste(author, collapse = ', ')}",
+    "**{title}**",
+    "*{journal}*",
+    "{issue_pages}",
+    "{year}.",
+    .sep = ". ",
+    .na = character()
+  )
+}
+
+years |>
+  purrr::map_chr(\(year) {
+    year_pubs <- purrr::keep(pubs, \(pub) pub$year == year)
+    paste0(
+      "## ", year, " {#year-", year, "}\n\n",
+      year_pubs |>
+        purrr::map_chr(format_publication) |>
+        paste(collapse = "\n\n")
+    )
+  }) |>
   cat(sep = "\n\n")
 ```
