@@ -25,4 +25,4 @@ output:
       fg: "#396175"
       primary: "#cbd6d5"
 include: ["out"]
-exclude: ["src", "Justfile", "biosketch_head.docx"]
+exclude: ["src", "scripts", "Justfile", "biosketch_head.docx"]

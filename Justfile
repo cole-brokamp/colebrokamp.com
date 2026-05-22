@@ -1,6 +1,11 @@
 # render all content and view website
-all: render_cv render_website
+all: render_bib render_cv render_website
     open docs/index.html
+
+# generate bibtex from publications yaml
+render_bib:
+    Rscript scripts/pubs_yaml_to_bibtex.R
+    Rscript scripts/pubs_yaml_to_bibtex.R src/pubs.yaml docs/colebrokamp.bib
 
 # render website
 render_website:
