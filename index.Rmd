@@ -8,9 +8,9 @@ pagetitle: "Cole Brokamp"
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-##
-
 <img src='cole_circle.png' align='right' style="max-height: 270px">
+
+<hr class="home-rule">
 
 ```{r}
 #| child: "src/bio.Rmd"

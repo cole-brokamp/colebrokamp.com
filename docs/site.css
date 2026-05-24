@@ -1,0 +1,156 @@
+:root {
+  --dark-blue: #396175;
+  --darkish-blue: #58829C;
+  --light-blue: #8CB4C3;
+  --grey-blue: #CBD6D5;
+  --paper: #F6EDDE;
+}
+
+html,
+body {
+  background-color: var(--paper);
+  color: var(--dark-blue);
+}
+
+.navbar,
+.navbar.navbar-default,
+.navbar-default,
+.navbar-fixed-top {
+  background-color: var(--dark-blue);
+  border-color: var(--dark-blue);
+  border-bottom: 0;
+  box-shadow: none;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > li > a:visited,
+.navbar a,
+.navbar button {
+  color: var(--paper);
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus,
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .open > a {
+  color: var(--paper);
+  background-color: var(--darkish-blue);
+  text-decoration: none;
+}
+
+.navbar-toggle,
+.navbar-toggler {
+  border-color: var(--light-blue);
+  background-color: var(--darkish-blue);
+}
+
+.navbar-toggle .icon-bar,
+.navbar-toggler-icon {
+  background-color: var(--paper);
+}
+
+.main-container,
+.container-fluid.main-container {
+  background-color: var(--paper);
+  color: var(--dark-blue);
+  max-width: 980px;
+  margin-top: 1.8rem;
+  padding: 2.2rem 2.2rem 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+p,
+li,
+td,
+th {
+  color: var(--dark-blue);
+}
+
+h2 {
+  border-bottom: 1px solid var(--light-blue);
+  padding-bottom: 0.3rem;
+}
+
+.home-rule {
+  border: 0;
+  border-top: 1px solid var(--light-blue);
+  margin: 0 0 1rem;
+  opacity: 1;
+  width: calc(100% - 302px);
+}
+
+a,
+a:visited,
+.pub-id,
+.pub-id:visited {
+  color: var(--dark-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--darkish-blue);
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.17em;
+}
+
+a:hover,
+a:focus,
+.pub-id:hover,
+.pub-id:focus {
+  color: var(--dark-blue);
+  text-decoration-color: var(--dark-blue);
+  background-color: var(--light-blue);
+}
+
+.main-container img[src*="cole_circle"] {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  box-shadow: none;
+  margin-left: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+blockquote,
+pre,
+code,
+table {
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  border-color: var(--darkish-blue);
+}
+
+hr {
+  border-color: var(--light-blue);
+}
+
+@media (max-width: 720px) {
+  .main-container,
+  .container-fluid.main-container {
+    margin-top: 1rem;
+    padding: 1.5rem 1.15rem 2rem;
+  }
+
+  .main-container img[src*="cole_circle"] {
+    display: block;
+    float: none !important;
+    max-width: 68vw;
+    height: auto;
+    margin: 0 auto 1.6rem;
+  }
+
+  .home-rule {
+    width: 100%;
+  }
+}
