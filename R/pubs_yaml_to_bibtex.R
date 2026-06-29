@@ -1,8 +1,8 @@
 #!/usr/bin/env Rscript
 
 args <- commandArgs(trailingOnly = TRUE)
-input_path <- if (length(args) >= 1) args[[1]] else "src/pubs.yaml"
-output_path <- if (length(args) >= 2) args[[2]] else "colebrokamp.bib"
+input_path <- args[[1]]
+output_path <- args[[2]]
 
 special_chars <- c(
   "\\" = "\\textbackslash{}",

@@ -32,7 +32,7 @@ h2 {
 #| message: false
 #| results: asis
 
-pubs <- yaml::yaml.load_file("src/pubs.yaml")
+pubs <- yaml::yaml.load_file("data-raw/pubs.yaml")
 years <- pubs |>
   purrr::map_int("year") |>
   unique() |>

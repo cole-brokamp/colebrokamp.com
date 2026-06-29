@@ -14,7 +14,7 @@ navbar:
     - icon: fa-envelope
       href: mailto:cole@colebrokamp.com
     - icon: fa-file-text
-      href: out/peds-cv-brokamp.docx
+      href: peds-cv-brokamp.docx
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
     - icon: fa-book-open
@@ -28,5 +28,5 @@ output:
       bg: "#F6EDDE"
       fg: "#396175"
       primary: "#396175"
-include: ["out", "site.css"]
-exclude: ["src", "scripts", "Justfile", "biosketch_head.docx", "site-head.html"]
+include: ["site.css", "peds-cv-brokamp.docx", "colebrokamp.bib"]
+exclude: ["R", "src", "data-raw"]

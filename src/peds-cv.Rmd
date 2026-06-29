@@ -116,7 +116,7 @@ My main research focus has been to elucidate the effects of environmental exposu
 
 ```{r}
 #| results: asis
-yaml::yaml.load_file("support.yaml") |>
+yaml::yaml.load_file("../data-raw/support.yaml") |>
   purrr::keep(\(x) x$status == "Active") |>
   purrr::map_chr(make_support_entry) |>
   cat(sep = "\n\n")
@@ -126,7 +126,7 @@ yaml::yaml.load_file("support.yaml") |>
 
 ```{r}
 #| results: asis
-yaml::yaml.load_file("support.yaml") |>
+yaml::yaml.load_file("../data-raw/support.yaml") |>
   purrr::keep(\(x) x$status == "Completed") |>
   purrr::map_chr(make_support_entry) |>
   cat(sep = "\n\n")
@@ -138,7 +138,7 @@ yaml::yaml.load_file("support.yaml") |>
 	
 ```{r}
 #| results: asis
-yaml::yaml.load_file("pubs.yaml") |>
+yaml::yaml.load_file("../data-raw/pubs.yaml") |>
   map_chr(\(x) glue_data(x,
                          "1",
                          "{paste(author, collapse = ', ')}",
@@ -197,7 +197,7 @@ Publications I authored have 4,433 total citations (3,568 since 2021), with an h
 \* denotes the presenting author
 
 ```{r echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("abstracts.yaml") |>
+yaml::yaml.load_file("../data-raw/abstracts.yaml") |>
   map_chr(\(x) glue_data(x,
                          "1",
                          "{paste(author, collapse = ', ')}",
@@ -216,7 +216,7 @@ yaml::yaml.load_file("abstracts.yaml") |>
 
 ```{r echo = FALSE}
 format_talks <- function(type) {
-yaml::yaml.load_file("talks.yaml") |>
+yaml::yaml.load_file("../data-raw/talks.yaml") |>
   purrr::keep(\(.) pluck(., "type") == type) |>
   map_chr(\(x) glue_data(x,
                          "{title}",
@@ -298,7 +298,8 @@ format_talks("teaching")
 
 #### K/Training Award Mentees
 
-- Allan Joseph, UC College of Medicine: Research mentor committee member for K application (2025-present)
+- Vivek Ashok, UC College of Medicine: Research mentor committee member for K23 application (2026 - present)
+- Allan Joseph, UC College of Medicine: Research mentor committee member for K application (2025 - present)
 - Anita Shaw, UC College of Medicine: Research mentor committee member for PEDSnet KL2 Training Award (2018 - 2020)
 - Meera Kotagal, UC College of Medicine: Research mentor committee member for CCTST KL2 Training Award (2023 - 2024)
 
