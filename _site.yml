@@ -17,6 +17,8 @@ navbar:
       href: out/peds-cv-brokamp.docx
     - icon: fa-graduation-cap
       href: https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en
+    - icon: fa-book-open
+      href: colebrokamp.bib
 output:
   html_document:
     includes:
