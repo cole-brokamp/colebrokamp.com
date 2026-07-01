@@ -1,0 +1,752 @@
+use anyhow::{Context, Result, anyhow, bail};
+use chrono::Local;
+use indexmap::IndexMap;
+use minijinja::{Environment, context};
+use regex::Regex;
+use serde::{Deserialize, Serialize};
+use std::fs;
+use std::io::Write;
+use std::path::{Path, PathBuf};
+use std::process::{Command, Stdio};
+use std::sync::LazyLock;
+
+static ISSUE_VOL_NUM_PAGES: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"^(\d+)\s*\(([^)]+)\)\s*[:;]\s*(.+)$").unwrap());
+static ISSUE_VOL_NUM: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"^(\d+)\s*\(([^)]+)\)$").unwrap());
+static ISSUE_VOL_PAGES: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"^(\d+(?:-\d+)?)\s*[:;]\s*(.+)$").unwrap());
+static ISSUE_NOTE_PAGES: LazyLock<Regex> =
+    LazyLock::new(|| Regex::new(r"^(.+?)\s*;\s*([A-Za-z]?\d+\S*(?:-\S+)?)$").unwrap());
+
+#[derive(Debug, Deserialize)]
+struct Publication {
+    title: String,
+    author: Vec<String>,
+    journal: String,
+    #[serde(default)]
+    issue_pages: Option<String>,
+    #[serde(default)]
+    pages: Option<String>,
+    year: i32,
+    #[serde(default)]
+    doi: Option<String>,
+    #[serde(default)]
+    pmid: Option<String>,
+    #[serde(default)]
+    download_link: Option<String>,
+}
+
+#[derive(Debug, Deserialize)]
+struct Support {
+    title: String,
+    status: String,
+    #[serde(default)]
+    number: Option<String>,
+    pi_name: String,
+    source: String,
+    start_date: String,
+    end_date: String,
+    amount: i64,
+}
+
+#[derive(Debug, Deserialize)]
+struct Abstract {
+    title: String,
+    author: Vec<String>,
+    event: String,
+    year: i32,
+    location: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct Talk {
+    title: String,
+    event: String,
+    year: i32,
+    location: String,
+    #[serde(rename = "type")]
+    talk_type: String,
+}
+
+#[derive(Debug, Serialize)]
+struct NavItem {
+    text: &'static str,
+    href: &'static str,
+}
+
+#[derive(Debug, Serialize)]
+struct NavLink {
+    icon: &'static str,
+    href: &'static str,
+    label: &'static str,
+}
+
+struct SiteBuilder {
+    root: PathBuf,
+    publications: IndexMap<String, Publication>,
+    support: IndexMap<String, Support>,
+    abstracts: IndexMap<String, Abstract>,
+    talks: IndexMap<String, Talk>,
+}
+
+fn main() -> Result<()> {
+    let command = std::env::args().nth(1).unwrap_or_else(|| "all".to_string());
+    let builder = SiteBuilder::new()?;
+
+    match command.as_str() {
+        "all" => builder.build_all(),
+        "site" => builder.build_site(),
+        "bib" => builder.build_bib(),
+        "cv" => builder.build_cv(),
+        other => bail!("unknown build command: {other}"),
+    }
+}
+
+impl SiteBuilder {
+    fn new() -> Result<Self> {
+        let root = std::env::current_dir().context("read current directory")?;
+        Ok(Self {
+            publications: read_yaml(&root, "data-raw/pubs.yaml")?,
+            support: read_yaml(&root, "data-raw/support.yaml")?,
+            abstracts: read_yaml(&root, "data-raw/abstracts.yaml")?,
+            talks: read_yaml(&root, "data-raw/talks.yaml")?,
+            root,
+        })
+    }
+
+    fn build_all(&self) -> Result<()> {
+        self.build_bib()?;
+        self.build_cv()?;
+        self.build_site()
+    }
+
+    fn build_site(&self) -> Result<()> {
+        fs::create_dir_all(self.path("docs")).context("create docs directory")?;
+        self.copy_static_assets()?;
+
+        self.render_page(PageSpec {
+            output: "index.html",
+            title: "Cole Brokamp",
+            body_markdown: self.index_markdown()?,
+            show_title: false,
+            extra_css: "",
+        })?;
+
+        self.render_page(PageSpec {
+            output: "research.html",
+            title: "Research",
+            body_markdown: self.read_to_string("content/research.md")?,
+            show_title: true,
+            extra_css: r#"h1 {
+  display: none;
+}
+h2 {
+  border-bottom: 1px solid #8CB4C3;
+  font-size: 1.25rem;
+  margin-top: 1.75rem;
+  padding-bottom: 0.25rem;
+}
+"#,
+        })?;
+
+        self.render_page(PageSpec {
+            output: "publications.html",
+            title: "Publications",
+            body_markdown: self.publications_markdown(),
+            show_title: true,
+            extra_css: r#"h1 {
+  display: none;
+}
+h2 {
+  border-bottom: 1px solid #8CB4C3;
+  margin-top: 1.75rem;
+  padding-bottom: 0.25rem;
+}
+.pub-id {
+  color: #58829C;
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+.pub-id:hover,
+.pub-id:focus {
+  color: #396175;
+  text-decoration: underline;
+  text-decoration-color: #396175;
+  background-color: transparent;
+}
+"#,
+        })
+    }
+
+    fn build_bib(&self) -> Result<()> {
+        let entries = self
+            .publications
+            .iter()
+            .map(|(key, publication)| self.bibtex_entry(key, publication))
+            .collect::<Vec<_>>()
+            .join("\n\n");
+        let content = format!(
+            "% Generated from data-raw/pubs.yaml. Do not edit this file directly.\n\
+             % Regenerate with: just render bib\n\n{entries}\n"
+        );
+
+        self.write("colebrokamp.bib", &content)?;
+        self.write("docs/colebrokamp.bib", &content)?;
+        eprintln!(
+            "wrote {} entries to colebrokamp.bib",
+            self.publications.len()
+        );
+        Ok(())
+    }
+
+    fn build_cv(&self) -> Result<()> {
+        fs::create_dir_all(self.path("_build")).context("create _build directory")?;
+
+        let markdown = self.render_template(
+            "content/cv.md.j2",
+            context! {
+                support_active => self.support_entries("Active"),
+                support_completed => self.support_entries("Completed"),
+                cv_publications => self.cv_publications(),
+                cv_abstracts => self.cv_abstracts(),
+                cv_talks_invited => self.cv_talks("invited"),
+                cv_talks_seminar => self.cv_talks("seminar"),
+                cv_talks_teaching => self.cv_talks("teaching"),
+                preparation_date => Local::now().date_naive().to_string(),
+            },
+        )?;
+
+        self.write("_build/peds-cv-brokamp.md", &markdown)?;
+
+        let output = self.path("peds-cv-brokamp.docx");
+        run_command(
+            Command::new("pandoc")
+                .arg("--from")
+                .arg("markdown+pipe_tables+smart")
+                .arg("--to")
+                .arg("docx")
+                .arg("--reference-doc")
+                .arg(self.path("src/reference_cv.docx"))
+                .arg("--output")
+                .arg(&output)
+                .arg(self.path("_build/peds-cv-brokamp.md")),
+        )
+        .context("render CV docx with pandoc")?;
+
+        fs::copy(&output, self.path("docs/peds-cv-brokamp.docx"))
+            .context("copy CV docx into docs")?;
+        eprintln!("wrote peds-cv-brokamp.docx");
+        Ok(())
+    }
+
+    fn render_page(&self, spec: PageSpec<'_>) -> Result<()> {
+        let body_html = markdown_to_html(&spec.body_markdown)?;
+        let html = self.render_template(
+            "templates/page.html.j2",
+            context! {
+                active_href => spec.output,
+                body_html => body_html,
+                extra_css => spec.extra_css,
+                nav_items => nav_items(),
+                nav_links => nav_links(),
+                show_title => spec.show_title,
+                title => spec.title,
+            },
+        )?;
+        self.write(&format!("docs/{}", spec.output), &html)
+    }
+
+    fn index_markdown(&self) -> Result<String> {
+        Ok(format!(
+            "<img src='cole_circle.png' align='right' style=\"max-height: 270px\">\n\n\
+             <hr class=\"home-rule\">\n\n{}",
+            self.read_to_string("content/bio.md")?
+        ))
+    }
+
+    fn publications_markdown(&self) -> String {
+        let mut years = self
+            .publications
+            .values()
+            .map(|publication| publication.year)
+            .collect::<Vec<_>>();
+        years.sort_unstable_by(|left, right| right.cmp(left));
+        years.dedup();
+
+        years
+            .into_iter()
+            .map(|year| {
+                let publications = self
+                    .publications
+                    .values()
+                    .filter(|publication| publication.year == year)
+                    .map(|publication| self.publication_entry(publication))
+                    .collect::<Vec<_>>()
+                    .join("\n\n");
+                format!("## {year} {{#year-{year}}}\n\n{publications}")
+            })
+            .collect::<Vec<_>>()
+            .join("\n\n")
+    }
+
+    fn publication_entry(&self, publication: &Publication) -> String {
+        markdown_fields(vec![
+            Some(publication.author.join(", ")),
+            Some(format!("**{}**", publication.title)),
+            Some(italic(&publication.journal)),
+            publication.issue_pages.clone(),
+            Some(publication.year.to_string()),
+            self.publication_identifier(publication),
+        ])
+    }
+
+    fn publication_identifier(&self, publication: &Publication) -> Option<String> {
+        let doi = publication
+            .doi
+            .as_deref()
+            .unwrap_or_default()
+            .trim()
+            .trim_start_matches("doi:")
+            .to_string();
+        let doi = strip_doi_url(&doi).trim().to_string();
+        let pmid = publication.pmid.as_deref().unwrap_or_default().trim();
+
+        if !doi.is_empty() {
+            Some(format!(
+                r#"<a class="pub-id" href="https://doi.org/{}">doi: {}</a>"#,
+                html_escape(&doi),
+                html_escape(&doi)
+            ))
+        } else if !pmid.is_empty() {
+            Some(format!(
+                r#"<a class="pub-id" href="https://pubmed.ncbi.nlm.nih.gov/{}/">pmid: {}</a>"#,
+                html_escape(pmid),
+                html_escape(pmid)
+            ))
+        } else {
+            None
+        }
+    }
+
+    fn support_entries(&self, status: &str) -> String {
+        self.support
+            .values()
+            .filter(|entry| entry.status == status)
+            .map(|entry| {
+                format!(
+                    "*{}*  \n{} {}, PI: {}  \n{}. {}. {} - {}.",
+                    entry.title,
+                    entry.source,
+                    entry.number.as_deref().unwrap_or_default(),
+                    entry.pi_name,
+                    entry.status,
+                    dollars(entry.amount),
+                    entry.start_date,
+                    entry.end_date
+                )
+            })
+            .collect::<Vec<_>>()
+            .join("\n\n")
+    }
+
+    fn cv_publications(&self) -> String {
+        self.publications
+            .values()
+            .rev()
+            .map(|publication| {
+                highlight_cole(&markdown_fields(vec![
+                    Some("1".to_string()),
+                    Some(publication.author.join(", ")),
+                    Some(publication.title.clone()),
+                    Some(italic(&publication.journal)),
+                    publication.issue_pages.clone(),
+                    Some(format!("{}.", publication.year)),
+                ]))
+            })
+            .collect::<Vec<_>>()
+            .join("\n")
+    }
+
+    fn cv_abstracts(&self) -> String {
+        self.abstracts
+            .values()
+            .rev()
+            .map(|abstract_entry| {
+                highlight_cole(&markdown_fields(vec![
+                    Some("1".to_string()),
+                    Some(abstract_entry.author.join(", ")),
+                    Some(abstract_entry.title.clone()),
+                    Some(italic(&abstract_entry.event)),
+                    Some(abstract_entry.location.clone()),
+                    Some(format!("{}.", abstract_entry.year)),
+                ]))
+            })
+            .collect::<Vec<_>>()
+            .join("\n")
+    }
+
+    fn cv_talks(&self, talk_type: &str) -> String {
+        self.talks
+            .values()
+            .filter(|talk| talk.talk_type == talk_type)
+            .map(|talk| {
+                markdown_fields(vec![
+                    Some(talk.title.clone()),
+                    Some(italic(&talk.event)),
+                    Some(talk.location.clone()),
+                    Some(talk.year.to_string()),
+                ])
+            })
+            .collect::<Vec<_>>()
+            .join("\n\n")
+    }
+
+    fn bibtex_entry(&self, key: &str, publication: &Publication) -> String {
+        let mut fields = vec![
+            ("title".to_string(), publication.title.clone()),
+            ("author".to_string(), publication.author.join(" and ")),
+            ("journal".to_string(), publication.journal.clone()),
+            ("year".to_string(), publication.year.to_string()),
+        ];
+
+        if let Some(issue_pages) = publication.issue_pages.as_deref() {
+            fields.extend(parse_issue_pages(issue_pages));
+        }
+
+        if let Some(pages) = publication.pages.as_deref() {
+            upsert_field(&mut fields, "pages", pages);
+        }
+
+        if let Some(doi) = normalize_doi(publication.doi.as_deref()) {
+            fields.push(("doi".to_string(), doi));
+        }
+        if let Some(pmid) = present(publication.pmid.as_deref()) {
+            fields.push(("pmid".to_string(), pmid.to_string()));
+        }
+        if let Some(download_link) = present(publication.download_link.as_deref()) {
+            fields.push(("url".to_string(), download_link.to_string()));
+        }
+
+        let lines = fields
+            .into_iter()
+            .map(|(field, value)| {
+                let mut escaped = latex_escape(&value);
+                if field == "title" {
+                    escaped = format!("{{{escaped}}}");
+                }
+                format!("  {field} = {{{escaped}}}")
+            })
+            .collect::<Vec<_>>()
+            .join(",\n");
+
+        format!("@article{{{key},\n{lines}\n}}")
+    }
+
+    fn copy_static_assets(&self) -> Result<()> {
+        for file in ["CNAME", "cole_circle.png", "site.css"] {
+            fs::copy(self.path(file), self.path(&format!("docs/{file}")))
+                .with_context(|| format!("copy {file} into docs"))?;
+        }
+        Ok(())
+    }
+
+    fn render_template<T>(&self, relative_path: &str, context: T) -> Result<String>
+    where
+        T: Serialize,
+    {
+        let source = self.read_to_string(relative_path)?;
+        let mut environment = Environment::new();
+        environment
+            .add_template_owned(relative_path.to_string(), source)
+            .with_context(|| format!("load template {relative_path}"))?;
+        let template = environment
+            .get_template(relative_path)
+            .with_context(|| format!("compile template {relative_path}"))?;
+        template
+            .render(context)
+            .with_context(|| format!("render template {relative_path}"))
+    }
+
+    fn read_to_string(&self, relative_path: &str) -> Result<String> {
+        fs::read_to_string(self.path(relative_path))
+            .with_context(|| format!("read {relative_path}"))
+    }
+
+    fn write(&self, relative_path: &str, content: &str) -> Result<()> {
+        let path = self.path(relative_path);
+        if let Some(parent) = path.parent() {
+            fs::create_dir_all(parent)
+                .with_context(|| format!("create directory {}", parent.display()))?;
+        }
+        fs::write(&path, content).with_context(|| format!("write {}", path.display()))
+    }
+
+    fn path(&self, relative_path: &str) -> PathBuf {
+        self.root.join(relative_path)
+    }
+}
+
+struct PageSpec<'a> {
+    output: &'a str,
+    title: &'a str,
+    body_markdown: String,
+    show_title: bool,
+    extra_css: &'a str,
+}
+
+fn read_yaml<T>(root: &Path, relative_path: &str) -> Result<T>
+where
+    T: for<'de> Deserialize<'de> + 'static,
+{
+    let content = fs::read_to_string(root.join(relative_path))
+        .with_context(|| format!("read {relative_path}"))?;
+    noyalib::from_str(&content).with_context(|| format!("parse {relative_path}"))
+}
+
+fn markdown_to_html(markdown: &str) -> Result<String> {
+    let mut child = Command::new("pandoc")
+        .arg("--from")
+        .arg("markdown+smart")
+        .arg("--to")
+        .arg("html")
+        .arg("--section-divs")
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped())
+        .spawn()
+        .context("spawn pandoc for markdown html")?;
+
+    child
+        .stdin
+        .take()
+        .ok_or_else(|| anyhow!("open pandoc stdin"))?
+        .write_all(markdown.as_bytes())
+        .context("write markdown to pandoc")?;
+
+    let output = child.wait_with_output().context("wait for pandoc")?;
+    if !output.status.success() {
+        bail!("{}", String::from_utf8_lossy(&output.stderr));
+    }
+    String::from_utf8(output.stdout).context("pandoc emitted invalid utf-8")
+}
+
+fn run_command(command: &mut Command) -> Result<()> {
+    let output = command.output().context("run command")?;
+    if !output.status.success() {
+        bail!("{}", String::from_utf8_lossy(&output.stderr));
+    }
+    if !output.stdout.is_empty() {
+        eprintln!("{}", String::from_utf8_lossy(&output.stdout));
+    }
+    Ok(())
+}
+
+fn nav_items() -> Vec<NavItem> {
+    vec![
+        NavItem {
+            text: "Research",
+            href: "research.html",
+        },
+        NavItem {
+            text: "Publications",
+            href: "publications.html",
+        },
+    ]
+}
+
+fn nav_links() -> Vec<NavLink> {
+    vec![
+        NavLink {
+            icon: "fa-github",
+            href: "https://github.com/cole-brokamp",
+            label: "GitHub",
+        },
+        NavLink {
+            icon: "fa-envelope",
+            href: "mailto:cole@colebrokamp.com",
+            label: "Email",
+        },
+        NavLink {
+            icon: "fa-file-text",
+            href: "peds-cv-brokamp.docx",
+            label: "CV",
+        },
+        NavLink {
+            icon: "fa-graduation-cap",
+            href: "https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en",
+            label: "Google Scholar",
+        },
+        NavLink {
+            icon: "fa-book-open",
+            href: "colebrokamp.bib",
+            label: "BibTeX",
+        },
+    ]
+}
+
+fn markdown_fields(fields: Vec<Option<String>>) -> String {
+    fields
+        .into_iter()
+        .flatten()
+        .map(|field| field.trim().to_string())
+        .filter(|field| !field.is_empty())
+        .collect::<Vec<_>>()
+        .join(". ")
+}
+
+fn italic(value: &str) -> String {
+    format!("*{value}*")
+}
+
+fn highlight_cole(value: &str) -> String {
+    value.replace("Cole Brokamp", "**Cole Brokamp**")
+}
+
+fn present(value: Option<&str>) -> Option<&str> {
+    value.map(str::trim).filter(|value| !value.is_empty())
+}
+
+fn strip_doi_url(value: &str) -> &str {
+    let lower = value.to_ascii_lowercase();
+    for prefix in [
+        "https://doi.org/",
+        "http://doi.org/",
+        "https://dx.doi.org/",
+        "http://dx.doi.org/",
+    ] {
+        if lower.starts_with(prefix) {
+            return &value[prefix.len()..];
+        }
+    }
+    value
+}
+
+fn normalize_doi(value: Option<&str>) -> Option<String> {
+    let doi = present(value)?;
+    let doi = strip_doi_url(doi)
+        .trim_start_matches("doi:")
+        .trim()
+        .to_string();
+    doi.starts_with("10.").then_some(doi)
+}
+
+fn parse_issue_pages(value: &str) -> Vec<(String, String)> {
+    let text = value.trim();
+    if text.eq_ignore_ascii_case("in press") {
+        return vec![("note".to_string(), "In Press".to_string())];
+    }
+
+    if let Some(captures) = ISSUE_VOL_NUM_PAGES.captures(text) {
+        return vec![
+            ("volume".to_string(), captures[1].to_string()),
+            ("number".to_string(), captures[2].to_string()),
+            ("pages".to_string(), captures[3].to_string()),
+        ];
+    }
+
+    if let Some(captures) = ISSUE_VOL_NUM.captures(text) {
+        return vec![
+            ("volume".to_string(), captures[1].to_string()),
+            ("number".to_string(), captures[2].to_string()),
+        ];
+    }
+
+    if let Some(captures) = ISSUE_VOL_PAGES.captures(text) {
+        return vec![
+            ("volume".to_string(), captures[1].to_string()),
+            ("pages".to_string(), captures[2].to_string()),
+        ];
+    }
+
+    if text.len() > 1
+        && text.starts_with(['e', 'E'])
+        && text[1..].chars().all(|c| c.is_ascii_digit())
+    {
+        return vec![("pages".to_string(), text.to_string())];
+    }
+
+    if let Some(captures) = ISSUE_NOTE_PAGES.captures(text) {
+        return vec![
+            ("note".to_string(), captures[1].to_string()),
+            ("pages".to_string(), captures[2].to_string()),
+        ];
+    }
+
+    vec![("note".to_string(), text.to_string())]
+}
+
+fn upsert_field(fields: &mut [(String, String)], key: &str, value: &str) {
+    if let Some((_, existing)) = fields.iter_mut().find(|(field, _)| field == key) {
+        *existing = value.to_string();
+    }
+}
+
+fn latex_escape(value: &str) -> String {
+    value
+        .chars()
+        .map(|character| match character {
+            '\\' => "\\textbackslash{}".to_string(),
+            '{' => "\\{".to_string(),
+            '}' => "\\}".to_string(),
+            '&' => "\\&".to_string(),
+            '%' => "\\%".to_string(),
+            '$' => "\\$".to_string(),
+            '#' => "\\#".to_string(),
+            '_' => "\\_".to_string(),
+            '–' => "--".to_string(),
+            '—' => "---".to_string(),
+            '−' => "-".to_string(),
+            '’' | '‘' => "'".to_string(),
+            '“' => "``".to_string(),
+            '”' => "''".to_string(),
+            '…' => "\\ldots{}".to_string(),
+            'Á' => "{\\'A}".to_string(),
+            'É' => "{\\'E}".to_string(),
+            'Í' => "{\\'I}".to_string(),
+            'Ó' => "{\\'O}".to_string(),
+            'Ú' => "{\\'U}".to_string(),
+            'á' => "{\\'a}".to_string(),
+            'é' => "{\\'e}".to_string(),
+            'í' => "{\\'i}".to_string(),
+            'ó' => "{\\'o}".to_string(),
+            'ú' => "{\\'u}".to_string(),
+            'Ö' => "{\\\"O}".to_string(),
+            'Ü' => "{\\\"U}".to_string(),
+            'ö' => "{\\\"o}".to_string(),
+            'ü' => "{\\\"u}".to_string(),
+            'ç' => "{\\c{c}}".to_string(),
+            'ã' => "{\\~a}".to_string(),
+            ' ' => " ".to_string(),
+            other => other.to_string(),
+        })
+        .collect()
+}
+
+fn html_escape(value: &str) -> String {
+    value
+        .chars()
+        .map(|character| match character {
+            '&' => "&amp;".to_string(),
+            '<' => "&lt;".to_string(),
+            '>' => "&gt;".to_string(),
+            '"' => "&quot;".to_string(),
+            '\'' => "&#39;".to_string(),
+            other => other.to_string(),
+        })
+        .collect()
+}
+
+fn dollars(value: i64) -> String {
+    let sign = if value < 0 { "-" } else { "" };
+    let digits = value.abs().to_string();
+    let mut reversed = String::new();
+    for (index, character) in digits.chars().rev().enumerate() {
+        if index > 0 && index % 3 == 0 {
+            reversed.push(',');
+        }
+        reversed.push(character);
+    }
+    let formatted = reversed.chars().rev().collect::<String>();
+    format!("{sign}${formatted}")
+}

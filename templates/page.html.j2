@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>{{ title }}</title>
+<link href="site_libs/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-5.3.1/bootstrap.bundle.min.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+<link href="site.css" rel="stylesheet" />
+<style type="text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width: 100%;
+}
+summary {
+  display: list-item;
+}
+</style>
+{% if extra_css %}
+<style type="text/css">
+{{ extra_css|safe }}</style>
+{% endif %}
+</head>
+<body>
+<div class="container-fluid main-container">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Cole Brokamp</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        {% for item in nav_items %}
+        <li>
+          <a href="{{ item.href|safe }}"{% if item.href == active_href %} class="active"{% endif %}>{{ item.text }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {% for link in nav_links %}
+        <li>
+          <a href="{{ link.href|safe }}" aria-label="{{ link.label }}">
+            <span class="fa {{ link.icon }}"></span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="header">
+{% if show_title %}
+<h1 class="title toc-ignore">{{ title }}</h1>
+{% endif %}
+</div>
+{{ body_html|safe }}
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var navbar = document.querySelector(".navbar");
+  if (!navbar) return;
+  var navHeight = navbar.getBoundingClientRect().height + 15;
+  document.body.style.paddingTop = navHeight + "px";
+  document.body.style.paddingBottom = "40px";
+});
+</script>
+</body>
+</html>

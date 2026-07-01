@@ -1,12 +1,3 @@
-```{css}
-h2 {
-  border-bottom: 1px solid #8CB4C3;
-  font-size: 1.25rem;
-  margin-top: 1.75rem;
-  padding-bottom: 0.25rem;
-}
-```
-
 ## Privacy-preserving geomarker platforms for multi-site biomedical research
 
 My research program has established privacy-preserving infrastructure for using address-linked environmental and community data in biomedical research. I developed and maintain DeGAUSS, a decentralized software platform that allows geocoding and geomarker assessment to occur locally and reproducibly, addressing a central barrier to multi-site studies: the need to characterize place-based exposures without sharing protected address data. My group has extended this approach from a geocoding tool into a sustainable framework for automated geomarker curation, computation, and linkage across heterogeneous spatial and temporal data sources. This work enables investigators without specialized GIS expertise to incorporate high-resolution social, economic, and environmental measures into clinical, epidemiologic, and informatics studies. These platforms now support national environmental health collaborations and clinical electronic health data warehouses, transforming geomarker assessment from an ad hoc analytic step into reproducible research infrastructure.

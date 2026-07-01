@@ -1,19 +1,6 @@
 ---
 title: "Curriculum Vitae: Cole Brokamp, Ph.D."
-output:
-  word_document:
-    reference_docx: reference_cv.docx
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
-```
-
-```{r}
-library(dplyr)
-library(purrr)
-library(glue)
-```
 	
 # Research Interests
 
@@ -94,18 +81,6 @@ B.S., Biomedical Engineering, 2010
 
 # Research and Scholarly Activities
 
-```{r}
-make_support_entry <- function(x) {
-  glue::glue_data(
-    x,
-    "*{title}*",
-    "{source} {number}, PI: {pi_name}",
-    "{status}. {scales::dollar(amount)}. {start_date} - {end_date}.",
-    .sep = "  \n", .na = " "
-  ) 
-}
-```
-
 ## Research and Scholarly Activities
 
 My main research focus has been to elucidate the effects of environmental exposures and community characteristics on the psychiatric well-being and mental health of children and adolescents. Through creating new place-based data science tools and environmental exposure methods, I have been able to both lead my own research program based on existing cohorts and the CCHMC electronic health records, as well as make methodological contributions to several different nationwide multi-site studies. 
@@ -114,44 +89,17 @@ My main research focus has been to elucidate the effects of environmental exposu
 
 ### Current
 
-```{r}
-#| results: asis
-yaml::yaml.load_file("../data-raw/support.yaml") |>
-  purrr::keep(\(x) x$status == "Active") |>
-  purrr::map_chr(make_support_entry) |>
-  cat(sep = "\n\n")
-```
+{{ support_active|safe }}
 
 ### Selected Previous (Brokamp, PI)
 
-```{r}
-#| results: asis
-yaml::yaml.load_file("../data-raw/support.yaml") |>
-  purrr::keep(\(x) x$status == "Completed") |>
-  purrr::map_chr(make_support_entry) |>
-  cat(sep = "\n\n")
-```
+{{ support_completed|safe }}
 
 ## Publications
 
 ### Peer reviewed articles
-	
-```{r}
-#| results: asis
-yaml::yaml.load_file("../data-raw/pubs.yaml") |>
-  map_chr(\(x) glue_data(x,
-                         "1",
-                         "{paste(author, collapse = ', ')}",
-                         "{title}",
-                         "*{journal}*",
-                         "{issue_pages}",
-                         "{year}.",
-                         .sep = ". ",
-                         .na = character())) |>
-  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
-  rev() |>
-  cat(sep = "\n")
-```
+
+{{ cv_publications|safe }}
 
 ### Quality Review of Publications
 
@@ -196,56 +144,21 @@ Publications I authored have 4,433 total citations (3,568 since 2021), with an h
 
 \* denotes the presenting author
 
-```{r echo = FALSE, results = 'asis'}
-yaml::yaml.load_file("../data-raw/abstracts.yaml") |>
-  map_chr(\(x) glue_data(x,
-                         "1",
-                         "{paste(author, collapse = ', ')}",
-                         "{title}",
-                         "*{event}*",
-                         "{location}",
-                         "{year}.",
-                         .sep = ". ",
-                         .na = character())) |>
-  map_chr(\(x) gsub("Cole Brokamp", "**Cole Brokamp**", x = x, fixed = TRUE)) |>
-  rev() |>
-  cat(sep = "\n")
-```
+{{ cv_abstracts|safe }}
 
 # Teaching and Mentoring
 
-```{r echo = FALSE}
-format_talks <- function(type) {
-yaml::yaml.load_file("../data-raw/talks.yaml") |>
-  purrr::keep(\(.) pluck(., "type") == type) |>
-  map_chr(\(x) glue_data(x,
-                         "{title}",
-                         "*{event}*",
-                         "{location}",
-                         "{year}",
-                         .sep = ". ",
-                         .na = character())) |>
-  cat(sep = "\n\n")
-}
-```
-
 ## Invited Lectures
 
-```{r echo = FALSE, results = 'asis'}
-format_talks("invited")
-```
+{{ cv_talks_invited|safe }}
 
 ## Seminars
 
-```{r echo = FALSE, results = 'asis'}
-format_talks("seminar")
-```
+{{ cv_talks_seminar|safe }}
 
 ## Teaching
 
-```{r echo = FALSE, results = 'asis'}
-format_talks("teaching")
-```
+{{ cv_talks_teaching|safe }}
 
 ## Mentoring
 
@@ -401,4 +314,4 @@ Division Director Signature and Date:
 
 Faculty Member Signature and Date:
 
-Date of Preparation: `r Sys.Date()`
+Date of Preparation: {{ preparation_date }}

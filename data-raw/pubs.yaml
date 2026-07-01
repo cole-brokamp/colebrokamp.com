@@ -100,7 +100,7 @@ hartlage-2026:
   journal: AMIA Summits on Translational Science Proceedings
   issue_pages: "183–192"
   year: 2026
-  pmid: 42317809
+  pmid: "42317809"
 
 brokamp-2026:
   title: "Building Enhanced Public Health Data Systems With a Situational Awareness and Learning Tool: Focus Group Study"
@@ -544,7 +544,7 @@ klages-2024:
   journal: "Pediatric Blood & Cancer"
   issue_pages: "71(4):e30892"
   year: 2024
-  doi: 10.1002/pbc.30892
+  doi: "10.1002/pbc.30892"
 
 brokamp-2024:
   title: "Causal Mediation of Neighborhood-Level Pediatric Hospitalization Inequities"
@@ -577,7 +577,7 @@ ryan-2023a:
   journal: Environmental Health Perspectives
   issue_pages: "131(11):117702"
   year: 2023
-  doi: 10.1289/EHP13907
+  doi: "10.1289/EHP13907"
 
 palipana-2023:
   title: "Social-environmental phenotypes of rapid cystic fibrosis lung disease progression in adolescents and young adults living in the United States"
@@ -600,7 +600,7 @@ palipana-2023:
   journal: Environmental Advances
   issue_pages: "14:100449"
   year: 2023
-  doi: 10.1016/j.envadv.2023.100449
+  doi: "10.1016/j.envadv.2023.100449"
 
 smith-2023:
   title: "Racial Disparities in Pediatric Inflammatory Bowel Disease Care: Differences in Outcomes and Health Service Utilization Between Black and White Children"
@@ -620,7 +620,7 @@ smith-2023:
   journal: Journal of Pediatrics
   issue_pages: "260:113522"
   year: 2023
-  doi: 10.1016/j.jpeds.2023.113522
+  doi: "10.1016/j.jpeds.2023.113522"
 
 gecili-2023a:
   title: "Lung function and secondhand smoke exposure among children with cystic fibrosis: A Bayesian meta-analysis"
@@ -636,7 +636,7 @@ gecili-2023a:
   journal: Journal of Cystic Fibrosis
   issue_pages: "22(4):694-701"
   year: 2023
-  doi: 10.1016/j.jcf.2023.04.020
+  doi: "10.1016/j.jcf.2023.04.020"
 
 iyanna-2023:
   title: "Air Pollution Exposure and Social Responsiveness in Childhood: The Cincinnati Combined Childhood Cohorts"
@@ -655,7 +655,7 @@ iyanna-2023:
   journal: International Journal of Hygiene and Environmental Health
   issue_pages: "251:114172"
   year: 2023
-  doi: 10.1016/j.ijheh.2023.114172
+  doi: "10.1016/j.ijheh.2023.114172"
 
 ryan-2023:
   title: Participant Engagement to Develop Report-Back Materials for Personal Air Monitoring
@@ -711,9 +711,9 @@ rasnick-2023:
     - James E Gern
     - Cole Brokamp
   journal: AMIA Summits on Translational Science Proceedings
-  issue_pages: 2023:62-70
+  issue_pages: "2023:62-70"
   year: 2023
-  pmid: 37350915
+  pmid: "37350915"
 
 zundel-2022:
   title: "Air Pollution, Depressive and Anxiety Disorders, and Brain Effects: A Systematic Review"
@@ -913,7 +913,7 @@ zanobetti-2022:
   journal: JAMA Pediatrics
   issue_pages: "176(8):759"
   year: 2022
-  doi: 10.1001/jamapediatrics.2022.1446
+  doi: "10.1001/jamapediatrics.2022.1446"
 
 trinidad-2022:
   title: Relationships Between Socioeconomic Deprivation and Pediatric Firearm-Related Injury at the Neighborhood Level
@@ -933,7 +933,7 @@ trinidad-2022:
   journal: Journal of Trauma and Acute Care Surgery
   issue_pages: "93(3):283-290"
   year: 2022
-  doi: 10.1097/TA.0000000000003679
+  doi: "10.1097/TA.0000000000003679"
 
 hartley-2022:
   title: "Residential Greenness, Asthma, and Lung Function Among Children at High Risk of Allergic Sensitization: A Prospective Cohort Study"
@@ -963,7 +963,7 @@ roy-2022:
   journal: Atmosphere
   issue_pages: "13(4):545"
   year: 2022
-  doi: 10.3390/atmos13040545
+  doi: "10.3390/atmos13040545"
 
 thomson-2022:
   title: Neighborhood Socioeconomic Deprivation and Health Care Utilization of Medically Complex Children
@@ -981,7 +981,7 @@ thomson-2022:
   journal: Pediatrics
   issue_pages: "149(4):e2021052592"
   year: 2022
-  doi: 10.1542/peds.2021-052592
+  doi: "10.1542/peds.2021-052592"
 
 brokamp-2022:
   title: A High Resolution Spatiotemporal Fine Particulate Matter Exposure Assessment Model for the Contiguous United States
@@ -991,7 +991,7 @@ brokamp-2022:
   issue_pages: "7:100155"
   year: 2022
   download_link: ""
-  doi: 10.1016/j.envadv.2021.100155
+  doi: "10.1016/j.envadv.2021.100155"
 
 turner-2022:
   title: Impact of Personal, Subhourly Exposure to Ultrafine Particles on Respiratory Health in Adolescents with Asthma
@@ -1004,7 +1004,7 @@ turner-2022:
   journal: Annals of the American Thoracic Society
   issue_pages: "19(9):1516-1524"
   year: 2022
-  doi: 10.1513/AnnalsATS.202108-947OC
+  doi: "10.1513/AnnalsATS.202108-947OC"
 
 liu-2021:
   title: "Understanding Pediatric Surgery Cancellation: Geospatial Analysis"
@@ -1020,7 +1020,7 @@ liu-2021:
   journal: Journal of Medical Internet Research
   issue_pages: "23(8):e26231"
   year: 2021
-  doi: 10.2196/26231
+  doi: "10.2196/26231"
 
 turner-2021:
   title: Personal exposure to average weekly ultrafine particles, lung function, and respiratory symptoms in asthmatic and non-asthmatic adolescents
@@ -1033,7 +1033,7 @@ turner-2021:
   journal: Environment International
   issue_pages: "156:106740"
   year: 2021
-  doi: 10.1016/j.envint.2021.106740
+  doi: "10.1016/j.envint.2021.106740"
 
 lowe-2021:
   title: "A Geographic Perspective on Opioid Misuse: Substance Abuse Treatment Deserts in Southwestern Ohio"
@@ -1046,7 +1046,7 @@ lowe-2021:
   journal: Ohio Journal of Public Health
   issue_pages: "4(1):31-37"
   year: 2021
-  doi: 10.18061/ojph.v4i1.8075
+  doi: "10.18061/ojph.v4i1.8075"
 
 loizaga-2021:
   title: "Rheumatic Heart Disease in the United States: Forgotten But Not Gone: Results of a 10 Year Multicenter Review"
@@ -1110,7 +1110,7 @@ maxwell-2021:
   journal: Journal of Hospital Medicine
   issue_pages: "16(9):517-523"
   year: 2021
-  doi: 10.12788/jhm.3664
+  doi: "10.12788/jhm.3664"
 
 gecili-2021b:
   title: Rapid cystic fibrosis lung-function decline and in-vitro CFTR modulation
@@ -1128,7 +1128,7 @@ gecili-2021b:
   journal: Journal of Cystic Fibrosis
   issue_pages: "20(5):e69-e71"
   year: 2021
-  doi: 10.1016/j.jcf.2021.04.001
+  doi: "10.1016/j.jcf.2021.04.001"
 
 kelly-2021:
   title: Voter Participation is Associated with Child Health Outcomes at the Population Level
@@ -1145,7 +1145,7 @@ kelly-2021:
   journal: Journal of Pediatrics
   issue_pages: "235:277-280"
   year: 2021
-  doi: 10.1016/j.jpeds.2021.04.027
+  doi: "10.1016/j.jpeds.2021.04.027"
 
 mohammad-2021:
   title: Source-specific contributions of particulate matter to asthma-related pediatric emergency department utilization
@@ -1158,9 +1158,9 @@ mohammad-2021:
     - Siv Balachandran
     - Cole Brokamp
   journal: Health Information Science and Systems
-  issue_pages: 9(12)
+  issue_pages: "9(12)"
   year: 2021
-  doi: 10.1007/s13755-021-00141-z
+  doi: "10.1007/s13755-021-00141-z"
 
 rasnick-2021:
   title: Identifying Sensitive Windows of Airborne Lead Exposure Associated with Behavioral Outcomes at Age 12
@@ -1217,7 +1217,7 @@ gecili-2021:
   journal: Science of the Total Environment
   issue_pages: "776:145905"
   year: 2021
-  doi: 10.1016/j.scitotenv.2021.145905
+  doi: "10.1016/j.scitotenv.2021.145905"
 
 ryan-2020:
   title: A Distributed Geospatial Approach to Describe Community Characteristics for Multi-Site Studies
@@ -1249,7 +1249,7 @@ ryan-2020:
   journal: Journal of Clinical and Translational Science
   issue_pages: "5:e86, 1-8"
   year: 2021
-  doi: 10.1017/cts.2021.7
+  doi: "10.1017/cts.2021.7"
 
 wolfe-2020:
   title: "Cystic Fibrosis Point of Personalized Detection (CFPOPD): An Interactive Web Application"
@@ -1268,9 +1268,9 @@ wolfe-2020:
     - Rhonda D. Szczesniak
     - Cole Brokamp
   journal: JMIR Med Inform
-  issue_pages: 8(12):e23530
+  issue_pages: "8(12):e23530"
   year: 2020
-  doi: 10.2196/23530
+  doi: "10.2196/23530"
 
 hartley-2020:
   title: Residential Surrounding Greenness and Self-Reported Symptoms of Anxiety and Depression in Adolescents
@@ -1286,7 +1286,7 @@ hartley-2020:
   journal: Environmental Research
   issue_pages: "194:110628"
   year: 2020
-  doi: 10.1016/j.envres.2020.110628
+  doi: "10.1016/j.envres.2020.110628"
 
 florin-2020a:
   title: Proadrenomedullin Predicts Severe Disease in Children with Suspected Community-Acquired Pneumonia
@@ -1307,7 +1307,7 @@ florin-2020a:
   journal: Clinical Infectious Diseases
   issue_pages: "73(3):e524-e530"
   year: 2020
-  doi: 10.1093/cid/ciaa1138
+  doi: "10.1093/cid/ciaa1138"
 
 wadhwani-2020a:
   title: Neighborhood Socioeconomic Deprivation, Racial Segregation, and Organ Donation Across 5 States
@@ -1321,7 +1321,7 @@ wadhwani-2020a:
   journal: American Journal of Transplantation
   issue_pages: "21(3):1206-1214"
   year: 2021
-  doi: 10.1111/ajt.16186
+  doi: "10.1111/ajt.16186"
 
 arbet-2020:
   title: Lessons and Tips for Designing a Machine Learning Study Using EHR Data
@@ -1334,7 +1334,7 @@ arbet-2020:
   journal: Journal of Clinical and Translational Science
   issue_pages: "5(1):e21"
   year: 2020
-  doi: 10.1017/cts.2020.513
+  doi: "10.1017/cts.2020.513"
 
 florin-2020:
   title: Biomarkers and Disease Severity in Children with Community-Acquired Pneumonia
@@ -1354,7 +1354,7 @@ florin-2020:
   journal: Pediatrics
   issue_pages: "145(6):e20193728"
   year: 2020
-  doi: 10.1542/peds.2019-3728
+  doi: "10.1542/peds.2019-3728"
 
 szczesniak-2020a:
   title: Influences of Environmental Exposures on Individuals Living with Cystic Fibrosis
@@ -1374,7 +1374,7 @@ szczesniak-2020a:
   journal: Expert Review of Respiratory Medicine
   issue_pages: "14(7):737-748"
   year: 2020
-  doi: 10.1080/17476348.2020.1753507
+  doi: "10.1080/17476348.2020.1753507"
 
 percy-2020:
   title: "Subclinical and Overt Newborn Opioid Exposure: Prevalence and First-Year Healthcare Utilization"
@@ -1404,7 +1404,7 @@ wadhwani-2020:
   journal: Transplantation
   issue_pages: "104(11):2346-2353"
   year: 2020
-  doi: 10.1097/TP.0000000000003157
+  doi: "10.1097/TP.0000000000003157"
 
 harley-2020:
   title: "Effect of greenness on asthma in children: A systematic review"
@@ -1416,7 +1416,7 @@ harley-2020:
   journal: Public Health Nursing
   issue_pages: "37(3):453-460"
   year: 2020
-  doi: 10.1111/phn.12701
+  doi: "10.1111/phn.12701"
 
 rossi-2020:
   title: Reported Prevalence of Maternal Hepatitis C Virus Infection in the United States
@@ -1431,7 +1431,7 @@ rossi-2020:
   journal: Obstetrics and Gynecology
   issue_pages: "135(2):387-395"
   year: 2020
-  doi: 10.1097/AOG.0000000000003644
+  doi: "10.1097/AOG.0000000000003644"
 
 szczesniak-2020:
   title: Dynamic Predictive Probabilities to Monitor Rapid Cystic Fibrosis Disease Progression
@@ -1447,7 +1447,7 @@ szczesniak-2020:
   journal: Statistics in Medicine
   issue_pages: "39(6):740-756"
   year: 2020
-  doi: 10.1002/sim.8443
+  doi: "10.1002/sim.8443"
 
 orkin-2019:
   title: Community Socioeconomic Deprivation and Nonalcoholic Fatty Liver Disease Severity
@@ -1473,7 +1473,7 @@ orkin-2019:
   journal: Journal of Pediatric Gastroenterology and Nutrition
   issue_pages: "70(3):364-370"
   year: 2019
-  doi: 10.1097/MPG.0000000000002527
+  doi: "10.1097/MPG.0000000000002527"
 
 brokamp-2019b:
   title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study"
@@ -1485,11 +1485,16 @@ brokamp-2019b:
   journal: Environmental Health Perspectives
   issue_pages: "127(9):097006"
   year: 2019
-  doi: 10.1289/EHP4815
+  doi: "10.1289/EHP4815"
 
 andrist-2019:
   title: Neighborhood Poverty and Pediatric Intensive Care Use
-  author: Erica Andrist, Cole Brokamp, Stuart Taylor, Carley Riley, Andrew Beck
+  author:
+    - Erica Andrist
+    - Cole Brokamp
+    - Stuart Taylor
+    - Carley Riley
+    - Andrew Beck
   journal: Pediatrics
   issue_pages: "144(6):e20190748"
   year: 2019
@@ -1504,7 +1509,7 @@ brokamp-2019a:
   journal: Journal of Allergy and Clinical Immunology
   issue_pages: "143(6):2002-2006"
   year: 2019
-  doi: 10.1016/j.jaci.2019.04.019
+  doi: "10.1016/j.jaci.2019.04.019"
 
 ambroggio-2019:
   title: Validation of the British Thoracic Society Severity Criteria for Pediatric Community-Acquired Pneumonia
@@ -1539,9 +1544,9 @@ gernes-2019:
     - Patrick Ryan
   journal: Science of the Total Environment
   issue_pages: "668:760-767"
-  pages: 760-767
+  pages: "760-767"
   year: 2019
-  doi: 10.1016/j.scitotenv.2019.03.009
+  doi: "10.1016/j.scitotenv.2019.03.009"
 
 brokamp-2019:
   title: "Material Community Deprivation and Hospital Utilization During the First Year of Life: An Urban Population-Based Cohort Study"
@@ -1554,9 +1559,9 @@ brokamp-2019:
     - Eric S. Hall
   journal: Annals of Epidemiology
   issue_pages: "30:37-43"
-  pages: 37-43
+  pages: "37-43"
   year: 2019
-  doi: 10.1016/j.annepidem.2018.11.008
+  doi: "10.1016/j.annepidem.2018.11.008"
 
 madzia-2018:
   title: Residential Greenspace Association with Childhood Behavioral Outcomes
@@ -1575,11 +1580,12 @@ madzia-2018:
 
 brokamp-2018a:
   title: "DeGAUSS: Decentralized Geomarker Assessment for Multi-Site Studies"
-  author: Cole Brokamp
+  author:
+    - Cole Brokamp
   journal: Journal of Open Source Software
   issue_pages: "3(30):812"
   year: 2018
-  doi: 10.21105/joss.00812
+  doi: "10.21105/joss.00812"
 
 szczesniak-2019:
   title: Improving Detection of Rapid Cystic Fibrosis Disease Progression—Early Translation of a Predictive Algorithm into a Point-of-Care Tool
@@ -1591,9 +1597,9 @@ szczesniak-2019:
     - John Pestian
     - John P. Clancy
   journal: IEEE Journal of Translational Engineering in Health and Medicine
-  issue_pages: 7(1); 1-8
+  issue_pages: "7(1); 1-8"
   year: 2019
-  doi: 10.1109/JTEHM.2018.2878534
+  doi: "10.1109/JTEHM.2018.2878534"
 
 riney-2018:
   title: Emergency Medical Services Utilization is Associated with Community Deprivation in Children
@@ -1607,7 +1613,7 @@ riney-2018:
   journal: Prehospital Emergency Care
   issue_pages: "23(2):225-232"
   year: 2018
-  doi: 10.1080/10903127.2018.1501124
+  doi: "10.1080/10903127.2018.1501124"
 
 brokamp-2018:
   title: Predicting Daily Urban Fine Particulate Matter Concentrations Using Random Forest
@@ -1617,9 +1623,9 @@ brokamp-2018:
     - Monir Hossain
     - Patrick Ryan
   journal: Environmental Science & Technology
-  issue_pages: 52 (7); 4173-4179
+  issue_pages: "52 (7); 4173-4179"
   year: 2018
-  doi: 10.1021/acs.est.7b05381
+  doi: "10.1021/acs.est.7b05381"
 
 beck-2018:
   title: "Pervasive Income-Based Disparities In Inpatient Bed-Day Rates Across Conditions And Subspecialties"
@@ -1630,9 +1636,9 @@ beck-2018:
     - Cole Brokamp
     - Robert S. Kahn
   journal: Health Affairs
-  issue_pages: 37(4); 551-559
+  issue_pages: "37(4); 551-559"
   year: 2018
-  doi: 10.1377/hlthaff.2017.1280
+  doi: "10.1377/hlthaff.2017.1280"
 
 florin-2018:
   title: Validation of the Pediatric Infectious Diseases Society-Infectious Diseases Society of America Severity Criteria in Children With Community-Acquired Pneumonia
@@ -1659,9 +1665,9 @@ szczesniak-2017a:
     - John Pestian
     - John P. Clancy
   journal: Healthcare Innovations and Point of Care Technologies
-  issue_pages: (HI-POCT), 2017 IEEE; 204-207
+  issue_pages: "(HI-POCT), 2017 IEEE; 204-207"
   year: 2017
-  doi: 10.1109/HIC.2017.8227620
+  doi: "10.1109/HIC.2017.8227620"
 
 brokamp-2017c:
   title: A comparison of resampling and recursive partitioning methods in random forest for estimating the asymptotic variance using the infinitesimal jackknife
@@ -1671,7 +1677,7 @@ brokamp-2017c:
     - Patrick Ryan
     - Roman Jandarov
   journal: Stat
-  issue_pages: 6(1); 360-372
+  issue_pages: "6(1); 360-372"
   year: 2017
   doi: "10.1002/sta4.162"
 
@@ -1684,9 +1690,9 @@ brokamp-2017b:
     - John Harley
     - Patrick Ryan
   journal: Journal of American Medical Informatics Association
-  issue_pages: 25(3); 309-314
+  issue_pages: "25(3); 309-314"
   year: 2017
-  doi: 10.1093/jamia/ocx128
+  doi: "10.1093/jamia/ocx128"
 
 szczesniak-2017:
   title: Phenotypes of Rapid Cystic Fibrosis Lung Disease Progression during Adolescence and Young Adulthood
@@ -1699,9 +1705,9 @@ szczesniak-2017:
     - Michael Seid
     - John P. Clancy
   journal: American Journal of Respiratory and Critical Care Medicine
-  issue_pages: 196(4); 471-478
+  issue_pages: "196(4); 471-478"
   year: 2017
-  doi: 10.1164/rccm.201612-2574OC
+  doi: "10.1164/rccm.201612-2574OC"
 
 florin-2017:
   title: Reliability of Examination Findings in Suspected Community-Acquired Pneumonia
@@ -1715,9 +1721,9 @@ florin-2017:
     - Richard M. Ruddy
     - Samir Shah
   journal: Pediatrics
-  issue_pages: 140(3); e20170310
+  issue_pages: "140(3); e20170310"
   year: 2017
-  doi: 10.1542/peds.2017-0310
+  doi: "10.1542/peds.2017-0310"
 
 brokamp-2017a:
   title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
@@ -1727,9 +1733,9 @@ brokamp-2017a:
     - Louis Muglia
     - Patrick Ryan
   journal: Science of the Total Environment
-  issue_pages: 607-608; 1180-1187
+  issue_pages: "607-608; 1180-1187"
   year: 2017
-  doi: 10.1016/j.scitotenv.2017.07.104
+  doi: "10.1016/j.scitotenv.2017.07.104"
 
 ryan-2017:
   title: Childhood exposure to libby amphibole asbestos and respiratory symptoms in young adulthood
@@ -1746,9 +1752,9 @@ ryan-2017:
     - Ted Larson
     - Grace K. LeMasters
   journal: Environmental Research
-  issue_pages: 158; 470-479
+  issue_pages: "158; 470-479"
   year: 2017
-  doi: 10.1016/j.envres.2017.07.013
+  doi: "10.1016/j.envres.2017.07.013"
 
 yaghjyan-2017:
   title: Association of air pollution with mammographic breast density in the Breast Cancer Surveillance Consortium
@@ -1761,9 +1767,9 @@ yaghjyan-2017:
     - G Ghita
     - Patrick Ryan
   journal: Breast Cancer Research
-  issue_pages: 19(36); 1-10
+  issue_pages: "19(36); 1-10"
   year: 2017
-  doi: 10.1186/s13058-017-0828-3
+  doi: "10.1186/s13058-017-0828-3"
 
 brokamp-2017:
   title: "Exposure assessment models for elemental components of particulate matter in an urban environment: A comparison of regression and random forest approaches"
@@ -1774,9 +1780,9 @@ brokamp-2017:
     - Grace LeMasters
     - Patrick Ryan
   journal: Atmospheric Environment
-  issue_pages: 151; 1-11
+  issue_pages: "151; 1-11"
   year: 2017
-  doi: 10.1016/j.atmosenv.2016.11.066
+  doi: "10.1016/j.atmosenv.2016.11.066"
 
 ji-2016:
   title: Air pollution, epigenetics, and asthma
@@ -1788,9 +1794,9 @@ ji-2016:
     - Patrick H Ryan
     - Gurjit K Khurana Hershey
   journal: Allergy, Asthma & Clinical Immunology
-  issue_pages: 12(1); 51
+  issue_pages: "12(1); 51"
   year: 2016
-  doi: 10.1186/s13223-016-0159-4
+  doi: "10.1186/s13223-016-0159-4"
 
 kannan-2016:
   title: Parental Snoring and Environmental Pollutants, but Not Aeroallergen Sensitization, Are Associated with Childhood Snoring in a Birth Cohort
@@ -1806,7 +1812,7 @@ kannan-2016:
   journal: Pediatric Allergy, Immunology, and Pulmonology
   issue_pages: "30(1):31-38"
   year: 2016
-  doi: 10.1089/ped.2016.0681
+  doi: "10.1089/ped.2016.0681"
 
 brokamp-2016:
   title: Residential mobility impacts exposure assessment and community socioeconomic characteristics in longitudinal epidemiology studies
@@ -1815,9 +1821,9 @@ brokamp-2016:
     - Grace LeMasters
     - Patrick Ryan
   journal: Journal of Exposure Science and Environmental Epidemiology
-  issue_pages: 26(4); 428-34
+  issue_pages: "26(4); 428-34"
   year: 2016
-  doi: 10.1038/jes.2016.10
+  doi: "10.1038/jes.2016.10"
 
 coombs-2016:
   title: Indoor air quality in green-renovated vs. non-green low-income homes of children living in a temperate region of US (Ohio)
@@ -1835,9 +1841,9 @@ coombs-2016:
     - Jamie Ross
     - Tiina Reponen
   journal: Science of The Total Environment
-  issue_pages: 554-555; 178-185
+  issue_pages: "554-555; 178-185"
   year: 2016
-  doi: 10.1016/j.scitotenv.2016.02.136
+  doi: "10.1016/j.scitotenv.2016.02.136"
 
 ryan-2015a:
   title: Analysis of personal and home characteristics associated with the elemental composition of PM2.5 in indoor, outdoor, and personal air in the RIOPA study
@@ -1847,10 +1853,10 @@ ryan-2015a:
     - ZH Fan
     - MB Rao
   journal: Health Effects Institute Research Reports
-  issue_pages: Report 185
+  issue_pages: "Report 185"
   year: 2015
   doi: ""
-  pmid: 26934775
+  pmid: "26934775"
 
 brunst-2015:
   title: Timing and duration of traffic-related air pollution exposure and the risk for childhood wheeze and asthma
@@ -1866,9 +1872,9 @@ brunst-2015:
     - Sergey A Grinshpun
     - Grace LeMasters
   journal: American Journal of Respiratory and Critical Care Medicine
-  issue_pages: 192(4); 421-427
+  issue_pages: "192(4); 421-427"
   year: 2015
-  doi: 10.1164/rccm.201407-1314OC
+  doi: "10.1164/rccm.201407-1314OC"
 
 ryan-2015:
   title: A field application of a personal sensor for ultrafine particle exposure in children
@@ -1880,9 +1886,9 @@ ryan-2015:
     - Cole Brokamp
     - Grace LeMasters
   journal: Science of The Total Environment
-  issue_pages: 508; 366-373
+  issue_pages: "508; 366-373"
   year: 2015
-  doi: 10.1016/j.scitotenv.2014.11.061
+  doi: "10.1016/j.scitotenv.2014.11.061"
 
 brokamp-2015:
   title: Does the elemental composition of indoor and outdoor PM2.5 accurately represent the elemental composition of personal PM2.5?
@@ -1892,9 +1898,9 @@ brokamp-2015:
     - Tina Zhihua Fan
     - Patrick H Ryan
   journal: Atmospheric Environment
-  issue_pages: 101; 226-234
+  issue_pages: "101; 226-234"
   year: 2015
-  doi: 10.1016/j.atmosenv.2014.11.022
+  doi: "10.1016/j.atmosenv.2014.11.022"
 
 brokamp-2012:
   title: Electrophysiology of single and aggregate Cx43 hemichannels
@@ -1904,9 +1910,9 @@ brokamp-2012:
     - Carlo Montemagno
     - David Wendell
   journal: PLoS ONE
-  issue_pages: 7(10);e47775
+  issue_pages: "7(10);e47775"
   year: 2012
-  doi: 10.1371/journal.pone.0047775
+  doi: "10.1371/journal.pone.0047775"
 
 koch-2012:
   title: "Probenecid: novel use as a non-injurious positive inotrope acting via cardiac TRPV2 stimulation"
@@ -1928,9 +1934,9 @@ koch-2012:
     - W Keith Jones
     - Jack Rubinstein
   journal: Journal of Molecular and Cellular Cardiology
-  issue_pages: 53(1); 134-144
+  issue_pages: "53(1); 134-144"
   year: 2012
-  doi: 10.1016/j.yjmcc.2012.04.011
+  doi: "10.1016/j.yjmcc.2012.04.011"
 
 tranter-2011:
   title: Coordinated post-transcriptional regulation of HSP70. 3 gene expression by microRNA and alternative polyadenylation
@@ -1945,6 +1951,6 @@ tranter-2011:
     - Xiaoping Ren
     - W Keith Jones
   journal: Journal of Biological Chemistry
-  issue_pages: 286(34); 29828-29837
+  issue_pages: "286(34); 29828-29837"
   year: 2011
-  doi: 10.1074/jbc.M111.221796
+  doi: "10.1074/jbc.M111.221796"
