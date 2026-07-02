@@ -4,11 +4,9 @@ title: "Curriculum Vitae: Cole Brokamp, Ph.D."
 	
 # Research Interests
 
-- Place-based data science
-- Environmental epidemiology
-- Population health
-- Causal inference machine learning methods
-- Fairness in precision medicine
+{% for interest in research_interests -%}
+- {{ interest }}
+{% endfor %}
 
 # Personal Data
 
@@ -61,12 +59,13 @@ B.S., Biomedical Engineering, 2010
 
 # Licensing and Certification
 
-- CITI Training  
-  - 2019-07-31: Responsible Conduct of Research  
-  - 2019-07-31: Children Research  
-  - 2019-10-10: Clinical Research Conduct  
-  - 2024-12-31: Human Subjects Research Core  
-  - 2025-09-18: Research Security Training
+**CITI Training**
+
+- 2024-12-31: Human Subjects Research Core
+- 2025-09-18: Responsible Conduct of Research
+- 2019-07-31: Humanities Responsible Conduct of Research
+- 2025-09-18: Research Security Training
+- 2025-11-06: Good Clinical Practice
 
 # Awards and Honors
 
@@ -83,23 +82,35 @@ B.S., Biomedical Engineering, 2010
 
 ## Research and Scholarly Activities
 
-My main research focus has been to elucidate the effects of environmental exposures and community characteristics on the psychiatric well-being and mental health of children and adolescents. Through creating new place-based data science tools and environmental exposure methods, I have been able to both lead my own research program based on existing cohorts and the CCHMC electronic health records, as well as make methodological contributions to several different nationwide multi-site studies. 
+{{ bio_markdown|safe }}
 
 ## Grants and Contracts
 
 ### Current
 
-{{ support_active|safe }}
+{% for entry in support_active %}
+*{{ entry.title }}*  
+{{ entry.source }}{% if entry.number %} {{ entry.number }}{% endif %}, PI: {{ entry.pi_name }}  
+{{ entry.status }}. {{ entry.amount }}. {{ entry.start_date }} - {{ entry.end_date }}.
+
+{% endfor %}
 
 ### Selected Previous (Brokamp, PI)
 
-{{ support_completed|safe }}
+{% for entry in support_completed %}
+*{{ entry.title }}*  
+{{ entry.source }}{% if entry.number %} {{ entry.number }}{% endif %}, PI: {{ entry.pi_name }}  
+{{ entry.status }}. {{ entry.amount }}. {{ entry.start_date }} - {{ entry.end_date }}.
+
+{% endfor %}
 
 ## Publications
 
 ### Peer reviewed articles
 
-{{ cv_publications|safe }}
+{% for publication in cv_publications %}
+1. {{ publication.authors }}. {{ publication.title }}. *{{ publication.journal }}*{% if publication.citation %}. {{ publication.citation }}{% endif %}. {{ publication.year }}.
+{% endfor %}
 
 ### Quality Review of Publications
 
@@ -144,21 +155,32 @@ Publications I authored have 4,433 total citations (3,568 since 2021), with an h
 
 \* denotes the presenting author
 
-{{ cv_abstracts|safe }}
+{% for abstract in cv_abstracts %}
+1. {{ abstract.authors }}. {{ abstract.title }}. *{{ abstract.event }}*. {{ abstract.location }}. {{ abstract.year }}.
+{% endfor %}
 
 # Teaching and Mentoring
 
 ## Invited Lectures
 
-{{ cv_talks_invited|safe }}
+{% for talk in cv_talks_invited %}
+{{ talk.title }}. *{{ talk.event }}*. {{ talk.location }}. {{ talk.year }}.
+
+{% endfor %}
 
 ## Seminars
 
-{{ cv_talks_seminar|safe }}
+{% for talk in cv_talks_seminar %}
+{{ talk.title }}. *{{ talk.event }}*. {{ talk.location }}. {{ talk.year }}.
+
+{% endfor %}
 
 ## Teaching
 
-{{ cv_talks_teaching|safe }}
+{% for talk in cv_talks_teaching %}
+{{ talk.title }}. *{{ talk.event }}*. {{ talk.location }}. {{ talk.year }}.
+
+{% endfor %}
 
 ## Mentoring
 
@@ -272,19 +294,15 @@ Publications I authored have 4,433 total citations (3,568 since 2021), with an h
   - January 2026: NIH 2026/01 ZRG1 SCIL-Q(40)P
   - April 2026: NIH 2026/05 ZRG1 MCST-J(56)R
 - Abstract Reviewer:
-  - 2018, 2019, 2022, 2025: International Society of Exposure Science Annual Meeting
+  - 2018, 2019, 2022, 2025, 2026: International Society of Exposure Science Annual Meeting
   - 2018, 2020, 2022, 2026: International Society of Environmental Epidemiology Annual Meeting
   - 2021, 2022, 2023: American Medical Informatics Association Clinical Informatics Conference
   - 2023: American Medical Informatics Association Annual Symposium
-- Journal Reviewer (12 manuscripts reviewed per year, on average):
-  - Academic Pediatrics
+- Journal Reviewer (6 manuscripts reviewed per year, on average):
   - American Journal of Public Health
   - American Journal of Respiratory and Critical Care Medicine
   - Annals of Epidemiology
   - Environmental Health Perspectives
-  - Environment International
-  - Environmental Pollution
-  - Environmental Research
   - Environmental Science & Technology
   - Health & Place
   - International Journal of Epidemiology
@@ -296,8 +314,8 @@ Publications I authored have 4,433 total citations (3,568 since 2021), with an h
 
 ## Leadership
 
-- 2017 - present: Founding Director of the Geospatial Research Accelerator for Precision Population Health (GRAPPH) within the Data Management and Analysis Center at Cincinnati Children’s
-- 2019 - 2024: Founding Leader of Cincinnati Children’s R Users Group (CCHMC RUG)
+- 2017 - 2024: Founding leader of the Geospatial Research Accelerator for Precision Population Health (GRAPPH) within the Data Management and Analysis Center at Cincinnati Children’s
+- 2019 - 2024: Founding leader of Cincinnati Children’s R Users Group (CCHMC RUG)
 
 # Distribution of Effort
 

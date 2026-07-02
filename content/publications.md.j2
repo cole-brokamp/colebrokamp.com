@@ -1,0 +1,8 @@
+{% for group in publication_years %}
+<h2 id="year-{{ group.year }}">{{ group.year }}</h2>
+
+{% for publication in group.publications %}
+{{ publication.authors }}. **{{ publication.title }}**. *{{ publication.journal }}*{% if publication.citation %}. {{ publication.citation }}{% endif %}. {{ publication.year }}{% if publication.identifier_html %}. {{ publication.identifier_html|safe }}{% endif %}.
+
+{% endfor %}
+{% endfor %}

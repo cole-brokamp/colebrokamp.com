@@ -1,23 +1,12 @@
-use anyhow::{Context, Result, anyhow, bail};
+use anyhow::{Context, Result, bail};
 use chrono::Local;
-use indexmap::IndexMap;
 use minijinja::{Environment, context};
-use regex::Regex;
+use pulldown_cmark::{Options, Parser, html};
 use serde::{Deserialize, Serialize};
+use std::collections::HashMap;
 use std::fs;
-use std::io::Write;
 use std::path::{Path, PathBuf};
-use std::process::{Command, Stdio};
-use std::sync::LazyLock;
-
-static ISSUE_VOL_NUM_PAGES: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^(\d+)\s*\(([^)]+)\)\s*[:;]\s*(.+)$").unwrap());
-static ISSUE_VOL_NUM: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^(\d+)\s*\(([^)]+)\)$").unwrap());
-static ISSUE_VOL_PAGES: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^(\d+(?:-\d+)?)\s*[:;]\s*(.+)$").unwrap());
-static ISSUE_NOTE_PAGES: LazyLock<Regex> =
-    LazyLock::new(|| Regex::new(r"^(.+?)\s*;\s*([A-Za-z]?\d+\S*(?:-\S+)?)$").unwrap());
+use std::process::Command;
 
 #[derive(Debug, Deserialize)]
 struct Publication {
@@ -25,19 +14,25 @@ struct Publication {
     author: Vec<String>,
     journal: String,
     #[serde(default)]
-    issue_pages: Option<String>,
+    citation: Option<String>,
+    #[serde(default)]
+    volume: Option<String>,
+    #[serde(default)]
+    number: Option<String>,
     #[serde(default)]
     pages: Option<String>,
+    #[serde(default)]
+    note: Option<String>,
     year: i32,
     #[serde(default)]
     doi: Option<String>,
     #[serde(default)]
     pmid: Option<String>,
     #[serde(default)]
-    download_link: Option<String>,
+    url: Option<String>,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Serialize)]
 struct Support {
     title: String,
     status: String,
@@ -47,7 +42,7 @@ struct Support {
     source: String,
     start_date: String,
     end_date: String,
-    amount: i64,
+    amount: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -59,7 +54,7 @@ struct Abstract {
     location: String,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Serialize)]
 struct Talk {
     title: String,
     event: String,
@@ -67,6 +62,31 @@ struct Talk {
     location: String,
     #[serde(rename = "type")]
     talk_type: String,
+}
+
+#[derive(Debug, Serialize)]
+struct PublicationView {
+    authors: String,
+    title: String,
+    journal: String,
+    citation: Option<String>,
+    year: i32,
+    identifier_html: Option<String>,
+}
+
+#[derive(Debug, Serialize)]
+struct PublicationYear {
+    year: i32,
+    publications: Vec<PublicationView>,
+}
+
+#[derive(Debug, Serialize)]
+struct AbstractView {
+    authors: String,
+    title: String,
+    event: String,
+    year: i32,
+    location: String,
 }
 
 #[derive(Debug, Serialize)]
@@ -84,10 +104,10 @@ struct NavLink {
 
 struct SiteBuilder {
     root: PathBuf,
-    publications: IndexMap<String, Publication>,
-    support: IndexMap<String, Support>,
-    abstracts: IndexMap<String, Abstract>,
-    talks: IndexMap<String, Talk>,
+    publications: Vec<Publication>,
+    support: Vec<Support>,
+    abstracts: Vec<Abstract>,
+    talks: Vec<Talk>,
 }
 
 fn main() -> Result<()> {
@@ -153,7 +173,7 @@ h2 {
         self.render_page(PageSpec {
             output: "publications.html",
             title: "Publications",
-            body_markdown: self.publications_markdown(),
+            body_markdown: self.publications_markdown()?,
             show_title: true,
             extra_css: r#"h1 {
   display: none;
@@ -180,10 +200,12 @@ h2 {
     }
 
     fn build_bib(&self) -> Result<()> {
+        let cite_keys = self.cite_keys();
         let entries = self
             .publications
             .iter()
-            .map(|(key, publication)| self.bibtex_entry(key, publication))
+            .zip(cite_keys.iter())
+            .map(|(publication, key)| self.bibtex_entry(key, publication))
             .collect::<Vec<_>>()
             .join("\n\n");
         let content = format!(
@@ -206,13 +228,15 @@ h2 {
         let markdown = self.render_template(
             "content/cv.md.j2",
             context! {
-                support_active => self.support_entries("Active"),
-                support_completed => self.support_entries("Completed"),
+                bio_markdown => self.read_to_string("content/bio.md")?,
+                research_interests => self.research_interests()?,
+                support_active => self.support_by_status("Active"),
+                support_completed => self.support_by_status("Completed"),
                 cv_publications => self.cv_publications(),
                 cv_abstracts => self.cv_abstracts(),
-                cv_talks_invited => self.cv_talks("invited"),
-                cv_talks_seminar => self.cv_talks("seminar"),
-                cv_talks_teaching => self.cv_talks("teaching"),
+                cv_talks_invited => self.talks_by_type("invited"),
+                cv_talks_seminar => self.talks_by_type("seminar"),
+                cv_talks_teaching => self.talks_by_type("teaching"),
                 preparation_date => Local::now().date_naive().to_string(),
             },
         )?;
@@ -241,7 +265,7 @@ h2 {
     }
 
     fn render_page(&self, spec: PageSpec<'_>) -> Result<()> {
-        let body_html = markdown_to_html(&spec.body_markdown)?;
+        let body_html = markdown_to_html(&spec.body_markdown);
         let html = self.render_template(
             "templates/page.html.j2",
             context! {
@@ -265,10 +289,30 @@ h2 {
         ))
     }
 
-    fn publications_markdown(&self) -> String {
+    fn research_interests(&self) -> Result<Vec<String>> {
+        Ok(self
+            .read_to_string("content/research.md")?
+            .lines()
+            .filter_map(|line| line.strip_prefix("## "))
+            .map(str::trim)
+            .filter(|heading| !heading.is_empty())
+            .map(str::to_string)
+            .collect())
+    }
+
+    fn publications_markdown(&self) -> Result<String> {
+        self.render_template(
+            "content/publications.md.j2",
+            context! {
+                publication_years => self.publication_years(),
+            },
+        )
+    }
+
+    fn publication_years(&self) -> Vec<PublicationYear> {
         let mut years = self
             .publications
-            .values()
+            .iter()
             .map(|publication| publication.year)
             .collect::<Vec<_>>();
         years.sort_unstable_by(|left, right| right.cmp(left));
@@ -276,49 +320,51 @@ h2 {
 
         years
             .into_iter()
-            .map(|year| {
-                let publications = self
+            .map(|year| PublicationYear {
+                year,
+                publications: self
                     .publications
-                    .values()
+                    .iter()
                     .filter(|publication| publication.year == year)
-                    .map(|publication| self.publication_entry(publication))
-                    .collect::<Vec<_>>()
-                    .join("\n\n");
-                format!("## {year} {{#year-{year}}}\n\n{publications}")
+                    .map(|publication| self.publication_view(publication, false))
+                    .collect(),
             })
-            .collect::<Vec<_>>()
-            .join("\n\n")
+            .collect()
     }
 
-    fn publication_entry(&self, publication: &Publication) -> String {
-        markdown_fields(vec![
-            Some(publication.author.join(", ")),
-            Some(format!("**{}**", publication.title)),
-            Some(italic(&publication.journal)),
-            publication.issue_pages.clone(),
-            Some(publication.year.to_string()),
-            self.publication_identifier(publication),
-        ])
+    fn publication_view(
+        &self,
+        publication: &Publication,
+        highlight_authors: bool,
+    ) -> PublicationView {
+        let authors = publication.author.join(", ");
+        let authors = if highlight_authors {
+            highlight_cole(&authors)
+        } else {
+            authors
+        };
+
+        PublicationView {
+            authors,
+            title: publication.title.clone(),
+            journal: publication.journal.clone(),
+            citation: present_owned(publication.citation.as_deref()),
+            year: publication.year,
+            identifier_html: self.publication_identifier(publication),
+        }
     }
 
     fn publication_identifier(&self, publication: &Publication) -> Option<String> {
-        let doi = publication
-            .doi
-            .as_deref()
-            .unwrap_or_default()
-            .trim()
-            .trim_start_matches("doi:")
-            .to_string();
-        let doi = strip_doi_url(&doi).trim().to_string();
-        let pmid = publication.pmid.as_deref().unwrap_or_default().trim();
+        let doi = normalize_doi(publication.doi.as_deref());
+        let pmid = present(publication.pmid.as_deref());
 
-        if !doi.is_empty() {
+        if let Some(doi) = doi {
             Some(format!(
                 r#"<a class="pub-id" href="https://doi.org/{}">doi: {}</a>"#,
                 html_escape(&doi),
                 html_escape(&doi)
             ))
-        } else if !pmid.is_empty() {
+        } else if let Some(pmid) = pmid {
             Some(format!(
                 r#"<a class="pub-id" href="https://pubmed.ncbi.nlm.nih.gov/{}/">pmid: {}</a>"#,
                 html_escape(pmid),
@@ -329,77 +375,67 @@ h2 {
         }
     }
 
-    fn support_entries(&self, status: &str) -> String {
+    fn support_by_status(&self, status: &str) -> Vec<&Support> {
         self.support
-            .values()
+            .iter()
             .filter(|entry| entry.status == status)
-            .map(|entry| {
-                format!(
-                    "*{}*  \n{} {}, PI: {}  \n{}. {}. {} - {}.",
-                    entry.title,
-                    entry.source,
-                    entry.number.as_deref().unwrap_or_default(),
-                    entry.pi_name,
-                    entry.status,
-                    dollars(entry.amount),
-                    entry.start_date,
-                    entry.end_date
-                )
-            })
-            .collect::<Vec<_>>()
-            .join("\n\n")
+            .collect()
     }
 
-    fn cv_publications(&self) -> String {
+    fn cv_publications(&self) -> Vec<PublicationView> {
         self.publications
-            .values()
+            .iter()
             .rev()
-            .map(|publication| {
-                highlight_cole(&markdown_fields(vec![
-                    Some("1".to_string()),
-                    Some(publication.author.join(", ")),
-                    Some(publication.title.clone()),
-                    Some(italic(&publication.journal)),
-                    publication.issue_pages.clone(),
-                    Some(format!("{}.", publication.year)),
-                ]))
-            })
-            .collect::<Vec<_>>()
-            .join("\n")
+            .map(|publication| self.publication_view(publication, true))
+            .collect()
     }
 
-    fn cv_abstracts(&self) -> String {
+    fn cv_abstracts(&self) -> Vec<AbstractView> {
         self.abstracts
-            .values()
+            .iter()
             .rev()
-            .map(|abstract_entry| {
-                highlight_cole(&markdown_fields(vec![
-                    Some("1".to_string()),
-                    Some(abstract_entry.author.join(", ")),
-                    Some(abstract_entry.title.clone()),
-                    Some(italic(&abstract_entry.event)),
-                    Some(abstract_entry.location.clone()),
-                    Some(format!("{}.", abstract_entry.year)),
-                ]))
+            .map(|abstract_entry| AbstractView {
+                authors: highlight_cole(&abstract_entry.author.join(", ")),
+                title: abstract_entry.title.clone(),
+                event: abstract_entry.event.clone(),
+                year: abstract_entry.year,
+                location: abstract_entry.location.clone(),
             })
-            .collect::<Vec<_>>()
-            .join("\n")
+            .collect()
     }
 
-    fn cv_talks(&self, talk_type: &str) -> String {
+    fn talks_by_type(&self, talk_type: &str) -> Vec<&Talk> {
         self.talks
-            .values()
+            .iter()
             .filter(|talk| talk.talk_type == talk_type)
-            .map(|talk| {
-                markdown_fields(vec![
-                    Some(talk.title.clone()),
-                    Some(italic(&talk.event)),
-                    Some(talk.location.clone()),
-                    Some(talk.year.to_string()),
-                ])
+            .collect()
+    }
+
+    fn cite_keys(&self) -> Vec<String> {
+        let bases = self
+            .publications
+            .iter()
+            .map(cite_key_base)
+            .collect::<Vec<_>>();
+
+        let mut totals = HashMap::new();
+        for base in &bases {
+            *totals.entry(base.clone()).or_insert(0_usize) += 1;
+        }
+
+        let mut seen = HashMap::new();
+        bases
+            .into_iter()
+            .map(|base| {
+                if totals[&base] == 1 {
+                    base
+                } else {
+                    let count = seen.entry(base.clone()).or_insert(0_usize);
+                    *count += 1;
+                    format!("{base}{}", cite_key_suffix(*count))
+                }
             })
-            .collect::<Vec<_>>()
-            .join("\n\n")
+            .collect()
     }
 
     fn bibtex_entry(&self, key: &str, publication: &Publication) -> String {
@@ -410,23 +446,16 @@ h2 {
             ("year".to_string(), publication.year.to_string()),
         ];
 
-        if let Some(issue_pages) = publication.issue_pages.as_deref() {
-            fields.extend(parse_issue_pages(issue_pages));
-        }
-
-        if let Some(pages) = publication.pages.as_deref() {
-            upsert_field(&mut fields, "pages", pages);
-        }
+        add_field(&mut fields, "volume", publication.volume.as_deref());
+        add_field(&mut fields, "number", publication.number.as_deref());
+        add_field(&mut fields, "pages", publication.pages.as_deref());
+        add_field(&mut fields, "note", publication.note.as_deref());
 
         if let Some(doi) = normalize_doi(publication.doi.as_deref()) {
             fields.push(("doi".to_string(), doi));
         }
-        if let Some(pmid) = present(publication.pmid.as_deref()) {
-            fields.push(("pmid".to_string(), pmid.to_string()));
-        }
-        if let Some(download_link) = present(publication.download_link.as_deref()) {
-            fields.push(("url".to_string(), download_link.to_string()));
-        }
+        add_field(&mut fields, "pmid", publication.pmid.as_deref());
+        add_field(&mut fields, "url", publication.url.as_deref());
 
         let lines = fields
             .into_iter()
@@ -504,31 +533,16 @@ where
     noyalib::from_str(&content).with_context(|| format!("parse {relative_path}"))
 }
 
-fn markdown_to_html(markdown: &str) -> Result<String> {
-    let mut child = Command::new("pandoc")
-        .arg("--from")
-        .arg("markdown+smart")
-        .arg("--to")
-        .arg("html")
-        .arg("--section-divs")
-        .stdin(Stdio::piped())
-        .stdout(Stdio::piped())
-        .stderr(Stdio::piped())
-        .spawn()
-        .context("spawn pandoc for markdown html")?;
+fn markdown_to_html(markdown: &str) -> String {
+    let mut options = Options::empty();
+    options.insert(Options::ENABLE_HEADING_ATTRIBUTES);
+    options.insert(Options::ENABLE_SMART_PUNCTUATION);
+    options.insert(Options::ENABLE_TABLES);
 
-    child
-        .stdin
-        .take()
-        .ok_or_else(|| anyhow!("open pandoc stdin"))?
-        .write_all(markdown.as_bytes())
-        .context("write markdown to pandoc")?;
-
-    let output = child.wait_with_output().context("wait for pandoc")?;
-    if !output.status.success() {
-        bail!("{}", String::from_utf8_lossy(&output.stderr));
-    }
-    String::from_utf8(output.stdout).context("pandoc emitted invalid utf-8")
+    let parser = Parser::new_ext(markdown, options);
+    let mut html = String::new();
+    html::push_html(&mut html, parser);
+    html
 }
 
 fn run_command(command: &mut Command) -> Result<()> {
@@ -585,18 +599,40 @@ fn nav_links() -> Vec<NavLink> {
     ]
 }
 
-fn markdown_fields(fields: Vec<Option<String>>) -> String {
-    fields
-        .into_iter()
-        .flatten()
-        .map(|field| field.trim().to_string())
-        .filter(|field| !field.is_empty())
-        .collect::<Vec<_>>()
-        .join(". ")
+fn add_field(fields: &mut Vec<(String, String)>, key: &str, value: Option<&str>) {
+    if let Some(value) = present(value) {
+        fields.push((key.to_string(), value.to_string()));
+    }
 }
 
-fn italic(value: &str) -> String {
-    format!("*{value}*")
+fn cite_key_base(publication: &Publication) -> String {
+    let surname = publication
+        .author
+        .first()
+        .and_then(|author| author.split_whitespace().last())
+        .map(slugify)
+        .filter(|slug| !slug.is_empty())
+        .unwrap_or_else(|| "publication".to_string());
+    format!("{surname}-{}", publication.year)
+}
+
+fn cite_key_suffix(index: usize) -> String {
+    let mut value = index;
+    let mut suffix = String::new();
+    while value > 0 {
+        value -= 1;
+        suffix.insert(0, (b'a' + (value % 26) as u8) as char);
+        value /= 26;
+    }
+    suffix
+}
+
+fn slugify(value: &str) -> String {
+    value
+        .chars()
+        .filter(|character| character.is_ascii_alphanumeric())
+        .flat_map(char::to_lowercase)
+        .collect()
 }
 
 fn highlight_cole(value: &str) -> String {
@@ -605,6 +641,10 @@ fn highlight_cole(value: &str) -> String {
 
 fn present(value: Option<&str>) -> Option<&str> {
     value.map(str::trim).filter(|value| !value.is_empty())
+}
+
+fn present_owned(value: Option<&str>) -> Option<String> {
+    present(value).map(str::to_string)
 }
 
 fn strip_doi_url(value: &str) -> &str {
@@ -629,57 +669,6 @@ fn normalize_doi(value: Option<&str>) -> Option<String> {
         .trim()
         .to_string();
     doi.starts_with("10.").then_some(doi)
-}
-
-fn parse_issue_pages(value: &str) -> Vec<(String, String)> {
-    let text = value.trim();
-    if text.eq_ignore_ascii_case("in press") {
-        return vec![("note".to_string(), "In Press".to_string())];
-    }
-
-    if let Some(captures) = ISSUE_VOL_NUM_PAGES.captures(text) {
-        return vec![
-            ("volume".to_string(), captures[1].to_string()),
-            ("number".to_string(), captures[2].to_string()),
-            ("pages".to_string(), captures[3].to_string()),
-        ];
-    }
-
-    if let Some(captures) = ISSUE_VOL_NUM.captures(text) {
-        return vec![
-            ("volume".to_string(), captures[1].to_string()),
-            ("number".to_string(), captures[2].to_string()),
-        ];
-    }
-
-    if let Some(captures) = ISSUE_VOL_PAGES.captures(text) {
-        return vec![
-            ("volume".to_string(), captures[1].to_string()),
-            ("pages".to_string(), captures[2].to_string()),
-        ];
-    }
-
-    if text.len() > 1
-        && text.starts_with(['e', 'E'])
-        && text[1..].chars().all(|c| c.is_ascii_digit())
-    {
-        return vec![("pages".to_string(), text.to_string())];
-    }
-
-    if let Some(captures) = ISSUE_NOTE_PAGES.captures(text) {
-        return vec![
-            ("note".to_string(), captures[1].to_string()),
-            ("pages".to_string(), captures[2].to_string()),
-        ];
-    }
-
-    vec![("note".to_string(), text.to_string())]
-}
-
-fn upsert_field(fields: &mut [(String, String)], key: &str, value: &str) {
-    if let Some((_, existing)) = fields.iter_mut().find(|(field, _)| field == key) {
-        *existing = value.to_string();
-    }
 }
 
 fn latex_escape(value: &str) -> String {
@@ -735,18 +724,4 @@ fn html_escape(value: &str) -> String {
             other => other.to_string(),
         })
         .collect()
-}
-
-fn dollars(value: i64) -> String {
-    let sign = if value < 0 { "-" } else { "" };
-    let digits = value.abs().to_string();
-    let mut reversed = String::new();
-    for (index, character) in digits.chars().rev().enumerate() {
-        if index > 0 && index % 3 == 0 {
-            reversed.push(',');
-        }
-        reversed.push(character);
-    }
-    let formatted = reversed.chars().rev().collect::<String>();
-    format!("{sign}${formatted}")
 }

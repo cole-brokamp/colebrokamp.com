@@ -7,8 +7,7 @@ rust-version = "1.85"
 [dependencies]
 anyhow = "1"
 chrono = { version = "0.4", default-features = false, features = ["clock"] }
-indexmap = { version = "2", features = ["serde"] }
 minijinja = "2.21.0"
 noyalib = "0.0.8"
-regex = "1"
+pulldown-cmark = "0.13.4"
 serde = { version = "1", features = ["derive"] }
