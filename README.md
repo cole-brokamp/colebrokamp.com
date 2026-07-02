@@ -9,21 +9,27 @@ small Rust binary, MiniJinja templates, and `just` as the command interface:
 
 - `just build` renders the website, CV, and BibTeX file.
 - `just render` renders the website, CV, and BibTeX file.
-- `just render site` renders only `docs/*.html`.
-- `just render cv` renders `peds-cv-brokamp.docx`.
-- `just render bib` renders `colebrokamp.bib`.
-- `just preview` renders, serves `docs/`, and opens <http://localhost:8000>.
+- `just render site` renders only the site HTML and static assets.
+- `just render cv` renders `_site/peds-cv-brokamp.docx`.
+- `just render bib` renders `_site/colebrokamp.bib`.
+- `just preview` renders, serves `_site/`, and opens <http://localhost:8000>.
+
+Generated output lives in `_site/` and is ignored by git. GitHub Actions builds
+that directory on pull requests and uploads a `site-preview` artifact. When
+`master` is updated, the same workflow deploys `_site/` to GitHub Pages.
 
 The source layout is intentionally small:
 
 - `content/*.md` is plain Markdown prose.
 - `content/*.md.j2` is Markdown plus MiniJinja loops for YAML-backed sections.
 - `templates/page.html.j2` is the shared HTML shell.
+- `site.css` contains the site styling, including the small navbar rules that
+  replace the old generated Bootstrap and Font Awesome assets.
 - `data-raw/*.yaml` is list-shaped source data with no R-style top-level IDs.
 - `data-raw/pubs.yaml` keeps display citations separate from explicit BibTeX fields
   such as `volume`, `number`, `pages`, and `note`.
 - `src/main.rs` loads YAML with `noyalib`, renders templates, generates BibTeX, and
-  writes generated files.
+  writes generated files to `_site/`.
 
 `pulldown-cmark` converts website Markdown to HTML. Pandoc is still used only for
 the Word CV output.

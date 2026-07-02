@@ -1,0 +1,87 @@
+name: build and deploy site
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+
+      - name: install rust
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+
+      - name: configure pages
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/configure-pages@v6
+
+      - name: install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes pandoc
+
+      - name: install just
+        run: cargo install just --locked
+
+      - name: build site
+        run: just build
+
+      - name: write preview instructions
+        run: |
+          {
+            echo "### site preview"
+            echo ""
+            echo "Download the \`site-preview\` artifact from this workflow run."
+            echo "Unzip it, then open \`index.html\` or serve the unzipped files locally:"
+            echo ""
+            echo "\`\`\`sh"
+            echo "mkdir site-preview"
+            echo "unzip site-preview.zip -d site-preview"
+            echo "python3 -m http.server --directory site-preview 8000"
+            echo "\`\`\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: upload preview artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: site-preview
+          path: _site
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: upload pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v5

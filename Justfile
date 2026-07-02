@@ -10,9 +10,9 @@ build: render
 render target="all":
     cargo run --quiet -- {{ quote(target) }}
 
-# render everything, serve docs locally, and open the browser
+# render everything, serve the generated site locally, and open the browser
 preview: build
-    (sleep 1 && open http://localhost:8000) & python3 -m http.server --directory docs 8000
+    (sleep 1 && open http://localhost:8000) & python3 -m http.server --directory _site 8000
 
 # snapshot with a git commit
 snapshot:
