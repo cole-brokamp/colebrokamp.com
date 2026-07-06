@@ -1,8 +1,5 @@
 set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
 
-# render all content
-all: build
-
 # render the website, CV, and BibTeX
 build: render
 

@@ -28,8 +28,7 @@ The source layout is intentionally small:
 - `data-raw/*.yaml` is list-shaped source data with no R-style top-level IDs.
 - `data-raw/pubs.yaml` keeps display citations separate from explicit BibTeX fields
   such as `volume`, `number`, `pages`, and `note`.
-- `src/main.rs` loads YAML with `noyalib`, renders templates, generates BibTeX, and
-  writes generated files to `_site/`.
+- `src/*.rs` contains the Rust build code. See `src/README.md` for the module map.
 
 `pulldown-cmark` converts website Markdown to HTML. Pandoc is still used only for
 the Word CV output.
