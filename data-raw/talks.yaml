@@ -1,517 +1,452 @@
-ohhn-2026:
-  title: "The Impact of Home Repairs and Services for Low-Income Homeowners on Pediatric Health Outcomes in Cincinnati, OH"
+- title: "The Impact of Home Repairs and Services for Low-Income Homeowners on Pediatric Health Outcomes in Cincinnati, OH"
   event: Ohio Health Homes Network Annual Meeting
   year: 2026
   location: Columbus, OH
   homepage: ""
   type: invited
 
-dephs-seminar-2026:
-  title: "Pediatric Psychiatric Exacerbations, Ambient Air Pollution, and Extreme Heat"
+- title: "Pediatric Psychiatric Exacerbations, Ambient Air Pollution, and Extreme Heat"
   event: University of Cincinnati Department of Public and Environmental Health Seminar
   year: 2026
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-peds-prep-extreme-weather:
-  title: "Psychiatric Exacerbations and Acute Stressors: Extreme Weather"
+- title: "Psychiatric Exacerbations and Acute Stressors: Extreme Weather"
   event: Pediatric Prepardness Network Weather Task Force Meeting
   year: 2026
   location: Online
   homepage: ""
   type: invited
 
-planetary-heath-2025:
-  title: "Air Pollution and Health"
+- title: "Air Pollution and Health"
   event: University of Cincinnati Planetary Health course guest lecture
   year: 2025
   location: Cincinnati, OH
   homepage: ""
   type: teaching
 
-introbmi-2025:
-  title: "Geomarker Curation and Computation"
+- title: "Geomarker Curation and Computation"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2025
   location: Cincinnati, OH
   homepage: "https://cole-brokamp.github.io/gcc/"
   type: teaching
 
-ga4gh-human-exposome:
-  title: "Geomarker Assessment Standards for the Human Exposome"
+- title: "Geomarker Assessment Standards for the Human Exposome"
   event: "Global Alliance for Genomics & Health Exposure and Geolocation Meeting"
   year: 2025
   location: Online
   homepage: "https://cole-brokamp.github.io/gcc/"
   type: invited
 
-rise-2025:
-  title: "Sensor Data Visualization in R"
+- title: "Sensor Data Visualization in R"
   event: Communities RISE 2025 Workshop
   year: 2025
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-introbmi-2024:
-  title: "Geomarker Curation and Computation"
+- title: "Geomarker Curation and Computation"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2024
   location: Cincinnati, OH
   homepage: "https://cole-brokamp.github.io/gcc/"
   type: teaching
 
-wsu-2024:
-  title: "Ambient Air Pollution and Pediatric Mental Health"
+- title: "Ambient Air Pollution and Pediatric Mental Health"
   event: Lifespan Cognitive Neuroscience Seminar
   year: 2024
   location: Detroit, MI
   homepage: "https://cole-brokamp.github.io/aap_and_pmh"
   type: invited
 
-cilc-2023:
-  title: "Geomarker Curation and Computation"
+- title: "Geomarker Curation and Computation"
   event: CCHMC Clinical Informatics Learning Community
   year: 2023
   location: Cincinnati, OH
   homepage: "https://cole-brokamp.github.io/gcc"
   type: seminar
 
-dplyr-tidyr-rug-2023:
-  title: "Data Wrangling in R with dplyr and tidyr"
+- title: "Data Wrangling in R with dplyr and tidyr"
   event: "CCHMC R Users Group Meeting"
   year: 2023
   location: Cincinnti, OH
   homepage: "https://cole-brokamp.github.io/rug_talk_dplyr_tidyr/"
   type: seminar
 
-introbmi-2023:
-  title: "Geomarker Curation and Computation"
+- title: "Geomarker Curation and Computation"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2023
   location: Cincinnati, OH
   homepage: "https://cole-brokamp.github.io/gcc/"
   type: teaching
 
-codec-rug-2023:
-  title: "Using R to Build a Community Data Explorer for Cincinnati (CoDEC)"
+- title: "Using R to Build a Community Data Explorer for Cincinnati (CoDEC)"
   event: "CCHMC R Users Group Meeting"
   year: 2023
   location: Cincinnati, OH
   homepage: "https://geomarker.io/codec_talk"
   type: seminar
 
-bmipracticum-2023:
-  title: "Geomarker Curation and Computation"
+- title: "Geomarker Curation and Computation"
   event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
   year: 2023
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_degauss_2023-02-20.html"
   type: teaching
 
-ccl-2023:
-  title: "Air Pollution and Pediatric Mental Health"
+- title: "Air Pollution and Pediatric Mental Health"
   event: Citizens Climate Lobby, Cincinnati Chapter Meeting
   year: 2023
   location: Cincinnati, OH
   homepage: ""
   type: invited
 
-RUG-2023:
-  title: "Functional Programming in R with {purrr}"
+- title: "Functional Programming in R with {purrr}"
   event: "CCHMC R Users Group Meeting"
   year: 2023
   location: Cincinnati, OH
   homepage: "https://cchmc-rug.github.io/purrr"
   type: seminar
 
-yale-biostat-2022:
-  title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
+- title: "A Framework for Automated and Reproducible Geomarker Curation and Computation at Scale"
   event: Yale Biostatistics Seminar
   year: 2022
   location: Online
   homepage: ""
   type: invited
 
-introbmi-2022:
-  title: "Introduction to Geoinformatics"
+- title: "Introduction to Geoinformatics"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2022
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/introbmi_brokamp_geoinformatics.html"
   type: teaching
 
-RUG-2022:
-  title: "Automating Your Academic CV, Biosketch, and Website with R"
+- title: "Automating Your Academic CV, Biosketch, and Website with R"
   event: "CCHMC R Users Group Meeting"
   year: 2022
   location: Cincinnati, OH
   homepage: "https://cchmc-rug.github.io/cv_automate"
   type: seminar
 
-RDCRN-2022:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
+- title: "Decentralized Geomarker Assessment for Multi-Site Studies"
   event: Rare Diseases Clinical Research Network (RDCRN) Steering Committee Meeting
   year: 2022
   location: Online
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_15-2-2022.pdf"
   type: invited
 
-PAS-2022:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
+- title: "Decentralized Geomarker Assessment for Multi-Site Studies"
   event: Pediatric Academic Societies Annual Meeting
   year: 2022
   location: Denver, CO
   homepage: ""
   type: invited
 
-BD2K-2022:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies"
+- title: "Decentralized Geomarker Assessment for Multi-Site Studies"
   event: NIH Bench to Bassinet PCGC EMR Extraction Working Group Meeting
   year: 2022
   location: Online
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/degauss_brokamp_10-2-2022.pdf"
   type: invited
 
-NIH-2022:
-  title: "Challenges and Solutions for Private and Reproducible Environmental Exposure Assessment at Scale"
+- title: "Challenges and Solutions for Private and Reproducible Environmental Exposure Assessment at Scale"
   event: NIH Ethical, Legal, and Social Implications of Gene-Environment Interaction Research Workshop
   year: 2022
   location: Online
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/GxE_ELSI_Brokamp.pdf"
   type: invited
 
-introbmi-2021:
-  title: "Geoinformatics for Population Health"
+- title: "Geoinformatics for Population Health"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2021
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/gfph_informatics_2021.pdf"
   type: teaching
 
-NIH-2021:
-  title: "Decentralized, Efficient, and Secure High Resolution Spatiotemporal Exposure Assessment at Scale"
+- title: "Decentralized, Efficient, and Secure High Resolution Spatiotemporal Exposure Assessment at Scale"
   event: NIH Integrating Multiscale Geospatial Environmental Data into Large Population Health Studies Workshop
   year: 2021
   location: Online
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_DeGAUSS_16_06_2020.pdf"
   type: invited
 
-PAC3-2021:
-  title: "Decentralized and Reproducible Geocoding and Geomarker Assessment for Multi-Site Studies"
+- title: "Decentralized and Reproducible Geocoding and Geomarker Assessment for Multi-Site Studies"
   event: Pediatric Acute Care Cardiology Collaborative Spring Conference
   year: 2021
   location: Online
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/DeGAUSS_quick_pitch_PAC3.pdf"
   type: invited
 
-nidey-2021:
-  title: "Geomarkers and Health"
+- title: "Geomarkers and Health"
   event: Rutgers University Social Epidemiology guest lecture
   year: 2021
   location: Online
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/deprivation_index.pdf"
   type: teaching
 
-bmi-2021:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
   year: 2021
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2021_02_01.pdf"
   type: teaching
 
-satRdays-2020:
-  title: "Three Levels of Computational Mobility in R"
+- title: "Three Levels of Computational Mobility in R"
   event: SatRday Columbus
   year: 2020
   location: Virtual
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/cole_brokamp_three_levels_of_computational_mobility.pdf"
   type: invited
 
-portico-2020:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: Pediatric Musculoskeletal & Rheumatology Innovation Core Center Seminar Series
   year: 2020
   location: Virtual
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_10_27.pdf"
   type: invited
 
-introbmi-2020:
-  title: "Introduction to Geoinformatics for Precision Population Health"
+- title: "Introduction to Geoinformatics for Precision Population Health"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2020
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/GRAPPH_talk_informatics_2020.pdf"
   type: teaching
 
-bmi-2020:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: University of Cincinnati Biomedical Informatics Practicum (BMIN8001) guest lecture
   year: 2020
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_degauss_2020_02_24.pdf"
   type: teaching
 
-ucepi-2020:
-  title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study"
+- title: "Pediatric Psychiatric Emergency Department Utilization and Fine Particulate Matter: A Case-Crossover Study"
   event: University of Cincinnati Department of Epidemiology Seminar
   year: 2020
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.us-east-1.amazonaws.com/talks/brokamp_PM_psych_ED_2020_01_23.pdf"
   type: seminar
 
-career-2019:
-  title: "Using Twitter for Academic Networking"
+- title: "Using Twitter for Academic Networking"
   event: "Cincinnati Children's Faculty Career Development Seminar Series"
   year: 2019
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/twitter_for_academia.html"
   type: seminar
 
-ml-2019:
-  title: "Causal Inference Machine Learning Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
+- title: "Causal Inference Machine Learning Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
   event: "Cincinnati Children's Machine Learning Focus Group"
   year: 2019
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_hce_2019_11_06.pdf"
   type: seminar
 
-cctst-2019:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: "Center for Clinical & Translational Science & Training Grand Rounds"
   year: 2019
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/brokamp_degauss_2019_15MAR2019.pdf"
   type: invited
 
-northwestern-2018:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures at Scale"
   event: Northwestern Institute for Public Health and Medicine Seminar Series
   year: 2018
   location: Chicago, IL
   homepage: ""
   type: invited
 
-introbmi-2018:
-  title: "Introduction to Geoinformatics for Precision Population Health"
+- title: "Introduction to Geoinformatics for Precision Population Health"
   event: University of Cincinnati Introduction to Medical Informatics course guest lecture
   year: 2018
   location: Cincinnati, OH
   homepage: "https://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_informatics_2018.pdf"
   type: teaching
 
-ucinnovation-2018:
-  title: "Climate Change and Health Disparities in the Urban Environment"
+- title: "Climate Change and Health Disparities in the Urban Environment"
   event: University of Cincinnati Research and Innovation Week
   year: 2018
   location: Cincinnati, OH
   homepage: ""
   type: invited
 
-bmi-2018:
-  title: "Geoinformatics for Environmental Epidemiology"
+- title: "Geoinformatics for Environmental Epidemiology"
   event: Biomedical Informatics (BMIN8001) Practicum Guest Lecture
   year: 2018
   location: Cincinnati, OH
   homepage: ""
   type: teaching
 
-pas-2018:
-  title: "Hot Topics in Pediatric Research Methodology: CART and Random Forest"
+- title: "Hot Topics in Pediatric Research Methodology: CART and Random Forest"
   event: Pediatric Academic Society Annual Meeting
   year: 2018
   location: Toronto, ON
   homepage: ""
   type: invited
 
-asacincy-2018:
-  title: "Ensemble Machine Learning for Air Pollution Exposure Assessment"
+- title: "Ensemble Machine Learning for Air Pollution Exposure Assessment"
   event: American Statistical Association, Cincinnati Chapter Meeting
   year: 2018
   location: Cincinnati, OH
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/LURF_talk_20_FEB_2018.pdf
   type: invited
 
-eh-2017:
-  title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
+- title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
   event: University of Cincinnati Environmental Health Seminar
   year: 2017
   location: Cincinnati, OH
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_30_November_2017.pdf
   type: seminar
 
-harvard-2017a:
-  title: "The Cincinnati Childhood Allergy and Air Pollution Study: An Overview and New Approaches to Exposure Assessment"
+- title: "The Cincinnati Childhood Allergy and Air Pollution Study: An Overview and New Approaches to Exposure Assessment"
   event: Harvard School of Public Health Air, Climate & Energy Center Research Meeting
   year: 2017
   location: Boston, MA
   homepage: ""
   type: invited
 
-harvard-2017:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
   event: Harvard School of Public Health Air, Climate & Energy Center Research Meeting
   year: 2017
   location: Boston, MA
   homepage: https://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_13_NOV_2017.pdf
   type: invited
 
-dbe-2017:
-  title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
+- title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
   event: Cincinnati Children's Hospital Medical Center Division of Biostatistics and Epidemiology Seminar
   year: 2017
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-mayerson-2017:
-  title: "Using GRAPPH to Leverage Geoinformatics for Innovative Research, Place-based Clinical Care, and Community-Centered Quality Improvement"
+- title: "Using GRAPPH to Leverage Geoinformatics for Innovative Research, Place-based Clinical Care, and Community-Centered Quality Improvement"
   event: Cincinnati Children's Hospital Medical Center Mayerson Center for Safe and Healthy Children Quarterly Research Meeting
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/GRAPPH_talk_MayersonCenter_16June2017.pdf
   type: seminar
 
-postdoc-2017:
-  title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
+- title: "Combined Sewer Overflow Events and Childhood Emergency Department Visits: A Case-Crossover Study"
   event: Cincinnati Children's Hospital Medical Center Postdoc and Research Associate Meeting
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/cso_talk_3_April_2017.pdf
   type: seminar
 
-bmiseminar-2017:
-  title: "Geocoding to Characterize Community and Environmental Exposures for Multi-site Studies"
+- title: "Geocoding to Characterize Community and Environmental Exposures for Multi-site Studies"
   event: Cincinnati Children's Hospital Medical Center Division of Biomedical Informatics Hutton Lecture Series
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/DeGAUSS_talk_Hutton.pdf
   type: seminar
 
-bmi-2017:
-  title: "GIS Tools for Environmental Epidemiology"
+- title: "GIS Tools for Environmental Epidemiology"
   event: University of Cincinnati Biomedical Informatics (BMIN8001) Practicum course guest lecture
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/BMIN8001_environmental_epidemiology.pdf
   type: teaching
 
-academyhealth-2017:
-  title: "Building A Platform for Data Sharing"
+- title: "Building A Platform for Data Sharing"
   event: Cincinnati Children's Hospital Medical Center Academy Health Site Visit
   year: 2017
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/academy_health_visit.pdf
   type: seminar
 
-dbe-2016:
-  title: "Predictive Comparisons: Interpreting Input Effects for Any Supervised Learner"
+- title: "Predictive Comparisons: Interpreting Input Effects for Any Supervised Learner"
   event: Cincinnati Children's Hospital Medical Center Division of Biostatistics & Epidemiology Journal Club
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/APC_talk.pdf
   type: seminar
 
-ucbiostat-2016:
-  title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
+- title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
   event: University of Cincinnati Division of Biostatistics and Bioinformatics Seminar Series
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/LUR_vs_LURF_Cole_Brokamp.pdf
   type: seminar
 
-allin-2016:
-  title: "Data Visualization for Population Health Initiatives"
+- title: "Data Visualization for Population Health Initiatives"
   event: All In Data Visualization Webinar
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/all_in_webinar_Beck_Brokamp.pdf
   type: seminar
 
-ucanalytics-2016:
-  title: "Using Machine Learning and Interactive Dashboards to Understand How Children's Health is Impacted by their Community and Surrounding Environment"
+- title: "Using Machine Learning and Interactive Dashboards to Understand How Children's Health is Impacted by their Community and Surrounding Environment"
   event: University of Cincinnati Institute for Analytics Innovation Showcase and Networking Event
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/data_analytics_showcase_cole_brokamp.pdf
   type: invited
 
-dbeseminar-2016:
-  title: "Combined Sewer Overflow and Childhood Hospital Admissions"
+- title: "Combined Sewer Overflow and Childhood Hospital Admissions"
   event: Cincinnati Children's Hospital Medical Center Division of Biostatistics & Epidemiology Seminar Series
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Combined%20Sewer%20Overflow%20and%20Hospital%20Admissions.pdf
   type: seminar
 
-dissertation-2016:
-  title: "Land Use Random Forests for Estimation of Exposure to Elemental Components of Particulate Matter"
+- title: "Land Use Random Forests for Estimation of Exposure to Elemental Components of Particulate Matter"
   event: University of Cincinnati Division of Biostatistics and Bioinformatics Doctoral Dissertation Defense
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Cole%20Brokamp%20Dissertation%20Defense%2023March2016.pdf
   type: seminar
 
-dbeinterest-2016:
-  title: "Geospatial Data for Environmental Epidemiology"
+- title: "Geospatial Data for Environmental Epidemiology"
   event: Cincinnati Children's Hospital Medical Center Environmental Epidemiology Shared Interest Group Seminar Series
   year: 2016
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/GIS_env_epi.pdf
   type: seminar
 
-ucbiostat-2015:
-  title: "Confidence Intervals for Random Forest Predictions Using the Infinitesimal Jackknife"
+- title: "Confidence Intervals for Random Forest Predictions Using the Infinitesimal Jackknife"
   event: University of Cincinnati Division of Biostatistics and Bioinformatics Seminar Series
   year: 2015
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/Confidence_Intervals_for_Random_Forest_Predictions_Using_the_Infinitesimal_Jackknife.pdf
   type: seminar
 
-intro-2015:
-  title: "R Studio and R Markdown: An integrated IDE and report generator for R"
+- title: "R Studio and R Markdown: An integrated IDE and report generator for R"
   event: University of Cincinnati BE7022 (Intro To Biostatistics) Guest Lecture
   year: 2015
   location: Cincinnati, OH
   homepage: http://colebrokamp-website.s3.amazonaws.com/talks/RStudio_and_RMarkdown.pdf
   type: teaching
 
-ucepi-2014:
-  title: "Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately Represent the Elemental Composition of Personal PM2.5?"
+- title: "Does the Elemental Composition of Indoor and Outdoor PM2.5 Accurately Represent the Elemental Composition of Personal PM2.5?"
   event: University of Cincinnati Division of Epidemiology Seminar Series
   year: 2014
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-ucepi-2013:
-  title: "Exact Sampling and Counting for Fixed-Margin Matrices"
+- title: "Exact Sampling and Counting for Fixed-Margin Matrices"
   event: University of Cincinnati Division of Epidemiology Seminar Series
   year: 2013
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-ucpharm-2011a:
-  title: "Small Molecule Disruption of G Beta Gamma Signaling Inhibits the Progression of Heart Failure"
+- title: "Small Molecule Disruption of G Beta Gamma Signaling Inhibits the Progression of Heart Failure"
   event: University of Cincinnati Department of Pharmacology and Biophysics Seminar Series
   year: 2011
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-ucpharm-2011:
-  title: "Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid to the Heart"
+- title: "Ultrasound-Targeted Microbubble Destruction to Deliver Nucleic Acid to the Heart"
   event: University of Cincinnati Department of Pharmacology and Biophysics Seminar Series
   year: 2011
   location: Cincinnati, OH
   homepage: ""
   type: seminar
 
-ucbme-2011:
-  title: "An academic research cooperative education experience"
+- title: "An academic research cooperative education experience"
   event: University of Cincinnati BME321 Guest Lecture
   year: 2011
   location: Cincinnati, OH

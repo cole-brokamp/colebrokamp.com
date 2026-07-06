@@ -1,23 +1,18 @@
-# render all content and view website
-all: render_bib render_cv render_website
-    open docs/index.html
+set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
 
-# generate bibtex from publications yaml
-render_bib:
-    Rscript R/pubs_yaml_to_bibtex.R data-raw/pubs.yaml colebrokamp.bib
+# render all content
+all: build
 
-# render website
-render_website:
-    Rscript -e "rmarkdown::render_site('encoding' = 'UTF-8')"
+# render the website, CV, and BibTeX
+build: render
 
-# render CV
-render_cv:
-    #!/usr/bin/env Rscript
-    rmarkdown::render(
-      "src/peds-cv.Rmd",
-      output_format = "word_document",
-      output_file = "../peds-cv-brokamp.docx"
-    )
+# render one target: all, site, bib, or cv
+render target="all":
+    cargo run --quiet -- {{ quote(target) }}
+
+# render everything, serve the generated site locally, and open the browser
+preview: build
+    (sleep 1 && open http://localhost:8000) & python3 -m http.server --directory _site 8000
 
 # snapshot with a git commit
 snapshot:

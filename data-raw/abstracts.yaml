@@ -1,5 +1,4 @@
-hartlage-amia-2026:
-  title: "Using Hyperlocal Geospatial Data to Support Pediatric Health Care: A Qualitative Study"
+- title: "Using Hyperlocal Geospatial Data to Support Pediatric Health Care: A Qualitative Study"
   author:
     - Carson S Hartlage\*
     - Teresa Pestian
@@ -8,10 +7,9 @@ hartlage-amia-2026:
     - Cole Brokamp
   event: American Medical Informatics Association Annual Symposium
   year: 2027
-  location: 2026
+  location: "2026"
 
-manning-isee-2025:
-  title: "Impact of Short-Term Air Pollution and Extreme Heat on Pediatric Psychiatric Exacerbations: A Case-Crossover Study"
+- title: "Impact of Short-Term Air Pollution and Extreme Heat on Pediatric Psychiatric Exacerbations: A Case-Crossover Study"
   author:
     - Erika Rasnick Manning\*
     - Andrew Vancil
@@ -21,8 +19,7 @@ manning-isee-2025:
   year: 2025
   location: Atlanta, GA
 
-hartlage-isee-2025:
-  title: "Integrating Hyperlocal Environmental, Social, and Healthcare Data to Create Address-Level Risk for Child Hospitalization (ARCH)"
+- title: "Integrating Hyperlocal Environmental, Social, and Healthcare Data to Create Address-Level Risk for Child Hospitalization (ARCH)"
   author:
     - Carson Hartlage\*
     - Qing Duan
@@ -35,8 +32,7 @@ hartlage-isee-2025:
   year: 2025
   location: Atlanta, GA
 
-colegate-ace-2024:
-  title: "Integrating a Machine Learning Algorithm to Forecast Daily Asthma Hospitalizations"
+- title: "Integrating a Machine Learning Algorithm to Forecast Daily Asthma Hospitalizations"
   author:
     - Stephen Colegate\*
     - Michael Seid
@@ -48,8 +44,7 @@ colegate-ace-2024:
   year: 2024
   location: Columbus, OH
 
-colegate-enar-2024:
-  title: "Fairness in Precision Environmental Health"
+- title: "Fairness in Precision Environmental Health"
   author:
     - Stephen Colegate\*
     - Cole Brokamp
@@ -57,8 +52,7 @@ colegate-enar-2024:
   year: 2024
   location: Baltimore, MD
 
-brokamp-amia-summit-2024:
-  title: "A Multi-Modal Geomarker Pipeline for Assessing the Impact of Social, Economic, and Environmental Factors on Pediatric Hospitalization"
+- title: "A Multi-Modal Geomarker Pipeline for Assessing the Impact of Social, Economic, and Environmental Factors on Pediatric Hospitalization"
   author:
     - Erika Rasnick Manning
     - Qing Duan
@@ -73,8 +67,7 @@ brokamp-amia-summit-2024:
   year: 2024
   location: Boston, MA
 
-brokamp-pas-2024:
-  title: "Parcel-level Housing Characteristics Associated with Historical Pediatric Hospitalizations"
+- title: "Parcel-level Housing Characteristics Associated with Historical Pediatric Hospitalizations"
   author:
     - Cole Brokamp
     - Qing Duan
@@ -87,8 +80,7 @@ brokamp-pas-2024:
   year: 2024
   location: Toronto, Canada
 
-colegate-ises-2023a:
-  title: "Estimating Bias Introduced by Within-Individual Autocorrelation in a Case-Crossover Design: Simulating Daily Fine Particulate Matter and Pulmonary Exacerbation Cases in Cystic Fibrosis Patient"
+- title: "Estimating Bias Introduced by Within-Individual Autocorrelation in a Case-Crossover Design: Simulating Daily Fine Particulate Matter and Pulmonary Exacerbation Cases in Cystic Fibrosis Patient"
   author:
     - Stephen Colegate\*
     - Erika Manning
@@ -104,8 +96,7 @@ colegate-ises-2023a:
   year: 2023
   location: Chicago IL
 
-colegate-ises-2023:
-  title: "Evaluating Precision Medicine Tools in Cystic Fibrosis for Racial and Ethnic Fairness"
+- title: "Evaluating Precision Medicine Tools in Cystic Fibrosis for Racial and Ethnic Fairness"
   author:
     - Stephen Colegate\*
     - Anushka Palipana
@@ -115,8 +106,7 @@ colegate-ises-2023:
   year: 2023
   location: Chicago IL
 
-vancil-ises-2023a:
-  title: "Comparison and Fairness of Commonly Used Traffic Pollution Measures"
+- title: "Comparison and Fairness of Commonly Used Traffic Pollution Measures"
   author:
     - Andrew Vancil\*
     - Cole Brokamp
@@ -124,8 +114,7 @@ vancil-ises-2023a:
   year: 2023
   location: Chicago IL
 
-vancil-ises-2023:
-  title: "Protecting Patient Privacy by Matching a Synthetic, Place-Based Dataset to Real World Geolocations"
+- title: "Protecting Patient Privacy by Matching a Synthetic, Place-Based Dataset to Real World Geolocations"
   author:
     - Andrew Vancil\*
     - Anushka Palipana
@@ -135,8 +124,7 @@ vancil-ises-2023:
   year: 2023
   location: Chicago IL
 
-manning-ises-2023a:
-  title: "Methods for linking housing-unit-level characteristics with residential addresses in the electronic health record: A comparison of two approaches using messy, real-world addresses"
+- title: "Methods for linking housing-unit-level characteristics with residential addresses in the electronic health record: A comparison of two approaches using messy, real-world addresses"
   author:
     - Erika Manning\*
     - Qing Duan
@@ -159,8 +147,7 @@ manning-ises-2023a:
   year: 2023
   location: Chicago IL
 
-manning-ises-2023:
-  title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale in the NIH ECHO Program"
+- title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale in the NIH ECHO Program"
   author:
     - Erika Manning\*
     - Patrick Ryan
@@ -177,8 +164,7 @@ manning-ises-2023:
   year: 2023
   location: Chicago IL
 
-parikh-ises-2023:
-  title: "A Novel Method for Capturing Windows of Association Between Spatiotemporal Exposures and DNAm on an Epigenome-Wide Scale"
+- title: "A Novel Method for Capturing Windows of Association Between Spatiotemporal Exposures and DNAm on an Epigenome-Wide Scale"
   author:
     - Milan Parikh\*
     - Erika Rasnick Manning
@@ -191,8 +177,7 @@ parikh-ises-2023:
   year: 2023
   location: Chicago IL
 
-brokamp-pas-2023:
-  title: "Causal mediation of racial disparities in pediatric hospital admissions: A population-wide, neighborhood-level study"
+- title: "Causal mediation of racial disparities in pediatric hospital admissions: A population-wide, neighborhood-level study"
   author:
     - Cole Brokamp
     - Qing Duan
@@ -208,56 +193,49 @@ brokamp-pas-2023:
   year: 2023
   location: Washington DC
 
-amiasummit-2023:
-  title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale"
+- title: "High Resolution and Spatiotemporal Place-Based Computable Exposures at Scale"
   author:
     - Cole Brokamp\*
   event: American Medical Informatics Association Summit
   year: 2023
   location: Seattle, WA
 
-brokamp_ises-2021a:
-  title: "Efficient and Secure High Resolution Spatiotemporal Exposure Assessment"
+- title: "Efficient and Secure High Resolution Spatiotemporal Exposure Assessment"
   author:
     - Cole Brokamp\*
   event: International Society of Exposure Science Annual Meeting
   year: 2021
   location: Online
 
-brokamp_ises-2021:
-  title: "A Nationwide High Resolution Spatiotemporal Fine Particulate Matter Exposure Assessment Model"
+- title: "A Nationwide High Resolution Spatiotemporal Fine Particulate Matter Exposure Assessment Model"
   author:
     - Cole Brokamp\*
   event: International Society of Exposure Science
   year: 2021
   location: Online
 
-isee-2020:
-  title: "Short-term Ambient Fine Particulate Matter and Anxiety Symptoms in Adolescents with Generalized Anxiety Disorder"
+- title: "Short-term Ambient Fine Particulate Matter and Anxiety Symptoms in Adolescents with Generalized Anxiety Disorder"
   author:
     - Cole Brokamp\*
   event: International Society of Environmental Epidemiology Annual Meeting
   year: 2020
   location: Online
 
-user-2020:
-  title: "Decentralized Geomarker Assessment for Multi-Site Studies (DeGAUSS)"
+- title: "Decentralized Geomarker Assessment for Multi-Site Studies (DeGAUSS)"
   author:
     - Cole Brokamp\*
   event: UseR! 2020 Conference (Conference Canceled)
   year: 2020
   location: St. Louis, MO
 
-enar-2019:
-  title: "Non-Parametric and Data-Driven Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
+- title: "Non-Parametric and Data-Driven Methods for Identifying Subpopulations Susceptible to the Health Effects of Air Pollution"
   author:
     - Cole Brokamp\*
   event: "International Biometric Society (Eastern North American Region) Spring Meeting"
   year: 2019
   location: Philadelphia, PA
 
-bhuiyan_jsm-2019:
-  title: "Source-specific contributions of particulate matter to asthma-related pediatric emergency department utilization"
+- title: "Source-specific contributions of particulate matter to asthma-related pediatric emergency department utilization"
   author:
     - Mohammad Alfrad Nobel Bhuiyan\*
     - Cole Brokamp
@@ -265,16 +243,14 @@ bhuiyan_jsm-2019:
   year: 2019
   location: Denver, CO
 
-ace-2018:
-  title: "Reproducible Research in R: Geoinformatics, Epidemiology, and Publicly Available Health and GIS Data"
+- title: "Reproducible Research in R: Geoinformatics, Epidemiology, and Publicly Available Health and GIS Data"
   author:
     - Cole Brokamp\*
   event: Workshop at the American College of Epidemiology Annual Meeting
   year: 2018
   location: Cincinnati, OH
 
-madzia-2018:
-  title: "Residential Greenspace is Associated with Childhood Behavioral Outcomes"
+- title: "Residential Greenspace is Associated with Childhood Behavioral Outcomes"
   author:
     - Juliana Madzia\*
     - Cole Brokamp
@@ -282,8 +258,7 @@ madzia-2018:
   year: 2018
   location: Toronto, Canada
 
-ises-2017:
-  title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
+- title: "Assessing Daily Exposure to PM2.5 with Machine Learning and Remote Sensing"
   author:
     - Cole Brokamp
     - Patrick Ryan\*
@@ -291,8 +266,7 @@ ises-2017:
   year: 2017
   location: Research Triangle Park, NC
 
-ises-2017a:
-  title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
+- title: "Decentralized and Reproducible Geocoding and Characterization of Community and Environmental Exposures for Multi-Site Studies"
   author:
     - Cole Brokamp
     - Patrick Ryan\*
@@ -300,8 +274,7 @@ ises-2017a:
   year: 2017
   location: Research Triangle Park, NC
 
-ryan_cso-2017:
-  title: "Combined Sewer Overflows and Pediatric Emergency Department Utilization: A Case-Crossover Study"
+- title: "Combined Sewer Overflows and Pediatric Emergency Department Utilization: A Case-Crossover Study"
   author:
     - Cole Brokamp
     - Patrick Ryan\*
@@ -309,8 +282,7 @@ ryan_cso-2017:
   year: 2017
   location: Sydney, Australia
 
-ises-2016:
-  title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
+- title: "Land Use Models for Elemental Components of Particulate Matter in an Urban Environment: A Comparison of Regression and Random Forest Models"
   author:
     - Cole Brokamp\*
     - Patrick Ryan
@@ -318,8 +290,7 @@ ises-2016:
   year: 2016
   location: Utrecht, NL
 
-ises-2015:
-  title: "Childhood Residential Changes are Associated with Decreased Traffic Exposure and Improved Neighborhood Characteristics"
+- title: "Childhood Residential Changes are Associated with Decreased Traffic Exposure and Improved Neighborhood Characteristics"
   author:
     - Cole Brokamp\*
     - Patrick Ryan
@@ -327,8 +298,7 @@ ises-2015:
   year: 2015
   location: Las Vegas, NV
 
-jsm-2014:
-  title: "Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements"
+- title: "Assessing Personal PM2.5 Exposure Prediction Improvement After Addition of Indoor PM2.5 Exposure and Personal Characteristics to Outdoor PM2.5 Exposure Measurements"
   author:
     - Cole Brokamp\*
     - Patrick Ryan

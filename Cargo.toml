@@ -1,0 +1,13 @@
+[package]
+name = "colebrokamp-site"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+minijinja = "2.21.0"
+noyalib = "0.0.8"
+pulldown-cmark = "0.13.4"
+serde = { version = "1", features = ["derive"] }

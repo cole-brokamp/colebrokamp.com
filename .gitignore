@@ -4,4 +4,9 @@
 *.synctex.gz 
 cole-brokamp-cv-signed.pdf
 /make.Rout
-/docs/make.Rout
+/_build/
+/_site/
+/docs/
+/colebrokamp.bib
+/peds-cv-brokamp.docx
+/target/
