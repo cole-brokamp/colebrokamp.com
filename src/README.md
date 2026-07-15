@@ -13,3 +13,5 @@ builder.
 - `text.rs`: Shared string helpers for DOI normalization, HTML escaping, and
   highlighting your name in CV/publication output.
 - `command.rs`: Runs external commands, currently just Pandoc for the Word CV.
+- `writing.rs`: Discovers YAML-front-matter articles, renders the writing index
+  and article pages, and copies colocated article assets.

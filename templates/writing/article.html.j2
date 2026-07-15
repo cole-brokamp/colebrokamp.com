@@ -1,0 +1,16 @@
+<a class="skip-link" href="#article-content">Skip to article</a>
+<main class="writing-page">
+  <article class="writing-article">
+    <header class="article-header">
+      <h1>{{ article.title }}</h1>
+      <p class="article-description">{{ article.description }}</p>
+      <time datetime="{{ article.date_iso }}">{{ article.date_display }}</time>
+    </header>
+
+    <div class="article-rule" aria-hidden="true"></div>
+
+    <section class="article-body" id="article-content">
+{{ body_html|safe }}
+    </section>
+  </article>
+</main>

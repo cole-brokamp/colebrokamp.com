@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 500"
+     role="img"
+     aria-labelledby="ensemble-title ensemble-description">
+  <title id="ensemble-title">Random forest and boosted tree ensembles</title>
+  <desc id="ensemble-description">
+    A random forest combines the outputs of several parallel trees by averaging
+    them. Boosting begins with an initial prediction and adds sequentially
+    learned tree corrections to form the final prediction.
+  </desc>
+
+  <defs>
+    <marker id="arrowhead"
+            viewBox="0 0 10 10"
+            refX="8"
+            refY="5"
+            markerWidth="7"
+            markerHeight="7"
+            orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#58829C" />
+    </marker>
+  </defs>
+
+  <style>
+    text {
+      fill: #396175;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .panel {
+      fill: #F6EDDE;
+      stroke: #8CB4C3;
+      stroke-width: 2;
+    }
+
+    .panel-title {
+      font-size: 20px;
+      font-weight: 750;
+    }
+
+    .decision-node {
+      fill: #F6EDDE;
+      stroke: #396175;
+      stroke-width: 2.5;
+    }
+
+    .terminal-node,
+    .output-node {
+      fill: #CBD6D5;
+      stroke: #58829C;
+      stroke-width: 2;
+    }
+
+    .tree-line,
+    .merge-line,
+    .flow-line {
+      fill: none;
+      stroke: #58829C;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .tree-line {
+      stroke-width: 2.5;
+    }
+
+    .merge-line,
+    .flow-line {
+      stroke-width: 3;
+    }
+
+    .result-box {
+      fill: #396175;
+      stroke: #396175;
+      stroke-width: 2.5;
+    }
+
+    .result-text {
+      fill: #F6EDDE;
+      font-size: 18px;
+      font-weight: 750;
+      text-anchor: middle;
+    }
+
+    .base-text,
+    .correction-text,
+    .operator-text {
+      fill: #396175;
+      font-weight: 700;
+      text-anchor: middle;
+    }
+
+    .base-text {
+      font-size: 16px;
+    }
+
+    .correction-text {
+      font-size: 15px;
+    }
+
+    .operator-text {
+      font-size: 24px;
+    }
+  </style>
+
+  <g aria-hidden="true">
+    <!-- Parallel trees flow downward into an averaged prediction. -->
+    <rect class="panel" x="20" y="20" width="370" height="460" rx="15" />
+    <text class="panel-title" x="45" y="62">Random forest</text>
+
+    <path class="tree-line" d="M 90 125 L 61 150 M 90 125 L 119 150" />
+    <rect class="decision-node" x="52" y="95" width="76" height="30" rx="7" />
+    <rect class="terminal-node" x="43" y="150" width="36" height="24" rx="6" />
+    <rect class="terminal-node" x="101" y="150" width="36" height="24" rx="6" />
+    <path class="tree-line" d="M 61 174 L 90 203 L 119 174" />
+    <circle class="output-node" cx="90" cy="215" r="12" />
+
+    <path class="tree-line" d="M 205 125 L 176 150 M 205 125 L 234 150" />
+    <rect class="decision-node" x="167" y="95" width="76" height="30" rx="7" />
+    <rect class="terminal-node" x="158" y="150" width="36" height="24" rx="6" />
+    <rect class="terminal-node" x="216" y="150" width="36" height="24" rx="6" />
+    <path class="tree-line" d="M 176 174 L 205 203 L 234 174" />
+    <circle class="output-node" cx="205" cy="215" r="12" />
+
+    <path class="tree-line" d="M 320 125 L 291 150 M 320 125 L 349 150" />
+    <rect class="decision-node" x="282" y="95" width="76" height="30" rx="7" />
+    <rect class="terminal-node" x="273" y="150" width="36" height="24" rx="6" />
+    <rect class="terminal-node" x="331" y="150" width="36" height="24" rx="6" />
+    <path class="tree-line" d="M 291 174 L 320 203 L 349 174" />
+    <circle class="output-node" cx="320" cy="215" r="12" />
+
+    <path class="merge-line" d="M 90 227 V 278 H 320 M 205 227 V 278 M 320 227 V 278" />
+    <path class="flow-line" d="M 205 278 V 326" marker-end="url(#arrowhead)" />
+    <rect class="result-box" x="130" y="340" width="150" height="70" rx="12" />
+    <text class="result-text" x="205" y="383">Average</text>
+
+    <!-- An initial prediction and sequential tree corrections are added. -->
+    <rect class="panel" x="410" y="20" width="370" height="460" rx="15" />
+    <text class="panel-title" x="435" y="62">Boosted trees</text>
+
+    <rect class="output-node" x="515" y="82" width="160" height="40" rx="10" />
+    <text class="base-text" x="595" y="107">Initial prediction</text>
+
+    <text class="operator-text" x="595" y="153">+</text>
+
+    <path class="tree-line" d="M 595 188 L 565 207 M 595 188 L 625 207" />
+    <rect class="decision-node" x="550" y="162" width="90" height="26" rx="7" />
+    <rect class="terminal-node" x="542" y="207" width="46" height="22" rx="6" />
+    <rect class="terminal-node" x="602" y="207" width="46" height="22" rx="6" />
+    <text class="correction-text" x="595" y="251">Tree 1 correction</text>
+
+    <text class="operator-text" x="595" y="279">+</text>
+
+    <path class="tree-line" d="M 595 313 L 565 332 M 595 313 L 625 332" />
+    <rect class="decision-node" x="550" y="287" width="90" height="26" rx="7" />
+    <rect class="terminal-node" x="542" y="332" width="46" height="22" rx="6" />
+    <rect class="terminal-node" x="602" y="332" width="46" height="22" rx="6" />
+    <text class="correction-text" x="595" y="376">Tree 2 correction</text>
+
+    <text class="operator-text" x="595" y="403">+ … =</text>
+
+    <rect class="result-box" x="520" y="415" width="150" height="50" rx="12" />
+    <text class="result-text" x="595" y="448">Final prediction</text>
+  </g>
+</svg>

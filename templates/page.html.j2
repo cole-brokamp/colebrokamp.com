@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+{% if description %}<meta name="description" content="{{ description }}" />
+{% endif %}
 <title>{{ title }}</title>
-<link href="site.css" rel="stylesheet" />
+<link href="{{ stylesheet_href|safe }}" rel="stylesheet" />
 <style type="text/css">
 .main-container {
   max-width: 940px;
@@ -33,13 +35,13 @@ summary {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Cole Brokamp</a>
+      <a class="navbar-brand" href="{{ home_href|safe }}">Cole Brokamp</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         {% for item in nav_items %}
-        <li>
-          <a href="{{ item.href|safe }}"{% if item.href == active_href %} class="active"{% endif %}>{{ item.text }}</a>
+        <li{% if item.active %} class="active"{% endif %}>
+          <a href="{{ item.href|safe }}"{% if item.active %} aria-current="page"{% endif %}>{{ item.text }}</a>
         </li>
         {% endfor %}
       </ul>

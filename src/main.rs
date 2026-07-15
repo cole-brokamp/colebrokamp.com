@@ -6,6 +6,7 @@ mod markdown;
 mod nav;
 mod text;
 mod views;
+mod writing;
 
 use anyhow::{Result, bail};
 use builder::SiteBuilder;
@@ -17,6 +18,7 @@ fn main() -> Result<()> {
     match command.as_str() {
         "all" => builder.build_all(),
         "site" => builder.build_site(),
+        "writing" => builder.build_writing(),
         "bib" => builder.build_bib(),
         "cv" => builder.build_cv(),
         other => bail!("unknown build command: {other}"),
