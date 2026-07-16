@@ -11,6 +11,8 @@ use crate::nav::NavSection;
 
 const WRITING_SOURCE_DIR: &str = "content/writing";
 const WRITING_OUTPUT_DIR: &str = "writing";
+const WRITING_DESCRIPTION: &str =
+    "Long-form notes about methods, models, and scientific reasoning.";
 
 #[derive(Clone, Debug, Serialize)]
 struct Article {
@@ -64,12 +66,13 @@ pub(crate) fn build(site: &SiteBuilder) -> Result<()> {
         "templates/writing/index.html.j2",
         context! {
             articles => articles.iter().map(|article| &article.metadata).collect::<Vec<_>>(),
+            description => WRITING_DESCRIPTION,
         },
     )?;
     site.render_html_page(HtmlPageSpec {
         output: "writing/index.html",
         title: "Writing | Cole Brokamp",
-        description: "Long-form notes about methods, models, and scientific reasoning.",
+        description: WRITING_DESCRIPTION,
         body_html: &index_body,
         show_title: false,
         extra_css: "",
@@ -311,15 +314,17 @@ fn copy_tree(source: &Path, destination: &Path, markdown_path: &Path) -> Result<
 }
 
 fn validate_slug(slug: &str) -> Result<()> {
-    if slug
-        .chars()
-        .all(|character| character.is_ascii_alphanumeric() || matches!(character, '-' | '_'))
+    if !slug.is_empty()
+        && slug.split('-').all(|segment| {
+            !segment.is_empty()
+                && segment
+                    .chars()
+                    .all(|character| character.is_ascii_lowercase() || character.is_ascii_digit())
+        })
     {
         Ok(())
     } else {
-        bail!(
-            "article folder names may contain only letters, numbers, hyphens, and underscores: {slug}"
-        )
+        bail!("article folder names must use lowercase kebab-case: {slug}")
     }
 }
 
@@ -446,9 +451,20 @@ More.
     }
 
     #[test]
-    fn accepts_url_safe_article_folder_names() {
-        assert!(validate_slug("tree_based-machine-learning2").is_ok());
-        assert!(validate_slug("article draft").is_err());
+    fn requires_lowercase_kebab_case_article_folder_names() {
+        assert!(validate_slug("tree-based-machine-learning2").is_ok());
+
+        for invalid in [
+            "tree_based_machine_learning",
+            "Tree-based-machine-learning",
+            "article draft",
+            "article--draft",
+            "-article",
+            "article-",
+            "",
+        ] {
+            assert!(validate_slug(invalid).is_err(), "accepted {invalid}");
+        }
     }
 
     #[test]

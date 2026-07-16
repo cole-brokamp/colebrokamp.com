@@ -40,7 +40,8 @@ the Word CV output.
 
 ## writing
 
-Each article folder name becomes its URL slug and must contain exactly one
+Each article folder name becomes its URL slug, must use lowercase kebab-case
+(for example, `tree-based-machine-learning`), and must contain exactly one
 Markdown file named `index.md`. The file starts with strict YAML front matter:
 
 ```yaml
