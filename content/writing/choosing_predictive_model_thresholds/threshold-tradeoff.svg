@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 960 560"
+     role="img"
+     aria-labelledby="threshold-title threshold-description">
+  <title id="threshold-title">Qualitative trade-off between sensitivity and positive predictive value</title>
+  <desc id="threshold-description">
+    As the alert threshold moves from lower to higher, sensitivity generally
+    decreases, positive predictive value generally increases, and alert volume
+    decreases. Lower thresholds favor sensitivity, while higher thresholds
+    favor positive predictive value. The curves show direction rather than
+    numeric values or a guaranteed shape.
+  </desc>
+
+  <defs>
+    <marker id="axis-arrow"
+            viewBox="0 0 10 10"
+            refX="8"
+            refY="5"
+            markerWidth="7"
+            markerHeight="7"
+            orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#58829C" />
+    </marker>
+  </defs>
+
+  <style>
+    text {
+      fill: #396175;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .plot-background {
+      fill: #F6EDDE;
+      stroke: #8CB4C3;
+      stroke-width: 2;
+    }
+
+    .balanced-region {
+      fill: #CBD6D5;
+      opacity: 0.42;
+    }
+
+    .axis {
+      fill: none;
+      stroke: #58829C;
+      stroke-linecap: round;
+      stroke-width: 2.5;
+    }
+
+    .guide {
+      stroke: #8CB4C3;
+      stroke-dasharray: 5 7;
+      stroke-width: 1.5;
+    }
+
+    .sensitivity-line {
+      fill: none;
+      stroke: #396175;
+      stroke-linecap: round;
+      stroke-width: 6;
+    }
+
+    .ppv-line {
+      fill: none;
+      stroke: #58829C;
+      stroke-dasharray: 12 9;
+      stroke-linecap: round;
+      stroke-width: 6;
+    }
+
+    .axis-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .axis-end {
+      font-size: 16px;
+      font-weight: 650;
+    }
+
+    .line-label {
+      font-size: 20px;
+      font-weight: 750;
+    }
+
+    .strategy-label {
+      font-size: 17px;
+      font-weight: 700;
+      text-anchor: middle;
+    }
+
+    .strategy-note {
+      font-size: 15px;
+      text-anchor: middle;
+    }
+  </style>
+
+  <g aria-hidden="true">
+    <rect class="plot-background" x="120" y="55" width="740" height="345" rx="12" />
+    <rect class="balanced-region" x="370" y="57" width="240" height="341" />
+
+    <line class="guide" x1="370" y1="55" x2="370" y2="400" />
+    <line class="guide" x1="610" y1="55" x2="610" y2="400" />
+
+    <path class="axis" d="M 120 400 H 875" marker-end="url(#axis-arrow)" />
+    <path class="axis" d="M 120 400 V 42" marker-end="url(#axis-arrow)" />
+
+    <path class="sensitivity-line"
+          d="M 145 105 C 315 110, 470 160, 585 235 C 690 302, 770 337, 835 346" />
+    <path class="ppv-line"
+          d="M 145 345 C 315 333, 450 286, 570 211 C 680 145, 765 116, 835 105" />
+
+    <text class="line-label" x="155" y="92">Sensitivity</text>
+    <text class="line-label" x="742" y="91">PPV</text>
+
+    <text class="axis-end" x="105" y="78" text-anchor="end">Higher</text>
+    <text class="axis-end" x="105" y="392" text-anchor="end">Lower</text>
+    <text class="axis-title" x="42" y="228" text-anchor="middle"
+          transform="rotate(-90 42 228)">Metric level</text>
+
+    <text class="axis-title" x="490" y="444" text-anchor="middle">Alert threshold</text>
+    <text class="axis-end" x="120" y="474">Lower · more alerts</text>
+    <text class="axis-end" x="860" y="474" text-anchor="end">Higher · fewer alerts</text>
+
+    <text class="strategy-label" x="245" y="516">Sensitivity-prioritized</text>
+    <text class="strategy-note" x="245" y="540">Catch more events</text>
+
+    <text class="strategy-label" x="490" y="516">Balanced</text>
+    <text class="strategy-note" x="490" y="540">Application-dependent compromise</text>
+
+    <text class="strategy-label" x="735" y="516">PPV-prioritized</text>
+    <text class="strategy-note" x="735" y="540">Make alerts more reliable</text>
+  </g>
+</svg>
