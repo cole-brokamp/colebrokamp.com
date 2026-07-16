@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 960 520"
+     role="img"
+     aria-labelledby="tree-title tree-description">
+  <title id="tree-title">Illustrative classification tree</title>
+  <desc id="tree-description">
+    Patients split first by whether they are younger than two years. Younger
+    patients then split by oxygen saturation, while older patients split by
+    days with poor air quality. Each path ends in a terminal group with a
+    different predicted risk of hospital admission.
+  </desc>
+
+  <style>
+    .connector {
+      fill: none;
+      stroke: #58829C;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 3;
+    }
+
+    .decision-node {
+      fill: #F6EDDE;
+      stroke: #396175;
+      stroke-width: 3;
+    }
+
+    .terminal-node {
+      fill: #CBD6D5;
+      stroke: #58829C;
+      stroke-width: 2.5;
+    }
+
+    .branch-label-background {
+      fill: #F6EDDE;
+    }
+
+    text {
+      fill: #396175;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-anchor: middle;
+    }
+
+    .question {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .branch-label {
+      fill: #58829C;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .terminal-title {
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .terminal-result {
+      fill: #58829C;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  </style>
+
+  <g aria-hidden="true">
+    <!-- Connect the root decision to the two secondary decisions. -->
+    <path class="connector" d="M 480 105 L 260 180" />
+    <path class="connector" d="M 480 105 L 700 180" />
+
+    <!-- Connect the secondary decisions to their terminal groups. -->
+    <path class="connector" d="M 260 265 L 120 390" />
+    <path class="connector" d="M 260 265 L 350 390" />
+    <path class="connector" d="M 700 265 L 610 390" />
+    <path class="connector" d="M 700 265 L 840 390" />
+
+    <!-- Root decision. -->
+    <rect class="decision-node" x="350" y="35" width="260" height="70" rx="12" />
+    <text class="question" x="480" y="78">Age &lt; 2 years?</text>
+
+    <!-- Secondary decisions. -->
+    <rect class="decision-node" x="120" y="180" width="280" height="85" rx="12" />
+    <text class="question" x="260" y="215">
+      <tspan x="260">O₂ saturation</tspan>
+      <tspan x="260" dy="27">&lt; 92%?</tspan>
+    </text>
+
+    <rect class="decision-node" x="560" y="180" width="280" height="85" rx="12" />
+    <text class="question" x="700" y="215">
+      <tspan x="700">≥ 3 poor-air-quality</tspan>
+      <tspan x="700" dy="27">days?</tspan>
+    </text>
+
+    <!-- Root branch labels. -->
+    <rect class="branch-label-background" x="345" y="126" width="50" height="27" rx="8" />
+    <text class="branch-label" x="370" y="146">Yes</text>
+    <rect class="branch-label-background" x="565" y="126" width="50" height="27" rx="8" />
+    <text class="branch-label" x="590" y="146">No</text>
+
+    <!-- Terminal branch labels. -->
+    <rect class="branch-label-background" x="165" y="311" width="50" height="27" rx="8" />
+    <text class="branch-label" x="190" y="331">Yes</text>
+    <rect class="branch-label-background" x="280" y="311" width="50" height="27" rx="8" />
+    <text class="branch-label" x="305" y="331">No</text>
+    <rect class="branch-label-background" x="630" y="311" width="50" height="27" rx="8" />
+    <text class="branch-label" x="655" y="331">Yes</text>
+    <rect class="branch-label-background" x="745" y="311" width="50" height="27" rx="8" />
+    <text class="branch-label" x="770" y="331">No</text>
+
+    <!-- Terminal groups. -->
+    <rect class="terminal-node" x="20" y="390" width="200" height="90" rx="12" />
+    <text class="terminal-title" x="120" y="428">Terminal group A</text>
+    <text class="terminal-result" x="120" y="456">Predicted risk: high</text>
+
+    <rect class="terminal-node" x="250" y="390" width="200" height="90" rx="12" />
+    <text class="terminal-title" x="350" y="428">Terminal group B</text>
+    <text class="terminal-result" x="350" y="456">Predicted risk: low</text>
+
+    <rect class="terminal-node" x="510" y="390" width="200" height="90" rx="12" />
+    <text class="terminal-title" x="610" y="428">Terminal group C</text>
+    <text class="terminal-result" x="610" y="456">Predicted risk: moderate</text>
+
+    <rect class="terminal-node" x="740" y="390" width="200" height="90" rx="12" />
+    <text class="terminal-title" x="840" y="428">Terminal group D</text>
+    <text class="terminal-result" x="840" y="456">Predicted risk: very low</text>
+  </g>
+</svg>

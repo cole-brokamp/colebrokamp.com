@@ -1,17 +1,17 @@
 use anyhow::{Context, Result};
 use chrono::Local;
-use minijinja::{Environment, context};
+use minijinja::{AutoEscape, Environment, context};
 use serde::Serialize;
 use std::fs;
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 use std::process::Command;
 
 use crate::data::{Abstract, Publication, Support, Talk, read_yaml};
 use crate::markdown::markdown_to_html;
-use crate::nav::{nav_items, nav_links};
+use crate::nav::{NavSection, nav_items, nav_links};
 use crate::text::{highlight_cole, html_escape, normalize_doi, present, present_owned};
 use crate::views::{AbstractView, PublicationView, PublicationYear};
-use crate::{bibtex, command};
+use crate::{bibtex, command, writing};
 
 const SITE_DIR: &str = "_site";
 
@@ -52,6 +52,7 @@ impl SiteBuilder {
             body_markdown: self.index_markdown()?,
             show_title: false,
             extra_css: "",
+            active_section: None,
         })?;
 
         self.render_page(PageSpec {
@@ -59,6 +60,7 @@ impl SiteBuilder {
             title: "Research",
             body_markdown: self.read_to_string("content/research.md")?,
             show_title: true,
+            active_section: Some(NavSection::Research),
             extra_css: r#"h1 {
   display: none;
 }
@@ -76,6 +78,7 @@ h2 {
             title: "Publications",
             body_markdown: self.publications_markdown()?,
             show_title: true,
+            active_section: Some(NavSection::Publications),
             extra_css: r#"h1 {
   display: none;
 }
@@ -97,7 +100,13 @@ h2 {
   background-color: transparent;
 }
 "#,
-        })
+        })?;
+
+        self.build_writing()
+    }
+
+    pub(crate) fn build_writing(&self) -> Result<()> {
+        writing::build(self)
     }
 
     pub(crate) fn build_bib(&self) -> Result<()> {
@@ -156,15 +165,30 @@ h2 {
 
     fn render_page(&self, spec: PageSpec<'_>) -> Result<()> {
         let body_html = markdown_to_html(&spec.body_markdown);
-        let html = self.render_template(
+        self.render_html_page(HtmlPageSpec {
+            output: spec.output,
+            title: spec.title,
+            description: "",
+            body_html: &body_html,
+            show_title: spec.show_title,
+            extra_css: spec.extra_css,
+            root_prefix: "",
+            active_section: spec.active_section,
+        })
+    }
+
+    pub(crate) fn render_html_page(&self, spec: HtmlPageSpec<'_>) -> Result<()> {
+        let html = self.render_html_template(
             "templates/page.html.j2",
             context! {
-                active_href => spec.output,
-                body_html => body_html,
+                body_html => spec.body_html,
+                description => spec.description,
                 extra_css => spec.extra_css,
-                nav_items => nav_items(),
-                nav_links => nav_links(),
+                home_href => format!("{}index.html", spec.root_prefix),
+                nav_items => nav_items(spec.root_prefix, spec.active_section),
+                nav_links => nav_links(spec.root_prefix),
                 show_title => spec.show_title,
+                stylesheet_href => format!("{}site.css", spec.root_prefix),
                 title => spec.title,
             },
         )?;
@@ -322,8 +346,30 @@ h2 {
     where
         T: Serialize,
     {
+        self.render_template_with_auto_escape(relative_path, context, false)
+    }
+
+    pub(crate) fn render_html_template<T>(&self, relative_path: &str, context: T) -> Result<String>
+    where
+        T: Serialize,
+    {
+        self.render_template_with_auto_escape(relative_path, context, true)
+    }
+
+    fn render_template_with_auto_escape<T>(
+        &self,
+        relative_path: &str,
+        context: T,
+        auto_escape: bool,
+    ) -> Result<String>
+    where
+        T: Serialize,
+    {
         let source = self.read_to_string(relative_path)?;
         let mut environment = Environment::new();
+        if auto_escape {
+            environment.set_auto_escape_callback(|_| AutoEscape::Html);
+        }
         environment
             .add_template_owned(relative_path.to_string(), source)
             .with_context(|| format!("load template {relative_path}"))?;
@@ -362,7 +408,11 @@ h2 {
         self.root.join(relative_path)
     }
 
-    fn site_path(&self, relative_path: &str) -> PathBuf {
+    pub(crate) fn root(&self) -> &Path {
+        &self.root
+    }
+
+    pub(crate) fn site_path(&self, relative_path: impl AsRef<Path>) -> PathBuf {
         self.path(SITE_DIR).join(relative_path)
     }
 }
@@ -373,4 +423,16 @@ struct PageSpec<'a> {
     body_markdown: String,
     show_title: bool,
     extra_css: &'a str,
+    active_section: Option<NavSection>,
+}
+
+pub(crate) struct HtmlPageSpec<'a> {
+    pub(crate) output: &'a str,
+    pub(crate) title: &'a str,
+    pub(crate) description: &'a str,
+    pub(crate) body_html: &'a str,
+    pub(crate) show_title: bool,
+    pub(crate) extra_css: &'a str,
+    pub(crate) root_prefix: &'a str,
+    pub(crate) active_section: Option<NavSection>,
 }

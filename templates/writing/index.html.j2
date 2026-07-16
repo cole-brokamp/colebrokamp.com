@@ -1,0 +1,17 @@
+<a class="skip-link" href="#writing-index">Skip to articles</a>
+<main class="writing-page" id="writing-index">
+  <header class="writing-index-header">
+    <h1>Writing</h1>
+    <p class="writing-index-description">{{ description }}</p>
+  </header>
+
+  <ul class="article-list">
+{% for article in articles %}
+    <li>
+      <a href="{{ article.href|safe }}">{{ article.title }}</a>
+      <p>{{ article.description }}</p>
+      <time datetime="{{ article.date_iso }}">{{ article.date_display }}</time>
+    </li>
+{% endfor %}
+  </ul>
+</main>
