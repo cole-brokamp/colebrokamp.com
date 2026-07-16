@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">Cole Brokamp</title>
+  <defs>
+    <clipPath id="horizon-circle">
+      <circle cx="32" cy="32" r="29" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#horizon-circle)">
+    <rect width="64" height="38" fill="#396175" />
+    <rect y="38" width="64" height="26" fill="#8CB4C3" />
+  </g>
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#396175" stroke-width="3" />
+</svg>

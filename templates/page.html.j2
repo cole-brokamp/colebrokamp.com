@@ -6,6 +6,9 @@
 {% if description %}<meta name="description" content="{{ description }}" />
 {% endif %}
 <title>{{ title }}</title>
+<link href="{{ favicon_svg_href|safe }}" rel="icon" type="image/svg+xml" />
+<link href="{{ favicon_ico_href|safe }}" rel="icon" sizes="any" />
+<link href="{{ apple_touch_icon_href|safe }}" rel="apple-touch-icon" />
 <link href="{{ stylesheet_href|safe }}" rel="stylesheet" />
 <style type="text/css">
 .main-container {
@@ -26,16 +29,16 @@ summary {
 {% endif %}
 </head>
 <body>
-<div class="container-fluid main-container">
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<nav class="navbar navbar-default" aria-label="Primary">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="{{ home_href|safe }}">Cole Brokamp</a>
+      <button type="button" class="navbar-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ home_href|safe }}">Cole Brokamp</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -48,41 +51,46 @@ summary {
       <ul class="nav navbar-nav navbar-right">
         {% for link in nav_links %}
         <li>
-          <a href="{{ link.href|safe }}" aria-label="{{ link.label }}">
+          <a href="{{ link.href|safe }}">
             {{ link.icon_svg|safe }}
+            <span class="nav-link-label">{{ link.label }}</span>
           </a>
         </li>
         {% endfor %}
       </ul>
     </div>
   </div>
-</div>
+</nav>
+<main id="main-content" class="container-fluid main-container" tabindex="-1">
 <div id="header">
-{% if show_title %}
-<h1 class="title toc-ignore">{{ title }}</h1>
+{% if page_heading %}
+<h1 class="title toc-ignore">{{ page_heading }}</h1>
 {% endif %}
 </div>
 {{ body_html|safe }}
-</div>
+</main>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  var navbar = document.querySelector(".navbar");
-  if (!navbar) return;
-
   var toggle = document.querySelector(".navbar-toggle");
   var nav = document.querySelector("#navbar");
   if (toggle && nav) {
+    function setExpanded(expanded) {
+      toggle.setAttribute("aria-expanded", String(expanded));
+      nav.classList.toggle("show", expanded);
+    }
+
     toggle.addEventListener("click", function () {
       var expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      toggle.classList.toggle("collapsed", expanded);
-      nav.classList.toggle("show", !expanded);
+      setExpanded(!expanded);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setExpanded(false);
+        toggle.focus();
+      }
     });
   }
-
-  var navHeight = navbar.getBoundingClientRect().height + 15;
-  document.body.style.paddingTop = navHeight + "px";
-  document.body.style.paddingBottom = "40px";
 });
 </script>
 </body>
