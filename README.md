@@ -30,6 +30,9 @@ The source layout is intentionally small:
 - `templates/writing/*.html.j2` contains the writing index and article bodies.
 - `site.css` contains the site styling, including the small navbar rules that
   replace the old generated Bootstrap and Font Awesome assets.
+- Root-level favicon files and `cole_circle.webp` are copied into the generated
+  site; the custom domain is configured in GitHub Pages rather than a `CNAME`
+  artifact.
 - `data-raw/*.yaml` is list-shaped source data with no R-style top-level IDs.
 - `data-raw/pubs.yaml` keeps display citations separate from explicit BibTeX fields
   such as `volume`, `number`, `pages`, and `note`.

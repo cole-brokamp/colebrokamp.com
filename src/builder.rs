@@ -49,22 +49,19 @@ impl SiteBuilder {
         self.render_page(PageSpec {
             output: "index.html",
             title: "Cole Brokamp",
+            page_heading: Some("Cole Brokamp"),
             body_markdown: self.index_markdown()?,
-            show_title: false,
             extra_css: "",
             active_section: None,
         })?;
 
         self.render_page(PageSpec {
             output: "research.html",
-            title: "Research",
+            title: "Research | Cole Brokamp",
+            page_heading: Some("Research"),
             body_markdown: self.read_to_string("content/research.md")?,
-            show_title: true,
             active_section: Some(NavSection::Research),
-            extra_css: r#"h1 {
-  display: none;
-}
-h2 {
+            extra_css: r#"h2 {
   border-bottom: 1px solid #8CB4C3;
   font-size: 1.25rem;
   margin-top: 1.75rem;
@@ -75,14 +72,11 @@ h2 {
 
         self.render_page(PageSpec {
             output: "publications.html",
-            title: "Publications",
+            title: "Publications | Cole Brokamp",
+            page_heading: Some("Publications"),
             body_markdown: self.publications_markdown()?,
-            show_title: true,
             active_section: Some(NavSection::Publications),
-            extra_css: r#"h1 {
-  display: none;
-}
-h2 {
+            extra_css: r#"h2 {
   border-bottom: 1px solid #8CB4C3;
   margin-top: 1.75rem;
   padding-bottom: 0.25rem;
@@ -170,7 +164,7 @@ h2 {
             title: spec.title,
             description: "",
             body_html: &body_html,
-            show_title: spec.show_title,
+            page_heading: spec.page_heading,
             extra_css: spec.extra_css,
             root_prefix: "",
             active_section: spec.active_section,
@@ -181,13 +175,16 @@ h2 {
         let html = self.render_html_template(
             "templates/page.html.j2",
             context! {
+                apple_touch_icon_href => format!("{}apple-touch-icon.png", spec.root_prefix),
                 body_html => spec.body_html,
                 description => spec.description,
                 extra_css => spec.extra_css,
+                favicon_ico_href => format!("{}favicon.ico", spec.root_prefix),
+                favicon_svg_href => format!("{}favicon.svg", spec.root_prefix),
                 home_href => format!("{}index.html", spec.root_prefix),
                 nav_items => nav_items(spec.root_prefix, spec.active_section),
                 nav_links => nav_links(spec.root_prefix),
-                show_title => spec.show_title,
+                page_heading => spec.page_heading,
                 stylesheet_href => format!("{}site.css", spec.root_prefix),
                 title => spec.title,
             },
@@ -197,7 +194,7 @@ h2 {
 
     fn index_markdown(&self) -> Result<String> {
         Ok(format!(
-            "<img src='cole_circle.png' align='right' style=\"max-height: 270px\">\n\n\
+            "<img class=\"home-portrait\" src=\"cole_circle.webp\" alt=\"Portrait of Cole Brokamp\" width=\"600\" height=\"600\" decoding=\"async\">\n\n\
              <hr class=\"home-rule\">\n\n{}",
             self.read_to_string("content/bio.md")?
         ))
@@ -326,7 +323,13 @@ h2 {
     }
 
     fn copy_static_assets(&self) -> Result<()> {
-        for file in ["CNAME", "cole_circle.png", "site.css"] {
+        for file in [
+            "apple-touch-icon.png",
+            "cole_circle.webp",
+            "favicon.ico",
+            "favicon.svg",
+            "site.css",
+        ] {
             fs::copy(self.path(file), self.site_path(file))
                 .with_context(|| format!("copy {file} into site output"))?;
         }
@@ -420,8 +423,8 @@ h2 {
 struct PageSpec<'a> {
     output: &'a str,
     title: &'a str,
+    page_heading: Option<&'a str>,
     body_markdown: String,
-    show_title: bool,
     extra_css: &'a str,
     active_section: Option<NavSection>,
 }
@@ -431,7 +434,7 @@ pub(crate) struct HtmlPageSpec<'a> {
     pub(crate) title: &'a str,
     pub(crate) description: &'a str,
     pub(crate) body_html: &'a str,
-    pub(crate) show_title: bool,
+    pub(crate) page_heading: Option<&'a str>,
     pub(crate) extra_css: &'a str,
     pub(crate) root_prefix: &'a str,
     pub(crate) active_section: Option<NavSection>,
