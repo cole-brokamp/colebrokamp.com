@@ -1,0 +1,21 @@
+<div class="software-page">
+  <p class="software-intro">{{ introduction }}</p>
+  <section class="software-grid" aria-label="Software projects">
+    {% for project in projects %}
+    <article class="software-card">
+      <div class="software-card-header">
+        <h2>{{ project.name }}</h2>
+        <div class="software-card-links">
+          <a class="software-card-link" href="{{ project.project_url|safe }}" aria-label="Visit the {{ project.name }} project page">
+            <span class="software-project-icon" aria-hidden="true">↗</span>
+          </a>
+          <a class="software-card-link" href="{{ project.github_url|safe }}" aria-label="View {{ project.name }} on GitHub">
+            {{ github_icon_svg|safe }}
+          </a>
+        </div>
+      </div>
+      <p>{{ project.description }}</p>
+    </article>
+    {% endfor %}
+  </section>
+</div>
