@@ -17,19 +17,42 @@
             markerWidth="7"
             markerHeight="7"
             orient="auto">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#58829C" />
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="var(--svg-accent)" />
     </marker>
   </defs>
 
   <style>
+    :root {
+      color-scheme: light dark;
+      --svg-canvas: #F6EDDE;
+      --svg-text: #396175;
+      --svg-strong-surface: #396175;
+      --svg-text-on-strong: #F6EDDE;
+      --svg-accent: #58829C;
+      --svg-accent-soft: #8CB4C3;
+      --svg-muted: #CBD6D5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --svg-canvas: #15262F;
+        --svg-text: #E9E2D8;
+        --svg-strong-surface: #244553;
+        --svg-text-on-strong: #F6EDDE;
+        --svg-accent: #9FC7D7;
+        --svg-accent-soft: #5F899A;
+        --svg-muted: #203942;
+      }
+    }
+
     text {
-      fill: #396175;
+      fill: var(--svg-text);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     .panel {
-      fill: #F6EDDE;
-      stroke: #8CB4C3;
+      fill: var(--svg-canvas);
+      stroke: var(--svg-accent-soft);
       stroke-width: 2;
     }
 
@@ -39,15 +62,15 @@
     }
 
     .decision-node {
-      fill: #F6EDDE;
-      stroke: #396175;
+      fill: var(--svg-canvas);
+      stroke: var(--svg-text);
       stroke-width: 2.5;
     }
 
     .terminal-node,
     .output-node {
-      fill: #CBD6D5;
-      stroke: #58829C;
+      fill: var(--svg-muted);
+      stroke: var(--svg-accent);
       stroke-width: 2;
     }
 
@@ -55,7 +78,7 @@
     .merge-line,
     .flow-line {
       fill: none;
-      stroke: #58829C;
+      stroke: var(--svg-accent);
       stroke-linecap: round;
       stroke-linejoin: round;
     }
@@ -70,13 +93,13 @@
     }
 
     .result-box {
-      fill: #396175;
-      stroke: #396175;
+      fill: var(--svg-strong-surface);
+      stroke: var(--svg-strong-surface);
       stroke-width: 2.5;
     }
 
     .result-text {
-      fill: #F6EDDE;
+      fill: var(--svg-text-on-strong);
       font-size: 18px;
       font-weight: 750;
       text-anchor: middle;
@@ -85,7 +108,7 @@
     .base-text,
     .correction-text,
     .operator-text {
-      fill: #396175;
+      fill: var(--svg-text);
       font-weight: 700;
       text-anchor: middle;
     }
@@ -102,6 +125,8 @@
       font-size: 24px;
     }
   </style>
+
+  <rect width="100%" height="100%" fill="var(--svg-canvas)" />
 
   <g aria-hidden="true">
     <!-- Parallel trees flow downward into an averaged prediction. -->

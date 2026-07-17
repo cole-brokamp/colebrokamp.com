@@ -11,32 +11,51 @@
   </desc>
 
   <style>
+    :root {
+      color-scheme: light dark;
+      --svg-canvas: #F6EDDE;
+      --svg-text: #396175;
+      --svg-accent: #58829C;
+      --svg-accent-soft: #8CB4C3;
+      --svg-muted: #CBD6D5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --svg-canvas: #15262F;
+        --svg-text: #E9E2D8;
+        --svg-accent: #9FC7D7;
+        --svg-accent-soft: #5F899A;
+        --svg-muted: #203942;
+      }
+    }
+
     .connector {
       fill: none;
-      stroke: #58829C;
+      stroke: var(--svg-accent);
       stroke-linecap: round;
       stroke-linejoin: round;
       stroke-width: 3;
     }
 
     .decision-node {
-      fill: #F6EDDE;
-      stroke: #396175;
+      fill: var(--svg-canvas);
+      stroke: var(--svg-text);
       stroke-width: 3;
     }
 
     .terminal-node {
-      fill: #CBD6D5;
-      stroke: #58829C;
+      fill: var(--svg-muted);
+      stroke: var(--svg-accent);
       stroke-width: 2.5;
     }
 
     .branch-label-background {
-      fill: #F6EDDE;
+      fill: var(--svg-canvas);
     }
 
     text {
-      fill: #396175;
+      fill: var(--svg-text);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       text-anchor: middle;
     }
@@ -47,7 +66,7 @@
     }
 
     .branch-label {
-      fill: #58829C;
+      fill: var(--svg-accent);
       font-size: 17px;
       font-weight: 700;
     }
@@ -58,11 +77,13 @@
     }
 
     .terminal-result {
-      fill: #58829C;
+      fill: var(--svg-accent);
       font-size: 16px;
       font-weight: 600;
     }
   </style>
+
+  <rect width="100%" height="100%" fill="var(--svg-canvas)" />
 
   <g aria-hidden="true">
     <!-- Connect the root decision to the two secondary decisions. -->

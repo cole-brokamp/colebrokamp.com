@@ -3,28 +3,47 @@
   <desc id="map-description">The tract-aligned Avondale neighborhood crosses six ZIP Code Tabulation Areas. The commonly used 45229 ZCTA extends north beyond Avondale, while western, eastern, and southern parts of Avondale fall in five other ZCTAs. A table compares Avondale with ZCTA 45229: 43 versus 36 percent living in poverty, 20,000 versus 31,000 dollars median household income, and 78 versus 65 percent Black non-Hispanic or Latino population.</desc>
   <defs>
     <pattern id="avondale-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-      <rect width="10" height="10" fill="#F6EDDE" fill-opacity="0.30" />
-      <line x1="0" y1="0" x2="0" y2="10" stroke="#396175" stroke-opacity="0.22" stroke-width="4" />
+      <rect width="10" height="10" fill="var(--svg-canvas)" fill-opacity="0.30" />
+      <line x1="0" y1="0" x2="0" y2="10" stroke="var(--svg-text)" stroke-opacity="0.22" stroke-width="4" />
     </pattern>
     <filter id="paper-shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#396175" flood-opacity="0.12" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="var(--svg-text)" flood-opacity="0.12" />
     </filter>
   </defs>
   <style>
-    text { fill: #396175; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .card { fill: #F6EDDE; stroke: #8CB4C3; stroke-width: 2; }
-    .zcta { fill: #CBD6D5; stroke: #8CB4C3; stroke-linejoin: round; stroke-width: 1.5; }
-    .zcta-main { fill: #8CB4C3; stroke: #58829C; stroke-linejoin: round; stroke-width: 2.5; }
-    .avondale { fill: url(#avondale-hatch); fill-rule: evenodd; stroke: #396175; stroke-linejoin: round; stroke-width: 4; }
-    .zcta-label { font-size: 14px; font-weight: 750; paint-order: stroke; stroke: #F6EDDE; stroke-linejoin: round; stroke-width: 5px; }
-    .zcta-label-main { fill: #F6EDDE; stroke: #58829C; stroke-width: 6px; }
-    .avondale-label { font-size: 18px; font-weight: 800; paint-order: stroke; stroke: #F6EDDE; stroke-width: 7px; }
-    .table-rule { stroke: #8CB4C3; stroke-width: 1.5; }
-    .table-header { fill: #58829C; font-size: 14px; font-weight: 800; text-anchor: middle; }
+    :root {
+      color-scheme: light dark;
+      --svg-canvas: #F6EDDE;
+      --svg-text: #396175;
+      --svg-accent: #58829C;
+      --svg-accent-soft: #8CB4C3;
+      --svg-muted: #CBD6D5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --svg-canvas: #15262F;
+        --svg-text: #E9E2D8;
+        --svg-accent: #9FC7D7;
+        --svg-accent-soft: #5F899A;
+        --svg-muted: #203942;
+      }
+    }
+
+    text { fill: var(--svg-text); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .card { fill: var(--svg-canvas); stroke: var(--svg-accent-soft); stroke-width: 2; }
+    .zcta { fill: var(--svg-muted); stroke: var(--svg-accent-soft); stroke-linejoin: round; stroke-width: 1.5; }
+    .zcta-main { fill: var(--svg-accent-soft); stroke: var(--svg-accent); stroke-linejoin: round; stroke-width: 2.5; }
+    .avondale { fill: url(#avondale-hatch); fill-rule: evenodd; stroke: var(--svg-text); stroke-linejoin: round; stroke-width: 4; }
+    .zcta-label { font-size: 14px; font-weight: 750; paint-order: stroke; stroke: var(--svg-canvas); stroke-linejoin: round; stroke-width: 5px; }
+    .zcta-label-main { fill: var(--svg-canvas); stroke: var(--svg-accent); stroke-width: 6px; }
+    .avondale-label { font-size: 18px; font-weight: 800; paint-order: stroke; stroke: var(--svg-canvas); stroke-width: 7px; }
+    .table-rule { stroke: var(--svg-accent-soft); stroke-width: 1.5; }
+    .table-header { fill: var(--svg-accent); font-size: 14px; font-weight: 800; text-anchor: middle; }
     .table-label { font-size: 15px; font-weight: 650; }
     .table-value { font-size: 20px; font-weight: 800; text-anchor: middle; }
   </style>
-  <rect width="960" height="520" fill="#F6EDDE" />
+  <rect width="960" height="520" fill="var(--svg-canvas)" />
   <rect class="card" x="20" y="15" width="920" height="490" rx="14" filter="url(#paper-shadow)" />
   <g transform="translate(-16 -78) scale(1.05)">
   <path class="zcta" d="M 309.2 475.1 L 307.8 474.9 L 305.6 474.7 L 303.5 474.7 L 301.3 474.7 L 302.6 460.4 L 303.4 450.8 L 294.8 450.0 L 294.4 447.8 L 294.4 447.4 L 294.5 445.1 L 295.0 439.4 L 295.4 435.7 L 296.2 435.6 L 297.3 435.6 L 298.3 435.7 L 299.8 436.0 L 300.6 436.2 L 306.7 438.5 L 309.3 435.8 L 310.2 434.3 L 310.6 433.6 L 310.8 433.1 L 312.3 427.1 L 313.5 423.2 L 315.0 418.3 L 317.3 411.3 L 315.1 411.3 L 314.6 411.4 L 313.4 411.6 L 313.3 411.6 L 312.8 408.4 L 314.3 403.8 L 314.6 399.1 L 318.7 399.4 L 318.6 400.5 L 319.4 400.3 L 319.7 400.3 L 319.9 400.4 L 320.1 400.5 L 322.5 400.6 L 328.9 400.9 L 333.0 401.1 L 333.4 401.0 L 333.5 401.0 L 333.9 400.6 L 334.2 400.2 L 336.5 400.2 L 341.4 400.5 L 342.5 400.5 L 347.5 395.1 L 347.8 395.4 L 348.1 395.7 L 348.5 396.0 L 349.1 396.3 L 351.9 397.2 L 353.6 395.7 L 354.6 394.7 L 355.2 394.0 L 356.0 392.9 L 356.5 392.2 L 357.2 391.6 L 357.8 391.1 L 358.1 390.9 L 358.5 390.6 L 358.9 390.1 L 359.1 389.6 L 360.1 386.9 L 360.4 386.3 L 360.9 385.2 L 359.4 381.9 L 361.5 380.6 L 364.5 378.8 L 365.9 377.8 L 368.0 376.3 L 369.1 375.4 L 370.8 374.0 L 372.3 372.6 L 373.2 371.7 L 374.2 370.8 L 375.7 369.2 L 377.0 367.6 L 378.0 366.5 L 379.0 365.0 L 381.0 362.2 L 383.4 358.9 L 386.5 365.4 L 388.1 368.9 L 388.9 370.8 L 389.7 372.8 L 390.0 373.5 L 391.6 380.3 L 391.9 381.8 L 392.2 383.2 L 392.7 384.5 L 393.1 385.6 L 396.6 392.6 L 397.3 393.8 L 398.0 395.0 L 398.7 396.0 L 399.6 397.0 L 401.7 399.1 L 403.6 400.6 L 406.0 402.5 L 407.0 404.4 L 407.4 403.3 L 407.7 399.3 L 413.6 399.8 L 419.0 400.3 L 418.6 404.1 L 427.2 404.8 L 430.2 405.0 L 432.5 405.2 L 436.6 405.6 L 438.5 405.7 L 444.9 406.3 L 445.0 406.8 L 444.9 407.2 L 444.9 407.6 L 447.0 407.8 L 447.2 406.6 L 447.5 406.7 L 449.5 407.0 L 450.4 407.1 L 451.1 407.1 L 453.1 407.1 L 453.9 407.1 L 454.9 407.2 L 455.6 407.2 L 455.7 406.8 L 456.2 400.8 L 466.2 401.5 L 467.8 401.6 L 477.1 402.6 L 474.3 408.6 L 474.9 420.1 L 479.3 423.7 L 476.6 427.1 L 476.2 427.6 L 475.8 428.4 L 475.6 429.1 L 475.4 429.9 L 475.2 430.9 L 475.2 431.8 L 475.3 432.7 L 475.4 433.5 L 477.6 440.0 L 479.1 444.6 L 479.1 444.6 L 479.5 446.0 L 479.8 447.4 L 479.9 448.9 L 480.0 450.5 L 479.9 451.5 L 479.1 455.9 L 478.8 457.3 L 478.4 458.9 L 477.2 459.1 L 475.2 459.3 L 466.0 459.6 L 459.7 459.8 L 458.1 460.1 L 456.3 460.2 L 452.2 461.3 L 449.6 462.0 L 447.8 462.4 L 446.0 463.0 L 438.9 465.9 L 436.0 467.2 L 433.2 468.5 L 430.4 470.0 L 426.4 472.3 L 421.1 475.4 L 415.3 478.8 L 413.2 480.0 L 405.8 484.3 L 390.8 492.9 L 389.2 494.0 L 387.7 495.1 L 382.5 499.3 L 380.3 500.9 L 378.2 502.8 L 378.0 502.9 L 375.1 506.2 L 375.2 505.8 L 375.3 505.4 L 375.2 505.1 L 375.1 504.7 L 374.4 502.9 L 374.1 502.3 L 373.8 501.8 L 373.3 501.2 L 373.1 501.0 L 372.1 500.3 L 371.2 499.8 L 370.4 499.4 L 369.8 499.2 L 369.4 498.7 L 369.0 498.2 L 368.9 498.0 L 368.7 497.8 L 367.9 496.5 L 367.2 495.5 L 366.5 494.6 L 365.9 493.9 L 363.5 499.1 L 363.6 499.4 L 363.9 500.0 L 364.4 500.6 L 364.9 501.1 L 365.4 501.5 L 366.0 501.9 L 366.8 502.2 L 368.2 502.5 L 368.9 502.7 L 369.2 502.9 L 369.5 503.2 L 369.7 503.5 L 369.8 503.8 L 369.9 504.2 L 369.9 504.6 L 369.9 504.9 L 369.8 505.3 L 369.6 505.6 L 369.3 505.9 L 368.5 506.2 L 368.0 506.6 L 367.4 507.1 L 367.0 507.6 L 366.5 508.4 L 366.1 509.0 L 365.6 509.5 L 365.0 510.0 L 364.7 510.1 L 364.4 510.1 L 364.1 510.1 L 363.1 509.7 L 361.0 508.2 L 360.5 507.6 L 359.8 506.8 L 359.6 506.5 L 359.4 506.2 L 359.4 505.8 L 359.4 505.5 L 359.4 505.1 L 356.9 507.8 L 356.5 508.4 L 355.9 509.5 L 355.0 511.1 L 354.2 512.8 L 353.2 514.5 L 348.5 520.3 L 347.4 521.4 L 346.6 522.5 L 345.9 523.5 L 345.4 524.6 L 345.2 525.0 L 345.1 525.6 L 344.8 527.2 L 344.7 528.4 L 344.6 531.1 L 344.5 531.7 L 344.4 532.3 L 344.1 532.9 L 343.6 533.6 L 343.0 534.1 L 342.2 534.7 L 341.1 535.4 L 340.5 535.8 L 339.9 536.0 L 339.7 536.0 L 339.3 535.9 L 339.1 535.9 L 338.4 535.5 L 337.7 534.9 L 336.5 533.7 L 336.2 533.4 L 335.8 532.8 L 335.4 532.1 L 335.2 531.4 L 335.0 530.7 L 334.9 529.9 L 335.0 529.1 L 335.5 526.4 L 335.3 526.1 L 335.1 525.7 L 334.9 525.5 L 334.6 525.3 L 334.3 525.1 L 333.9 525.0 L 333.6 525.0 L 333.3 525.1 L 333.0 525.2 L 332.8 525.4 L 332.5 525.6 L 331.9 525.9 L 331.2 526.1 L 330.6 526.3 L 330.0 526.3 L 329.3 526.3 L 328.8 526.2 L 328.2 525.9 L 327.4 525.5 L 326.6 525.0 L 324.6 523.1 L 320.8 518.1 L 316.4 511.9 L 316.0 511.3 L 315.6 510.9 L 315.1 510.6 L 309.5 506.1 L 308.2 505.1 L 307.5 504.5 L 307.8 503.3 L 310.1 494.0 L 311.0 491.7 L 311.9 488.6 L 312.4 486.8 L 313.2 482.6 L 313.5 480.5 L 313.8 477.8 L 314.0 475.4 L 312.2 475.3 L 311.6 475.2 L 311.2 479.8 L 308.9 479.7 L 309.0 477.9 L 309.2 475.1 Z" />
