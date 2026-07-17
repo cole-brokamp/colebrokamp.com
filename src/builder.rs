@@ -6,18 +6,20 @@ use std::fs;
 use std::path::{Path, PathBuf};
 use std::process::Command;
 
-use crate::data::{Abstract, Publication, Support, Talk, read_yaml};
+use crate::data::{Abstract, Publication, Software, Support, Talk, read_yaml};
 use crate::markdown::markdown_to_html;
-use crate::nav::{NavSection, nav_items, nav_links};
+use crate::nav::{GITHUB_ICON_SVG, NavSection, nav_items, nav_links};
 use crate::text::{highlight_cole, html_escape, normalize_doi, present, present_owned};
 use crate::views::{AbstractView, PublicationView, PublicationYear};
 use crate::{bibtex, command, writing};
 
 const SITE_DIR: &str = "_site";
+const SOFTWARE_DESCRIPTION: &str = "Selected open-source software for reproducible environmental health, geospatial research, and data workflows.";
 
 pub(crate) struct SiteBuilder {
     root: PathBuf,
     publications: Vec<Publication>,
+    software: Vec<Software>,
     support: Vec<Support>,
     abstracts: Vec<Abstract>,
     talks: Vec<Talk>,
@@ -28,6 +30,7 @@ impl SiteBuilder {
         let root = std::env::current_dir().context("read current directory")?;
         Ok(Self {
             publications: read_yaml(&root, "data-raw/pubs.yaml")?,
+            software: read_yaml(&root, "data-raw/software.yaml")?,
             support: read_yaml(&root, "data-raw/support.yaml")?,
             abstracts: read_yaml(&root, "data-raw/abstracts.yaml")?,
             talks: read_yaml(&root, "data-raw/talks.yaml")?,
@@ -69,6 +72,8 @@ impl SiteBuilder {
 }
 "#,
         })?;
+
+        self.render_software_page()?;
 
         self.render_page(PageSpec {
             output: "publications.html",
@@ -169,6 +174,31 @@ impl SiteBuilder {
             root_prefix: "",
             active_section: spec.active_section,
         })
+    }
+
+    fn render_software_page(&self) -> Result<()> {
+        let body_html = self.software_body_html()?;
+        self.render_html_page(HtmlPageSpec {
+            output: "software.html",
+            title: "Software | Cole Brokamp",
+            description: SOFTWARE_DESCRIPTION,
+            body_html: &body_html,
+            page_heading: Some("Software"),
+            extra_css: "",
+            root_prefix: "",
+            active_section: Some(NavSection::Software),
+        })
+    }
+
+    fn software_body_html(&self) -> Result<String> {
+        self.render_html_template(
+            "templates/software.html.j2",
+            context! {
+                introduction => SOFTWARE_DESCRIPTION,
+                projects => &self.software,
+                github_icon_svg => GITHUB_ICON_SVG,
+            },
+        )
     }
 
     pub(crate) fn render_html_page(&self, spec: HtmlPageSpec<'_>) -> Result<()> {
@@ -438,4 +468,27 @@ pub(crate) struct HtmlPageSpec<'a> {
     pub(crate) extra_css: &'a str,
     pub(crate) root_prefix: &'a str,
     pub(crate) active_section: Option<NavSection>,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{SOFTWARE_DESCRIPTION, SiteBuilder};
+
+    #[test]
+    fn renders_the_complete_software_card_collection() {
+        let builder = SiteBuilder::new().unwrap();
+        let html = builder.software_body_html().unwrap();
+        let mut previous_position = 0;
+
+        assert_eq!(html.matches("class=\"software-card\"").count(), 6);
+        assert!(html.contains(SOFTWARE_DESCRIPTION));
+
+        for project in &builder.software {
+            let position = html.find(&format!(">{}</h2>", project.name)).unwrap();
+            assert!(position >= previous_position);
+            assert!(html.contains(&format!("href=\"{}\"", project.project_url)));
+            assert!(html.contains(&format!("href=\"{}\"", project.github_url)));
+            previous_position = position;
+        }
+    }
 }
