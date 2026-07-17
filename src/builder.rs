@@ -65,7 +65,7 @@ impl SiteBuilder {
             body_markdown: self.read_to_string("content/research.md")?,
             active_section: Some(NavSection::Research),
             extra_css: r#"h2 {
-  border-bottom: 1px solid #8CB4C3;
+  border-bottom: 1px solid var(--color-accent-soft);
   font-size: 1.25rem;
   margin-top: 1.75rem;
   padding-bottom: 0.25rem;
@@ -82,20 +82,20 @@ impl SiteBuilder {
             body_markdown: self.publications_markdown()?,
             active_section: Some(NavSection::Publications),
             extra_css: r#"h2 {
-  border-bottom: 1px solid #8CB4C3;
+  border-bottom: 1px solid var(--color-accent-soft);
   margin-top: 1.75rem;
   padding-bottom: 0.25rem;
 }
 .pub-id {
-  color: #58829C;
+  color: var(--color-accent);
   text-decoration: none;
   text-underline-offset: 2px;
 }
 .pub-id:hover,
 .pub-id:focus {
-  color: #396175;
+  color: var(--color-text);
   text-decoration: underline;
-  text-decoration-color: #396175;
+  text-decoration-color: var(--color-text);
   background-color: transparent;
 }
 "#,
