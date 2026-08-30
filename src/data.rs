@@ -92,7 +92,7 @@ mod tests {
 
         assert_eq!(
             names,
-            ["DeGAUSS", "addr", "appc", "CoDEC", "PurpleAir", "dpkg"]
+            ["geomarker", "addr", "appc", "CoDEC", "PurpleAir", "stow"]
         );
         assert!(entries.iter().all(|entry| {
             entry.project_url.starts_with("https://")
