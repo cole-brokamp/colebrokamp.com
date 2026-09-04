@@ -1,3 +1,64 @@
+- title: "Air Pollution Prediction Commons (appc): An Open-source Framework for Near Real-time, Point-based Assessment of Ambient Fine Particulate Matter Exposure"
+  author:
+    - Cole Brokamp
+    - Erika Manning
+    - Carson Hartlage
+  event: International Society of Exposure Science Annual Meeting
+  year: 2026
+  location: Vancouver, Canada
+
+- title: "Address-Level Evaluation of Home Repair Interventions and Pediatric Health Outcomes in Cincinnati, Ohio"
+  author:
+    - Cole Brokamp\*
+    - Erika Manning
+    - Carson Hartlage
+    - Patrick Ryan
+  event: International Society of Exposure Science Annual Meeting
+  year: 2026
+  location: Vancouver, Canada
+
+- title: "Characterizing Psychosocial Exposures in Pediatric Psychiatric Emergencies with an Open-Weight Large Language Model"
+  author:
+    - Carson Hartlage\*
+    - Erika Manning
+    - Jon Bernard
+    - Sia Vaish
+    - Cole Brokamp
+  event: International Society of Exposure Science Annual Meeting
+  year: 2026
+  location: Vancouver, Canada
+
+- title: "Impact of Recent Exposure to Hyperlocal Gun Violence on Risk of Psychiatric Re-Exacerbation in Youth"
+  author:
+    - Carson Hartlage\*
+    - Vivek Ashok
+    - Erika Manning
+    - Andrew F Beck
+    - Cole Brokamp
+  event: International Society of Exposure Science Annual Meeting
+  year: 2026
+  location: Vancouver, Canada
+
+- title: "A Framework for Standardized Address Matching to Support Precise Exposure Assessment"
+  author:
+    - Erika Rasnick Manning
+    - Carson Hartlage
+    - Cole Brokamp\*
+  event: International Society of Exposure Science Annual Meeting
+  year: 2026
+  location: Vancouver, Canada
+
+- title: "Impact of Acute Gun Violence Exposure on Psychiatric Re-Exacerbation in Children and Adolescents"
+  author:
+    - Carson S Hartlage\*
+    - Vivek Ashok
+    - Erika Rasnick Manning
+    - Andrew F Beck
+    - Cole Brokamp
+  event: National Research Conference for the Prevention of Firearm-Related Harms
+  year: 2026
+  location: Baltimore, MD
+
 - title: "Using Hyperlocal Geospatial Data to Support Pediatric Health Care: A Qualitative Study"
   author:
     - Carson S Hartlage\*
@@ -6,8 +67,8 @@
     - Andrew F Beck
     - Cole Brokamp
   event: American Medical Informatics Association Annual Symposium
-  year: 2027
-  location: "2026"
+  year: 2026
+  location: Dallas, TX
 
 - title: "Impact of Short-Term Air Pollution and Extreme Heat on Pediatric Psychiatric Exacerbations: A Case-Crossover Study"
   author:
