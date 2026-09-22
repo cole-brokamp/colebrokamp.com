@@ -7,7 +7,7 @@ builder.
   CV, write `_site/`, and copy static assets.
 - `data.rs`: Defines the YAML input shapes and the `read_yaml` helper.
 - `views.rs`: Defines the small structs passed into MiniJinja templates.
-- `bibtex.rs`: Turns `data-raw/pubs.yaml` publications into BibTeX.
+- `ris.rs`: Turns `data-raw/pubs.yaml` publications into RIS.
 - `markdown.rs`: Converts Markdown to HTML with `pulldown-cmark`.
 - `nav.rs`: Defines navbar links and inline SVG icons.
 - `text.rs`: Shared string helpers for DOI normalization, HTML escaping, and

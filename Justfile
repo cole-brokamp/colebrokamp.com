@@ -1,9 +1,9 @@
 set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
 
-# render the website, writing, CV, and BibTeX
+# render the website, writing, CV, and RIS
 build: render
 
-# render one target: all, site, writing, bib, or cv
+# render one target: all, site, writing, ris, or cv
 render target="all":
     cargo run --quiet -- {{ quote(target) }}
 

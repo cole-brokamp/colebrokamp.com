@@ -22,6 +22,7 @@ pub(crate) struct NavLink {
     icon_svg: &'static str,
     href: String,
     label: &'static str,
+    download: bool,
 }
 
 pub(crate) fn nav_items(root_prefix: &str, active_section: Option<NavSection>) -> Vec<NavItem> {
@@ -55,26 +56,31 @@ pub(crate) fn nav_links(root_prefix: &str) -> Vec<NavLink> {
             icon_svg: GITHUB_ICON_SVG,
             href: "https://github.com/cole-brokamp".to_string(),
             label: "GitHub",
+            download: false,
         },
         NavLink {
             icon_svg: r#"<svg class="nav-icon nav-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>"#,
             href: "mailto:cole@colebrokamp.com".to_string(),
             label: "Email",
+            download: false,
         },
         NavLink {
             icon_svg: r#"<svg class="nav-icon nav-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>"#,
             href: internal_href(root_prefix, "peds-cv-brokamp.docx"),
             label: "CV",
+            download: false,
         },
         NavLink {
             icon_svg: r#"<svg class="nav-icon nav-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="m2 10 10-5 10 5-10 5z"/><path d="M6 12v5c2 1.4 4 2 6 2s4-.6 6-2v-5"/><path d="M22 10v6"/></svg>"#,
             href: "https://scholar.google.com/citations?user=N_CkwfoAAAAJ&hl=en".to_string(),
             label: "Google Scholar",
+            download: false,
         },
         NavLink {
             icon_svg: r#"<svg class="nav-icon nav-icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H20v17H7.5A3.5 3.5 0 0 0 4 22z"/><path d="M4 5.5V22"/><path d="M8 6h8"/><path d="M8 10h8"/></svg>"#,
-            href: internal_href(root_prefix, "colebrokamp.bib"),
-            label: "BibTeX",
+            href: internal_href(root_prefix, "colebrokamp.ris"),
+            label: "RIS",
+            download: true,
         },
     ]
 }
@@ -138,12 +144,8 @@ mod tests {
             "../../peds-cv-brokamp.docx"
         );
         assert_eq!(
-            links
-                .iter()
-                .find(|link| link.label == "BibTeX")
-                .unwrap()
-                .href,
-            "../../colebrokamp.bib"
+            links.iter().find(|link| link.label == "RIS").unwrap().href,
+            "../../colebrokamp.ris"
         );
         assert_eq!(
             links

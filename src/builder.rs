@@ -11,7 +11,7 @@ use crate::markdown::markdown_to_html;
 use crate::nav::{GITHUB_ICON_SVG, NavSection, nav_items, nav_links};
 use crate::text::{highlight_cole, html_escape, normalize_doi, present, present_owned};
 use crate::views::{AbstractView, PublicationView, PublicationYear};
-use crate::{bibtex, command, writing};
+use crate::{command, ris, writing};
 
 const SITE_DIR: &str = "_site";
 const SOFTWARE_DESCRIPTION: &str = "Selected open-source software for reproducible environmental health, geospatial research, and data workflows.";
@@ -40,7 +40,7 @@ impl SiteBuilder {
 
     pub(crate) fn build_all(&self) -> Result<()> {
         self.clean_site_dir()?;
-        self.build_bib()?;
+        self.build_ris()?;
         self.build_cv()?;
         self.build_site()
     }
@@ -108,12 +108,12 @@ impl SiteBuilder {
         writing::build(self)
     }
 
-    pub(crate) fn build_bib(&self) -> Result<()> {
-        let content = bibtex::render(&self.publications);
+    pub(crate) fn build_ris(&self) -> Result<()> {
+        let content = ris::render(&self.publications);
 
-        self.write_site("colebrokamp.bib", &content)?;
+        self.write_site("colebrokamp.ris", &content)?;
         eprintln!(
-            "wrote {} entries to _site/colebrokamp.bib",
+            "wrote {} entries to _site/colebrokamp.ris",
             self.publications.len()
         );
         Ok(())

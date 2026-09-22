@@ -1,9 +1,9 @@
-mod bibtex;
 mod builder;
 mod command;
 mod data;
 mod markdown;
 mod nav;
+mod ris;
 mod text;
 mod views;
 mod writing;
@@ -19,7 +19,7 @@ fn main() -> Result<()> {
         "all" => builder.build_all(),
         "site" => builder.build_site(),
         "writing" => builder.build_writing(),
-        "bib" => builder.build_bib(),
+        "ris" => builder.build_ris(),
         "cv" => builder.build_cv(),
         other => bail!("unknown build command: {other}"),
     }

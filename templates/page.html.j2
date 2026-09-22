@@ -54,7 +54,7 @@ summary {
       <ul class="nav navbar-nav navbar-right">
         {% for link in nav_links %}
         <li>
-          <a href="{{ link.href|safe }}">
+          <a href="{{ link.href|safe }}"{% if link.download %} download{% endif %}>
             {{ link.icon_svg|safe }}
             <span class="nav-link-label">{{ link.label }}</span>
           </a>
