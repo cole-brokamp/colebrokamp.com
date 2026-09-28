@@ -12,11 +12,10 @@
     - Hilary Marusak
   journal: "Biological Psychiatry Global Open Science"
   citation: "100831"
-  volume: "100831"
-  pages: ""
+  pages: "100831"
   note: "In Press"
   year: 2026
-  doi: " 10.1016/j.bpsgos.2026.100831"
+  doi: "10.1016/j.bpsgos.2026.100831"
 
 - title: "Comparing Machine and Deep Learning Models for Pediatric Anxiety Classification using Structured EHRs and Area-based Measures of Health Data"
   author:
@@ -64,10 +63,13 @@
     - James Gern
     - Stephanie Lovinsky-Desir
   journal: "Journal of Exposure Science & Environmental Epidemiology"
-  citation: "In Press"
-  note: "In Press"
+  citation: "36(5):919-928"
+  volume: "36"
+  number: "5"
+  pages: "919-928"
   year: 2026
   doi: "10.1038/s41370-026-00875-6"
+  pmid: "42032029"
 
 - title: "Climate Change and Pediatric Population Health Management"
   author:
